@@ -29,12 +29,13 @@ myautopilot(autopilot).
 +mm::mission_loop(Id) 
    <- .send(autopilot,tell,mission_loop(Id)).
 
+/*
 +mm::current_mission(Id)
    <- //.print("Current Mission :",Id);
       //-current_mission(_);
       //+current_mission(Id);
       .send(autopilot,tell,update_current_mission(Id)).//    <- No need for autopilot to ask for it, test this
-
+*/
 
 /*+whats_my_current_mission[source(A)]                   //Unnecessary,mm::current_mission takes care of it
    : current_mission(Id)
