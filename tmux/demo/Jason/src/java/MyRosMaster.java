@@ -237,7 +237,7 @@ public class MyRosMaster extends RosMaster {
 
     private boolean exec_test_mrs_topic_action_light_loop(Object[] args){
         ObjectMapper mapper = new ObjectMapper();
-        //System.out.println("TESTE");    
+        System.out.println("TESTE Loop");    
         // Nodes that contain nested nodes
         ObjectNode path = mapper.createObjectNode();            
         ObjectNode header = mapper.createObjectNode();
@@ -360,6 +360,10 @@ public class MyRosMaster extends RosMaster {
         else
         if(actionName.equals("test_mrs_topic_action_light")){
             return exec_test_mrs_topic_action_light(args);           
+        }
+        else
+        if(actionName.equals("test_mrs_topic_action_light_loop")){
+            return exec_test_mrs_topic_action_light_loop(args);           
         }
 		return false;
 	}

@@ -44,8 +44,7 @@ current_position(CX, CY, CZ) :- my_frame_id(Frame_id) & my_number(4) & uav4_grou
 
 +!my_missions
    :  waypoints_list(L)
-   <- !calculate_trajectory;
-      !mm::create_mission(pa, 900, []); // scan
+   <- !mm::create_mission(pa, 900, []); // scan
       +mm::mission_plan(pa,L); // a list of waypoints
 
       //embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("sample_roscore","test_mrs_topic_action_light",[N,L] );
@@ -57,10 +56,10 @@ current_position(CX, CY, CZ) :- my_frame_id(Frame_id) & my_number(4) & uav4_grou
       // land now
 
 
-      !mm::run_mission(pa).
-      //.wait(5000);
+      !mm::run_mission(pa);
+      .wait(2000);
       //embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("sample_roscore","stop_tracking",[]);  
-      //+found_fire(22,-24).
+      +found_fire(5,5).
       //!mm::run_mission(pb).
 
 
@@ -68,12 +67,24 @@ current_position(CX, CY, CZ) :- my_frame_id(Frame_id) & my_number(4) & uav4_grou
 +fire <- !mm::run_mission(pb).
 -energy <- !mm::run_mission(gohome).
 
-+mm::mission_state(Id,S) // "callback" when a mission is finished
-   <- .print("Mission ",Id," state is ",S).
 
 
 
 
++found_fire(CX,CY)
+   : my_number(N)
+   <- .print("Found fire in : ",CX," , ",CY);
+      !mm::create_mission(pc, 900, []); // gotofire
+      +mm::mission_plan(pc,[[CX,CY,10]]);
+      !mm::run_mission(pc).
+
++mm::mission_state(pc,finished) 
+   : found_fire(CX,CY)
+   <- .print("Mission c finished!");
+      !mm::create_mission(pd, 100, [drop_when_interrupted]);
+      +mm::mission_plan(pd,[[CX-5,CY+5,5],[CX+5,CY+5,5],[CX+5,CY-5,5],[CX-5,CY-5,5]]);
+      !mm::run_mission(pd).
+      
 
 +!calculate_trajectory
    :  my_number(N)
@@ -129,7 +140,8 @@ current_position(CX, CY, CZ) :- my_frame_id(Frame_id) & my_number(4) & uav4_grou
         +waypoints_list_len(.length(WayList));
         .print("Waypoints list: ", WayList).
 
-
++mm::mission_state(Id,S) // "callback" when a mission is finished
+   <- .print("Mission ",Id," state is ",S).
 /*+whats_my_current_mission[source(A)]                   //Unnecessary,mm::current_mission takes care of it
    : current_mission(Id)
   <- //.print("Current Mission :",Id);
