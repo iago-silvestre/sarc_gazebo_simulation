@@ -50,8 +50,12 @@
         topicType: std_msgs/Int32
       - actionName: update_time              
         topicName: /current_time
-        topicType: std_msgs/String        
+        topicType: std_msgs/String  
+      - actionName: fightFire              
+        topicName: /fightFire
+        topicType: std_msgs/Int32       
           #this action does not have any parameters
+      
       
     serviceRequestActions:
       - actionName: stop_tracking
