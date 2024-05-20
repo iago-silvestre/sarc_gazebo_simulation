@@ -26,10 +26,11 @@ myautopilot(autopilot).
 +mm::mission_state(Id,S) // "callback" when a mission is finished
    <- .print("Mission ",Id," state is ",S).
 
+/*
 +mm::mission_loop(Id) 
    <- .send(autopilot,tell,mission_loop(Id)).
 
-/*
+
 +mm::current_mission(Id)
    <- //.print("Current Mission :",Id);
       //-current_mission(_);

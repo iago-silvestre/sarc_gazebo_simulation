@@ -11,6 +11,9 @@
       }      
    .
 
++mission_loop(Id)
+   <- .send(autopilot,tell,mission_loop(Id)).
+
 @[atomic] +!run_mission(Id) : current_mission(Id). // nothing to do
 @[atomic] +!run_mission(Id)  // no current, but already desired, resume
    :  not current_mission(_) & 
@@ -34,7 +37,6 @@
          !change_state(CMission,suspended);
       }
       !run_mission(Id).
-
 
 @[atomic] +!stop_mission(Id,R)
    :  current_mission(Id)
@@ -77,6 +79,9 @@
       +mission_rem_plan(Mission,RemPlan);
       -mission_energy(Mission,EE,US);
       +mission_energy(Mission,EE,US+Energy).
+
++!default::update_rem_plan(Doing,Energy)
+   <- .print("no current mission to update energy!").
 
 +!auto_resume
    :  not current_mission(_) &
