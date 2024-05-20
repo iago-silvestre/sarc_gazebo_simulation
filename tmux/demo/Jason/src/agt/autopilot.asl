@@ -58,7 +58,7 @@ progress(pc,0).
       +progress(CM,N).
 
 +progress(CM,N) 
-   : mission_plan(CM,Plan) & .length(Plan,N) & my_agent(Ag)
+   : not mission_loop(CM) & mission_plan(CM,Plan) & .length(Plan,N) & my_agent(Ag)
    <- .send(Ag,signal,finished).
 
 // *** Energy
