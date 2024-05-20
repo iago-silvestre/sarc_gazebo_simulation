@@ -6,6 +6,9 @@
       if ( .member(drop_when_interrupted, Args)) {
         +mission_drop_when_interrupted(Id);
       }
+      if ( .member(loop, Args)) {
+        +mission_loop(Id);
+      }      
    .
 
 @[atomic] +!run_mission(Id) : current_mission(Id). // nothing to do
