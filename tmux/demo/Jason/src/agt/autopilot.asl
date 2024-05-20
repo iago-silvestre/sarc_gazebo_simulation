@@ -61,6 +61,11 @@ progress(pc,0).
    : not mission_loop(CM) & mission_plan(CM,Plan) & .length(Plan,N) & my_agent(Ag)
    <- .send(Ag,signal,finished).
 
++progress(CM,N) 
+   : my_agent(Ag)
+   <- UsedEnergy = 0;
+      .send(Ag,achieve,update_rem_plan(N,UsedEnergy)).
+
 // *** Energy
 
 /*+!do(Step,Ag,Rem)

@@ -18,13 +18,17 @@
 @[atomic] +!run_mission(Id)  // no current, but already desired, resume
    :  not current_mission(_) & 
       mission_state(Id,suspended) &
-      mission_rem_plan(Id,Plan) 
-   <- +current_mission(Id);
-      .send(autopilot,achieve,run_plan(Id,Plan)).
+      mission_step(Id,Step) &
+      mission_plan(Id,Plan)
+   <- .delete(0,Step+1,Plan,RemPlan); .print("Resuming ",Plan,", remaining plan is ",RemPlan," (",Step+1,"/",.length(Plan),")");
+      +current_mission(Id);
+      !change_state(Id,running);
+      .send(autopilot,achieve,run_plan(Id,RemPlan)).
 @[atomic] +!run_mission(Id) // no current, not desired, start!
    :  not current_mission(_) & 
       mission_plan(Id,Plan) 
    <- +current_mission(Id);
+      !change_state(Id,running);
       .send(autopilot,achieve,run_plan(Id,Plan)).
 @[atomic] +!run_mission(Id) // drop current
    :  current_mission(CMission) & 
@@ -64,19 +68,11 @@
       !change_state(Id,finished);
       !auto_resume.   
 
-+!default::update_rem_plan(Doing,Energy)
++!default::update_rem_plan(Step,Energy)
    :  current_mission(Mission) & 
-      not mission_rem_plan(Mission,_) &
-      mission_plan(Mission,Plan)
-   <- +mission_rem_plan(Mission,Plan);
-      !default::update_rem_plan(Doing,Energy).
-
-+!default::update_rem_plan(Doing,Energy)
-   :  current_mission(Mission) & 
-      mission_rem_plan(Mission,[_|RemPlan]) &
       mission_energy(Mission,EE,US) 
-   <- -mission_rem_plan(Mission,_);
-      +mission_rem_plan(Mission,RemPlan);
+   <- -mission_step(Mission,_);
+      +mission_step(Mission,Step);
       -mission_energy(Mission,EE,US);
       +mission_energy(Mission,EE,US+Energy).
 
