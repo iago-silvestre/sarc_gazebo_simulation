@@ -1,0 +1,63 @@
+/*
+   Project teste_embedded_mas
+
+   Gradle build file for Jason Application
+   April 14, 2023 - 13:20:26
+*/
+
+defaultTasks 'run'
+
+apply plugin: 'java'
+//apply plugin: 'eclipse'
+
+version '1.0'
+group   'org.jason'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(15)
+    }
+}
+
+repositories {
+    mavenCentral()
+
+    //maven { url "http://jacamo.sourceforge.net/maven2" }
+    maven { url "https://raw.githubusercontent.com/jacamo-lang/mvn-repo/master" }
+    maven { url "https://jade.tilab.com/maven/" }
+    maven { url "https://raw.github.com/embedded-mas/embedded-mas-mvn-repo/master" }
+
+    flatDir { dirs 'lib' }
+}
+
+dependencies {
+    implementation('org.jason:jason:3.1')
+    implementation('embedded-mas:embedded-mas:0.055-SNAPSHOT')
+
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.13.3'
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.13.2' 
+    implementation group: 'com.fasterxml.jackson.dataformat', name: 'jackson-dataformat-yaml', version: '2.13.3'
+}
+
+sourceSets {
+    main {
+        java {
+            srcDir 'src/java'
+        }
+        resources {
+            srcDir 'src/resources'
+        }
+    }
+}
+
+task run (type: JavaExec, dependsOn: 'classes') {
+    description 'runs the application'
+    main = 'jason.infra.local.RunLocalMAS'
+    args 'agCrit.mas2j'
+    classpath sourceSets.main.runtimeClasspath
+}
+
+clean {
+    delete 'bin'
+    delete 'build'
+}

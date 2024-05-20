@@ -1,0 +1,36 @@
+/*
+    teste_embedded_mas
+    ---------------------------
+
+    Jason Project File
+
+    This file defines the initial state of the MAS
+
+    Jason 2.5.1
+    April 14, 2023 - 13:20:26
+*/
+
+MAS teste_embedded_mas {
+
+    infrastructure: Local
+
+
+    agents: 
+    	uav1 uav1.asl [beliefs="my_number(1) , my_frame_id(\"world\")"]
+    	agentClass embedded.mas.bridges.jacamo.CyberPhysicalAgent 
+    	agentArchClass embedded.mas.bridges.jacamo.DefaultEmbeddedAgArch;
+    	
+    	uav2 uav1.asl [beliefs="my_number(2) , my_frame_id(\"world\")"]
+    	agentClass embedded.mas.bridges.jacamo.CyberPhysicalAgent 
+    	agentArchClass embedded.mas.bridges.jacamo.DefaultEmbeddedAgArch;
+    	
+    	uav3 uav1.asl [beliefs="my_number(3) , my_frame_id(\"world\")"]
+    	agentClass embedded.mas.bridges.jacamo.CyberPhysicalAgent 
+    	agentArchClass embedded.mas.bridges.jacamo.DefaultEmbeddedAgArch;
+    	
+    	uav4 uav1.asl [beliefs="my_number(4) , my_frame_id(\"world\")"]
+    	agentClass embedded.mas.bridges.jacamo.CyberPhysicalAgent 
+    	agentArchClass embedded.mas.bridges.jacamo.DefaultEmbeddedAgArch;
+    	
+    aslSourcePath: "src/agt";
+}

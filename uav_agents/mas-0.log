@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2024-03-21T13:48:42.269397299Z</date>
+  <millis>1711028922269</millis>
+  <nanos>397299</nanos>
+  <sequence>136</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav2</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>117</thread>
+  <message>Arrived at waypoint</message>
+</record>
+<record>
+  <date>2024-03-21T13:48:42.270987515Z</date>
+  <millis>1711028922270</millis>
+  <nanos>987515</nanos>
+  <sequence>137</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav2</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>117</thread>
+  <message>following_trajectory</message>
+</record>
+<record>
+  <date>2024-03-21T13:48:46.797485005Z</date>
+  <millis>1711028926797</millis>
+  <nanos>485005</nanos>
+  <sequence>138</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav2</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>117</thread>
+  <message>Arrived at waypoint</message>
+</record>
+<record>
+  <date>2024-03-21T13:48:46.798175142Z</date>
+  <millis>1711028926798</millis>
+  <nanos>175142</nanos>
+  <sequence>139</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav2</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>117</thread>
+  <message>following_trajectory</message>
+</record>
+<record>
+  <date>2024-03-21T13:48:52.628654800Z</date>
+  <millis>1711028932628</millis>
+  <nanos>654800</nanos>
+  <sequence>140</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav4</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>119</thread>
+  <message>Arrived at waypoint</message>
+</record>
+<record>
+  <date>2024-03-21T13:48:52.629973750Z</date>
+  <millis>1711028932629</millis>
+  <nanos>973750</nanos>
+  <sequence>141</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav4</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>119</thread>
+  <message>following_trajectory</message>
+</record>
+<record>
+  <date>2024-03-21T13:48:57.153725979Z</date>
+  <millis>1711028937153</millis>
+  <nanos>725979</nanos>
+  <sequence>142</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav4</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>119</thread>
+  <message>Arrived at waypoint</message>
+</record>
+<record>
+  <date>2024-03-21T13:48:57.154438137Z</date>
+  <millis>1711028937154</millis>
+  <nanos>438137</nanos>
+  <sequence>143</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav4</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>119</thread>
+  <message>following_trajectory</message>
+</record>
+<record>
+  <date>2024-03-21T13:49:05.303788849Z</date>
+  <millis>1711028945303</millis>
+  <nanos>788849</nanos>
+  <sequence>144</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav3</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>118</thread>
+  <message>Arrived at waypoint</message>
+</record>
+<record>
+  <date>2024-03-21T13:49:05.305342188Z</date>
+  <millis>1711028945305</millis>
+  <nanos>342188</nanos>
+  <sequence>145</sequence>
+  <logger>jason.asSemantics.TransitionSystem.uav3</logger>
+  <level>INFO</level>
+  <class>jason.stdlib.println</class>
+  <method>execute</method>
+  <thread>118</thread>
+  <message>following_trajectory</message>
+</record>
+</log>

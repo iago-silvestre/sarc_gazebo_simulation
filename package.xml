@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<package format="2">
+
+  <name>sarc_gazebo_simulation</name>
+  <version>1.0.3</version>
+  <description>The Metapackage for MRS UAV Gazebo simulation pipeline.</description>
+
+  <author email="vojtech.spurny@fel.cvut.cz">Vojtech Spurny</author>
+  <maintainer email="petr.stibinger@fel.cvut.cz">Petr Stibinger</maintainer>
+  <maintainer email="vojtech.spurny@fel.cvut.cz">Vojtech Spurny</maintainer>
+  <maintainer email="tomas.baca@fel.cvut.cz">Tomas Baca</maintainer>
+
+  <license>BSD 3-Clause</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>cmake_modules</depend>
+  <depend>gazebo_ros</depend>
+  <depend>mavlink_sitl_gazebo</depend>
+  <depend>mavros_msgs</depend>
+  <depend>message_runtime</depend>
+  <depend>mrs_gazebo_common_resources</depend>
+  <depend>mrs_msgs</depend>
+  <depend>mrs_uav_px4_api</depend>
+  <depend>px4</depend>
+  <depend>rospy</depend>
+  <depend>std_msgs</depend>
+  <depend>mrs_uav_testing</depend>
+  <depend>mrs_uav_gazebo_testing</depend>
+
+  <depend>python3-jinja2</depend>
+
+  <export>
+    <!-- gazebo_ros_paths_plugin automatically adds these to
+      GAZEBO_PLUGIN_PATH and GAZEBO_MODEL_PATH when you do this export inside
+      the package.xml file. You can than use URIs of type model://my_package/stuff. -->
+    <gazebo_ros gazebo_model_path="${prefix}/models"/>
+    <gazebo_ros gazebo_media_path="${prefix}"/>
+  </export>
+
+</package>

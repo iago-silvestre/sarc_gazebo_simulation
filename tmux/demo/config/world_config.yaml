@@ -1,0 +1,40 @@
+world_origin:
+
+  units: "LATLON" # {"UTM, "LATLON"}
+
+  #origin_x: 47.397743
+  origin_x: 47.397700
+  origin_y: 8.545594
+
+  init_gps_origin_local: false # origin of gps_origin will be in the position of UAV at odometry launch
+  init_gps_offset_x: 0.0 # initial position of UAV relative to gps_origin when init_gps_origin_local is enabled
+  init_gps_offset_y: 0.0 # initial position of UAV relative to gps_origin when init_gps_origin_local is enabled
+  
+safety_area:
+
+  enabled: false
+
+  horizontal:
+
+    # the frame of reference in which the points are expressed
+    #frame_name: "world_origin"
+    frame_name: "gps_origin"
+
+    # polygon
+    #
+    # x, y [m] for any frame_name except latlon_origin
+    # x = latitude, y = longitude [deg]  for frame_name=="latlon_origin"
+    points: [
+      -250, -250,
+      250,  -250,
+      250,  250,
+      -250, 250,
+    ]
+
+  vertical:
+
+    # the frame of reference in which the max&min z is expressed
+    frame_name: "world_origin"
+
+    max_z: 30.0
+    min_z: 0.5
