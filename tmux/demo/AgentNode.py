@@ -65,7 +65,8 @@ class WaypointTrackerNode:
                     rospy.loginfo("Model deletion response: %s", response.status_message)
                 except rospy.ServiceException as e:
                     rospy.logerr("Service call failed: %s", e)
-
+            if self.count==4:
+                self.fire_ext_pub.publish(1)
             
         
     def odometry_callback(self, msg):

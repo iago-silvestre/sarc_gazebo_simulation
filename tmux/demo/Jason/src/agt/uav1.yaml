@@ -50,7 +50,12 @@
         topicType: std_msgs/Int32
       - actionName: update_time              
         topicName: /current_time
-        topicType: std_msgs/String  
+        topicType: std_msgs/String 
+
+    serviceRequestActions:
+      - actionName: stop_tracking
+        serviceName: uav1/control_manager/stop_trajectory_tracking         
+          #this action does not have any parameters
       
 
 

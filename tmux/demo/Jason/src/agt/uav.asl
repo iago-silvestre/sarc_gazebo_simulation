@@ -50,15 +50,18 @@ current_position(CX, CY, CZ) :- my_frame_id(Frame_id) & my_number(4) & uav4_grou
 
 
       +mm::mission_plan(pa,[[-5,-5,5],[5,-5,5],[5,5,5],[-5,5,5]]); // a list of waypoints
-      !mm::create_mission(pb, 100, [drop_when_interrupted]); // extinguish
-      +mm::mission_plan(pb,[[5,-8,5],[0,-8,5]]);
+     // !mm::create_mission(pb, 100, [drop_when_interrupted]); // extinguish
+     // !mm::create_mission(pb, 100, [drop_when_interrupted,loop]); // extinguish
+      //+mm::mission_plan(pb,[[5,-8,5],[0,-8,5]]);
       // go home
       // land now
 
 
-      !mm::run_mission(pa);
-      .wait(23000);
-      !mm::run_mission(pb).
+      !mm::run_mission(pa).
+      //.wait(5000);
+      //embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("sample_roscore","stop_tracking",[]);  
+      //+found_fire(22,-24).
+      //!mm::run_mission(pb).
 
 
 
@@ -68,11 +71,6 @@ current_position(CX, CY, CZ) :- my_frame_id(Frame_id) & my_number(4) & uav4_grou
 +mm::mission_state(Id,S) // "callback" when a mission is finished
    <- .print("Mission ",Id," state is ",S).
 
-+mm::current_mission(Id)
-   <- //.print("Current Mission :",Id);
-      -current_mission(_);
-      +current_mission(Id);
-      .send(autopilot,tell,update_current_mission(Id)).//    <- No need for autopilot to ask for it, test this
 
 
 
