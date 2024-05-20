@@ -28,6 +28,8 @@ class WaypointTrackerNode:
         # Publisher
         self.last_waypoint_pub = rospy.Publisher("uav1_lastWP", Int8, queue_size=1)
         
+        self.fire_ext_pub = rospy.Publisher("fireExt", Int8, queue_size=1)
+
         # Rate for the odometry callback
         self.rate = rospy.Rate(1)  # Execute once per second
         self.waypoints = [(-5.0, -5.0), (5.0, -5.0), (5.0, 5.0), (-5.0, 5.0)]
@@ -54,14 +56,17 @@ class WaypointTrackerNode:
         if msg.data != 0:
             model_name = "tree_red_"+ str(self.count)  # Change this to the name of the model you want to delete
             rospy.loginfo("Deleting model: %s", model_name)
-            self.count=self.count+1
+            
             probability = random.random()
             if probability <= 0.3:
                 try:
+                    self.count=self.count+1
                     response = self.delete_model(model_name)
                     rospy.loginfo("Model deletion response: %s", response.status_message)
                 except rospy.ServiceException as e:
                     rospy.logerr("Service call failed: %s", e)
+
+            
         
     def odometry_callback(self, msg):
         # Extract drone position

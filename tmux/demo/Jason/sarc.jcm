@@ -14,8 +14,10 @@
 
 mas sarc {
 
-    agent uav1 : sample_agent.asl{
-      beliefs: my_number(1)
+    agent uav1 : uav.asl{
+      beliefs: my_number(2) 
+               my_frame_id("world")
+      
       ag-class: embedded.mas.bridges.jacamo.CyberPhysicalAgent
       ag-arch: embedded.mas.bridges.jacamo.DefaultEmbeddedAgArch
     }
