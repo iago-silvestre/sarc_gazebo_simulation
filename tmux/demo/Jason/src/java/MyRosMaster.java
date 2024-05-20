@@ -130,7 +130,7 @@ public class MyRosMaster extends RosMaster {
 
     private boolean exec_test_mrs_topic_action_light(Object[] args){
         ObjectMapper mapper = new ObjectMapper();
-        //System.out.println("TESTE");    
+        System.out.println("TESTE");    
         // Nodes that contain nested nodes
         ObjectNode path = mapper.createObjectNode();            
         ObjectNode header = mapper.createObjectNode();
@@ -201,7 +201,7 @@ public class MyRosMaster extends RosMaster {
         path.put("fly_now", fly_now);
         path.put("stop_at_waypoints", stop_at_waypoints);
        //path.put("loop", loop ?"1":"0");
-        path.put("loop", loop ?"1":"0");
+        path.put("loop", loop);
         path.put("max_execution_time", max_execution_time);
         path.put("max_deviation_from_path", max_deviation_from_path);
         path.put("dont_prepend_current_state", dont_prepend_current_state);
@@ -223,7 +223,9 @@ public class MyRosMaster extends RosMaster {
             
 
         try {
+            //((DefaultRos4EmbeddedMas) microcontroller).rosWrite("/uav"+args[0]+"/trajectory_generation/path","mrs_msgs/Path",mapper.writeValueAsString(path));                   
             ((DefaultRos4EmbeddedMas) microcontroller).rosWrite("/uav"+args[0]+"/trajectory_generation/path","mrs_msgs/Path",mapper.writeValueAsString(path));                   
+            
             //((DefaultRos4EmbeddedMas) microcontroller).rosWrite("/uav1/trajectory_generation/path","mrs_msgs/Path",mapper.writeValueAsString(path));                   
         } catch (Exception e) {
             e.printStackTrace();
@@ -306,7 +308,7 @@ public class MyRosMaster extends RosMaster {
         path.put("fly_now", fly_now);
         path.put("stop_at_waypoints", stop_at_waypoints);
        //path.put("loop", loop ?"1":"0");
-        path.put("loop", loop ?"1":"0");
+        path.put("loop", loop);
         path.put("max_execution_time", max_execution_time);
         path.put("max_deviation_from_path", max_deviation_from_path);
         path.put("dont_prepend_current_state", dont_prepend_current_state);

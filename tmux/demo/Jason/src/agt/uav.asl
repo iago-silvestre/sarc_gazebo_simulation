@@ -46,10 +46,10 @@ current_position(CX, CY, CZ) :- my_frame_id(Frame_id) & my_number(4) & uav4_grou
    :  waypoints_list(L)
    <- !calculate_trajectory;
       !mm::create_mission(pa, 900, []); // scan
-      //+mm::mission_plan(pa,L); // a list of waypoints
+      +mm::mission_plan(pa,L); // a list of waypoints
 
-
-      +mm::mission_plan(pa,[[-5,-5,5],[5,-5,5],[5,5,5],[-5,5,5]]); // a list of waypoints
+      //embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("sample_roscore","test_mrs_topic_action_light",[N,L] );
+      //+mm::mission_plan(pa,[[-5,-5,5],[5,-5,5],[5,5,5],[-5,5,5]]); // a list of waypoints
      // !mm::create_mission(pb, 100, [drop_when_interrupted]); // extinguish
      // !mm::create_mission(pb, 100, [drop_when_interrupted,loop]); // extinguish
       //+mm::mission_plan(pb,[[5,-8,5],[0,-8,5]]);
