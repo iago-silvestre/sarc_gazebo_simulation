@@ -7,9 +7,11 @@ status("None").
 world_area(100, 100, 0, 0).
 num_of_uavs(4).
 camera_range(5).
-std_altitude(20.0).
+std_altitude(10.0).
 std_heading(0.0).
 land_radius(10.0).
+frl_charges(5).
+fireSize(4).
 
 currentwaypoint(0).
 
@@ -57,10 +59,10 @@ current_position(CX, CY, CZ) :- my_frame_id(Frame_id) & my_number(4) & uav4_grou
 
 
       !mm::run_mission(pa);
-      .wait(2000);
+      .wait(10000);
       //embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("sample_roscore","stop_tracking",[]);  
-      +found_fire(5,5).
-      //!mm::run_mission(pb).
+      //+found_fire(5,5).
+      !low_battery.
 
 
 
@@ -68,8 +70,16 @@ current_position(CX, CY, CZ) :- my_frame_id(Frame_id) & my_number(4) & uav4_grou
 -energy <- !mm::run_mission(gohome).
 
 
++!low_battery
+   <- .print(" Low Battery, going back to Recharge");
+      !mm::create_mission(p_lb, 900, []); // Recharge Battery
+      +mm::mission_plan(p_lb,[[0,0,10]]);
+      !mm::run_mission(p_lb).
 
-
++mm::mission_state(p_lb,finished) 
+   <- .print(" Recharging Battery");
+      .wait(10000);
+      .print(" Recharged!!").
 
 +found_fire(CX,CY)
    : my_number(N)
@@ -79,12 +89,28 @@ current_position(CX, CY, CZ) :- my_frame_id(Frame_id) & my_number(4) & uav4_grou
       !mm::run_mission(pc).
 
 +mm::mission_state(pc,finished) 
-   : found_fire(CX,CY)
+   : found_fire(CX,CY) & std_altitude(Z)
    <- .print("Mission c finished!");
       !mm::create_mission(pd, 100, [drop_when_interrupted]);
-      +mm::mission_plan(pd,[[CX-5,CY+5,5],[CX+5,CY+5,5],[CX+5,CY-5,5],[CX-5,CY-5,5]]);
+      +mm::mission_plan(pd,[[CX-1,CY+1,Z],[CX+1,CY+1,Z],[CX+1,CY-1,Z],[CX-1,CY-1,Z]]);
       !mm::run_mission(pd).
-      
+
+
++mm::mission_state(pd,finished)   // Priority
+   : fireExt(F) & fireSize(F)
+   <- .print("Fire Extinguished").
+
+
++mm::mission_state(pd,finished) 
+   : found_fire(CX,CY) & frl_charges(FRL) 
+   <- .print("Loop finished!");
+      -+frl_charges(FRL-1);
+      embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("sample_roscore","fightFire",FRL);
+      //!mm::create_mission(pd, 100, [drop_when_interrupted]);
+      //+mm::mission_plan(pd,[[CX-5,CY+5,5],[CX+5,CY+5,5],[CX+5,CY-5,5],[CX-5,CY-5,5]]);
+      !mm::run_mission(pd).
+
+
 
 +!calculate_trajectory
    :  my_number(N)

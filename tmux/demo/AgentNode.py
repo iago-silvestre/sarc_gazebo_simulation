@@ -58,7 +58,7 @@ class WaypointTrackerNode:
             rospy.loginfo("Deleting model: %s", model_name)
             
             probability = random.random()
-            if probability <= 0.3:
+            if probability <= 0.7:
                 try:
                     self.count=self.count+1
                     response = self.delete_model(model_name)
@@ -66,7 +66,7 @@ class WaypointTrackerNode:
                 except rospy.ServiceException as e:
                     rospy.logerr("Service call failed: %s", e)
             if self.count==4:
-                self.fire_ext_pub.publish(1)
+                self.fire_ext_pub.publish(self.count)
             
         
     def odometry_callback(self, msg):

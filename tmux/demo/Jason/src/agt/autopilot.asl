@@ -59,7 +59,9 @@ progress(pc,0).
 
 +progress(CM,N) 
    : not mission_loop(CM) & mission_plan(CM,Plan) & .length(Plan,N) & my_agent(Ag)
-   <- .send(Ag,signal,finished).
+   <- -progress(CM,_);
+      +progress(CM,0);
+      .send(Ag,signal,finished).
 
 +progress(CM,N) 
    : my_agent(Ag)

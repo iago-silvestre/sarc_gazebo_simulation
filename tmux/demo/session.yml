@@ -21,7 +21,8 @@ windows:
       panes:
         #- waitForRos; roslaunch mrs_uav_gazebo_simulation simulation.launch world_name:=grass_plane gui:=true
         - waitForRos; roslaunch mrs_uav_gazebo_simulation simulation.launch world_name:=fire gui:=true
-        - waitForGazebo; rosservice call /mrs_drone_spawner/spawn "1 --$UAV_TYPE --enable-rangefinder --enable_bluefox_camera --enable-ground-truth --pos 0 7.5 0 0"
+        - waitForGazebo; rosservice call /mrs_drone_spawner/spawn "1 --$UAV_TYPE --enable-rangefinder --enable_bluefox_camera --enable-ground-truth --pos 0 0 0 0"
+        #- waitForGazebo; rosservice call /mrs_drone_spawner/spawn "1 --$UAV_TYPE --enable-rangefinder --enable_bluefox_camera --enable-ground-truth --pos 0 7.5 0 0"
         #- waitForGazebo; rosservice call /mrs_drone_spawner/spawn "2 --$UAV_TYPE --enable-rangefinder --enable_bluefox_camera --enable-ground-truth --pos 0 2.5 0 0"
         #- waitForGazebo; rosservice call /mrs_drone_spawner/spawn "3 --$UAV_TYPE --enable-rangefinder --enable_bluefox_camera --enable-ground-truth --pos 0 -2.5 0 0"
         #- waitForGazebo; rosservice call /mrs_drone_spawner/spawn "4 --$UAV_TYPE --enable-rangefinder --enable_bluefox_camera --enable-ground-truth --pos 0 -7.5 0 0"
@@ -69,7 +70,7 @@ windows:
   - takeoff:
       layout: tiled
       panes:
-        - export UAV_NAME=uav1; waitForControl; rosservice call /$UAV_NAME/hw_api/arming 1; sleep 2; rosservice call /$UAV_NAME/hw_api/offboard
+        - export UAV_NAME=uav1; waitForControl; rosservice call /$UAV_NAME/hw_api/arming 1; sleep 2; rosservice call /$UAV_NAME/hw_api/offboard ; sleep 10; rosservice call /$UAV_NAME/control_manager/goto_altitude 10
         - export UAV_NAME=uav2; waitForControl; rosservice call /$UAV_NAME/hw_api/arming 1; sleep 2; rosservice call /$UAV_NAME/hw_api/offboard
         - export UAV_NAME=uav3; waitForControl; rosservice call /$UAV_NAME/hw_api/arming 1; sleep 2; rosservice call /$UAV_NAME/hw_api/offboard
         - export UAV_NAME=uav4; waitForControl; rosservice call /$UAV_NAME/hw_api/arming 1; sleep 2; rosservice call /$UAV_NAME/hw_api/offboard
