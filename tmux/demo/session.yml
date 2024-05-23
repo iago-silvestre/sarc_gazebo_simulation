@@ -4,7 +4,7 @@ name: simulation
 socket_name: mrs
 attach: false
 tmux_options: -f /etc/ctu-mrs/tmux.conf
-# you can modify these
+# you can modify these export UAV_TYPE=f450;
 pre_window: export RUN_TYPE=simulation; export UAV_TYPE=f450; export PLATFORM_CONFIG=`rospack find mrs_uav_gazebo_simulation`/config/mrs_uav_system/$UAV_TYPE.yaml; export CUSTOM_CONFIG=./config/custom_config.yaml; export WORLD_CONFIG=./config/world_config.yaml; export NETWORK_CONFIG=./config/network_config.yaml; export SENSORS="garmin_down"
 startup_window: status
 windows:
@@ -21,7 +21,7 @@ windows:
       panes:
         #- waitForRos; roslaunch mrs_uav_gazebo_simulation simulation.launch world_name:=grass_plane gui:=true
         - waitForRos; roslaunch mrs_uav_gazebo_simulation simulation.launch world_name:=fire gui:=true
-        - waitForGazebo; rosservice call /mrs_drone_spawner/spawn "1 --$UAV_TYPE --enable-rangefinder --enable_bluefox_camera --enable-ground-truth --pos 0 0 0 0"
+        - waitForGazebo; rosservice call /mrs_drone_spawner/spawn "1 --$UAV_TYPE   --pos 0 0 0 0 --enable-rangefinder --enable_bluefox_camera --enable-ground-truth"
         #- waitForGazebo; rosservice call /mrs_drone_spawner/spawn "1 --$UAV_TYPE --enable-rangefinder --enable_bluefox_camera --enable-ground-truth --pos 0 7.5 0 0"
         #- waitForGazebo; rosservice call /mrs_drone_spawner/spawn "2 --$UAV_TYPE --enable-rangefinder --enable_bluefox_camera --enable-ground-truth --pos 0 2.5 0 0"
         #- waitForGazebo; rosservice call /mrs_drone_spawner/spawn "3 --$UAV_TYPE --enable-rangefinder --enable_bluefox_camera --enable-ground-truth --pos 0 -2.5 0 0"
@@ -64,16 +64,16 @@ windows:
       layout: tiled
       panes:
         - export UAV_NAME=uav1; waitForHw; roslaunch mrs_uav_autostart automatic_start.launch
-        - export UAV_NAME=uav2; waitForHw; roslaunch mrs_uav_autostart automatic_start.launch
-        - export UAV_NAME=uav3; waitForHw; roslaunch mrs_uav_autostart automatic_start.launch
-        - export UAV_NAME=uav4; waitForHw; roslaunch mrs_uav_autostart automatic_start.launch
+        #- export UAV_NAME=uav2; waitForHw; roslaunch mrs_uav_autostart automatic_start.launch
+        #- export UAV_NAME=uav3; waitForHw; roslaunch mrs_uav_autostart automatic_start.launch
+        #- export UAV_NAME=uav4; waitForHw; roslaunch mrs_uav_autostart automatic_start.launch
   - takeoff:
       layout: tiled
       panes:
         - export UAV_NAME=uav1; waitForControl; rosservice call /$UAV_NAME/hw_api/arming 1; sleep 2; rosservice call /$UAV_NAME/hw_api/offboard ; sleep 10; rosservice call /$UAV_NAME/control_manager/goto_altitude 10
-        - export UAV_NAME=uav2; waitForControl; rosservice call /$UAV_NAME/hw_api/arming 1; sleep 2; rosservice call /$UAV_NAME/hw_api/offboard
-        - export UAV_NAME=uav3; waitForControl; rosservice call /$UAV_NAME/hw_api/arming 1; sleep 2; rosservice call /$UAV_NAME/hw_api/offboard
-        - export UAV_NAME=uav4; waitForControl; rosservice call /$UAV_NAME/hw_api/arming 1; sleep 2; rosservice call /$UAV_NAME/hw_api/offboard
+        #- export UAV_NAME=uav2; waitForControl; rosservice call /$UAV_NAME/hw_api/arming 1; sleep 2; rosservice call /$UAV_NAME/hw_api/offboard
+        #- export UAV_NAME=uav3; waitForControl; rosservice call /$UAV_NAME/hw_api/arming 1; sleep 2; rosservice call /$UAV_NAME/hw_api/offboard
+        #- export UAV_NAME=uav4; waitForControl; rosservice call /$UAV_NAME/hw_api/arming 1; sleep 2; rosservice call /$UAV_NAME/hw_api/offboard
   #- path:
    #   layout: even-vertical
    #   panes:
@@ -81,7 +81,7 @@ windows:
    #     - 'waitForControl; read; rosservice call /$UAV_NAME/hw_api/arming 1; sleep 2.0; rosservice call /$UAV_NAME/hw_api/offboard'
    #     - 'history -s rosservice call /uav1/control_manager/goto_trajectory_start'
    #     - 'history -s rosservice call /uav1/control_manager/start_trajectory_tracking'
-  - layout:
-      layout: tiled
-      panes:
-        - waitForControl; sleep 3; ~/.i3/layout_manager.sh ./layout.json
+  #- layout:
+  #    layout: tiled
+  #    panes:
+  #      - waitForControl; sleep 3; ~/.i3/layout_manager.sh ./layout.json
