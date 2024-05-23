@@ -18,6 +18,12 @@ class WaypointTrackerNode:
         
         # Parameters
         self.threshold = 0.5
+        self.batt_uav1 = 100.0
+        self.batt_uav2 = 100.0
+        self.batt_uav3 = 100.0
+        self.batt_uav4 = 100.0
+        self.count=0
+        self.waypoints1 = [(-5.0, -5.0), (5.0, -5.0), (5.0, 5.0), (-5.0, 5.0)]
         
         # Initialize last waypoint index
         self.last_waypoint_index1 = -1
@@ -28,27 +34,41 @@ class WaypointTrackerNode:
         #rospy.Subscriber("uav3/ground_truth", Odometry, self.odometry3_callback)
         #rospy.Subscriber("uav4/ground_truth", Odometry, self.odometry4_callback)
         
-        # Publisher
-        self.last_waypoint1_pub = rospy.Publisher("uav1_lastWP", Int8, queue_size=1)
-        #self.last_waypoint2_pub = rospy.Publisher("uav2_lastWP", Int8, queue_size=1)
-        #self.last_waypoint3_pub = rospy.Publisher("uav3_lastWP", Int8, queue_size=1)
-        #self.last_waypoint4_pub = rospy.Publisher("uav4_lastWP", Int8, queue_size=1)
-        
-        self.fire_ext_pub = rospy.Publisher("fireExt", Int8, queue_size=1)
-
-        # Rate for the odometry callback
-        self.rate = rospy.Rate(1)  # Execute once per second
-        self.waypoints1 = [(-5.0, -5.0), (5.0, -5.0), (5.0, 5.0), (-5.0, 5.0)]
-        self.delete_model = rospy.ServiceProxy('/gazebo/delete_model', DeleteModel)
         self.subscriber_del = rospy.Subscriber('/fightFire', Int32, self.del_callback)
         self.subscriber_path1 = rospy.Subscriber('/uav1/trajectory_generation/path', Path, self.path1_callback)
         #self.subscriber_path2 = rospy.Subscriber('/uav2/trajectory_generation/path', Path, self.path2_callback)
         #self.subscriber_path3 = rospy.Subscriber('/uav3/trajectory_generation/path', Path, self.path3_callback)
         #self.subscriber_path4 = rospy.Subscriber('/uav4/trajectory_generation/path', Path, self.path4_callback)
 
-        # Get the path to the SDF file
-        self.count=0
-        #self.createForest()
+        # Publisher
+        self.last_waypoint1_pub = rospy.Publisher("uav1_lastWP", Int8, queue_size=1)
+        #self.last_waypoint2_pub = rospy.Publisher("uav2_lastWP", Int8, queue_size=1)
+        #self.last_waypoint3_pub = rospy.Publisher("uav3_lastWP", Int8, queue_size=1)
+        #self.last_waypoint4_pub = rospy.Publisher("uav4_lastWP", Int8, queue_size=1)
+
+        self.batt_uav1_pub = rospy.Publisher("battery_uav1", Float64, queue_size=1)
+        self.batt_uav2_pub = rospy.Publisher("battery_uav2", Float64, queue_size=1)
+        self.batt_uav3_pub = rospy.Publisher("battery_uav3", Float64, queue_size=1)
+        self.batt_uav4_pub = rospy.Publisher("battery_uav4", Float64, queue_size=1)
+        
+        self.fire_ext_pub = rospy.Publisher("fireExt", Int8, queue_size=1)
+
+
+        # Delete model service
+        self.delete_model = rospy.ServiceProxy('/gazebo/delete_model', DeleteModel)
+        # Create a ROS timer to subtract 0.1 from battery variables every 2 seconds
+        self.timer = rospy.Timer(rospy.Duration(2.0), self.update_batteries)
+
+    def update_batteries(self, event):
+        # Subtract 0.1 from each battery variable
+        self.batt_uav1 -= 0.1
+        self.batt_uav2 -= 0.1
+        self.batt_uav3 -= 0.1
+        self.batt_uav4 -= 0.1
+        self.batt_uav1_pub.publish(self.batt_uav1)
+        self.batt_uav2_pub.publish(self.batt_uav2)
+        self.batt_uav3_pub.publish(self.batt_uav3)
+        self.batt_uav4_pub.publish(self.batt_uav4)
 
     def path1_callback(self, msg):
         self.waypoints1 = [(point.position.x, point.position.y) for point in msg.points]
@@ -108,7 +128,7 @@ class WaypointTrackerNode:
             self.last_waypoint_index1 = next_waypoint_index
             
             # Publish last waypoint index
-            self.last_waypoint_pub.publish(self.last_waypoint_index1+1)
+            self.last_waypoint1_pub.publish(self.last_waypoint_index1+1)
 
 
 if __name__ == '__main__':
