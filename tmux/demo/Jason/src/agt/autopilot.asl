@@ -8,7 +8,7 @@ progress(pc,0).
 //+uav_lastWP(N) : current_mission(CM) <- -+progress(CM,N).
 
 +!stop_mission
-   <- .print("**** not implemented");
+   <- .print("**** stop_mission is not implemented, just select another mission.");
    .
 
 /*+!run_plan(L)[source(Ag)]
