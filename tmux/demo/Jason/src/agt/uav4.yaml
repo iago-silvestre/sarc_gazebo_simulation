@@ -21,15 +21,12 @@
       #                  By default, the belief name has the identifier as the topic identifier.  
       #                      It is also possible to customize the belief using the optional key beliefName`, whose value is the intended belief name.  
   perceptionTopics:
-      - topicName: uav1_lastWP
+      - topicName: uav4_lastWP
         topicType: std_msgs/Int8
-      - topicName: uav1/ground_truth
+      - topicName: uav4/ground_truth
         topicType: nav_msgs/Odometry
       - topicName: fireExt
         topicType: std_msgs/Int8
-      - topicName: uav1/fire_detection
-        topicType: std_msgs/Int32
-        beliefName: fire_detection
   #actions: An agent acts upon ROS by topic writings and service requests, configured in the items topicWritingActions and serviceRequestActions, respectively.
   #           This example illustrate only topic writing actions. 
   actions:       
@@ -39,7 +36,7 @@
     # 3. topicType: the type of the topic.
     # For example, the first configured action defines that, when a agent executes the action update_value1, the corresponding atuation 
     #    is the writing of an integer value in the topic value1. The written value is the parameter of the action triggered by the agent.
-    topicWritingActions:          
+    topicWritingActions:           
       - actionName: fightFire              
         topicName: /fightFire
         topicType: std_msgs/Int32       

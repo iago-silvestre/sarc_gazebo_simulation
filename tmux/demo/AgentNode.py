@@ -21,16 +21,18 @@ class WaypointTrackerNode:
         rospy.init_node('waypoint_tracker_node', anonymous=True)
         self.n_drones = n
         # Parameters
-        self.threshold = 1.0
-        self.batt_uav1 = 100.0
-        self.batt_uav2 = 100.0
-        self.batt_uav3 = 100.0
-        self.batt_uav4 = 100.0
+        self.threshold = 2.0
+        #self.batt_uav1 = 100.0
+        #self.batt_uav2 = 100.0
+        #self.batt_uav3 = 100.0
+        #self.batt_uav4 = 100.0
+        self.battery_levels = [100.0 for _ in range(n)]
         self.count=0
         self.waypoints = [[] for _ in range(n)]
         self.last_waypoint_indices = [0 for _ in range(n)]
         self.path_publishers = []
         self.fire_detection_publishers = []
+        self.battery_publishers = []
         self.bridge = CvBridge()
         # Initialize last waypoint index
         #self.last_waypoint_index1 = -1
@@ -53,18 +55,19 @@ class WaypointTrackerNode:
         #self.last_waypoint3_pub = rospy.Publisher("uav3_lastWP", Int8, queue_size=1)
         #self.last_waypoint4_pub = rospy.Publisher("uav4_lastWP", Int8, queue_size=1)
 
-        self.batt_uav1_pub = rospy.Publisher("battery_uav1", Float64, queue_size=1)
-        self.batt_uav2_pub = rospy.Publisher("battery_uav2", Float64, queue_size=1)
-        self.batt_uav3_pub = rospy.Publisher("battery_uav3", Float64, queue_size=1)
-        self.batt_uav4_pub = rospy.Publisher("battery_uav4", Float64, queue_size=1)
-        
+        #self.batt_uav1_pub = rospy.Publisher("battery_uav1", Float64, queue_size=1)
+        #self.batt_uav2_pub = rospy.Publisher("battery_uav2", Float64, queue_size=1)
+        #self.batt_uav3_pub = rospy.Publisher("battery_uav3", Float64, queue_size=1)
+        #self.batt_uav4_pub = rospy.Publisher("battery_uav4", Float64, queue_size=1)
+        #self.timer = rospy.Timer(rospy.Duration(2.0), self.update_batteries)
+
         self.fire_ext_pub = rospy.Publisher("fireExt", Int8, queue_size=1)
 
 
         # Delete model service
         self.delete_model = rospy.ServiceProxy('/gazebo/delete_model', DeleteModel)
         # Create a ROS timer to subtract 0.1 from battery variables every 2 seconds
-        self.timer = rospy.Timer(rospy.Duration(2.0), self.update_batteries)
+        
 
         for i in range(n):
             rospy.Subscriber(f'/uav{i+1}/trajectory_generation/path', Path, self.create_path_callback(i))
@@ -74,7 +77,28 @@ class WaypointTrackerNode:
             rospy.Subscriber(f'/uav{i+1}/bluefox_optflow/image_raw', Image, self.create_image_callback(i))
             fire_detection_publisher = rospy.Publisher(f'/uav{i+1}/fire_detection', Int32, queue_size=1)
             self.fire_detection_publishers.append(fire_detection_publisher)
+            battery_publisher = rospy.Publisher(f'battery_uav{i+1}', Float64, queue_size=1)
+            self.battery_publishers.append(battery_publisher)
+        rospy.Timer(rospy.Duration(1), self.update_batteries)
 
+        rospy.Subscriber('/recharge_battery', Int8, self.recharge_battery_callback)
+
+    def update_batteries(self, event):
+        # Subtract 0.1 from each battery variable and publish
+        for i in range(self.n_drones):
+            self.battery_levels[i] -= 0.1
+            #print(self.battery_levels[i])
+            self.battery_publishers[i].publish(self.battery_levels[i])   
+
+    def recharge_battery_callback(self, msg):
+        drone_index = msg.data - 1
+        if 0 <= drone_index < self.n_drones:
+            self.battery_levels[drone_index] = 100.0
+            self.battery_publishers[drone_index].publish(100.0)
+            rospy.loginfo("Recharged battery of UAV%d to 100", drone_index + 1)
+        else:
+            rospy.logwarn("Invalid drone index: %d", drone_index + 1)
+         
     def create_path_callback(self, drone_index):
         def path_callback(msg):
             self.waypoints[drone_index] = [(point.position.x, point.position.y) for point in msg.points]
@@ -89,7 +113,7 @@ class WaypointTrackerNode:
         def odom_callback(msg):
             # Extract drone position
             if not self.waypoints[drone_index]:
-                rospy.logwarn("No waypoints received yet for drone %d. Skipping odometry callback.", drone_index + 1)
+                #rospy.logwarn("No waypoints received yet for drone %d. Skipping odometry callback.", drone_index + 1)
                 return
             #print(msg)
             x = msg.pose.pose.position.x
@@ -100,8 +124,6 @@ class WaypointTrackerNode:
             next_waypoint_x, next_waypoint_y = self.waypoints[drone_index][next_waypoint_index]
             distance = ((x - next_waypoint_x) ** 2 + (y - next_waypoint_y) ** 2) ** 0.5
             #print("distance = %.2f"%distance)
-            print("next x = %.2f"%next_waypoint_x)
-            print("next y = %.2f"%next_waypoint_y)
             # Check if drone has passed the next waypoint
             if distance < self.threshold:
                 # Update last waypoint index
@@ -133,7 +155,7 @@ class WaypointTrackerNode:
             red_pixel_count = np.sum(red_mask == 255)
 
             # Publish the number of red pixels
-            self.fire_detection_publishers[drone_index].publish(red_pixel_count)
+            #self.fire_detection_publishers[drone_index].publish(red_pixel_count)
         return image_callback
 
     def odometry1_callback(self, msg):
@@ -155,33 +177,34 @@ class WaypointTrackerNode:
             # Publish last waypoint index
             self.last_waypoint1_pub.publish(self.last_waypoint_index1+1)
 
-    def update_batteries(self, event):
+    #def update_batteries(self, event):
         # Subtract 0.1 from each battery variable
-        self.batt_uav1 -= 0.1
-        self.batt_uav2 -= 0.1
-        self.batt_uav3 -= 0.1
-        self.batt_uav4 -= 0.1
-        self.batt_uav1_pub.publish(self.batt_uav1)
-        self.batt_uav2_pub.publish(self.batt_uav2)
-        self.batt_uav3_pub.publish(self.batt_uav3)
-        self.batt_uav4_pub.publish(self.batt_uav4)
+    #    self.batt_uav1 -= 0.1
+    #    self.batt_uav2 -= 0.1
+    #    self.batt_uav3 -= 0.1
+    #    self.batt_uav4 -= 0.1
+    #    self.batt_uav1_pub.publish(self.batt_uav1)
+    #    self.batt_uav2_pub.publish(self.batt_uav2)
+    #    self.batt_uav3_pub.publish(self.batt_uav3)
+    #    self.batt_uav4_pub.publish(self.batt_uav4)
 
-    def path1_callback(self, msg):
-        self.waypoints1 = [(point.position.x, point.position.y) for point in msg.points]
-        for i, (x, y) in enumerate(self.waypoints1):
-            rospy.loginfo("Waypoint %d: x=%.2f, y=%.2f", i, x, y)
-    def path2_callback(self, msg):
-        self.waypoints2 = [(point.position.x, point.position.y) for point in msg.points]
-        for i, (x, y) in enumerate(self.waypoints2):
-            rospy.loginfo("Waypoint %d: x=%.2f, y=%.2f", i, x, y)
-    def path3_callback(self, msg):
-        self.waypoints3 = [(point.position.x, point.position.y) for point in msg.points]
-        for i, (x, y) in enumerate(self.waypoints3):
-            rospy.loginfo("Waypoint %d: x=%.2f, y=%.2f", i, x, y)
-    def path4_callback(self, msg):
-        self.waypoints4 = [(point.position.x, point.position.y) for point in msg.points]
-        for i, (x, y) in enumerate(self.waypoints4):
-            rospy.loginfo("Waypoint %d: x=%.2f, y=%.2f", i, x, y)
+    #def path1_callback(self, msg):
+    #    self.waypoints1 = [(point.position.x, point.position.y) for point in msg.points]
+    #    for i, (x, y) in enumerate(self.waypoints1):
+    #        rospy.loginfo("Waypoint %d: x=%.2f, y=%.2f", i, x, y)
+    #def path2_callback(self, msg):
+    #    self.waypoints2 = [(point.position.x, point.position.y) for point in msg.points]
+    #    for i, (x, y) in enumerate(self.waypoints2):
+    #        rospy.loginfo("Waypoint %d: x=%.2f, y=%.2f", i, x, y)
+    #def path3_callback(self, msg):
+    #    self.waypoints3 = [(point.position.x, point.position.y) for point in msg.points]
+    #    for i, (x, y) in enumerate(self.waypoints3):
+    #        rospy.loginfo("Waypoint %d: x=%.2f, y=%.2f", i, x, y)
+    #def path4_callback(self, msg):
+    #    self.waypoints4 = [(point.position.x, point.position.y) for point in msg.points]
+    #    for i, (x, y) in enumerate(self.waypoints4):
+    #        rospy.loginfo("Waypoint %d: x=%.2f, y=%.2f", i, x, y)
+    
         #global points_uav1
         #points_uav1 = msg.points
         #print("Received points list with length:", len(points_uav1))

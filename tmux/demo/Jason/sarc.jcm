@@ -13,20 +13,64 @@
 */
 
 mas sarc {
+  
+    agent uav1 : uav.asl{   //agent uav1
+      beliefs: my_number(1) 
+               my_frame_id("world")
+      
+      ag-class: embedded.mas.bridges.jacamo.CyberPhysicalAgent
+      ag-arch: embedded.mas.bridges.jacamo.DefaultEmbeddedAgArch
+    }
+    
+    agent autopilot1 : autopilot.asl{
+      beliefs: my_number(1)
+      ag-class: embedded.mas.bridges.jacamo.CyberPhysicalAgent
+      ag-arch: embedded.mas.bridges.jacamo.DefaultEmbeddedAgArch
+    }
 
-    agent uav1 : uav.asl{
+    agent uav2 : uav.asl{   //agent uav2
       beliefs: my_number(2) 
                my_frame_id("world")
       
       ag-class: embedded.mas.bridges.jacamo.CyberPhysicalAgent
       ag-arch: embedded.mas.bridges.jacamo.DefaultEmbeddedAgArch
     }
-    //agent bob2
-    agent autopilot : autopilot.asl{
-      beliefs: my_number(1)
+
+    agent autopilot2 : autopilot.asl{
+      beliefs: my_number(2)
       ag-class: embedded.mas.bridges.jacamo.CyberPhysicalAgent
       ag-arch: embedded.mas.bridges.jacamo.DefaultEmbeddedAgArch
     }
+
+    agent uav3 : uav.asl{   //agent uav3
+      beliefs: my_number(3) 
+               my_frame_id("world")
+      
+      ag-class: embedded.mas.bridges.jacamo.CyberPhysicalAgent
+      ag-arch: embedded.mas.bridges.jacamo.DefaultEmbeddedAgArch
+    }
+
+    agent autopilot3 : autopilot.asl{
+      beliefs: my_number(3)
+      ag-class: embedded.mas.bridges.jacamo.CyberPhysicalAgent
+      ag-arch: embedded.mas.bridges.jacamo.DefaultEmbeddedAgArch
+    }
+
+    agent uav4 : uav.asl{   //agent uav4
+      beliefs: my_number(4) 
+               my_frame_id("world")
+      
+      ag-class: embedded.mas.bridges.jacamo.CyberPhysicalAgent
+      ag-arch: embedded.mas.bridges.jacamo.DefaultEmbeddedAgArch
+    }
+
+    agent autopilot4 : autopilot.asl{
+      beliefs: my_number(4)
+      ag-class: embedded.mas.bridges.jacamo.CyberPhysicalAgent
+      ag-arch: embedded.mas.bridges.jacamo.DefaultEmbeddedAgArch
+    }
+
+    
 
 
 }

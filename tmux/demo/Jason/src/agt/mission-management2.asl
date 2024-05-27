@@ -19,22 +19,25 @@
    :  not current_mission(_) & 
       mission_state(Id,suspended) &
       mission_step(Id,Step) &
-      mission_plan(Id,Plan)
+      mission_plan(Id,Plan)  &
+      my_ap(AP)
    <- //.delete(0,Step+1,Plan,RemPlan); .print("Resuming ",Plan,", remaining plan is ",RemPlan," (",Step+1,"/",.length(Plan),")");
       .delete(0,Step,Plan,RemPlan); .print("Resuming ",Plan,", remaining plan is ",RemPlan," (",Step,"/",.length(Plan),")");
       +current_mission(Id);
       !change_state(Id,running);
-      .send(autopilot,achieve,run_plan(Id,RemPlan)).
+      .send(AP,achieve,run_plan(Id,RemPlan)).
 @[atomic] +!run_mission(Id) // no current, not desired, start!
    :  not current_mission(_) & 
-      mission_plan(Id,Plan) 
+      mission_plan(Id,Plan) &
+      my_ap(AP)
    <- +current_mission(Id);
       !change_state(Id,running);
-      .send(autopilot,achieve,run_plan(Id,Plan)).
+      .send(AP,achieve,run_plan(Id,Plan)).
 @[atomic] +!run_mission(Id) // drop current
    :  current_mission(CMission) & 
-      CMission \== Id
-   <- .send(autopilot,achieve,stop_mission);
+      CMission \== Id  &
+      my_ap(AP)
+   <- .send(AP,achieve,stop_mission);
       -current_mission(CMission);
       if (mission_drop_when_interrupted(CMission)) {
          !change_state(CMission,dropped);
@@ -44,15 +47,17 @@
       !run_mission(Id).
 
 @[atomic] +!stop_mission(Id,R)
-   :  current_mission(Id)
-   <- .send(autopilot,achieve,stop_mission);
+   :  current_mission(Id)  &
+      my_ap(AP)
+   <- .send(AP,achieve,stop_mission);
       -current_mission(Id);
       !change_state(Id,stopped[reason(R)]);
       !auto_resume.
 
 @[atomic] +!drop_mission(Id,R)
-   :  current_mission(Id)
-   <- .send(autopilot,achieve,stop_mission);
+   :  current_mission(Id)  &
+      my_ap(AP)
+   <- .send(AP,achieve,stop_mission);
       -current_mission(Id);
       !change_state(Id,dropped[reason(R)]);
       !auto_resume.
@@ -60,8 +65,9 @@
 
 +!start_mission(Id)
    :  enough_energy(Id) &
-      mission_plan(Id,Plan)
-   <- .send(autopilot,achieve,run_plan(Id,Plan)).
+      mission_plan(Id,Plan)  &
+      my_ap(AP)
+   <- .send(AP,achieve,run_plan(Id,Plan)).
 
 +default::finished
    <- // plan has finished

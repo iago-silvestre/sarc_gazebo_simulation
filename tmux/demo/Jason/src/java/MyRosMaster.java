@@ -142,12 +142,12 @@ public class MyRosMaster extends RosMaster {
         int nsecs = 0;
         String frame_id = "";
         int input_id = 0;          
-        boolean use_heading = true; 
+        boolean use_heading = false; 
         boolean fly_now = true; 
-        boolean stop_at_waypoints = false; 
+        boolean stop_at_waypoints = true; 
         boolean loop = false; 
-        float max_execution_time = 5.0f;
-        float  max_deviation_from_path = 0.0f;
+        float max_execution_time = 0.0f;
+        float  max_deviation_from_path = 0.01f;
         boolean  dont_prepend_current_state = false;
         boolean  override_constraints = false;
         float  override_max_velocity_horizontal = 0.0f;
