@@ -10,7 +10,11 @@ from nav_msgs.msg import Odometry
 from std_msgs.msg import Int8
 from mrs_msgs.srv import PathSrv,PathSrvRequest
 from mrs_msgs.msg import Reference,Path
+from sensor_msgs.msg import Image
 import threading
+import cv2
+from cv_bridge import CvBridge, CvBridgeError
+import numpy as np
 
 class WaypointTrackerNode:
     def __init__(self, n):
@@ -23,11 +27,11 @@ class WaypointTrackerNode:
         self.batt_uav3 = 100.0
         self.batt_uav4 = 100.0
         self.count=0
-        #self.waypoints1 = [(-5.0, -5.0), (5.0, -5.0), (5.0, 5.0), (-5.0, 5.0)]
-        #self.waypoints = [[(255.0, 255.0)] for _ in range(n)]
         self.waypoints = [[] for _ in range(n)]
         self.last_waypoint_indices = [0 for _ in range(n)]
         self.path_publishers = []
+        self.fire_detection_publishers = []
+        self.bridge = CvBridge()
         # Initialize last waypoint index
         #self.last_waypoint_index1 = -1
         
@@ -44,7 +48,7 @@ class WaypointTrackerNode:
         #self.subscriber_path4 = rospy.Subscriber('/uav4/trajectory_generation/path', Path, self.path4_callback)
 
         # Publisher
-        self.last_waypoint1_pub = rospy.Publisher("uav1_lastWP", Int8, queue_size=1)
+        #self.last_waypoint1_pub = rospy.Publisher("uav1_lastWP", Int8, queue_size=1)
         #self.last_waypoint2_pub = rospy.Publisher("uav2_lastWP", Int8, queue_size=1)
         #self.last_waypoint3_pub = rospy.Publisher("uav3_lastWP", Int8, queue_size=1)
         #self.last_waypoint4_pub = rospy.Publisher("uav4_lastWP", Int8, queue_size=1)
@@ -67,6 +71,9 @@ class WaypointTrackerNode:
             path_publisher = rospy.Publisher(f'uav{i+1}_lastWP', Int8, queue_size=1)
             self.path_publishers.append(path_publisher)
             rospy.Subscriber(f'/uav{i+1}/ground_truth', Odometry, self.create_odom_callback(i))
+            rospy.Subscriber(f'/uav{i+1}/bluefox_optflow/image_raw', Image, self.create_image_callback(i))
+            fire_detection_publisher = rospy.Publisher(f'/uav{i+1}/fire_detection', Int32, queue_size=1)
+            self.fire_detection_publishers.append(fire_detection_publisher)
 
     def create_path_callback(self, drone_index):
         def path_callback(msg):
@@ -103,6 +110,31 @@ class WaypointTrackerNode:
                 # Publish last waypoint index
                 self.path_publishers[drone_index].publish(next_waypoint_index + 1)
         return odom_callback
+
+    def create_image_callback(self, drone_index):
+        def image_callback(msg):
+            try:
+                cv_image = self.bridge.imgmsg_to_cv2(msg, "rgb8")
+            except CvBridgeError as e:
+                rospy.logerr("CvBridge Error: {0}".format(e))
+                return
+
+            # Convert the image to HSV color space
+            hsv_image = cv2.cvtColor(cv_image, cv2.COLOR_BGR2HSV)
+
+            # Define the red color range
+            lower_red = np.array([150, 0, 0])
+            upper_red = np.array([255, 100, 100])
+
+            # Create a mask to extract only the red pixels
+            red_mask = cv2.inRange(cv_image, lower_red, upper_red)
+
+            # Count the number of red pixels
+            red_pixel_count = np.sum(red_mask == 255)
+
+            # Publish the number of red pixels
+            self.fire_detection_publishers[drone_index].publish(red_pixel_count)
+        return image_callback
 
     def odometry1_callback(self, msg):
         # Extract drone position
