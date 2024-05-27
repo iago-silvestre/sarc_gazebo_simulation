@@ -130,7 +130,7 @@ public class MyRosMaster extends RosMaster {
 
     private boolean exec_test_mrs_topic_action_light(Object[] args){
         ObjectMapper mapper = new ObjectMapper();
-        System.out.println("TESTE");    
+        //System.out.println("TESTE");    
         // Nodes that contain nested nodes
         ObjectNode path = mapper.createObjectNode();            
         ObjectNode header = mapper.createObjectNode();

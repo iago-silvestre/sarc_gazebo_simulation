@@ -57,7 +57,7 @@ progress(pc,0).
 +uav_lastWP(N) 
    : current_mission(CM) 
    <- -progress(CM,_);
-      .print("Current Mission :",CM," Current Progress :",N);
+      //.print("Current Mission :",CM," Current Progress :",N);
       +progress(CM,N).
 
 +progress(CM,N) 
