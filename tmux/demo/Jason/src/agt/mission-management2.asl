@@ -20,7 +20,8 @@
       mission_state(Id,suspended) &
       mission_step(Id,Step) &
       mission_plan(Id,Plan)
-   <- .delete(0,Step+1,Plan,RemPlan); .print("Resuming ",Plan,", remaining plan is ",RemPlan," (",Step+1,"/",.length(Plan),")");
+   <- //.delete(0,Step+1,Plan,RemPlan); .print("Resuming ",Plan,", remaining plan is ",RemPlan," (",Step+1,"/",.length(Plan),")");
+      .delete(0,Step,Plan,RemPlan); .print("Resuming ",Plan,", remaining plan is ",RemPlan," (",Step,"/",.length(Plan),")");
       +current_mission(Id);
       !change_state(Id,running);
       .send(autopilot,achieve,run_plan(Id,RemPlan)).

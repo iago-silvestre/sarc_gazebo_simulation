@@ -47,10 +47,10 @@ current_position(CX, CY, CZ) :- my_frame_id(Frame_id) & my_number(4) & uav4_grou
 +!my_missions
    :  waypoints_list(L)
    <- !mm::create_mission(pa, 900, []); // scan
-      +mm::mission_plan(pa,L); // a list of waypoints
+      //+mm::mission_plan(pa,L); // a list of waypoints
 
       //embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("sample_roscore","test_mrs_topic_action_light",[N,L] );
-      //+mm::mission_plan(pa,[[-5,-5,5],[5,-5,5],[5,5,5],[-5,5,5]]); // a list of waypoints
+      +mm::mission_plan(pa,[[-5,-5,10],[5,-5,10],[5,5,10],[-5,5,10]]); // a list of waypoints
      // !mm::create_mission(pb, 100, [drop_when_interrupted]); // extinguish
      // !mm::create_mission(pb, 100, [drop_when_interrupted,loop]); // extinguish
       //+mm::mission_plan(pb,[[5,-8,5],[0,-8,5]]);
@@ -59,7 +59,7 @@ current_position(CX, CY, CZ) :- my_frame_id(Frame_id) & my_number(4) & uav4_grou
 
 
       !mm::run_mission(pa);
-      .wait(10000);
+      .wait(8000);
       //embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("sample_roscore","stop_tracking",[]);  
       //+found_fire(5,5).
       !low_battery.

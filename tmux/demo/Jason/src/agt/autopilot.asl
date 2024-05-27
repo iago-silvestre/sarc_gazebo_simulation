@@ -52,9 +52,12 @@ progress(pc,0).
      +current_mission(Id);
      -update_current_mission(Id)[source(Ag)].
 */
+
+
 +uav_lastWP(N) 
    : current_mission(CM) 
    <- -progress(CM,_);
+      .print("Current Mission :",CM," Current Progress :",N);
       +progress(CM,N).
 
 +progress(CM,N) 

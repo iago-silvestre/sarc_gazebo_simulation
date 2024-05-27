@@ -13,29 +13,32 @@ from mrs_msgs.msg import Reference,Path
 import threading
 
 class WaypointTrackerNode:
-    def __init__(self):
+    def __init__(self, n):
         rospy.init_node('waypoint_tracker_node', anonymous=True)
-        
+        self.n_drones = n
         # Parameters
-        self.threshold = 0.5
+        self.threshold = 1.0
         self.batt_uav1 = 100.0
         self.batt_uav2 = 100.0
         self.batt_uav3 = 100.0
         self.batt_uav4 = 100.0
         self.count=0
-        self.waypoints1 = [(-5.0, -5.0), (5.0, -5.0), (5.0, 5.0), (-5.0, 5.0)]
-        
+        #self.waypoints1 = [(-5.0, -5.0), (5.0, -5.0), (5.0, 5.0), (-5.0, 5.0)]
+        #self.waypoints = [[(255.0, 255.0)] for _ in range(n)]
+        self.waypoints = [[] for _ in range(n)]
+        self.last_waypoint_indices = [0 for _ in range(n)]
+        self.path_publishers = []
         # Initialize last waypoint index
-        self.last_waypoint_index1 = -1
+        #self.last_waypoint_index1 = -1
         
         # Subscribers
-        rospy.Subscriber("uav1/ground_truth", Odometry, self.odometry1_callback)
+        #rospy.Subscriber("uav1/ground_truth", Odometry, self.odometry1_callback)
         #rospy.Subscriber("uav2/ground_truth", Odometry, self.odometry2_callback)
         #rospy.Subscriber("uav3/ground_truth", Odometry, self.odometry3_callback)
         #rospy.Subscriber("uav4/ground_truth", Odometry, self.odometry4_callback)
         
-        self.subscriber_del = rospy.Subscriber('/fightFire', Int32, self.del_callback)
-        self.subscriber_path1 = rospy.Subscriber('/uav1/trajectory_generation/path', Path, self.path1_callback)
+        #self.subscriber_del = rospy.Subscriber('/fightFire', Int32, self.del_callback)
+        #self.subscriber_path1 = rospy.Subscriber('/uav1/trajectory_generation/path', Path, self.path1_callback)
         #self.subscriber_path2 = rospy.Subscriber('/uav2/trajectory_generation/path', Path, self.path2_callback)
         #self.subscriber_path3 = rospy.Subscriber('/uav3/trajectory_generation/path', Path, self.path3_callback)
         #self.subscriber_path4 = rospy.Subscriber('/uav4/trajectory_generation/path', Path, self.path4_callback)
@@ -58,6 +61,67 @@ class WaypointTrackerNode:
         self.delete_model = rospy.ServiceProxy('/gazebo/delete_model', DeleteModel)
         # Create a ROS timer to subtract 0.1 from battery variables every 2 seconds
         self.timer = rospy.Timer(rospy.Duration(2.0), self.update_batteries)
+
+        for i in range(n):
+            rospy.Subscriber(f'/uav{i+1}/trajectory_generation/path', Path, self.create_path_callback(i))
+            path_publisher = rospy.Publisher(f'uav{i+1}_lastWP', Int8, queue_size=1)
+            self.path_publishers.append(path_publisher)
+            rospy.Subscriber(f'/uav{i+1}/ground_truth', Odometry, self.create_odom_callback(i))
+
+    def create_path_callback(self, drone_index):
+        def path_callback(msg):
+            self.waypoints[drone_index] = [(point.position.x, point.position.y) for point in msg.points]
+            for i, (x, y) in enumerate(self.waypoints[drone_index]):
+                rospy.loginfo("Drone %d Waypoint %d: x=%.2f, y=%.2f", drone_index + 1, i, x, y)
+            # Initialize last waypoint index
+            self.last_waypoint_indices[drone_index] = 0
+            self.path_publishers[drone_index].publish(0)
+        return path_callback
+    
+    def create_odom_callback(self, drone_index):
+        def odom_callback(msg):
+            # Extract drone position
+            if not self.waypoints[drone_index]:
+                rospy.logwarn("No waypoints received yet for drone %d. Skipping odometry callback.", drone_index + 1)
+                return
+            #print(msg)
+            x = msg.pose.pose.position.x
+            y = msg.pose.pose.position.y
+            
+            # Calculate distance to next waypoint
+            next_waypoint_index = (self.last_waypoint_indices[drone_index]) % len(self.waypoints[drone_index])
+            next_waypoint_x, next_waypoint_y = self.waypoints[drone_index][next_waypoint_index]
+            distance = ((x - next_waypoint_x) ** 2 + (y - next_waypoint_y) ** 2) ** 0.5
+            #print("distance = %.2f"%distance)
+            print("next x = %.2f"%next_waypoint_x)
+            print("next y = %.2f"%next_waypoint_y)
+            # Check if drone has passed the next waypoint
+            if distance < self.threshold:
+                # Update last waypoint index
+                self.last_waypoint_indices[drone_index] = next_waypoint_index +1
+                
+                # Publish last waypoint index
+                self.path_publishers[drone_index].publish(next_waypoint_index + 1)
+        return odom_callback
+
+    def odometry1_callback(self, msg):
+        # Extract drone position
+        x = msg.pose.pose.position.x
+        y = msg.pose.pose.position.y
+        
+        # Calculate distance to next waypoint
+        next_waypoint_index = (self.last_waypoint_index1 + 1) % len(self.waypoints1)
+        next_waypoint_x, next_waypoint_y = self.waypoints1[next_waypoint_index]
+        distance = ((x - next_waypoint_x) ** 2 + (y - next_waypoint_y) ** 2) ** 0.5
+        
+        #print("distance = %.2f"%distance)
+        # Check if drone has passed the next waypoint
+        if distance < self.threshold:
+            # Update last waypoint index
+            self.last_waypoint_index1 = next_waypoint_index
+            
+            # Publish last waypoint index
+            self.last_waypoint1_pub.publish(self.last_waypoint_index1+1)
 
     def update_batteries(self, event):
         # Subtract 0.1 from each battery variable
@@ -111,29 +175,13 @@ class WaypointTrackerNode:
                 self.fire_ext_pub.publish(self.count)
             
         
-    def odometry1_callback(self, msg):
-        # Extract drone position
-        x = msg.pose.pose.position.x
-        y = msg.pose.pose.position.y
-        
-        # Calculate distance to next waypoint
-        next_waypoint_index = (self.last_waypoint_index1 + 1) % len(self.waypoints1)
-        next_waypoint_x, next_waypoint_y = self.waypoints1[next_waypoint_index]
-        distance = ((x - next_waypoint_x) ** 2 + (y - next_waypoint_y) ** 2) ** 0.5
-        
-        #print("distance = %.2f"%distance)
-        # Check if drone has passed the next waypoint
-        if distance < self.threshold:
-            # Update last waypoint index
-            self.last_waypoint_index1 = next_waypoint_index
-            
-            # Publish last waypoint index
-            self.last_waypoint1_pub.publish(self.last_waypoint_index1+1)
+    
 
 
 if __name__ == '__main__':
+    n_drones = 4
     try:
-        waypoint_tracker_node = WaypointTrackerNode()
+        waypoint_tracker_node = WaypointTrackerNode(n_drones)
         rospy.spin()
     except rospy.ROSInterruptException:
         pass
