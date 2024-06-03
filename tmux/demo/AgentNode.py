@@ -86,12 +86,15 @@ class WaypointTrackerNode:
 
         rospy.Subscriber('/recharge_battery', Int8, self.recharge_battery_callback)
 
+        #self.fire_size_pub.publish(self.fireSize)
+
     def update_batteries(self, event):
         # Subtract 0.1 from each battery variable and publish
         for i in range(self.n_drones):
             self.battery_levels[i] -= 0.1
             #print(self.battery_levels[i])
             self.battery_publishers[i].publish(self.battery_levels[i])   
+            self.fire_size_pub.publish(self.fireSize)
 
     def recharge_battery_callback(self, msg):
         drone_index = msg.data - 1
@@ -235,8 +238,8 @@ class WaypointTrackerNode:
                     self.fire_size_pub.publish(self.fireSize)
                 except rospy.ServiceException as e:
                     rospy.logerr("Service call failed: %s", e)
-            if self.count==4:
-                self.fire_ext_pub.publish(self.count)
+            #if self.count==4:
+            #    self.fire_ext_pub.publish(self.count)
             
         
     

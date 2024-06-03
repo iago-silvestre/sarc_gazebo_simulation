@@ -8,9 +8,9 @@ camera_range(5).
 std_altitude(7.0).
 std_heading(0.0).
 land_radius(10.0).
-frl_charges(3).
-fire_size(9).
-fireSize(4).
+frl_charges(1).
+//fire_size(9).
+//fireSize(4).
 
 nb_participants(3).
 
@@ -33,9 +33,17 @@ my_ap(AP) :- my_number(N)
 distance(X,Y,D) :- current_position(CX, CY, CZ) & D=math.sqrt( (CX-X)**2 + (CY-Y)**2 ).
 
 +fire_detection(N) : N>=6000 <- !found_fire.
-+fireSize(FS) <- -fireSize(_); +fireSize(FS).
+//+fireSize(FS) <- -fireSize(_); +fireSize(FS). //infinite loop 
 //////////////// Start
 !start.
+
++fireSize(FS)
+   : FS == 0 & current_mission(combat_fire)
+   <- !mm::drop_mission(combat_fire,"Fire is Extinguished").
+      
++fireSize(FS)
+   : FS == 0 & current_mission(goto_fire)
+   <- !mm::drop_mission(goto_fire,"Fire is Extinguished").
 
 +!start
    :my_ap(AP)
@@ -66,11 +74,16 @@ distance(X,Y,D) :- current_position(CX, CY, CZ) & D=math.sqrt( (CX-X)**2 + (CY-Y
 
       !mm::run_mission(search).
       //.wait(8000);
+      //!mm::drop_mission(combat_fire,"debug").
       //embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("sample_roscore","stop_tracking",[]);  
       //+found_fire(5,5).
       //!low_battery.
 
-
++!my_missions
+   :  waypoints_list(L) & my_number(N) & not (N==1)
+   <- !mm::create_mission(search, 900, []); // scan
+      +mm::mission_plan(search,L); // a list of waypoints
+      !mm::run_mission(search).
 
 +fire <- !mm::run_mission(pb).
 -energy <- !mm::run_mission(gohome).
@@ -96,19 +109,21 @@ distance(X,Y,D) :- current_position(CX, CY, CZ) & D=math.sqrt( (CX-X)**2 + (CY-Y
       .print(" Recharged!!").  //Still need to publish rechargeBattery topic
 
 
-+mm::mission_state(low_frl,finished) 
-   :  fireSize(FS) & FS>0
-   <- .print(" Recharging FRL");
-      .wait(10000);
-      .print(" Recharged!!");  //Still need to publish rechargeBattery topic
-      -+frl_charges(4);
-      !mm::run_mission(combat_fire).
+      
 
 +mm::mission_state(low_frl,finished) 
    <- .print(" Recharging FRL");
       .wait(10000);
       .print(" Recharged!!");  //Still need to publish rechargeBattery topic
-      -+frl_charges(4).
+      -+frl_charges(4);
+      !analyzeFire.
+
++!analyzeFire
+   : fireSize(FS) & FS >0 & fire_pos(CX,CY)
+   <- .print(" Going back to fire!!");
+      !mm::create_mission(goto_fire, 900, []); // gotofire
+      +mm::mission_plan(goto_fire,[[CX,CY,7]]);
+      !mm::run_mission(goto_fire).
 
 +!found_fire
    : current_position(CX, CY, CZ) & std_altitude(Z)
@@ -116,7 +131,7 @@ distance(X,Y,D) :- current_position(CX, CY, CZ) & D=math.sqrt( (CX-X)**2 + (CY-Y
    & current_mission(search)
    <- .print("Need help for detected fire in : ",CX," , ",CY);
       .print("FRL Needed: ",(FS-FRL));
-      
+      +fire_pos(CX,CY);
       !mm::create_mission(combat_fire, 100, [drop_when_interrupted]);
       +mm::mission_plan(combat_fire,[[CX-2,CY+2,Z],[CX+2,CY+2,Z],[CX+2,CY-2,Z],[CX-2,CY-2,Z]]);
       //+mm::mission_plan(combat_fire,[[CX,CY+1.5,Z],[CX+1.5,CY,Z],[CX,CY-1.5,Z],[CX-1.5,CY,Z]]);
@@ -157,20 +172,21 @@ price(_Service,X,Y,R) :-
 @r1 +accept_proposal(CNPId)[source(A)]
    :  proposal(CNPId,Task,X,Y,R) & fire_pos(CX,CY) & std_altitude(Z)
    <- .print("My proposal '",R,"' was accepted for CNP ",CNPId, ", task ",Task," for agent ",A,"!");
-      //.print("Going to fire in : ",CX," , ",CY);
-      .print("Debugging CNP");
+      .print("Going to fire in : ",CX," , ",CY);
+      
+      /*.print("Debugging CNP");
       !mm::create_mission(pa, 900, []); // scan
       +mm::mission_plan(pa,[[-5,-5,5],[5,-5,5],[5,5,5],[-5,5,5]]); // a list of waypoints
-      !mm::run_mission(pa).
+      !mm::run_mission(pa).*/
 
       //!mm::create_mission(combat_fire, 100, [drop_when_interrupted]);
       //+mm::mission_plan(combat_fire,[[CX-2,CY+2,Z],[CX+2,CY+2,Z],[CX+2,CY-2,Z],[CX-2,CY-2,Z]]);
       //!mm::run_mission(combat_fire).
       
       
-      //!mm::create_mission(goto_fire, 900, []); // gotofire
-      //+mm::mission_plan(goto_fire,[[CX,CY,7]]);
-      //!mm::run_mission(goto_fire).
+      !mm::create_mission(goto_fire, 900, []); // gotofire
+      +mm::mission_plan(goto_fire,[[CX,CY,7]]);
+      !mm::run_mission(goto_fire).
    
 @r2 +reject_proposal(CNPId)
    <- .print("My proposal was not accepted for CNP ",CNPId, ".");
@@ -230,11 +246,10 @@ all_proposals_received(CNPId,NP) :-              // NP = number of participants
       !mm::run_mission(goto_fire).*/
 
 +mm::mission_state(goto_fire,finished)  //goto fire finished
-   : found_fire(CX,CY) & std_altitude(Z)
+   : fire_pos(CX,CY) & std_altitude(Z)
    <- .print("Go to fire finished!");
       !mm::create_mission(combat_fire, 100, [drop_when_interrupted]);
-      +mm::mission_plan(combat_fire,[[CX-5,CY+5,5],[CX+5,CY+5,5],[CX+5,CY-5,5],[CX-5,CY-5,5]]);
-      //+mm::mission_plan(combat_fire,[[CX,CY+1.5,Z],[CX+1.5,CY,Z],[CX,CY-1.5,Z],[CX-1.5,CY,Z]]);
+      +mm::mission_plan(combat_fire,[[CX-2,CY+2,Z],[CX+2,CY+2,Z],[CX+2,CY-2,Z],[CX-2,CY-2,Z]]);
       !mm::run_mission(combat_fire).
 
 
@@ -313,3 +328,4 @@ all_proposals_received(CNPId,NP) :-              // NP = number of participants
 
 +!found_fire.
 +!my_missions.
++!analyzeFire.

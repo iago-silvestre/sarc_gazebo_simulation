@@ -12,7 +12,8 @@
    .
 
 +mission_loop(Id)
-   <- .send(autopilot,tell,mission_loop(Id)).
+   : my_ap(AP)
+   <- .send(AP,tell,mission_loop(Id)).
 
 @[atomic] +!run_mission(Id) : current_mission(Id). // nothing to do
 @[atomic] +!run_mission(Id)  // no current, but already desired, resume

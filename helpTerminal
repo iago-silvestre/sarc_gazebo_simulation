@@ -1,0 +1,12 @@
+./start.sh
+./AgentNode.py
+./gradlew
+
+
+
+
+/uav1/trajectory_generation/path
+
+rosservice call /mrs_drone_spawner/spawn "2 --t650 --enable-rangefinder --enable_bluefox_camera"
+
+roslaunch mrs_mins_core rosbag_bluefox_front.launch UAV_NAME:=uav1
