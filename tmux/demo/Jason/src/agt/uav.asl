@@ -31,7 +31,7 @@ my_ap(AP) :- my_number(N)
 
 distance(X,Y,D) :- current_position(CX, CY, CZ) & D=math.sqrt( (CX-X)**2 + (CY-Y)**2 ).
 
-+fire_detection(N) : N>=1000 <- !found_fire.
++fire_detection(N) : N>=9000 <- !found_fire.
 //////////////// Start
 !start.
 
@@ -51,10 +51,10 @@ distance(X,Y,D) :- current_position(CX, CY, CZ) & D=math.sqrt( (CX-X)**2 + (CY-Y
 +!my_missions
    :  waypoints_list(L)
    <- !mm::create_mission(search, 900, []); // scan
-      +mm::mission_plan(search,L); // a list of waypoints
+      //+mm::mission_plan(search,L); // a list of waypoints
 
       //embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("sample_roscore","test_mrs_topic_action_light",[N,L] );
-      //+mm::mission_plan(p_search,[[-5,-5,10],[5,-5,10],[5,5,10],[-5,5,10]]); // a list of waypoints
+      +mm::mission_plan(search,[[23,-23,10]]); // a list of waypoints
      // !mm::create_mission(pb, 100, [drop_when_interrupted]); // extinguish
      // !mm::create_mission(pb, 100, [drop_when_interrupted,loop]); // extinguish
       //+mm::mission_plan(pb,[[5,-8,5],[0,-8,5]]);
@@ -111,6 +111,7 @@ distance(X,Y,D) :- current_position(CX, CY, CZ) & D=math.sqrt( (CX-X)**2 + (CY-Y
    : current_position(CX, CY, CZ) & std_altitude(Z)
    & frl_charges(FRL) & fire_size(FS)
    & FRL< FS
+   & current_mission(search)
    <- .print("Need help for detected fire in : ",CX," , ",CY);
       .print("FRL Needed: ",(FS-FRL));
       
@@ -119,6 +120,7 @@ distance(X,Y,D) :- current_position(CX, CY, CZ) & D=math.sqrt( (CX-X)**2 + (CY-Y
       //+mm::mission_plan(combat_fire,[[CX,CY+1.5,Z],[CX+1.5,CY,Z],[CX,CY-1.5,Z],[CX-1.5,CY,Z]]);
       !mm::run_mission(combat_fire);
       !cnp( 2,help,(FS-FRL)).
+
 
 
 
@@ -283,8 +285,18 @@ all_proposals_received(CNPId,NP) :-              // NP = number of participants
 
 +mm::mission_state(Id,S) // "callback" when a mission is finished
    <- .print("Mission ",Id," state is ",S).
+
++mm::current_mission(Id)
+   <- //.print("Current Mission :",Id);
+      -current_mission(_);
+      +current_mission(Id).
+
 /*+whats_my_current_mission[source(A)]                   //Unnecessary,mm::current_mission takes care of it
    : current_mission(Id)
   <- //.print("Current Mission :",Id);
      .send(A,tell,update_current_mission(Id));
      -whats_my_current_mission[source(A)].*/
+
+
+
++!found_fire.

@@ -34,6 +34,8 @@ class WaypointTrackerNode:
         self.fire_detection_publishers = []
         self.battery_publishers = []
         self.bridge = CvBridge()
+
+        self.fireSize=4
         # Initialize last waypoint index
         #self.last_waypoint_index1 = -1
         
@@ -62,6 +64,7 @@ class WaypointTrackerNode:
         #self.timer = rospy.Timer(rospy.Duration(2.0), self.update_batteries)
 
         self.fire_ext_pub = rospy.Publisher("fireExt", Int8, queue_size=1)
+        self.fire_size_pub = rospy.Publisher("fireSize", Int8, queue_size=1)
 
 
         # Delete model service
@@ -175,7 +178,7 @@ class WaypointTrackerNode:
             red_pixel_count = np.sum(red_mask == 255)
 
             # Publish the number of red pixels
-            #self.fire_detection_publishers[drone_index].publish(red_pixel_count)
+            self.fire_detection_publishers[drone_index].publish(red_pixel_count)
         return image_callback
 
 
@@ -224,8 +227,10 @@ class WaypointTrackerNode:
             if probability <= 0.7:
                 try:
                     self.count=self.count+1
+                    self.fireSize=self.fireSize-1
                     response = self.delete_model(model_name)
                     rospy.loginfo("Model deletion response: %s", response.status_message)
+                    self.fire_size_pub.publish(self.fireSize)
                 except rospy.ServiceException as e:
                     rospy.logerr("Service call failed: %s", e)
             if self.count==4:
