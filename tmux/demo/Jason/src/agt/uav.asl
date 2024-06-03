@@ -8,7 +8,8 @@ camera_range(5).
 std_altitude(7.0).
 std_heading(0.0).
 land_radius(10.0).
-frl_charges(1).
+frl_charges(4).
+cnp_limit(0).
 //fire_size(9).
 //fireSize(4).
 
@@ -32,7 +33,7 @@ my_ap(AP) :- my_number(N)
 
 distance(X,Y,D) :- current_position(CX, CY, CZ) & D=math.sqrt( (CX-X)**2 + (CY-Y)**2 ).
 
-+fire_detection(N) : N>=6000 <- !found_fire.
++fire_detection(N) : N>=9000 <- !found_fire.
 //+fireSize(FS) <- -fireSize(_); +fireSize(FS). //infinite loop 
 //////////////// Start
 !start.
@@ -138,13 +139,28 @@ distance(X,Y,D) :- current_position(CX, CY, CZ) & D=math.sqrt( (CX-X)**2 + (CY-Y
       !mm::run_mission(combat_fire);
       !cnp( 2,help,(FS-FRL)).
 
++!found_fire
+   : current_position(CX, CY, CZ) & std_altitude(Z)
+   & fireSize(FS) & frl_charges(FRL) & FRL >= FS
+   & current_mission(search)
+   <- .print("Found fire in : ",CX," , ",CY,". I don't need help");
+      +fire_pos(CX,CY);
+      !mm::create_mission(combat_fire, 100, [drop_when_interrupted]);
+      +mm::mission_plan(combat_fire,[[CX-2,CY+2,Z],[CX+2,CY+2,Z],[CX+2,CY-2,Z],[CX-2,CY-2,Z]]);
+      //+mm::mission_plan(combat_fire,[[CX,CY+1.5,Z],[CX+1.5,CY,Z],[CX,CY-1.5,Z],[CX-1.5,CY,Z]]);
+      !mm::run_mission(combat_fire).
+
 +mm::mission_state(combat_fire,finished)   // Priority
    : fireSize(FS) & FS==0
    <- .print("Fire Extinguished").
 
++mm::mission_state(combat_fire,finished) 
+   : frl_charges(FRL) & FRL==1
+   <- embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("sample_roscore","fightFire",FRL);
+      -+frl_charges(FRL-1).
 
 +mm::mission_state(combat_fire,finished) 
-   : frl_charges(FRL) & FRL>1
+   : frl_charges(FRL) & FRL>1 & fireSize(FS) & FRL >= FS
    <- .print("Loop finished!,Remaining Charges", (FRL-1));
       embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("sample_roscore","fightFire",FRL);
       -+frl_charges(FRL-1);
@@ -154,9 +170,24 @@ distance(X,Y,D) :- current_position(CX, CY, CZ) & D=math.sqrt( (CX-X)**2 + (CY-Y
       !mm::run_mission(combat_fire).
 
 +mm::mission_state(combat_fire,finished) 
-   : frl_charges(FRL) & FRL==1
-   <- embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("sample_roscore","fightFire",FRL);
-      -+frl_charges(FRL-1).
+   : frl_charges(FRL) & FRL>1 & fireSize(FS) & FRL < FS
+      & current_position(CX, CY, CZ) & not(cnp_limit(1))
+   <- .print("Loop finished!,Remaining Charges", (FRL-1));
+      embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("sample_roscore","fightFire",FRL);
+      -+frl_charges(FRL-1);
+      !cnp( 2,help,(FS-FRL));
+      +cnp_limit(1);
+      !mm::run_mission(combat_fire).      
+
++mm::mission_state(combat_fire,finished) 
+   : frl_charges(FRL) & FRL>1 & fireSize(FS) & FRL < FS
+      & current_position(CX, CY, CZ) & cnp_limit(1)
+   <- .print("Loop finished!,Remaining Charges", (FRL-1));
+      embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("sample_roscore","fightFire",FRL);
+      -+frl_charges(FRL-1);
+      !mm::run_mission(combat_fire).            
+
+
 
 
 price(_Service,X,Y,R) :- 
