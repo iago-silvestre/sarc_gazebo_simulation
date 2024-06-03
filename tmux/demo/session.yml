@@ -36,9 +36,9 @@ windows:
       layout: tiled
       panes:
         -  export UAV_NAME=uav1; waitForTime; roslaunch mrs_uav_px4_api api.launch
-        #-  export UAV_NAME=uav2; waitForTime; roslaunch mrs_uav_px4_api api.launch
-        #-  export UAV_NAME=uav3; waitForTime; roslaunch mrs_uav_px4_api api.launch
-        #-  export UAV_NAME=uav4; waitForTime; roslaunch mrs_uav_px4_api api.launch
+        -  export UAV_NAME=uav2; waitForTime; roslaunch mrs_uav_px4_api api.launch
+        -  export UAV_NAME=uav3; waitForTime; roslaunch mrs_uav_px4_api api.launch
+        -  export UAV_NAME=uav4; waitForTime; roslaunch mrs_uav_px4_api api.launch
   - core:
       layout: tiled
       panes:
@@ -72,10 +72,10 @@ windows:
   - takeoff:
       layout: tiled
       panes:
-        - export UAV_NAME=uav1; waitForControl; rosservice call /$UAV_NAME/hw_api/arming 1; sleep 2; rosservice call /$UAV_NAME/hw_api/offboard ; sleep 10; rosservice call /$UAV_NAME/control_manager/goto_altitude 10
-        - export UAV_NAME=uav2; waitForControl; rosservice call /$UAV_NAME/hw_api/arming 1; sleep 2; rosservice call /$UAV_NAME/hw_api/offboard
-        - export UAV_NAME=uav3; waitForControl; rosservice call /$UAV_NAME/hw_api/arming 1; sleep 2; rosservice call /$UAV_NAME/hw_api/offboard
-        - export UAV_NAME=uav4; waitForControl; rosservice call /$UAV_NAME/hw_api/arming 1; sleep 2; rosservice call /$UAV_NAME/hw_api/offboard
+        - export UAV_NAME=uav1; waitForControl; rosservice call /$UAV_NAME/hw_api/arming 1; sleep 2; rosservice call /$UAV_NAME/hw_api/offboard ; sleep 10; rosservice call /$UAV_NAME/control_manager/goto_altitude 7
+        - export UAV_NAME=uav2; waitForControl; rosservice call /$UAV_NAME/hw_api/arming 1; sleep 2; rosservice call /$UAV_NAME/hw_api/offboard ; sleep 10; rosservice call /$UAV_NAME/control_manager/goto_altitude 7
+        - export UAV_NAME=uav3; waitForControl; rosservice call /$UAV_NAME/hw_api/arming 1; sleep 2; rosservice call /$UAV_NAME/hw_api/offboard ; sleep 10; rosservice call /$UAV_NAME/control_manager/goto_altitude 7
+        - export UAV_NAME=uav4; waitForControl; rosservice call /$UAV_NAME/hw_api/arming 1; sleep 2; rosservice call /$UAV_NAME/hw_api/offboard ; sleep 10; rosservice call /$UAV_NAME/control_manager/goto_altitude 7
   #- path:
    #   layout: even-vertical
    #   panes:

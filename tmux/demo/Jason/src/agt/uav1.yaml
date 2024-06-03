@@ -27,6 +27,8 @@
         topicType: nav_msgs/Odometry
       - topicName: fireExt
         topicType: std_msgs/Int8
+      - topicName: fireSize
+        topicType: std_msgs/Int8
       - topicName: uav1/fire_detection
         topicType: std_msgs/Int32
         beliefName: fire_detection

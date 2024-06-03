@@ -179,6 +179,8 @@ class WaypointTrackerNode:
 
             # Publish the number of red pixels
             self.fire_detection_publishers[drone_index].publish(red_pixel_count)
+            # Add a delay of 0.5 seconds
+            #rospy.sleep(0.25)
         return image_callback
 
 
