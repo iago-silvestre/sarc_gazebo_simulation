@@ -10,16 +10,7 @@ std_heading(0.0).
 land_radius(10.0).
 frl_charges(4).
 cnp_limit(0).
-//fire_size(9).
-//fireSize(4).
-
 nb_participants(3).
-
-//currentwaypoint(0).
-
-temp_limit(70.5).//30.0
-wind_limit(72.5).//12.1
-//fireLoc(24.5, -23.5).
 landing_x(0.0).
 landing_y(0.0).
 
@@ -33,7 +24,8 @@ my_ap(AP) :- my_number(N)
 
 distance(X,Y,D) :- current_position(CX, CY, CZ) & D=math.sqrt( (CX-X)**2 + (CY-Y)**2 ).
 
-+fire_detection(N) : N>=9000 <- !found_fire.
++fire_detection(N) : N>=6000 <- !found_fire.
++battery(B) : B<=30.0 & not(low_batt) <- !low_battery.
 //+fireSize(FS) <- -fireSize(_); +fireSize(FS). //infinite loop 
 //////////////// Start
 !start.
@@ -54,30 +46,18 @@ distance(X,Y,D) :- current_position(CX, CY, CZ) & D=math.sqrt( (CX-X)**2 + (CY-Y
       //embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("roscore1","drop",[0.0, 0.0, 0.0]);
       .print("Started!");
       !calculate_trajectory;//trajectory//!calculate_area;//!calculate_waypoints(1, []);// pode ser unido com os outros
-      //!hover.
       !my_missions.
 
 
 
 +!my_missions
-   :  waypoints_list(L) & my_number(N) & N==1
+   :  waypoints_list(L) & my_number(N) //& N==1
    <- !mm::create_mission(search, 900, []); // scan
       //+mm::mission_plan(search,L); // a list of waypoints
-
-      //embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("sample_roscore","test_mrs_topic_action_light",[N,L] );
-      +mm::mission_plan(search,[[23,-23,7],[50,-50,7]]); // a list of waypoints
-     // !mm::create_mission(pb, 100, [drop_when_interrupted]); // extinguish
-     // !mm::create_mission(pb, 100, [drop_when_interrupted,loop]); // extinguish
-      //+mm::mission_plan(pb,[[5,-8,5],[0,-8,5]]);
-      // go home
-      // land now
-
-
+      //+mm::mission_plan(search,[[23,-23,7],[50,-50,7]]); // a list of waypoints
+      +mm::mission_plan(search,[[N*10, N*10,7]]); // a list of waypoints
       !mm::run_mission(search).
-      //.wait(8000);
-      //!mm::drop_mission(combat_fire,"debug").
-      //embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("sample_roscore","stop_tracking",[]);  
-      //+found_fire(5,5).
+      //embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("sample_roscore","land",[]).
       //!low_battery.
 
 +!my_missions
@@ -86,30 +66,31 @@ distance(X,Y,D) :- current_position(CX, CY, CZ) & D=math.sqrt( (CX-X)**2 + (CY-Y
       +mm::mission_plan(search,L); // a list of waypoints
       !mm::run_mission(search).
 
-+fire <- !mm::run_mission(pb).
--energy <- !mm::run_mission(gohome).
-
+//+fire <- !mm::run_mission(pb).
+//-energy <- !mm::run_mission(gohome).
 
 +frl_charges(N)
    : N==0
    <- .print(" No more Fire Retardant charges, going to recharge");
-      //!mm::stop_mission(combat_fire,"Recharging");
       !mm::create_mission(low_frl, 900, []); // Recharge Battery
       +mm::mission_plan(low_frl,[[0,0,10]]);
       !mm::run_mission(low_frl).
 
 +!low_battery
-   <- .print(" Low Battery, going back to Recharge");
+   <- +low_batt;
+      .print(" Low Battery, going back to Recharge");
       !mm::create_mission(low_batt, 900, []); // Recharge Battery
       +mm::mission_plan(low_batt,[[0,0,10]]);
       !mm::run_mission(low_batt).
 
 +mm::mission_state(low_batt,finished) 
+   : my_number(N)
    <- .print(" Recharging Battery");
       .wait(10000);
-      .print(" Recharged!!").  //Still need to publish rechargeBattery topic
-
-
+      .print(" Recharged", N);
+      embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("sample_roscore","recharge_battery",N);
+      .print(" Recharged!!");  //Still need to publish rechargeBattery topic
+      -low_batt.
       
 
 +mm::mission_state(low_frl,finished) 
@@ -135,7 +116,6 @@ distance(X,Y,D) :- current_position(CX, CY, CZ) & D=math.sqrt( (CX-X)**2 + (CY-Y
       +fire_pos(CX,CY);
       !mm::create_mission(combat_fire, 100, [drop_when_interrupted]);
       +mm::mission_plan(combat_fire,[[CX-2,CY+2,Z],[CX+2,CY+2,Z],[CX+2,CY-2,Z],[CX-2,CY-2,Z]]);
-      //+mm::mission_plan(combat_fire,[[CX,CY+1.5,Z],[CX+1.5,CY,Z],[CX,CY-1.5,Z],[CX-1.5,CY,Z]]);
       !mm::run_mission(combat_fire);
       !cnp( 2,help,(FS-FRL)).
 
@@ -147,7 +127,6 @@ distance(X,Y,D) :- current_position(CX, CY, CZ) & D=math.sqrt( (CX-X)**2 + (CY-Y
       +fire_pos(CX,CY);
       !mm::create_mission(combat_fire, 100, [drop_when_interrupted]);
       +mm::mission_plan(combat_fire,[[CX-2,CY+2,Z],[CX+2,CY+2,Z],[CX+2,CY-2,Z],[CX-2,CY-2,Z]]);
-      //+mm::mission_plan(combat_fire,[[CX,CY+1.5,Z],[CX+1.5,CY,Z],[CX,CY-1.5,Z],[CX-1.5,CY,Z]]);
       !mm::run_mission(combat_fire).
 
 +mm::mission_state(combat_fire,finished)   // Priority
@@ -165,13 +144,11 @@ distance(X,Y,D) :- current_position(CX, CY, CZ) & D=math.sqrt( (CX-X)**2 + (CY-Y
       embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("sample_roscore","fightFire",FRL);
       -+frl_charges(FRL-1);
       .wait(200);
-      //!mm::create_mission(combat_fire, 100, [drop_when_interrupted]);
-      //+mm::mission_plan(combat_fire,[[CX-5,CY+5,5],[CX+5,CY+5,5],[CX+5,CY-5,5],[CX-5,CY-5,5]]);
       !mm::run_mission(combat_fire).
 
 +mm::mission_state(combat_fire,finished) 
    : frl_charges(FRL) & FRL>1 & fireSize(FS) & FRL < FS
-      & current_position(CX, CY, CZ) & not(cnp_limit(1))
+      & current_position(CX, CY, CZ) //& not(cnp_limit(1))
    <- .print("Loop finished!,Remaining Charges", (FRL-1));
       embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("sample_roscore","fightFire",FRL);
       -+frl_charges(FRL-1);
@@ -179,21 +156,17 @@ distance(X,Y,D) :- current_position(CX, CY, CZ) & D=math.sqrt( (CX-X)**2 + (CY-Y
       +cnp_limit(1);
       !mm::run_mission(combat_fire).      
 
-+mm::mission_state(combat_fire,finished) 
+/*+mm::mission_state(combat_fire,finished) 
    : frl_charges(FRL) & FRL>1 & fireSize(FS) & FRL < FS
       & current_position(CX, CY, CZ) & cnp_limit(1)
    <- .print("Loop finished!,Remaining Charges", (FRL-1));
       embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("sample_roscore","fightFire",FRL);
       -+frl_charges(FRL-1);
-      !mm::run_mission(combat_fire).            
-
-
-
+      !mm::run_mission(combat_fire).           */ 
 
 price(_Service,X,Y,R) :- 
    current_position(X, Y, CZ) & 
    frl_charges(R). //math.floor(R*20)+1.
-
 // answer to Call For Proposal
 @c1 +cfp(CNPId,Task)[source(A)]
    :  price(Task,X,Y,R)
@@ -203,30 +176,14 @@ price(_Service,X,Y,R) :-
 @r1 +accept_proposal(CNPId)[source(A)]
    :  proposal(CNPId,Task,X,Y,R) & fire_pos(CX,CY) & std_altitude(Z)
    <- .print("My proposal '",R,"' was accepted for CNP ",CNPId, ", task ",Task," for agent ",A,"!");
-      .print("Going to fire in : ",CX," , ",CY);
-      
-      /*.print("Debugging CNP");
-      !mm::create_mission(pa, 900, []); // scan
-      +mm::mission_plan(pa,[[-5,-5,5],[5,-5,5],[5,5,5],[-5,5,5]]); // a list of waypoints
-      !mm::run_mission(pa).*/
-
-      //!mm::create_mission(combat_fire, 100, [drop_when_interrupted]);
-      //+mm::mission_plan(combat_fire,[[CX-2,CY+2,Z],[CX+2,CY+2,Z],[CX+2,CY-2,Z],[CX-2,CY-2,Z]]);
-      //!mm::run_mission(combat_fire).
-      
-      
+      .print("Going to fire in : ",CX," , ",CY);  
       !mm::create_mission(goto_fire, 900, []); // gotofire
-      +mm::mission_plan(goto_fire,[[CX,CY,7]]);
+      +mm::mission_plan(goto_fire,[[CX,CY,Z]]);
       !mm::run_mission(goto_fire).
    
 @r2 +reject_proposal(CNPId)
    <- .print("My proposal was not accepted for CNP ",CNPId, ".");
       -proposal(CNPId,_,_,_,_). // clear memory
-
-
-
-
-
 
 +!cnp(Id,Task,TR)
    <- !call(Id,Task);
@@ -283,9 +240,27 @@ all_proposals_received(CNPId,NP) :-              // NP = number of participants
       +mm::mission_plan(combat_fire,[[CX-2,CY+2,Z],[CX+2,CY+2,Z],[CX+2,CY-2,Z],[CX-2,CY-2,Z]]);
       !mm::run_mission(combat_fire).
 
++mm::mission_state(search,finished) 
+   : my_number(N)
+   <- .print(" Search finished");
+      .broadcast(tell, finished_trajectory(N));
+      !wait_for_others.
 
++!wait_for_others
+   :  my_landing_position(LAX, LAY) & std_altitude(Z)
+      & .count(finished_trajectory(_), C) & nb_participants(C)
+   <- .print("All finished, going to land position");
+      !mm::create_mission(goto_land, 900, []); // gotofire
+      +mm::mission_plan(goto_land,[[LAX,LAY,Z]]);
+      !mm::run_mission(goto_land).
 
-
++!wait_for_others 
+   <-.wait(1000);
+      .print("Waiting for others");
+      !wait_for_others.
++mm::mission_state(goto_land,finished) 
+   <- .print(" Arrived at landing point, landing!");
+       embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("sample_roscore","land",[]).
 
 +!calculate_trajectory
    :  my_number(N)
@@ -345,8 +320,7 @@ all_proposals_received(CNPId,NP) :-              // NP = number of participants
    <- .print("Mission ",Id," state is ",S).
 
 +mm::current_mission(Id)
-   <- //.print("Current Mission :",Id);
-      -current_mission(_);
+   <- -current_mission(_);
       +current_mission(Id).
 
 /*+whats_my_current_mission[source(A)]                   //Unnecessary,mm::current_mission takes care of it

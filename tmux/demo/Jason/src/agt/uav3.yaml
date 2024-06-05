@@ -32,6 +32,9 @@
       - topicName: uav3/fire_detection
         topicType: std_msgs/Int32
         beliefName: fire_detection
+      - topicName: battery_uav3
+        topicType: std_msgs/Float64
+        beliefName: battery
   #actions: An agent acts upon ROS by topic writings and service requests, configured in the items topicWritingActions and serviceRequestActions, respectively.
   #           This example illustrate only topic writing actions. 
   actions:       
@@ -44,12 +47,17 @@
     topicWritingActions:          
       - actionName: fightFire              
         topicName: /fightFire
-        topicType: std_msgs/Int32       
+        topicType: std_msgs/Int32         
+      - actionName: recharge_battery              
+        topicName: /recharge_battery 
+        topicType: std_msgs/Int32   
           #this action does not have any parameters
       
       
     serviceRequestActions:
       - actionName: stop_tracking
         serviceName: uav1/control_manager/stop_trajectory_tracking  
+      - actionName: land #action name (from agent's perspective)
+        serviceName: /uav3/uav_manager/land #service called to execute the action
 
 
