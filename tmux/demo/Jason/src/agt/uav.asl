@@ -6,10 +6,10 @@ world_area(100, 100, 0, 0).
 num_of_uavs(6).
 nb_participants(5).
 camera_range(5).
-std_altitude(6.5).
+std_altitude(6.25).
 std_heading(0.0).
 land_radius(10.0).
-frl_charges(1).
+frl_charges(4).
 cnp_limit(0).
 landing_x(0.0).
 landing_y(0.0).
@@ -26,19 +26,19 @@ my_ap(AP) :- my_number(N)
 
 distance(X,Y,D) :- current_position(CX, CY, CZ) & D=math.sqrt( (CX-X)**2 + (CY-Y)**2 ).
 
-+fire_detection(N) : N>=32000 <- !found_fire.
++fire_detection(N) : N>=30000 <- !found_fire.
 +battery(B) : B<=30.0 & not(low_batt) <- !low_battery.
 //+fireSize(FS) <- -fireSize(_); +fireSize(FS). //infinite loop 
 //////////////// Start
 !start.
 
-+fireSize(FS)
-   : FS == 0 & current_mission(combat_fire)
-   <- !mm::drop_mission(combat_fire,"Fire is Extinguished").
++fireSize(0)
+   : current_mission(combat_fire)
+   <- !mm::stop_mission(combat_fire,"Fire is Extinguished").
       
-+fireSize(FS)
-   : FS == 0 & current_mission(goto_fire)
-   <- !mm::drop_mission(goto_fire,"Fire is Extinguished").
++fireSize(0)
+   : current_mission(goto_fire)
+   <- !mm::stop_mission(goto_fire,"Fire is Extinguished").
 
 +!start
    : my_ap(AP) & my_number(N)
@@ -106,7 +106,7 @@ distance(X,Y,D) :- current_position(CX, CY, CZ) & D=math.sqrt( (CX-X)**2 + (CY-Y
    : fireSize(FS) & FS >0 & fire_pos(CX,CY) & std_altitude(Z) & my_number(N)
    <- .print(" Going back to fire!!");
       !mm::create_mission(goto_fire, 10, []); // gotofire
-      +mm::mission_plan(goto_fire,[[CX,CY,Z+N*0.25]]);
+      +mm::mission_plan(goto_fire,[[CX,CY,Z+N]]);
       !mm::run_mission(goto_fire).
 
 +!found_fire
@@ -117,7 +117,7 @@ distance(X,Y,D) :- current_position(CX, CY, CZ) & D=math.sqrt( (CX-X)**2 + (CY-Y
       .print("FRL Needed: ",(FS-FRL));
       +fire_pos(CX,CY);
       !mm::create_mission(combat_fire, 10, [drop_when_interrupted]);
-      +mm::mission_plan(combat_fire,[[CX-2,CY+2,Z+N*0.25],[CX+2,CY+2,Z+N*0.25],[CX+2,CY-2,Z+N*0.25],[CX-2,CY-2,Z+N*0.25]]);
+      +mm::mission_plan(combat_fire,[[CX-2,CY+2,Z+N],[CX+2,CY+2,Z+N],[CX+2,CY-2,Z+N],[CX-2,CY-2,Z+N]]);
       !mm::run_mission(combat_fire);
       !cnp( 2,help,(FS-FRL)).
 
@@ -128,17 +128,28 @@ distance(X,Y,D) :- current_position(CX, CY, CZ) & D=math.sqrt( (CX-X)**2 + (CY-Y
    <- .print("Found fire in : ",CX," , ",CY,". I don't need help");
       +fire_pos(CX,CY);
       !mm::create_mission(combat_fire, 10, [drop_when_interrupted]);
-      +mm::mission_plan(combat_fire,[[CX-2,CY+2,Z+N*0.25],[CX+2,CY+2,Z+N*0.25],[CX+2,CY-2,Z+N*0.25],[CX-2,CY-2,Z+N*0.25]]);
+      +mm::mission_plan(combat_fire,[[CX-2,CY+2,Z+N],[CX+2,CY+2,Z+N],[CX+2,CY-2,Z+N],[CX-2,CY-2,Z+N]]);
       !mm::run_mission(combat_fire).
 
 +mm::mission_state(combat_fire,finished)   // Priority
    : fireSize(FS) & FS==0
    <- .print("Fire Extinguished").
 
++frl_charges(FRL)
+   : fireSize(FS) & current_mission(combat_fire) & FS>FRL
+   <- !cnp( 2,help,(FS-FRL)).
+
 +mm::mission_state(combat_fire,finished) 
+   : frl_charges(FRL) & FRL>=1
+   <- embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("sample_roscore","fightFire",FRL);
+      .wait(1000);
+      -+frl_charges(FRL-1);
+      !mm::run_mission(combat_fire).
+/*+mm::mission_state(combat_fire,finished) 
    : frl_charges(FRL) & FRL==1
    <- embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("sample_roscore","fightFire",FRL);
-      -+frl_charges(FRL-1).
+      -+frl_charges(FRL-1);
+      .wait(500).
 
 +mm::mission_state(combat_fire,finished) 
    : frl_charges(FRL) & FRL>1 & fireSize(FS) & FRL >= FS
@@ -157,7 +168,9 @@ distance(X,Y,D) :- current_position(CX, CY, CZ) & D=math.sqrt( (CX-X)**2 + (CY-Y
       !cnp( 2,help,(FS-FRL));
       +cnp_limit(1);
       .wait(500);
-      !mm::run_mission(combat_fire).      
+      !mm::run_mission(combat_fire).   */
+
+
 
 /*+mm::mission_state(combat_fire,finished) 
    : frl_charges(FRL) & FRL>1 & fireSize(FS) & FRL < FS
@@ -181,7 +194,7 @@ price(_Service,X,Y,R) :-
    <- .print("My proposal '",R,"' was accepted for CNP ",CNPId, ", task ",Task," for agent ",A,"!");
       .print("Going to fire in : ",CX," , ",CY);  
       !mm::create_mission(goto_fire, 10, []); // gotofire
-      +mm::mission_plan(goto_fire,[[CX,CY,Z+N*0.25]]);
+      +mm::mission_plan(goto_fire,[[CX,CY,Z+N]]);
       !mm::run_mission(goto_fire).
    
 @r2 +reject_proposal(CNPId)
@@ -240,7 +253,7 @@ all_proposals_received(CNPId,NP) :-              // NP = number of participants
    : fire_pos(CX,CY) & std_altitude(Z) & my_number(N)
    <- .print("Go to fire finished!");
       !mm::create_mission(combat_fire, 10, [drop_when_interrupted]);
-      +mm::mission_plan(combat_fire,[[CX-2,CY+2,Z+N*0.25],[CX+2,CY+2,Z+N*0.25],[CX+2,CY-2,Z+N*0.25],[CX-2,CY-2,Z+N*0.25]]);
+      +mm::mission_plan(combat_fire,[[CX-2,CY+2,Z+N],[CX+2,CY+2,Z+N],[CX+2,CY-2,Z+N],[CX-2,CY-2,Z+N]]);
       !mm::run_mission(combat_fire).
 
 +mm::mission_state(search,finished) 

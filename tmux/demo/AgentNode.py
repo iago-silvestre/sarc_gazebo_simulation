@@ -28,6 +28,7 @@ class WaypointTrackerNode:
         #self.batt_uav4 = 100.0
         self.battery_levels = [100.0 for _ in range(n)]
         self.count=0
+        self.auxcount=0
         self.waypoints = [[] for _ in range(n)]
         self.last_waypoint_indices = [0 for _ in range(n)]
         self.path_publishers = []
@@ -227,17 +228,18 @@ class WaypointTrackerNode:
         if msg.data != 0:
             model_name = "tree_red_"+ str(self.count)  # Change this to the name of the model you want to delete
             rospy.loginfo("Deleting model: %s", model_name)
-            
+            self.auxcount=self.auxcount+1
             probability = random.random()
-            if probability <= 1.80:
-                try:
-                    self.count=self.count+1
-                    self.fireSize=self.fireSize-1
-                    response = self.delete_model(model_name)
-                    rospy.loginfo("Model deletion response: %s", response.status_message)
-                    self.fire_size_pub.publish(self.fireSize)
-                except rospy.ServiceException as e:
-                    rospy.logerr("Service call failed: %s", e)
+            if self.auxcount != 2:
+                if probability <= 1.80:
+                    try:
+                        self.count=self.count+1
+                        self.fireSize=self.fireSize-1
+                        response = self.delete_model(model_name)
+                        rospy.loginfo("Model deletion response: %s", response.status_message)
+                        self.fire_size_pub.publish(self.fireSize)
+                    except rospy.ServiceException as e:
+                        rospy.logerr("Service call failed: %s", e)
             #if self.count==4:
             #    self.fire_ext_pub.publish(self.count)
             
