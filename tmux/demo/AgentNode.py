@@ -21,7 +21,7 @@ class WaypointTrackerNode:
         rospy.init_node('waypoint_tracker_node', anonymous=True)
         self.n_drones = n
         # Parameters
-        self.threshold = 2.0
+        self.threshold = 1.0
         #self.batt_uav1 = 100.0
         #self.batt_uav2 = 100.0
         #self.batt_uav3 = 100.0
@@ -115,7 +115,7 @@ class WaypointTrackerNode:
             self.path_publishers[drone_index].publish(0)
         return path_callback
     
-    def create_odom_callback(self, drone_index):
+    """def create_odom_callback(self, drone_index):
         def odom_callback(msg):
             # Extract drone position
             if not self.waypoints[drone_index]:
@@ -137,9 +137,9 @@ class WaypointTrackerNode:
                 
                 # Publish last waypoint index
                 self.path_publishers[drone_index].publish(next_waypoint_index + 1)
-        return odom_callback
+        return odom_callback"""
 
-    """def create_odom_callback(self, drone_index):
+    def create_odom_callback(self, drone_index):
         def odom_callback(msg):
             # Extract drone position
             if not self.waypoints[drone_index]:
@@ -157,7 +157,7 @@ class WaypointTrackerNode:
                     # Publish last waypoint index
                     self.path_publishers[drone_index].publish(i + 1)
                     break
-        return odom_callback"""
+        return odom_callback
 
     def create_image_callback(self, drone_index):
         def image_callback(msg):
@@ -229,7 +229,7 @@ class WaypointTrackerNode:
             rospy.loginfo("Deleting model: %s", model_name)
             
             probability = random.random()
-            if probability <= 0.80:
+            if probability <= 1.80:
                 try:
                     self.count=self.count+1
                     self.fireSize=self.fireSize-1

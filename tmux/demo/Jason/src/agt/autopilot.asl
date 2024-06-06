@@ -66,10 +66,10 @@ progress(pc,0).
       +progress(CM,0);
       .send(Ag,signal,finished).
 
-+progress(CM,N) 
+/*+progress(CM,N) 
    : my_agent(Ag)
    <- UsedEnergy = 0;
-      .send(Ag,achieve,update_rem_plan(N,UsedEnergy)).
+      .send(Ag,achieve,update_rem_plan(N,UsedEnergy)).*/
 
 // *** Energy
 

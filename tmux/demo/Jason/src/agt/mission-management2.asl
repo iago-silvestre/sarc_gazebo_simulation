@@ -84,8 +84,8 @@
       -mission_energy(Mission,EE,US);
       +mission_energy(Mission,EE,US+Energy).
 
-+!default::update_rem_plan(Doing,Energy)
-   <- .print("no current mission to update energy!").
+//+!default::update_rem_plan(Doing,Energy)
+//  <- .print("no current mission to update energy!").
 
 +!auto_resume
    :  not current_mission(_) &
