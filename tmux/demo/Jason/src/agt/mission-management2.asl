@@ -63,6 +63,8 @@
       !change_state(Id,dropped[reason(R)]);
       !auto_resume.
 
+@[atomic] +!stop_mission(Id,R)
+   <- !auto_resume.
 
 +!start_mission(Id)
    :  enough_energy(Id) &
