@@ -229,7 +229,7 @@ class WaypointTrackerNode:
             rospy.loginfo("Deleting model: %s", model_name)
             
             probability = random.random()
-            if probability <= 0.50:
+            if probability <= 0.80:
                 try:
                     self.count=self.count+1
                     self.fireSize=self.fireSize-1
@@ -246,7 +246,7 @@ class WaypointTrackerNode:
 
 
 if __name__ == '__main__':
-    n_drones = 4
+    n_drones = 6
     try:
         waypoint_tracker_node = WaypointTrackerNode(n_drones)
         rospy.spin()

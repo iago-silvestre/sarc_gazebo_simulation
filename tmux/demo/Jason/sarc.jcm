@@ -70,7 +70,33 @@ mas sarc {
       ag-arch: embedded.mas.bridges.jacamo.DefaultEmbeddedAgArch
     }
 
-    
+    agent uav5 : uav.asl{   //agent uav5
+      beliefs: my_number(5) 
+               my_frame_id("world")
+      
+      ag-class: embedded.mas.bridges.jacamo.CyberPhysicalAgent
+      ag-arch: embedded.mas.bridges.jacamo.DefaultEmbeddedAgArch
+    }
+
+    agent autopilot5 : autopilot.asl{
+      beliefs: my_number(5)
+      ag-class: embedded.mas.bridges.jacamo.CyberPhysicalAgent
+      ag-arch: embedded.mas.bridges.jacamo.DefaultEmbeddedAgArch
+    }
+
+    agent uav6 : uav.asl{   //agent uav6
+      beliefs: my_number(6) 
+               my_frame_id("world")
+      
+      ag-class: embedded.mas.bridges.jacamo.CyberPhysicalAgent
+      ag-arch: embedded.mas.bridges.jacamo.DefaultEmbeddedAgArch
+    }
+
+    agent autopilot6 : autopilot.asl{
+      beliefs: my_number(6)
+      ag-class: embedded.mas.bridges.jacamo.CyberPhysicalAgent
+      ag-arch: embedded.mas.bridges.jacamo.DefaultEmbeddedAgArch
+    }
 
 
 }

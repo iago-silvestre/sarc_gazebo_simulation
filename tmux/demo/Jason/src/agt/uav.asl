@@ -3,14 +3,14 @@
 current_mission("None").
 status("None").
 world_area(100, 100, 0, 0).
-num_of_uavs(4).
+num_of_uavs(6).
+nb_participants(5).
 camera_range(5).
 std_altitude(7.0).
 std_heading(0.0).
 land_radius(10.0).
 frl_charges(4).
 cnp_limit(0).
-nb_participants(3).
 landing_x(0.0).
 landing_y(0.0).
 
@@ -18,13 +18,15 @@ current_position(CX, CY, CZ) :- my_frame_id(Frame_id) & my_number(1) & uav1_grou
 current_position(CX, CY, CZ) :- my_frame_id(Frame_id) & my_number(2) & uav2_ground_truth(header(seq(Seq),stamp(secs(Secs),nsecs(Nsecs)),frame_id(Frame_id)),child_frame_id(CFI),pose(pose(position(x(CX),y(CY),z(CZ)),orientation(x(OX),y((OY)),z((OZ)),w((OW)))),covariance(CV)),twist(twist(linear(x(LX),y(LY),z((LZ))),angular(x(AX),y((AY)),z((AZ)))),covariance(CV2))).
 current_position(CX, CY, CZ) :- my_frame_id(Frame_id) & my_number(3) & uav3_ground_truth(header(seq(Seq),stamp(secs(Secs),nsecs(Nsecs)),frame_id(Frame_id)),child_frame_id(CFI),pose(pose(position(x(CX),y(CY),z(CZ)),orientation(x(OX),y((OY)),z((OZ)),w((OW)))),covariance(CV)),twist(twist(linear(x(LX),y(LY),z((LZ))),angular(x(AX),y((AY)),z((AZ)))),covariance(CV2))).
 current_position(CX, CY, CZ) :- my_frame_id(Frame_id) & my_number(4) & uav4_ground_truth(header(seq(Seq),stamp(secs(Secs),nsecs(Nsecs)),frame_id(Frame_id)),child_frame_id(CFI),pose(pose(position(x(CX),y(CY),z(CZ)),orientation(x(OX),y((OY)),z((OZ)),w((OW)))),covariance(CV)),twist(twist(linear(x(LX),y(LY),z((LZ))),angular(x(AX),y((AY)),z((AZ)))),covariance(CV2))).
+current_position(CX, CY, CZ) :- my_frame_id(Frame_id) & my_number(5) & uav5_ground_truth(header(seq(Seq),stamp(secs(Secs),nsecs(Nsecs)),frame_id(Frame_id)),child_frame_id(CFI),pose(pose(position(x(CX),y(CY),z(CZ)),orientation(x(OX),y((OY)),z((OZ)),w((OW)))),covariance(CV)),twist(twist(linear(x(LX),y(LY),z((LZ))),angular(x(AX),y((AY)),z((AZ)))),covariance(CV2))).
+current_position(CX, CY, CZ) :- my_frame_id(Frame_id) & my_number(6) & uav6_ground_truth(header(seq(Seq),stamp(secs(Secs),nsecs(Nsecs)),frame_id(Frame_id)),child_frame_id(CFI),pose(pose(position(x(CX),y(CY),z(CZ)),orientation(x(OX),y((OY)),z((OZ)),w((OW)))),covariance(CV)),twist(twist(linear(x(LX),y(LY),z((LZ))),angular(x(AX),y((AY)),z((AZ)))),covariance(CV2))).
 
 my_ap(AP) :- my_number(N)
             & .term2string(N, S) & .concat("autopilot",S,AP).
 
 distance(X,Y,D) :- current_position(CX, CY, CZ) & D=math.sqrt( (CX-X)**2 + (CY-Y)**2 ).
 
-+fire_detection(N) : N>=6000 <- !found_fire.
++fire_detection(N) : N>=20000 <- !found_fire.
 +battery(B) : B<=30.0 & not(low_batt) <- !low_battery.
 //+fireSize(FS) <- -fireSize(_); +fireSize(FS). //infinite loop 
 //////////////// Start
@@ -48,14 +50,12 @@ distance(X,Y,D) :- current_position(CX, CY, CZ) & D=math.sqrt( (CX-X)**2 + (CY-Y
       !calculate_trajectory;//trajectory//!calculate_area;//!calculate_waypoints(1, []);// pode ser unido com os outros
       !my_missions.
 
-
-
 +!my_missions
    :  waypoints_list(L) & my_number(N) //& N==1
    <- !mm::create_mission(search, 900, []); // scan
-      //+mm::mission_plan(search,L); // a list of waypoints
+      +mm::mission_plan(search,L); // a list of waypoints
       //+mm::mission_plan(search,[[23,-23,7],[50,-50,7]]); // a list of waypoints
-      +mm::mission_plan(search,[[N*10, N*10,7]]); // a list of waypoints
+      //+mm::mission_plan(search,[[N*10, N*10,7]]); // a list of waypoints
       !mm::run_mission(search).
       //embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("sample_roscore","land",[]).
       //!low_battery.
@@ -242,7 +242,8 @@ all_proposals_received(CNPId,NP) :-              // NP = number of participants
 
 +mm::mission_state(search,finished) 
    : my_number(N)
-   <- .print(" Search finished");
+   <- !mm::drop_mission(search,"Search is Completed");
+      .print(" Search finished");
       .broadcast(tell, finished_trajectory(N));
       !wait_for_others.
 
@@ -256,8 +257,9 @@ all_proposals_received(CNPId,NP) :-              // NP = number of participants
 
 +!wait_for_others 
    <-.wait(1000);
-      .print("Waiting for others");
+      //.print("Waiting for others");
       !wait_for_others.
+
 +mm::mission_state(goto_land,finished) 
    <- .print(" Arrived at landing point, landing!");
        embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("sample_roscore","land",[]).
