@@ -27,6 +27,7 @@ class WaypointTrackerNode:
         #self.batt_uav3 = 100.0
         #self.batt_uav4 = 100.0
         self.battery_levels = [100.0 for _ in range(n)]
+        #self.battery_levels[1] = 33.0 # Demonstrate low battery
         self.count=0
         self.auxcount=0
         self.waypoints = [[] for _ in range(n)]
