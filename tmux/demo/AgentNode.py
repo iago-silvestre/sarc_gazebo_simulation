@@ -22,12 +22,9 @@ class WaypointTrackerNode:
         self.n_drones = n
         # Parameters
         self.threshold = 1.0
-        #self.batt_uav1 = 100.0
-        #self.batt_uav2 = 100.0
-        #self.batt_uav3 = 100.0
-        #self.batt_uav4 = 100.0
         self.battery_levels = [100.0 for _ in range(n)]
         #self.battery_levels[1] = 33.0 # Demonstrate low battery
+        self.fireSize=4
         self.count=0
         self.auxcount=0
         self.waypoints = [[] for _ in range(n)]
@@ -36,43 +33,13 @@ class WaypointTrackerNode:
         self.fire_detection_publishers = []
         self.battery_publishers = []
         self.bridge = CvBridge()
-
-        self.fireSize=4
-        # Initialize last waypoint index
-        #self.last_waypoint_index1 = -1
-        
-        # Subscribers
-        #rospy.Subscriber("uav1/ground_truth", Odometry, self.odometry1_callback)
-        #rospy.Subscriber("uav2/ground_truth", Odometry, self.odometry2_callback)
-        #rospy.Subscriber("uav3/ground_truth", Odometry, self.odometry3_callback)
-        #rospy.Subscriber("uav4/ground_truth", Odometry, self.odometry4_callback)
-        
+              
         self.subscriber_del = rospy.Subscriber('/fightFire', Int32, self.del_callback)
-        #self.subscriber_path1 = rospy.Subscriber('/uav1/trajectory_generation/path', Path, self.path1_callback)
-        #self.subscriber_path2 = rospy.Subscriber('/uav2/trajectory_generation/path', Path, self.path2_callback)
-        #self.subscriber_path3 = rospy.Subscriber('/uav3/trajectory_generation/path', Path, self.path3_callback)
-        #self.subscriber_path4 = rospy.Subscriber('/uav4/trajectory_generation/path', Path, self.path4_callback)
-
-        # Publisher
-        #self.last_waypoint1_pub = rospy.Publisher("uav1_lastWP", Int8, queue_size=1)
-        #self.last_waypoint2_pub = rospy.Publisher("uav2_lastWP", Int8, queue_size=1)
-        #self.last_waypoint3_pub = rospy.Publisher("uav3_lastWP", Int8, queue_size=1)
-        #self.last_waypoint4_pub = rospy.Publisher("uav4_lastWP", Int8, queue_size=1)
-
-        #self.batt_uav1_pub = rospy.Publisher("battery_uav1", Float64, queue_size=1)
-        #self.batt_uav2_pub = rospy.Publisher("battery_uav2", Float64, queue_size=1)
-        #self.batt_uav3_pub = rospy.Publisher("battery_uav3", Float64, queue_size=1)
-        #self.batt_uav4_pub = rospy.Publisher("battery_uav4", Float64, queue_size=1)
-        #self.timer = rospy.Timer(rospy.Duration(2.0), self.update_batteries)
-
-        self.fire_ext_pub = rospy.Publisher("fireExt", Int8, queue_size=1)
         self.fire_size_pub = rospy.Publisher("fireSize", Int8, queue_size=1)
-
 
         # Delete model service
         self.delete_model = rospy.ServiceProxy('/gazebo/delete_model', DeleteModel)
         # Create a ROS timer to subtract 0.1 from battery variables every 2 seconds
-        
 
         for i in range(n):
             rospy.Subscriber(f'/uav{i+1}/trajectory_generation/path', Path, self.create_path_callback(i))
@@ -117,7 +84,7 @@ class WaypointTrackerNode:
             self.path_publishers[drone_index].publish(0)
         return path_callback
     
-    """def create_odom_callback(self, drone_index):
+    """def create_odom_callback(self, drone_index):   #This method only checks the next waypoint, some issues can occur due to collision avoidance
         def odom_callback(msg):
             # Extract drone position
             if not self.waypoints[drone_index]:
@@ -171,59 +138,18 @@ class WaypointTrackerNode:
 
             # Convert the image to HSV color space
             hsv_image = cv2.cvtColor(cv_image, cv2.COLOR_BGR2HSV)
-
             # Define the red color range
             lower_red = np.array([150, 0, 0])
             upper_red = np.array([255, 100, 100])
-
             # Create a mask to extract only the red pixels
             red_mask = cv2.inRange(cv_image, lower_red, upper_red)
-
             # Count the number of red pixels
             red_pixel_count = np.sum(red_mask == 255)
-
             # Publish the number of red pixels
             self.fire_detection_publishers[drone_index].publish(red_pixel_count)
-            # Add a delay of 0.5 seconds
+            # Add a delay of 0.25 seconds
             #rospy.sleep(0.25)
         return image_callback
-
-
-    #def update_batteries(self, event):
-        # Subtract 0.1 from each battery variable
-    #    self.batt_uav1 -= 0.1
-    #    self.batt_uav2 -= 0.1
-    #    self.batt_uav3 -= 0.1
-    #    self.batt_uav4 -= 0.1
-    #    self.batt_uav1_pub.publish(self.batt_uav1)
-    #    self.batt_uav2_pub.publish(self.batt_uav2)
-    #    self.batt_uav3_pub.publish(self.batt_uav3)
-    #    self.batt_uav4_pub.publish(self.batt_uav4)
-
-    #def path1_callback(self, msg):
-    #    self.waypoints1 = [(point.position.x, point.position.y) for point in msg.points]
-    #    for i, (x, y) in enumerate(self.waypoints1):
-    #        rospy.loginfo("Waypoint %d: x=%.2f, y=%.2f", i, x, y)
-    #def path2_callback(self, msg):
-    #    self.waypoints2 = [(point.position.x, point.position.y) for point in msg.points]
-    #    for i, (x, y) in enumerate(self.waypoints2):
-    #        rospy.loginfo("Waypoint %d: x=%.2f, y=%.2f", i, x, y)
-    #def path3_callback(self, msg):
-    #    self.waypoints3 = [(point.position.x, point.position.y) for point in msg.points]
-    #    for i, (x, y) in enumerate(self.waypoints3):
-    #        rospy.loginfo("Waypoint %d: x=%.2f, y=%.2f", i, x, y)
-    #def path4_callback(self, msg):
-    #    self.waypoints4 = [(point.position.x, point.position.y) for point in msg.points]
-    #    for i, (x, y) in enumerate(self.waypoints4):
-    #        rospy.loginfo("Waypoint %d: x=%.2f, y=%.2f", i, x, y)
-    
-        #global points_uav1
-        #points_uav1 = msg.points
-        #print("Received points list with length:", len(points_uav1))
-        #print("Points list:")
-        #for i, point in enumerate(points_uav1):
-        #    print("Point", i, ":", point)
-
 
     def del_callback(self, msg):
         if msg.data != 0:
@@ -231,7 +157,7 @@ class WaypointTrackerNode:
             rospy.loginfo("Deleting model: %s", model_name)
             self.auxcount=self.auxcount+1
             probability = random.random()
-            if self.auxcount != 2:
+            if self.auxcount != -2:
                 if probability <= 1.80:
                     try:
                         self.count=self.count+1
@@ -241,8 +167,6 @@ class WaypointTrackerNode:
                         self.fire_size_pub.publish(self.fireSize)
                     except rospy.ServiceException as e:
                         rospy.logerr("Service call failed: %s", e)
-            #if self.count==4:
-            #    self.fire_ext_pub.publish(self.count)
             
         
     

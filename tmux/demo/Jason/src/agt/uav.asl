@@ -3,13 +3,14 @@
 current_mission("None").
 status("None").
 world_area(100, 100, 0, 0).
+//world_area(250, 250, 0, 0).
 num_of_uavs(6).
 nb_participants(5).
 camera_range(5).
 std_altitude(6.25).
 std_heading(0.0).
 land_radius(10.0).
-frl_charges(4).
+frl_charges(1).
 cnp_limit(0).
 landing_x(0.0).
 landing_y(0.0).
@@ -26,7 +27,7 @@ my_ap(AP) :- my_number(N)
 
 distance(X,Y,D) :- current_position(CX, CY, CZ) & D=math.sqrt( (CX-X)**2 + (CY-Y)**2 ).
 
-+fire_detection(N) : N>=30000 <- !found_fire.
++fire_detection(N) : N>=22000 <- !found_fire.
 +battery(B) : B<=30.0 & not(low_batt) <- !low_battery.
 //+fireSize(FS) <- -fireSize(_); +fireSize(FS). //infinite loop 
 //////////////// Start
@@ -79,7 +80,6 @@ distance(X,Y,D) :- current_position(CX, CY, CZ) & D=math.sqrt( (CX-X)**2 + (CY-Y
    : my_number(N)
    <- .print(" Recharging Battery");
       .wait(10000);
-      .print(" Recharged", N);
       embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("sample_roscore","recharge_battery",N);
       .print(" Recharged!!");  //Still need to publish rechargeBattery topic
       -low_batt.
