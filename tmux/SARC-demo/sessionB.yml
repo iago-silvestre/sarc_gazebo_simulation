@@ -24,19 +24,12 @@ windows:
         - waitForRos; roslaunch mrs_uav_gazebo_simulation simulation.launch world_name:=fire3 gui:=true
         #- waitForGazebo; rosservice call /mrs_drone_spawner/spawn "1 --$UAV_TYPE   --pos 0 0 0 0 --enable-rangefinder --enable_bluefox_camera --enable-ground-truth"
         #- waitForGazebo; rosservice call /mrs_drone_spawner/spawn "1 $UAV_TYPE --pos 0 0 0.5 0 --enable-rangefinder --enable-ground-truth --enable-bluefox-camera"
-        - waitForGazebo; rosservice call /mrs_drone_spawner/spawn "1 --$UAV_TYPE --enable-rangefinder --enable-ground-truth --enable-bluefox-camera  --pos -10 5 0 0"
-        - waitForGazebo; rosservice call /mrs_drone_spawner/spawn "2 --$UAV_TYPE --enable-rangefinder --enable-ground-truth --enable-bluefox-camera  --pos 10 5 0 0"
-        - waitForGazebo; rosservice call /mrs_drone_spawner/spawn "3 --$UAV_TYPE --enable-rangefinder --enable-ground-truth --enable-bluefox-camera  --pos -10 0 0 0"
-        - waitForGazebo; rosservice call /mrs_drone_spawner/spawn "4 --$UAV_TYPE --enable-rangefinder --enable-ground-truth --enable-bluefox-camera  --pos 10 0 0 0"
-        - waitForGazebo; rosservice call /mrs_drone_spawner/spawn "5 --$UAV_TYPE --enable-rangefinder --enable-ground-truth --enable-bluefox-camera  --pos -10 -5 0 0"
-        - waitForGazebo; rosservice call /mrs_drone_spawner/spawn "6 --$UAV_TYPE --enable-rangefinder --enable-ground-truth --enable-bluefox-camera  --pos 10 -5 0 0"
-        - waitForGazebo; rosservice call /mrs_drone_spawner/spawn "7 --$UAV_TYPE --enable-rangefinder --enable-ground-truth --enable-bluefox-camera  --pos -10 -10 0 0"
-        - waitForGazebo; rosservice call /mrs_drone_spawner/spawn "8 --$UAV_TYPE --enable-rangefinder --enable-ground-truth --enable-bluefox-camera  --pos 10 -10 0 0"
-        - waitForGazebo; rosservice call /mrs_drone_spawner/spawn "9 --$UAV_TYPE --enable-rangefinder --enable-ground-truth --enable-bluefox-camera  --pos -10 -15 0 0"
-        - waitForGazebo; rosservice call /mrs_drone_spawner/spawn "10 --$UAV_TYPE --enable-rangefinder --enable-ground-truth --enable-bluefox-camera  --pos 10 -15 0 0"
-        - waitForGazebo; rosservice call /mrs_drone_spawner/spawn "11 --$UAV_TYPE --enable-rangefinder --enable-ground-truth --enable-bluefox-camera  --pos -10 -20 0 0"
-        - waitForGazebo; rosservice call /mrs_drone_spawner/spawn "12 --$UAV_TYPE --enable-rangefinder --enable-ground-truth --enable-bluefox-camera  --pos 10 -20 0 0"
-
+        - waitForGazebo; rosservice call /mrs_drone_spawner/spawn "1 --$UAV_TYPE --enable-rangefinder --enable-ground-truth --enable-bluefox-camera  --pos -5 5 0 0"
+        - waitForGazebo; rosservice call /mrs_drone_spawner/spawn "2 --$UAV_TYPE --enable-rangefinder --enable-ground-truth --enable-bluefox-camera  --pos 5 5 0 0"
+        - waitForGazebo; rosservice call /mrs_drone_spawner/spawn "3 --$UAV_TYPE --enable-rangefinder --enable-ground-truth --enable-bluefox-camera  --pos -5 0 0 0"
+        - waitForGazebo; rosservice call /mrs_drone_spawner/spawn "4 --$UAV_TYPE --enable-rangefinder --enable-ground-truth --enable-bluefox-camera  --pos 5 0 0 0"
+        - waitForGazebo; rosservice call /mrs_drone_spawner/spawn "5 --$UAV_TYPE --enable-rangefinder --enable-ground-truth --enable-bluefox-camera  --pos -5 -5 0 0"
+        - waitForGazebo; rosservice call /mrs_drone_spawner/spawn "6 --$UAV_TYPE --enable-rangefinder --enable-ground-truth --enable-bluefox-camera  --pos 5 -5 0 0"
 
   - status:
       layout: tiled
@@ -51,12 +44,6 @@ windows:
         -  export UAV_NAME=uav4; waitForTime; roslaunch mrs_uav_px4_api api.launch
         -  export UAV_NAME=uav5; waitForTime; roslaunch mrs_uav_px4_api api.launch
         -  export UAV_NAME=uav6; waitForTime; roslaunch mrs_uav_px4_api api.launch
-        -  export UAV_NAME=uav7; waitForTime; roslaunch mrs_uav_px4_api api.launch
-        -  export UAV_NAME=uav8; waitForTime; roslaunch mrs_uav_px4_api api.launch
-        -  export UAV_NAME=uav9; waitForTime; roslaunch mrs_uav_px4_api api.launch
-        -  export UAV_NAME=uav10; waitForTime; roslaunch mrs_uav_px4_api api.launch
-        -  export UAV_NAME=uav11; waitForTime; roslaunch mrs_uav_px4_api api.launch
-        -  export UAV_NAME=uav12; waitForTime; roslaunch mrs_uav_px4_api api.launch
   - core:
       layout: tiled
       panes:
@@ -90,36 +77,6 @@ windows:
           custom_config:=./config/custom_config.yaml
           world_config:=./config/world_config.yaml
           network_config:=./config/network_config.yaml
-        - export UAV_NAME=uav7; waitForHw; roslaunch mrs_uav_core core.launch
-          platform_config:=`rospack find mrs_uav_gazebo_simulation`/config/mrs_uav_system/$UAV_TYPE.yaml
-          custom_config:=./config/custom_config.yaml
-          world_config:=./config/world_config.yaml
-          network_config:=./config/network_config.yaml
-        - export UAV_NAME=uav8; waitForHw; roslaunch mrs_uav_core core.launch
-          platform_config:=`rospack find mrs_uav_gazebo_simulation`/config/mrs_uav_system/$UAV_TYPE.yaml
-          custom_config:=./config/custom_config.yaml
-          world_config:=./config/world_config.yaml
-          network_config:=./config/network_config.yaml
-        - export UAV_NAME=uav9; waitForHw; roslaunch mrs_uav_core core.launch
-          platform_config:=`rospack find mrs_uav_gazebo_simulation`/config/mrs_uav_system/$UAV_TYPE.yaml
-          custom_config:=./config/custom_config.yaml
-          world_config:=./config/world_config.yaml
-          network_config:=./config/network_config.yaml
-        - export UAV_NAME=uav10; waitForHw; roslaunch mrs_uav_core core.launch
-          platform_config:=`rospack find mrs_uav_gazebo_simulation`/config/mrs_uav_system/$UAV_TYPE.yaml
-          custom_config:=./config/custom_config.yaml
-          world_config:=./config/world_config.yaml
-          network_config:=./config/network_config.yaml
-        - export UAV_NAME=uav11; waitForHw; roslaunch mrs_uav_core core.launch
-          platform_config:=`rospack find mrs_uav_gazebo_simulation`/config/mrs_uav_system/$UAV_TYPE.yaml
-          custom_config:=./config/custom_config.yaml
-          world_config:=./config/world_config.yaml
-          network_config:=./config/network_config.yaml
-        - export UAV_NAME=uav12; waitForHw; roslaunch mrs_uav_core core.launch
-          platform_config:=`rospack find mrs_uav_gazebo_simulation`/config/mrs_uav_system/$UAV_TYPE.yaml
-          custom_config:=./config/custom_config.yaml
-          world_config:=./config/world_config.yaml
-          network_config:=./config/network_config.yaml
   - automatic_start:
       layout: tiled
       panes:
@@ -129,12 +86,6 @@ windows:
         - export UAV_NAME=uav4; waitForHw; roslaunch mrs_uav_autostart automatic_start.launch
         - export UAV_NAME=uav5; waitForHw; roslaunch mrs_uav_autostart automatic_start.launch
         - export UAV_NAME=uav6; waitForHw; roslaunch mrs_uav_autostart automatic_start.launch
-        - export UAV_NAME=uav7; waitForHw; roslaunch mrs_uav_autostart automatic_start.launch
-        - export UAV_NAME=uav8; waitForHw; roslaunch mrs_uav_autostart automatic_start.launch
-        - export UAV_NAME=uav9; waitForHw; roslaunch mrs_uav_autostart automatic_start.launch
-        - export UAV_NAME=uav10; waitForHw; roslaunch mrs_uav_autostart automatic_start.launch
-        - export UAV_NAME=uav11; waitForHw; roslaunch mrs_uav_autostart automatic_start.launch
-        - export UAV_NAME=uav12; waitForHw; roslaunch mrs_uav_autostart automatic_start.launch
   - takeoff:
       layout: tiled
       panes:
@@ -144,13 +95,6 @@ windows:
         - export UAV_NAME=uav4; waitForControl; rosservice call /$UAV_NAME/hw_api/arming 1; sleep 2; rosservice call /$UAV_NAME/hw_api/offboard ; sleep 10; rosservice call /$UAV_NAME/control_manager/goto_altitude 7
         - export UAV_NAME=uav5; waitForControl; rosservice call /$UAV_NAME/hw_api/arming 1; sleep 2; rosservice call /$UAV_NAME/hw_api/offboard ; sleep 10; rosservice call /$UAV_NAME/control_manager/goto_altitude 7
         - export UAV_NAME=uav6; waitForControl; rosservice call /$UAV_NAME/hw_api/arming 1; sleep 2; rosservice call /$UAV_NAME/hw_api/offboard ; sleep 10; rosservice call /$UAV_NAME/control_manager/goto_altitude 7
-        - export UAV_NAME=uav7; waitForControl; rosservice call /$UAV_NAME/hw_api/arming 1; sleep 2; rosservice call /$UAV_NAME/hw_api/offboard ; sleep 10; rosservice call /$UAV_NAME/control_manager/goto_altitude 7
-        - export UAV_NAME=uav8; waitForControl; rosservice call /$UAV_NAME/hw_api/arming 1; sleep 2; rosservice call /$UAV_NAME/hw_api/offboard ; sleep 10; rosservice call /$UAV_NAME/control_manager/goto_altitude 7
-        - export UAV_NAME=uav9; waitForControl; rosservice call /$UAV_NAME/hw_api/arming 1; sleep 2; rosservice call /$UAV_NAME/hw_api/offboard ; sleep 10; rosservice call /$UAV_NAME/control_manager/goto_altitude 7
-        - export UAV_NAME=uav10; waitForControl; rosservice call /$UAV_NAME/hw_api/arming 1; sleep 2; rosservice call /$UAV_NAME/hw_api/offboard ; sleep 10; rosservice call /$UAV_NAME/control_manager/goto_altitude 7
-        - export UAV_NAME=uav11; waitForControl; rosservice call /$UAV_NAME/hw_api/arming 1; sleep 2; rosservice call /$UAV_NAME/hw_api/offboard ; sleep 10; rosservice call /$UAV_NAME/control_manager/goto_altitude 7
-        - export UAV_NAME=uav12; waitForControl; rosservice call /$UAV_NAME/hw_api/arming 1; sleep 2; rosservice call /$UAV_NAME/hw_api/offboard ; sleep 10; rosservice call /$UAV_NAME/control_manager/goto_altitude 7
-
   #- path:
    #   layout: even-vertical
    #   panes:

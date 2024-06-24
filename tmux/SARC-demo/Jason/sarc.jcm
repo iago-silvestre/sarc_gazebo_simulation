@@ -98,5 +98,87 @@ mas sarc {
       ag-arch: embedded.mas.bridges.jacamo.DefaultEmbeddedAgArch
     }
 
+    agent uav7 : uav.asl{   //agent uav7
+      beliefs: my_number(7) 
+               my_frame_id("world")
+      
+      ag-class: embedded.mas.bridges.jacamo.CyberPhysicalAgent
+      ag-arch: embedded.mas.bridges.jacamo.DefaultEmbeddedAgArch
+    }
 
+    agent autopilot7 : autopilot.asl{
+      beliefs: my_number(7)
+      ag-class: embedded.mas.bridges.jacamo.CyberPhysicalAgent
+      ag-arch: embedded.mas.bridges.jacamo.DefaultEmbeddedAgArch
+    }
+
+    agent uav8 : uav.asl{   //agent uav8
+      beliefs: my_number(8) 
+               my_frame_id("world")
+      
+      ag-class: embedded.mas.bridges.jacamo.CyberPhysicalAgent
+      ag-arch: embedded.mas.bridges.jacamo.DefaultEmbeddedAgArch
+    }
+
+    agent autopilot8 : autopilot.asl{
+      beliefs: my_number(8)
+      ag-class: embedded.mas.bridges.jacamo.CyberPhysicalAgent
+      ag-arch: embedded.mas.bridges.jacamo.DefaultEmbeddedAgArch
+    }
+
+    agent uav9 : uav.asl{   //agent uav9
+      beliefs: my_number(9) 
+               my_frame_id("world")
+      
+      ag-class: embedded.mas.bridges.jacamo.CyberPhysicalAgent
+      ag-arch: embedded.mas.bridges.jacamo.DefaultEmbeddedAgArch
+    }
+
+    agent autopilot9 : autopilot.asl{
+      beliefs: my_number(9)
+      ag-class: embedded.mas.bridges.jacamo.CyberPhysicalAgent
+      ag-arch: embedded.mas.bridges.jacamo.DefaultEmbeddedAgArch
+    }
+
+    agent uav10 : uav.asl{   //agent uav10
+      beliefs: my_number(10) 
+               my_frame_id("world")
+      
+      ag-class: embedded.mas.bridges.jacamo.CyberPhysicalAgent
+      ag-arch: embedded.mas.bridges.jacamo.DefaultEmbeddedAgArch
+    }
+
+    agent autopilot10 : autopilot.asl{
+      beliefs: my_number(10)
+      ag-class: embedded.mas.bridges.jacamo.CyberPhysicalAgent
+      ag-arch: embedded.mas.bridges.jacamo.DefaultEmbeddedAgArch
+    }
+
+    agent uav11 : uav.asl{   //agent uav11
+      beliefs: my_number(11) 
+               my_frame_id("world")
+      
+      ag-class: embedded.mas.bridges.jacamo.CyberPhysicalAgent
+      ag-arch: embedded.mas.bridges.jacamo.DefaultEmbeddedAgArch
+    }
+
+    agent autopilot11 : autopilot.asl{
+      beliefs: my_number(11)
+      ag-class: embedded.mas.bridges.jacamo.CyberPhysicalAgent
+      ag-arch: embedded.mas.bridges.jacamo.DefaultEmbeddedAgArch
+    }
+
+    agent uav12 : uav.asl{   //agent uav12
+      beliefs: my_number(12) 
+               my_frame_id("world")
+      
+      ag-class: embedded.mas.bridges.jacamo.CyberPhysicalAgent
+      ag-arch: embedded.mas.bridges.jacamo.DefaultEmbeddedAgArch
+    }
+
+    agent autopilot12 : autopilot.asl{
+      beliefs: my_number(12)
+      ag-class: embedded.mas.bridges.jacamo.CyberPhysicalAgent
+      ag-arch: embedded.mas.bridges.jacamo.DefaultEmbeddedAgArch
+    }
 }
