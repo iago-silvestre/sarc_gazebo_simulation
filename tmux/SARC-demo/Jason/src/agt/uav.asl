@@ -16,7 +16,7 @@ frl_charges(1).
 cnp_limit(0).
 landing_x(0.0).
 landing_y(0.0).
-wind_speed(20.0).
+wind_speed(-20.0).
 fire_pos(0.0,0.0).
 
 current_position(CX, CY, CZ) :- my_frame_id(Frame_id) & my_number(1) & uav1_ground_truth(header(seq(Seq),stamp(secs(Secs),nsecs(Nsecs)),frame_id(Frame_id)),child_frame_id(CFI),pose(pose(position(x(CX),y(CY),z(CZ)),orientation(x(OX),y((OY)),z((OZ)),w((OW)))),covariance(CV)),twist(twist(linear(x(LX),y(LY),z((LZ))),angular(x(AX),y((AY)),z((AZ)))),covariance(CV2))).
@@ -132,28 +132,6 @@ distance(X,Y,D) :- current_position(CX, CY, CZ) & D=math.sqrt( (CX-X)**2 + (CY-Y
 +!analyze_CNP
    : fireSize(FS) & frl_charges(FRL) & FS > FRL
    <- !cnp( 2,help,(FS-FRL)).
-/*
-+!found_fire
-   : current_position(CX, CY, CZ) & std_altitude(Z) & my_number(N)
-   & fireSize(FS) & frl_charges(FRL) & FS > FRL
-   & current_mission(search)
-   <- .print("Need help for detected fire in : ",CX," , ",CY);
-      .print("FRL Needed: ",(FS-FRL));
-      +fire_pos(CX,CY);
-      !mm::create_mission(combat_fire, 10, [drop_when_interrupted]);
-      +mm::mission_plan(combat_fire,[[CX-2,CY+2,Z+N],[CX+2,CY+2,Z+N],[CX+2,CY-2,Z+N],[CX-2,CY-2,Z+N]]);
-      !mm::run_mission(combat_fire);
-      !cnp( 2,help,(FS-FRL)).
-
-+!found_fire
-   : current_position(CX, CY, CZ) & std_altitude(Z) & my_number(N)
-   & fireSize(FS) & frl_charges(FRL) & FRL >= FS
-   & current_mission(search)
-   <- .print("Found fire in : ",CX," , ",CY,". I don't need help");
-      +fire_pos(CX,CY);
-      !mm::create_mission(combat_fire, 10, [drop_when_interrupted]);
-      +mm::mission_plan(combat_fire,[[CX-2,CY+2,Z+N],[CX+2,CY+2,Z+N],[CX+2,CY-2,Z+N],[CX-2,CY-2,Z+N]]);
-      !mm::run_mission(combat_fire).*/
 
 +mm::mission_state(combat_fire,finished)   // Priority
    : fireSize(FS) & FS==0
