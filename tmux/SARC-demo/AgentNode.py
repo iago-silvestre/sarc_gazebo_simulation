@@ -173,7 +173,7 @@ class WaypointTrackerNode:
 
 
 if __name__ == '__main__':
-    n_drones = 12
+    n_drones = 6
     try:
         waypoint_tracker_node = WaypointTrackerNode(n_drones)
         rospy.spin()

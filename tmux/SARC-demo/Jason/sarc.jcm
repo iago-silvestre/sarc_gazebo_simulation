@@ -97,7 +97,7 @@ mas sarc {
       ag-class: embedded.mas.bridges.jacamo.CyberPhysicalAgent
       ag-arch: embedded.mas.bridges.jacamo.DefaultEmbeddedAgArch
     }
-
+    /*
     agent uav7 : uav.asl{   //agent uav7
       beliefs: my_number(7) 
                my_frame_id("world")
@@ -180,5 +180,5 @@ mas sarc {
       beliefs: my_number(12)
       ag-class: embedded.mas.bridges.jacamo.CyberPhysicalAgent
       ag-arch: embedded.mas.bridges.jacamo.DefaultEmbeddedAgArch
-    }
+    }*/
 }
