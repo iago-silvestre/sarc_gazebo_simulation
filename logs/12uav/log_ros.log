@@ -12,7 +12,7 @@ iteration: 12 ; CPU: 83.71% ; MEM: 4353.33 MB
 iteration: 13 ; CPU: 75.28% ; MEM: 4982.06 MB
 iteration: 14 ; CPU: 85.24% ; MEM: 5870.59 MB
 iteration: 15 ; CPU: 92.80% ; MEM: 6370.85 MB
-iteration: 16 ; CPU: 117.32% ; MEM: 7423.27 MB
+iteration: 16 ; CPU: 100.00% ; MEM: 7423.27 MB
 iteration: 17 ; CPU: 90.16% ; MEM: 7835.46 MB
 iteration: 18 ; CPU: 80.25% ; MEM: 8020.77 MB
 iteration: 19 ; CPU: 81.45% ; MEM: 8073.33 MB
