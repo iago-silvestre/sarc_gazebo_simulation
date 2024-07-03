@@ -358,7 +358,8 @@ public class MyRosMaster extends RosMaster {
             return exec_test_mrs_topic_action_full(args);           
         }
         else 
-        if(actionName.equals("test_mrs_topic_action_light")){
+        //if(actionName.equals("test_mrs_topic_action_light")){
+        if(actionName.equals("path")){
             return exec_test_mrs_topic_action_light(args);           
         }
         else 
