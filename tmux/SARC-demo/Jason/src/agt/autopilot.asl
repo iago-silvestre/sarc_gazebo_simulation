@@ -9,9 +9,11 @@
       embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("sample_roscore","path",[N,L] ).
 
 +uav_lastWP(N) 
-   : current_mission(CM) 
+   : current_mission(CM) & my_agent(Ag)
    <- -progress(CM,_);
-      +progress(CM,N).
+      +progress(CM,N);
+      .send(Ag,signal,update_rem_plan(N,0)).
+      //.send(Ag::mm,achieve,update_rem_plan(N,0)).
 
 +progress(CM,N) 
    : not mission_loop(CM) & mission_plan(CM,Plan) & .length(Plan,N) & my_agent(Ag)

@@ -78,13 +78,21 @@
       !change_state(Id,finished);
       !auto_resume.   
 
-+!default::update_rem_plan(Step,Energy)
++default::update_rem_plan(Step,Energy)
    :  current_mission(Mission) & 
       mission_energy(Mission,EE,US) 
    <- -mission_step(Mission,_);
       +mission_step(Mission,Step);
       -mission_energy(Mission,EE,US);
       +mission_energy(Mission,EE,US+Energy).
+
+/*+!default::update_rem_plan(Step,Energy)
+   :  current_mission(Mission) & 
+      mission_energy(Mission,EE,US) 
+   <- -mission_step(Mission,_);
+      +mission_step(Mission,Step);
+      -mission_energy(Mission,EE,US);
+      +mission_energy(Mission,EE,US+Energy).*/
 
 //+!default::update_rem_plan(Doing,Energy)
 //  <- .print("no current mission to update energy!").
