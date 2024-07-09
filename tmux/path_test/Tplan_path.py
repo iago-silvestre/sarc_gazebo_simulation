@@ -1,0 +1,64 @@
+#!/usr/bin/python3
+
+import rospy
+import random
+import os
+import time
+
+from mrs_msgs.msg import Reference, Path
+
+class Goto:
+
+    def __init__(self):
+        rospy.init_node('goto', anonymous=True)
+        rospy.loginfo('ROS not initialized')
+
+        # Publisher for path
+        self.path_pub = rospy.Publisher('/uav1/trajectory_generation/path', Path, queue_size=10)
+
+        path_msg = Path()
+        path_msg2 = Path()
+
+        path_msg.header.frame_id = ""
+        path_msg.use_heading = True
+        path_msg.fly_now = True
+        path_msg.max_execution_time = 5.0
+        path_msg.max_deviation_from_path = 0.0
+        path_msg.dont_prepend_current_state = False
+        path_msg2 = path_msg
+
+        for i in range(0, 10):
+            point = Reference()
+            point.position.x = i * 10
+            point.position.y = 0
+            point.position.z = 7
+            point.heading = -1.571
+            path_msg.points.append(point)
+
+        for k in range(0, 10):
+            point = Reference()
+            point.position.x = -k * 10
+            point.position.y = 0
+            point.position.z = 7
+            point.heading = 1.571
+            path_msg2.points.append(point)
+
+        try:
+            path_msg.header.stamp = rospy.Time.now()
+            rospy.loginfo(path_msg)
+            self.path_pub.publish(path_msg)
+            
+            time.sleep(10)
+            
+            path_msg2.header.stamp = rospy.Time.now()
+            rospy.loginfo(path_msg2)
+            self.path_pub.publish(path_msg2)
+        except rospy.ROSException as e:
+            rospy.logerr('[SweepingGenerator]: Exception occurred: {}'.format(e))
+
+if __name__ == '__main__':
+    try:
+        goto = Goto()
+        rospy.spin()  # keep the node alive
+    except rospy.ROSInterruptException:
+        pass

@@ -63,15 +63,16 @@ distance(X,Y,D) :- current_position(CX, CY, CZ) & D=math.sqrt( (CX-X)**2 + (CY-Y
     <- .wait(2000);
       +mm::my_ap(AP);
       .print("Started!",CT);
+      embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("sample_roscore","recharge_battery",1);
       !mm::create_mission(right, 10, [drop_when_interrupted]);
-      +mm::mission_plan(right,[[5,0,7,-1.571],[10,0,7,-1.571],[15,0,7,-1.571],[20,0,7,-1.571]]);
+      +mm::mission_plan(right,[[25,0,7,-1.571],[50,0,7,-1.571],[75,0,7,-1.571],[100,0,7,-1.571]]);
       !mm::run_mission(right);
       .wait(15000);
       !left.
 
 +!left
    <- !mm::create_mission(left, 10, [drop_when_interrupted]);
-      +mm::mission_plan(left,[[-5,0,7,1.571],[-10,0,7,1.571],[-15,0,7,1.571],[-20,0,7,1.571]]);
+      +mm::mission_plan(left,[[-25,0,7,1.571],[-50,0,7,1.571],[-75,0,7,1.571],[-100,0,7,1.571]]);
       !mm::run_mission(left).
 
 +!my_missions
