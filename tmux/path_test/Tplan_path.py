@@ -11,7 +11,7 @@ class Goto:
 
     def __init__(self):
         rospy.init_node('goto', anonymous=True)
-        rospy.loginfo('ROS not initialized')
+        rospy.loginfo('ROS node initialized')
 
         # Publisher for path
         self.path_pub = rospy.Publisher('/uav1/trajectory_generation/path', Path, queue_size=0)
