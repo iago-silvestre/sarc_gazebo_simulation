@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import re
 
 # Define the base name pattern for the log files
