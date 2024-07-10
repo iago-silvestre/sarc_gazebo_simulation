@@ -1,0 +1,3408 @@
+header: 
+  seq: 461
+  stamp: 
+    secs: 53
+    nsecs: 744000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.046381454110719596
+---
+header: 
+  seq: 462
+  stamp: 
+    secs: 53
+    nsecs: 844000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.04634574479271792
+---
+header: 
+  seq: 463
+  stamp: 
+    secs: 53
+    nsecs: 944000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.046492866961242406
+---
+header: 
+  seq: 464
+  stamp: 
+    secs: 54
+    nsecs:  44000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.04658780264158136
+---
+header: 
+  seq: 465
+  stamp: 
+    secs: 54
+    nsecs: 144000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.046605685296255174
+---
+header: 
+  seq: 466
+  stamp: 
+    secs: 54
+    nsecs: 244000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.046665536508101194
+---
+header: 
+  seq: 467
+  stamp: 
+    secs: 54
+    nsecs: 344000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.046542095911238805
+---
+header: 
+  seq: 468
+  stamp: 
+    secs: 54
+    nsecs: 444000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.04647786652025016
+---
+header: 
+  seq: 469
+  stamp: 
+    secs: 54
+    nsecs: 544000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.04649326025884886
+---
+header: 
+  seq: 470
+  stamp: 
+    secs: 54
+    nsecs: 644000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.046512635882972296
+---
+header: 
+  seq: 471
+  stamp: 
+    secs: 54
+    nsecs: 744000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.04643657504922501
+---
+header: 
+  seq: 472
+  stamp: 
+    secs: 54
+    nsecs: 844000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.04640777814426615
+---
+header: 
+  seq: 473
+  stamp: 
+    secs: 54
+    nsecs: 944000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0463937668406613
+---
+header: 
+  seq: 474
+  stamp: 
+    secs: 55
+    nsecs:  44000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.046386390712972826
+---
+header: 
+  seq: 475
+  stamp: 
+    secs: 55
+    nsecs: 144000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.046349955011821466
+---
+header: 
+  seq: 476
+  stamp: 
+    secs: 55
+    nsecs: 244000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.04633057375102008
+---
+header: 
+  seq: 477
+  stamp: 
+    secs: 55
+    nsecs: 344000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.046399402428007455
+---
+header: 
+  seq: 478
+  stamp: 
+    secs: 55
+    nsecs: 444000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.04638592843338691
+---
+header: 
+  seq: 479
+  stamp: 
+    secs: 55
+    nsecs: 544000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.04635959492684334
+---
+header: 
+  seq: 480
+  stamp: 
+    secs: 55
+    nsecs: 644000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0463233725263226
+---
+header: 
+  seq: 481
+  stamp: 
+    secs: 55
+    nsecs: 744000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.04633093454669149
+---
+header: 
+  seq: 482
+  stamp: 
+    secs: 55
+    nsecs: 844000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.04654996343482729
+---
+header: 
+  seq: 483
+  stamp: 
+    secs: 55
+    nsecs: 944000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.046578817920565445
+---
+header: 
+  seq: 484
+  stamp: 
+    secs: 56
+    nsecs:  44000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.04655220988381088
+---
+header: 
+  seq: 485
+  stamp: 
+    secs: 56
+    nsecs: 144000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.04661323641332056
+---
+header: 
+  seq: 486
+  stamp: 
+    secs: 56
+    nsecs: 244000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.04663277472874007
+---
+header: 
+  seq: 487
+  stamp: 
+    secs: 56
+    nsecs: 344000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0467038515729798
+---
+header: 
+  seq: 488
+  stamp: 
+    secs: 56
+    nsecs: 444000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.04667901085186256
+---
+header: 
+  seq: 489
+  stamp: 
+    secs: 56
+    nsecs: 544000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.046483475905312426
+---
+header: 
+  seq: 490
+  stamp: 
+    secs: 56
+    nsecs: 644000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.04646164664551228
+---
+header: 
+  seq: 491
+  stamp: 
+    secs: 56
+    nsecs: 744000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.04650641677410806
+---
+header: 
+  seq: 492
+  stamp: 
+    secs: 56
+    nsecs: 844000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.04644937247183236
+---
+header: 
+  seq: 493
+  stamp: 
+    secs: 56
+    nsecs: 944000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.046470141195952046
+---
+header: 
+  seq: 494
+  stamp: 
+    secs: 57
+    nsecs:  44000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0466254743015557
+---
+header: 
+  seq: 495
+  stamp: 
+    secs: 57
+    nsecs: 148000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.04677502024917515
+---
+header: 
+  seq: 496
+  stamp: 
+    secs: 57
+    nsecs: 248000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.04674971603196063
+---
+header: 
+  seq: 497
+  stamp: 
+    secs: 57
+    nsecs: 356000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.04669315166565729
+---
+header: 
+  seq: 498
+  stamp: 
+    secs: 57
+    nsecs: 448000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.046730201888429836
+---
+header: 
+  seq: 499
+  stamp: 
+    secs: 57
+    nsecs: 548000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0466946223170981
+---
+header: 
+  seq: 500
+  stamp: 
+    secs: 57
+    nsecs: 648000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.04648465744076517
+---
+header: 
+  seq: 501
+  stamp: 
+    secs: 57
+    nsecs: 748000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.046371106417821856
+---
+header: 
+  seq: 502
+  stamp: 
+    secs: 57
+    nsecs: 848000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.04622035724148588
+---
+header: 
+  seq: 503
+  stamp: 
+    secs: 57
+    nsecs: 948000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.046210102097573806
+---
+header: 
+  seq: 504
+  stamp: 
+    secs: 58
+    nsecs:  56000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0461652542116682
+---
+header: 
+  seq: 505
+  stamp: 
+    secs: 58
+    nsecs: 156000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.04610597787704601
+---
+header: 
+  seq: 506
+  stamp: 
+    secs: 58
+    nsecs: 256000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0462191385023985
+---
+header: 
+  seq: 507
+  stamp: 
+    secs: 58
+    nsecs: 348000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.046424187038881716
+---
+header: 
+  seq: 508
+  stamp: 
+    secs: 58
+    nsecs: 448000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.04688001794302969
+---
+header: 
+  seq: 509
+  stamp: 
+    secs: 58
+    nsecs: 556000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.04928712072673734
+---
+header: 
+  seq: 510
+  stamp: 
+    secs: 58
+    nsecs: 648000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.054330630333923456
+---
+header: 
+  seq: 511
+  stamp: 
+    secs: 58
+    nsecs: 756000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.06657226381090216
+---
+header: 
+  seq: 512
+  stamp: 
+    secs: 58
+    nsecs: 848000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.08389728730167578
+---
+header: 
+  seq: 513
+  stamp: 
+    secs: 58
+    nsecs: 948000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.11146039505186907
+---
+header: 
+  seq: 514
+  stamp: 
+    secs: 59
+    nsecs:  48000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.14258008384315965
+---
+header: 
+  seq: 515
+  stamp: 
+    secs: 59
+    nsecs: 148000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.1927236764033275
+---
+header: 
+  seq: 516
+  stamp: 
+    secs: 59
+    nsecs: 248000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.24456914220130913
+---
+header: 
+  seq: 517
+  stamp: 
+    secs: 59
+    nsecs: 348000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.3093592175395577
+---
+header: 
+  seq: 518
+  stamp: 
+    secs: 59
+    nsecs: 448000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.3707365741151355
+---
+header: 
+  seq: 519
+  stamp: 
+    secs: 59
+    nsecs: 548000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.45659879558745037
+---
+header: 
+  seq: 520
+  stamp: 
+    secs: 59
+    nsecs: 648000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.5363857311231855
+---
+header: 
+  seq: 521
+  stamp: 
+    secs: 59
+    nsecs: 748000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.6285378689453307
+---
+header: 
+  seq: 522
+  stamp: 
+    secs: 59
+    nsecs: 848000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.7184835304347922
+---
+header: 
+  seq: 523
+  stamp: 
+    secs: 59
+    nsecs: 948000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.8212139776138662
+---
+header: 
+  seq: 524
+  stamp: 
+    secs: 60
+    nsecs:  48000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.9204548619023416
+---
+header: 
+  seq: 525
+  stamp: 
+    secs: 60
+    nsecs: 148000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.0307638467025941
+---
+header: 
+  seq: 526
+  stamp: 
+    secs: 60
+    nsecs: 248000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.1247043935863055
+---
+header: 
+  seq: 527
+  stamp: 
+    secs: 60
+    nsecs: 348000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.2423768777288116
+---
+header: 
+  seq: 528
+  stamp: 
+    secs: 60
+    nsecs: 448000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.3312345226790374
+---
+header: 
+  seq: 529
+  stamp: 
+    secs: 60
+    nsecs: 548000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.436989434501007
+---
+header: 
+  seq: 530
+  stamp: 
+    secs: 60
+    nsecs: 648000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.51869410418797
+---
+header: 
+  seq: 531
+  stamp: 
+    secs: 60
+    nsecs: 748000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.5970108024108522
+---
+header: 
+  seq: 532
+  stamp: 
+    secs: 60
+    nsecs: 848000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.6543784560030346
+---
+header: 
+  seq: 533
+  stamp: 
+    secs: 60
+    nsecs: 948000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.7117504297632864
+---
+header: 
+  seq: 534
+  stamp: 
+    secs: 61
+    nsecs:  48000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.758232421743695
+---
+header: 
+  seq: 535
+  stamp: 
+    secs: 61
+    nsecs: 148000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.7945393488391732
+---
+header: 
+  seq: 536
+  stamp: 
+    secs: 61
+    nsecs: 248000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.8196097360570294
+---
+header: 
+  seq: 537
+  stamp: 
+    secs: 61
+    nsecs: 348000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.8381239626313404
+---
+header: 
+  seq: 538
+  stamp: 
+    secs: 61
+    nsecs: 448000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.8482338651399834
+---
+header: 
+  seq: 539
+  stamp: 
+    secs: 61
+    nsecs: 548000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.852392111846258
+---
+header: 
+  seq: 540
+  stamp: 
+    secs: 61
+    nsecs: 656000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.8505140159837892
+---
+header: 
+  seq: 541
+  stamp: 
+    secs: 61
+    nsecs: 748000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.843790913160348
+---
+header: 
+  seq: 542
+  stamp: 
+    secs: 61
+    nsecs: 848000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.833553765192017
+---
+header: 
+  seq: 543
+  stamp: 
+    secs: 61
+    nsecs: 948000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.819857134509157
+---
+header: 
+  seq: 544
+  stamp: 
+    secs: 62
+    nsecs:  48000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.8018542303131502
+---
+header: 
+  seq: 545
+  stamp: 
+    secs: 62
+    nsecs: 148000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.7835897344195228
+---
+header: 
+  seq: 546
+  stamp: 
+    secs: 62
+    nsecs: 248000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.7621866746540666
+---
+header: 
+  seq: 547
+  stamp: 
+    secs: 62
+    nsecs: 348000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.7411038512771326
+---
+header: 
+  seq: 548
+  stamp: 
+    secs: 62
+    nsecs: 448000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.7173879901849423
+---
+header: 
+  seq: 549
+  stamp: 
+    secs: 62
+    nsecs: 548000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.6934214395316918
+---
+header: 
+  seq: 550
+  stamp: 
+    secs: 62
+    nsecs: 648000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.6717328303109458
+---
+header: 
+  seq: 551
+  stamp: 
+    secs: 62
+    nsecs: 756000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.6488823561989778
+---
+header: 
+  seq: 552
+  stamp: 
+    secs: 62
+    nsecs: 848000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.6284703468601058
+---
+header: 
+  seq: 553
+  stamp: 
+    secs: 62
+    nsecs: 948000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.6076186699990802
+---
+header: 
+  seq: 554
+  stamp: 
+    secs: 63
+    nsecs:  48000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.591114032889281
+---
+header: 
+  seq: 555
+  stamp: 
+    secs: 63
+    nsecs: 156000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.5718883828055081
+---
+header: 
+  seq: 556
+  stamp: 
+    secs: 63
+    nsecs: 248000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.5586233033878556
+---
+header: 
+  seq: 557
+  stamp: 
+    secs: 63
+    nsecs: 348000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.544165714383932
+---
+header: 
+  seq: 558
+  stamp: 
+    secs: 63
+    nsecs: 456000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.533484797434526
+---
+header: 
+  seq: 559
+  stamp: 
+    secs: 63
+    nsecs: 548000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.5264502369334838
+---
+header: 
+  seq: 560
+  stamp: 
+    secs: 63
+    nsecs: 648000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.520980390842787
+---
+header: 
+  seq: 561
+  stamp: 
+    secs: 63
+    nsecs: 748000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.5172927369730247
+---
+header: 
+  seq: 562
+  stamp: 
+    secs: 63
+    nsecs: 848000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.5163240780270197
+---
+header: 
+  seq: 563
+  stamp: 
+    secs: 63
+    nsecs: 948000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.5169104242729692
+---
+header: 
+  seq: 564
+  stamp: 
+    secs: 64
+    nsecs:  48000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.5188333677763588
+---
+header: 
+  seq: 565
+  stamp: 
+    secs: 64
+    nsecs: 148000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.52213296597865
+---
+header: 
+  seq: 566
+  stamp: 
+    secs: 64
+    nsecs: 248000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.5263438817589952
+---
+header: 
+  seq: 567
+  stamp: 
+    secs: 64
+    nsecs: 356000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.5319136540962321
+---
+header: 
+  seq: 568
+  stamp: 
+    secs: 64
+    nsecs: 456000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.5369606784631766
+---
+header: 
+  seq: 569
+  stamp: 
+    secs: 64
+    nsecs: 548000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.5425646912945228
+---
+header: 
+  seq: 570
+  stamp: 
+    secs: 64
+    nsecs: 648000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.5474483648920907
+---
+header: 
+  seq: 571
+  stamp: 
+    secs: 64
+    nsecs: 748000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.5523670841723276
+---
+header: 
+  seq: 572
+  stamp: 
+    secs: 64
+    nsecs: 848000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.5560972961411361
+---
+header: 
+  seq: 573
+  stamp: 
+    secs: 64
+    nsecs: 948000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.560248996033756
+---
+header: 
+  seq: 574
+  stamp: 
+    secs: 65
+    nsecs:  48000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.5631601385952867
+---
+header: 
+  seq: 575
+  stamp: 
+    secs: 65
+    nsecs: 148000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.5653642299873676
+---
+header: 
+  seq: 576
+  stamp: 
+    secs: 65
+    nsecs: 248000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.5671052403731665
+---
+header: 
+  seq: 577
+  stamp: 
+    secs: 65
+    nsecs: 348000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.5683973873485562
+---
+header: 
+  seq: 578
+  stamp: 
+    secs: 65
+    nsecs: 456000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.5691995527374312
+---
+header: 
+  seq: 579
+  stamp: 
+    secs: 65
+    nsecs: 548000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.569341460319353
+---
+header: 
+  seq: 580
+  stamp: 
+    secs: 65
+    nsecs: 656000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.5691527364013036
+---
+header: 
+  seq: 581
+  stamp: 
+    secs: 65
+    nsecs: 748000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.5688767544202356
+---
+header: 
+  seq: 582
+  stamp: 
+    secs: 65
+    nsecs: 848000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.5684279157263863
+---
+header: 
+  seq: 583
+  stamp: 
+    secs: 65
+    nsecs: 948000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.5677234426932714
+---
+header: 
+  seq: 584
+  stamp: 
+    secs: 66
+    nsecs:  48000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.5671719259258365
+---
+header: 
+  seq: 585
+  stamp: 
+    secs: 66
+    nsecs: 148000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.5667262358551164
+---
+header: 
+  seq: 586
+  stamp: 
+    secs: 66
+    nsecs: 248000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.5662454911670738
+---
+header: 
+  seq: 587
+  stamp: 
+    secs: 66
+    nsecs: 348000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.5658722874456927
+---
+header: 
+  seq: 588
+  stamp: 
+    secs: 66
+    nsecs: 448000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.5656363239630517
+---
+header: 
+  seq: 589
+  stamp: 
+    secs: 66
+    nsecs: 548000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.5653197277027366
+---
+header: 
+  seq: 590
+  stamp: 
+    secs: 66
+    nsecs: 648000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.5651135920678403
+---
+header: 
+  seq: 591
+  stamp: 
+    secs: 66
+    nsecs: 748000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.564927705332876
+---
+header: 
+  seq: 592
+  stamp: 
+    secs: 66
+    nsecs: 848000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.564851731773467
+---
+header: 
+  seq: 593
+  stamp: 
+    secs: 66
+    nsecs: 948000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.5649999921161757
+---
+header: 
+  seq: 594
+  stamp: 
+    secs: 67
+    nsecs:  48000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.5650555781734414
+---
+header: 
+  seq: 595
+  stamp: 
+    secs: 67
+    nsecs: 148000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.565150973448552
+---
+header: 
+  seq: 596
+  stamp: 
+    secs: 67
+    nsecs: 248000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.5652743307569876
+---
+header: 
+  seq: 597
+  stamp: 
+    secs: 67
+    nsecs: 348000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.56549490981559
+---
+header: 
+  seq: 598
+  stamp: 
+    secs: 67
+    nsecs: 448000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.5656509631240667
+---
+header: 
+  seq: 599
+  stamp: 
+    secs: 67
+    nsecs: 548000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.5657292275406987
+---
+header: 
+  seq: 600
+  stamp: 
+    secs: 67
+    nsecs: 648000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.5658660725458537
+---
+header: 
+  seq: 601
+  stamp: 
+    secs: 67
+    nsecs: 748000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.5661726744744011
+---
+header: 
+  seq: 602
+  stamp: 
+    secs: 67
+    nsecs: 848000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.566227604620055
+---
+header: 
+  seq: 603
+  stamp: 
+    secs: 67
+    nsecs: 948000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.5663635518725472
+---
+header: 
+  seq: 604
+  stamp: 
+    secs: 68
+    nsecs:  56000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.566443082230885
+---
+header: 
+  seq: 605
+  stamp: 
+    secs: 68
+    nsecs: 148000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.566752506749921
+---
+header: 
+  seq: 606
+  stamp: 
+    secs: 68
+    nsecs: 256000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.5666809075398251
+---
+header: 
+  seq: 607
+  stamp: 
+    secs: 68
+    nsecs: 348000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.5668971082549443
+---
+header: 
+  seq: 608
+  stamp: 
+    secs: 68
+    nsecs: 448000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.5670115941898324
+---
+header: 
+  seq: 609
+  stamp: 
+    secs: 68
+    nsecs: 548000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.5669706971024677
+---
+header: 
+  seq: 610
+  stamp: 
+    secs: 68
+    nsecs: 648000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.5667640055941234
+---
+header: 
+  seq: 611
+  stamp: 
+    secs: 68
+    nsecs: 748000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.5660922548047325
+---
+header: 
+  seq: 612
+  stamp: 
+    secs: 68
+    nsecs: 848000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.5649909826228177
+---
+header: 
+  seq: 613
+  stamp: 
+    secs: 68
+    nsecs: 948000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.5634096229827235
+---
+header: 
+  seq: 614
+  stamp: 
+    secs: 69
+    nsecs:  48000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.5618182812435784
+---
+header: 
+  seq: 615
+  stamp: 
+    secs: 69
+    nsecs: 148000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.5588314948252098
+---
+header: 
+  seq: 616
+  stamp: 
+    secs: 69
+    nsecs: 248000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.5555403726463266
+---
+header: 
+  seq: 617
+  stamp: 
+    secs: 69
+    nsecs: 348000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.5511282916807416
+---
+header: 
+  seq: 618
+  stamp: 
+    secs: 69
+    nsecs: 448000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.5463238188358168
+---
+header: 
+  seq: 619
+  stamp: 
+    secs: 69
+    nsecs: 548000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.5397501844402992
+---
+header: 
+  seq: 620
+  stamp: 
+    secs: 69
+    nsecs: 648000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.532470812233466
+---
+header: 
+  seq: 621
+  stamp: 
+    secs: 69
+    nsecs: 748000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.5229141805365825
+---
+header: 
+  seq: 622
+  stamp: 
+    secs: 69
+    nsecs: 848000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.5126345754202954
+---
+header: 
+  seq: 623
+  stamp: 
+    secs: 69
+    nsecs: 948000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.5003945416702749
+---
+header: 
+  seq: 624
+  stamp: 
+    secs: 70
+    nsecs:  48000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.489141830330354
+---
+header: 
+  seq: 625
+  stamp: 
+    secs: 70
+    nsecs: 148000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.474604871748706
+---
+header: 
+  seq: 626
+  stamp: 
+    secs: 70
+    nsecs: 248000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.4582641614235776
+---
+header: 
+  seq: 627
+  stamp: 
+    secs: 70
+    nsecs: 348000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.4416508404962434
+---
+header: 
+  seq: 628
+  stamp: 
+    secs: 70
+    nsecs: 448000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.4222281126415741
+---
+header: 
+  seq: 629
+  stamp: 
+    secs: 70
+    nsecs: 556000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.401493753691962
+---
+header: 
+  seq: 630
+  stamp: 
+    secs: 70
+    nsecs: 648000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.3815048306236626
+---
+header: 
+  seq: 631
+  stamp: 
+    secs: 70
+    nsecs: 756000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.3583458066767577
+---
+header: 
+  seq: 632
+  stamp: 
+    secs: 70
+    nsecs: 848000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.3362814289618947
+---
+header: 
+  seq: 633
+  stamp: 
+    secs: 70
+    nsecs: 948000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.31154400743145
+---
+header: 
+  seq: 634
+  stamp: 
+    secs: 71
+    nsecs:  48000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.2874685064812448
+---
+header: 
+  seq: 635
+  stamp: 
+    secs: 71
+    nsecs: 148000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.2607043628652594
+---
+header: 
+  seq: 636
+  stamp: 
+    secs: 71
+    nsecs: 248000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.23527900811903
+---
+header: 
+  seq: 637
+  stamp: 
+    secs: 71
+    nsecs: 348000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.2067308004857664
+---
+header: 
+  seq: 638
+  stamp: 
+    secs: 71
+    nsecs: 448000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.1823754429401738
+---
+header: 
+  seq: 639
+  stamp: 
+    secs: 71
+    nsecs: 548000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.1537183638930388
+---
+header: 
+  seq: 640
+  stamp: 
+    secs: 71
+    nsecs: 648000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.1274038002460944
+---
+header: 
+  seq: 641
+  stamp: 
+    secs: 71
+    nsecs: 748000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.0960866297096088
+---
+header: 
+  seq: 642
+  stamp: 
+    secs: 71
+    nsecs: 848000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.0687393836523564
+---
+header: 
+  seq: 643
+  stamp: 
+    secs: 71
+    nsecs: 948000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.0393397927102104
+---
+header: 
+  seq: 644
+  stamp: 
+    secs: 72
+    nsecs:  48000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.0143122698951494
+---
+header: 
+  seq: 645
+  stamp: 
+    secs: 72
+    nsecs: 156000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.9819935095133926
+---
+header: 
+  seq: 646
+  stamp: 
+    secs: 72
+    nsecs: 248000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.9566351915814028
+---
+header: 
+  seq: 647
+  stamp: 
+    secs: 72
+    nsecs: 348000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.9248818376047101
+---
+header: 
+  seq: 648
+  stamp: 
+    secs: 72
+    nsecs: 448000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.8997309448552672
+---
+header: 
+  seq: 649
+  stamp: 
+    secs: 72
+    nsecs: 548000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.8679481431908467
+---
+header: 
+  seq: 650
+  stamp: 
+    secs: 72
+    nsecs: 648000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.8412084105231564
+---
+header: 
+  seq: 651
+  stamp: 
+    secs: 72
+    nsecs: 748000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.8121650714265696
+---
+header: 
+  seq: 652
+  stamp: 
+    secs: 72
+    nsecs: 848000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.7838715992543277
+---
+header: 
+  seq: 653
+  stamp: 
+    secs: 72
+    nsecs: 948000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.7558512311813423
+---
+header: 
+  seq: 654
+  stamp: 
+    secs: 73
+    nsecs:  56000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.7258739082431959
+---
+header: 
+  seq: 655
+  stamp: 
+    secs: 73
+    nsecs: 148000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.6987661723201645
+---
+header: 
+  seq: 656
+  stamp: 
+    secs: 73
+    nsecs: 248000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.6691294559627244
+---
+header: 
+  seq: 657
+  stamp: 
+    secs: 73
+    nsecs: 348000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.6400797279722589
+---
+header: 
+  seq: 658
+  stamp: 
+    secs: 73
+    nsecs: 448000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.6136831707996504
+---
+header: 
+  seq: 659
+  stamp: 
+    secs: 73
+    nsecs: 556000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.5852371101697778
+---
+header: 
+  seq: 660
+  stamp: 
+    secs: 73
+    nsecs: 648000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.561942575390691
+---
+header: 
+  seq: 661
+  stamp: 
+    secs: 73
+    nsecs: 748000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.5340316706885034
+---
+header: 
+  seq: 662
+  stamp: 
+    secs: 73
+    nsecs: 848000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.5083463448514483
+---
+header: 
+  seq: 663
+  stamp: 
+    secs: 73
+    nsecs: 948000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.4790665788552936
+---
+header: 
+  seq: 664
+  stamp: 
+    secs: 74
+    nsecs:  48000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.4516218545187295
+---
+header: 
+  seq: 665
+  stamp: 
+    secs: 74
+    nsecs: 148000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.41932984246422583
+---
+header: 
+  seq: 666
+  stamp: 
+    secs: 74
+    nsecs: 248000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.3963435258055751
+---
+header: 
+  seq: 667
+  stamp: 
+    secs: 74
+    nsecs: 348000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.3676312076257174
+---
+header: 
+  seq: 668
+  stamp: 
+    secs: 74
+    nsecs: 448000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.34520225434852553
+---
+header: 
+  seq: 669
+  stamp: 
+    secs: 74
+    nsecs: 548000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.3182511219356093
+---
+header: 
+  seq: 670
+  stamp: 
+    secs: 74
+    nsecs: 648000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.2964587532331867
+---
+header: 
+  seq: 671
+  stamp: 
+    secs: 74
+    nsecs: 748000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.27214276101874607
+---
+header: 
+  seq: 672
+  stamp: 
+    secs: 74
+    nsecs: 848000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.2500782288030127
+---
+header: 
+  seq: 673
+  stamp: 
+    secs: 74
+    nsecs: 948000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.23015441943937867
+---
+header: 
+  seq: 674
+  stamp: 
+    secs: 75
+    nsecs:  48000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.21000476757754782
+---
+header: 
+  seq: 675
+  stamp: 
+    secs: 75
+    nsecs: 148000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.185422524573089
+---
+header: 
+  seq: 676
+  stamp: 
+    secs: 75
+    nsecs: 248000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.1659507141737731
+---
+header: 
+  seq: 677
+  stamp: 
+    secs: 75
+    nsecs: 348000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.1477761883779624
+---
+header: 
+  seq: 678
+  stamp: 
+    secs: 75
+    nsecs: 456000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.13032244455822425
+---
+header: 
+  seq: 679
+  stamp: 
+    secs: 75
+    nsecs: 556000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.1118240592476706
+---
+header: 
+  seq: 680
+  stamp: 
+    secs: 75
+    nsecs: 648000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.09556321938554209
+---
+header: 
+  seq: 681
+  stamp: 
+    secs: 75
+    nsecs: 748000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.08096039071393911
+---
+header: 
+  seq: 682
+  stamp: 
+    secs: 75
+    nsecs: 856000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.06912666386101013
+---
+header: 
+  seq: 683
+  stamp: 
+    secs: 75
+    nsecs: 948000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.05618873303563404
+---
+header: 
+  seq: 684
+  stamp: 
+    secs: 76
+    nsecs:  48000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.04436504024330151
+---
+header: 
+  seq: 685
+  stamp: 
+    secs: 76
+    nsecs: 148000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.03136174570539247
+---
+header: 
+  seq: 686
+  stamp: 
+    secs: 76
+    nsecs: 248000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.02102613090936155
+---
+header: 
+  seq: 687
+  stamp: 
+    secs: 76
+    nsecs: 348000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.012037149549412662
+---
+header: 
+  seq: 688
+  stamp: 
+    secs: 76
+    nsecs: 448000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.004031717741826504
+---
+header: 
+  seq: 689
+  stamp: 
+    secs: 76
+    nsecs: 548000000
+  frame_id: "uav1/gps_baro_origin"
+value: 0.0019447982088898396
+---
+header: 
+  seq: 690
+  stamp: 
+    secs: 76
+    nsecs: 648000000
+  frame_id: "uav1/gps_baro_origin"
+value: 0.007135527708471306
+---
+header: 
+  seq: 691
+  stamp: 
+    secs: 76
+    nsecs: 756000000
+  frame_id: "uav1/gps_baro_origin"
+value: 0.012075647443375413
+---
+header: 
+  seq: 692
+  stamp: 
+    secs: 76
+    nsecs: 856000000
+  frame_id: "uav1/gps_baro_origin"
+value: 0.015800477138538917
+---
+header: 
+  seq: 693
+  stamp: 
+    secs: 76
+    nsecs: 948000000
+  frame_id: "uav1/gps_baro_origin"
+value: 0.01917694084299883
+---
+header: 
+  seq: 694
+  stamp: 
+    secs: 77
+    nsecs:  48000000
+  frame_id: "uav1/gps_baro_origin"
+value: 0.021695446306799242
+---
+header: 
+  seq: 695
+  stamp: 
+    secs: 77
+    nsecs: 148000000
+  frame_id: "uav1/gps_baro_origin"
+value: 0.02358853026887612
+---
+header: 
+  seq: 696
+  stamp: 
+    secs: 77
+    nsecs: 256000000
+  frame_id: "uav1/gps_baro_origin"
+value: 0.024214137193279545
+---
+header: 
+  seq: 697
+  stamp: 
+    secs: 77
+    nsecs: 348000000
+  frame_id: "uav1/gps_baro_origin"
+value: 0.023721448970298147
+---
+header: 
+  seq: 698
+  stamp: 
+    secs: 77
+    nsecs: 448000000
+  frame_id: "uav1/gps_baro_origin"
+value: 0.022016293811264548
+---
+header: 
+  seq: 699
+  stamp: 
+    secs: 77
+    nsecs: 548000000
+  frame_id: "uav1/gps_baro_origin"
+value: 0.01933441132762196
+---
+header: 
+  seq: 700
+  stamp: 
+    secs: 77
+    nsecs: 648000000
+  frame_id: "uav1/gps_baro_origin"
+value: 0.016136308257529382
+---
+header: 
+  seq: 701
+  stamp: 
+    secs: 77
+    nsecs: 748000000
+  frame_id: "uav1/gps_baro_origin"
+value: 0.012240988142823718
+---
+header: 
+  seq: 702
+  stamp: 
+    secs: 77
+    nsecs: 848000000
+  frame_id: "uav1/gps_baro_origin"
+value: 0.008484135832699552
+---
+header: 
+  seq: 703
+  stamp: 
+    secs: 77
+    nsecs: 948000000
+  frame_id: "uav1/gps_baro_origin"
+value: 0.004580326229239781
+---
+header: 
+  seq: 704
+  stamp: 
+    secs: 78
+    nsecs:  48000000
+  frame_id: "uav1/gps_baro_origin"
+value: 0.0015471590791725173
+---
+header: 
+  seq: 705
+  stamp: 
+    secs: 78
+    nsecs: 156000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.00124182661775779
+---
+header: 
+  seq: 706
+  stamp: 
+    secs: 78
+    nsecs: 248000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0031458137988450256
+---
+header: 
+  seq: 707
+  stamp: 
+    secs: 78
+    nsecs: 348000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.004861866129116095
+---
+header: 
+  seq: 708
+  stamp: 
+    secs: 78
+    nsecs: 456000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.005735029427900157
+---
+header: 
+  seq: 709
+  stamp: 
+    secs: 78
+    nsecs: 548000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.006344749314787877
+---
+header: 
+  seq: 710
+  stamp: 
+    secs: 78
+    nsecs: 648000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.006332400920657197
+---
+header: 
+  seq: 711
+  stamp: 
+    secs: 78
+    nsecs: 748000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.006371907921337987
+---
+header: 
+  seq: 712
+  stamp: 
+    secs: 78
+    nsecs: 848000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.006208467503157017
+---
+header: 
+  seq: 713
+  stamp: 
+    secs: 78
+    nsecs: 948000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.005996345053292002
+---
+header: 
+  seq: 714
+  stamp: 
+    secs: 79
+    nsecs:  56000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0058121046482072294
+---
+header: 
+  seq: 715
+  stamp: 
+    secs: 79
+    nsecs: 148000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0054586347723850235
+---
+header: 
+  seq: 716
+  stamp: 
+    secs: 79
+    nsecs: 248000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.005428226896061275
+---
+header: 
+  seq: 717
+  stamp: 
+    secs: 79
+    nsecs: 348000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.005153172286204084
+---
+header: 
+  seq: 718
+  stamp: 
+    secs: 79
+    nsecs: 448000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.004917384741287867
+---
+header: 
+  seq: 719
+  stamp: 
+    secs: 79
+    nsecs: 548000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.004637769449942248
+---
+header: 
+  seq: 720
+  stamp: 
+    secs: 79
+    nsecs: 656000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0043598264889721005
+---
+header: 
+  seq: 721
+  stamp: 
+    secs: 79
+    nsecs: 748000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0041764602128973715
+---
+header: 
+  seq: 722
+  stamp: 
+    secs: 79
+    nsecs: 856000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.004025388140879907
+---
+header: 
+  seq: 723
+  stamp: 
+    secs: 79
+    nsecs: 956000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0037109306836928496
+---
+header: 
+  seq: 724
+  stamp: 
+    secs: 80
+    nsecs:  48000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.003352558815150619
+---
+header: 
+  seq: 725
+  stamp: 
+    secs: 80
+    nsecs: 148000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0030172891533056705
+---
+header: 
+  seq: 726
+  stamp: 
+    secs: 80
+    nsecs: 256000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0028891535682534597
+---
+header: 
+  seq: 727
+  stamp: 
+    secs: 80
+    nsecs: 356000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.002627269277580984
+---
+header: 
+  seq: 728
+  stamp: 
+    secs: 80
+    nsecs: 448000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.002477312255755537
+---
+header: 
+  seq: 729
+  stamp: 
+    secs: 80
+    nsecs: 548000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0023392690849466406
+---
+header: 
+  seq: 730
+  stamp: 
+    secs: 80
+    nsecs: 648000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.002331329256874439
+---
+header: 
+  seq: 731
+  stamp: 
+    secs: 80
+    nsecs: 748000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.002128784985713215
+---
+header: 
+  seq: 732
+  stamp: 
+    secs: 80
+    nsecs: 848000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0021181088705904587
+---
+header: 
+  seq: 733
+  stamp: 
+    secs: 80
+    nsecs: 948000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0019084304658245183
+---
+header: 
+  seq: 734
+  stamp: 
+    secs: 81
+    nsecs:  48000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0016859810054510253
+---
+header: 
+  seq: 735
+  stamp: 
+    secs: 81
+    nsecs: 148000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0014684265876670902
+---
+header: 
+  seq: 736
+  stamp: 
+    secs: 81
+    nsecs: 248000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0011472777081550885
+---
+header: 
+  seq: 737
+  stamp: 
+    secs: 81
+    nsecs: 356000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.00086085731365764
+---
+header: 
+  seq: 738
+  stamp: 
+    secs: 81
+    nsecs: 448000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0007486535531312781
+---
+header: 
+  seq: 739
+  stamp: 
+    secs: 81
+    nsecs: 548000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0005857486126769184
+---
+header: 
+  seq: 740
+  stamp: 
+    secs: 81
+    nsecs: 648000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0004885399622353953
+---
+header: 
+  seq: 741
+  stamp: 
+    secs: 81
+    nsecs: 756000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.00028828298930858986
+---
+header: 
+  seq: 742
+  stamp: 
+    secs: 81
+    nsecs: 848000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.00022593283225844814
+---
+header: 
+  seq: 743
+  stamp: 
+    secs: 81
+    nsecs: 948000000
+  frame_id: "uav1/gps_baro_origin"
+value: -3.7436817024686586e-05
+---
+header: 
+  seq: 744
+  stamp: 
+    secs: 82
+    nsecs:  48000000
+  frame_id: "uav1/gps_baro_origin"
+value: 1.641899126338018e-05
+---
+header: 
+  seq: 745
+  stamp: 
+    secs: 82
+    nsecs: 148000000
+  frame_id: "uav1/gps_baro_origin"
+value: 0.00026343691714265547
+---
+header: 
+  seq: 746
+  stamp: 
+    secs: 82
+    nsecs: 248000000
+  frame_id: "uav1/gps_baro_origin"
+value: 0.0003946634905310346
+---
+header: 
+  seq: 747
+  stamp: 
+    secs: 82
+    nsecs: 356000000
+  frame_id: "uav1/gps_baro_origin"
+value: 0.0005571005133782084
+---
+header: 
+  seq: 748
+  stamp: 
+    secs: 82
+    nsecs: 456000000
+  frame_id: "uav1/gps_baro_origin"
+value: 0.0007005757496609599
+---
+header: 
+  seq: 749
+  stamp: 
+    secs: 82
+    nsecs: 548000000
+  frame_id: "uav1/gps_baro_origin"
+value: 0.0009216134138275348
+---
+header: 
+  seq: 750
+  stamp: 
+    secs: 82
+    nsecs: 648000000
+  frame_id: "uav1/gps_baro_origin"
+value: 0.0010661850379874176
+---
+header: 
+  seq: 751
+  stamp: 
+    secs: 82
+    nsecs: 756000000
+  frame_id: "uav1/gps_baro_origin"
+value: 0.001003739475195772
+---
+header: 
+  seq: 752
+  stamp: 
+    secs: 82
+    nsecs: 848000000
+  frame_id: "uav1/gps_baro_origin"
+value: 0.0009939872072640703
+---
+header: 
+  seq: 753
+  stamp: 
+    secs: 82
+    nsecs: 948000000
+  frame_id: "uav1/gps_baro_origin"
+value: 0.00102796672925683
+---
+header: 
+  seq: 754
+  stamp: 
+    secs: 83
+    nsecs:  56000000
+  frame_id: "uav1/gps_baro_origin"
+value: 0.0010028993392712292
+---
+header: 
+  seq: 755
+  stamp: 
+    secs: 83
+    nsecs: 148000000
+  frame_id: "uav1/gps_baro_origin"
+value: 0.0007987350259967951
+---
+header: 
+  seq: 756
+  stamp: 
+    secs: 83
+    nsecs: 248000000
+  frame_id: "uav1/gps_baro_origin"
+value: 0.0005373984462629033
+---
+header: 
+  seq: 757
+  stamp: 
+    secs: 83
+    nsecs: 348000000
+  frame_id: "uav1/gps_baro_origin"
+value: 0.0002694690952593065
+---
+header: 
+  seq: 758
+  stamp: 
+    secs: 83
+    nsecs: 448000000
+  frame_id: "uav1/gps_baro_origin"
+value: 0.00021321606847793013
+---
+header: 
+  seq: 759
+  stamp: 
+    secs: 83
+    nsecs: 548000000
+  frame_id: "uav1/gps_baro_origin"
+value: 0.00011682415946652749
+---
+header: 
+  seq: 760
+  stamp: 
+    secs: 83
+    nsecs: 648000000
+  frame_id: "uav1/gps_baro_origin"
+value: 4.3816284013964265e-05
+---
+header: 
+  seq: 761
+  stamp: 
+    secs: 83
+    nsecs: 748000000
+  frame_id: "uav1/gps_baro_origin"
+value: -8.183829524797698e-05
+---
+header: 
+  seq: 762
+  stamp: 
+    secs: 83
+    nsecs: 848000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.00021921287671153666
+---
+header: 
+  seq: 763
+  stamp: 
+    secs: 83
+    nsecs: 956000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.00026305186735612116
+---
+header: 
+  seq: 764
+  stamp: 
+    secs: 84
+    nsecs:  48000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.00013930261089853044
+---
+header: 
+  seq: 765
+  stamp: 
+    secs: 84
+    nsecs: 148000000
+  frame_id: "uav1/gps_baro_origin"
+value: -9.164548130537278e-05
+---
+header: 
+  seq: 766
+  stamp: 
+    secs: 84
+    nsecs: 248000000
+  frame_id: "uav1/gps_baro_origin"
+value: -4.99615672654869e-05
+---
+header: 
+  seq: 767
+  stamp: 
+    secs: 84
+    nsecs: 348000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.00016968206755002064
+---
+header: 
+  seq: 768
+  stamp: 
+    secs: 84
+    nsecs: 448000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0002564584006751757
+---
+header: 
+  seq: 769
+  stamp: 
+    secs: 84
+    nsecs: 548000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.00020434050457780623
+---
+header: 
+  seq: 770
+  stamp: 
+    secs: 84
+    nsecs: 648000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.000187705863247756
+---
+header: 
+  seq: 771
+  stamp: 
+    secs: 84
+    nsecs: 748000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.00026067262996167076
+---
+header: 
+  seq: 772
+  stamp: 
+    secs: 84
+    nsecs: 856000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0002298588973784199
+---
+header: 
+  seq: 773
+  stamp: 
+    secs: 84
+    nsecs: 948000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.00026342915711832744
+---
+header: 
+  seq: 774
+  stamp: 
+    secs: 85
+    nsecs:  48000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.00015613217038244894
+---
+header: 
+  seq: 775
+  stamp: 
+    secs: 85
+    nsecs: 148000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.00027275305671072827
+---
+header: 
+  seq: 776
+  stamp: 
+    secs: 85
+    nsecs: 248000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.00030938926649401785
+---
+header: 
+  seq: 777
+  stamp: 
+    secs: 85
+    nsecs: 348000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0004041008643714488
+---
+header: 
+  seq: 778
+  stamp: 
+    secs: 85
+    nsecs: 448000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0004031489149414403
+---
+header: 
+  seq: 779
+  stamp: 
+    secs: 85
+    nsecs: 556000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.00043166426226271036
+---
+header: 
+  seq: 780
+  stamp: 
+    secs: 85
+    nsecs: 648000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0003512081411323393
+---
+header: 
+  seq: 781
+  stamp: 
+    secs: 85
+    nsecs: 756000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0002779681500208593
+---
+header: 
+  seq: 782
+  stamp: 
+    secs: 85
+    nsecs: 848000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0003590610994190251
+---
+header: 
+  seq: 783
+  stamp: 
+    secs: 85
+    nsecs: 948000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.00021473021282887974
+---
+header: 
+  seq: 784
+  stamp: 
+    secs: 86
+    nsecs:  48000000
+  frame_id: "uav1/gps_baro_origin"
+value: -7.408802860745753e-05
+---
+header: 
+  seq: 785
+  stamp: 
+    secs: 86
+    nsecs: 156000000
+  frame_id: "uav1/gps_baro_origin"
+value: -5.487063360353479e-06
+---
+header: 
+  seq: 786
+  stamp: 
+    secs: 86
+    nsecs: 248000000
+  frame_id: "uav1/gps_baro_origin"
+value: 1.9490486942042574e-05
+---
+header: 
+  seq: 787
+  stamp: 
+    secs: 86
+    nsecs: 348000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.2650852987395116e-05
+---
+header: 
+  seq: 788
+  stamp: 
+    secs: 86
+    nsecs: 448000000
+  frame_id: "uav1/gps_baro_origin"
+value: 5.366271347149064e-05
+---
+header: 
+  seq: 789
+  stamp: 
+    secs: 86
+    nsecs: 548000000
+  frame_id: "uav1/gps_baro_origin"
+value: 5.915109853522569e-05
+---
+header: 
+  seq: 790
+  stamp: 
+    secs: 86
+    nsecs: 648000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.013527173902236e-05
+---
+header: 
+  seq: 791
+  stamp: 
+    secs: 86
+    nsecs: 748000000
+  frame_id: "uav1/gps_baro_origin"
+value: 9.809729695830503e-05
+---
+header: 
+  seq: 792
+  stamp: 
+    secs: 86
+    nsecs: 848000000
+  frame_id: "uav1/gps_baro_origin"
+value: -3.377879357830056e-05
+---
+header: 
+  seq: 793
+  stamp: 
+    secs: 86
+    nsecs: 948000000
+  frame_id: "uav1/gps_baro_origin"
+value: 6.35342933211059e-05
+---
+header: 
+  seq: 794
+  stamp: 
+    secs: 87
+    nsecs:  48000000
+  frame_id: "uav1/gps_baro_origin"
+value: -7.41100703788225e-05
+---
+header: 
+  seq: 795
+  stamp: 
+    secs: 87
+    nsecs: 148000000
+  frame_id: "uav1/gps_baro_origin"
+value: -8.738987463137205e-05
+---
+header: 
+  seq: 796
+  stamp: 
+    secs: 87
+    nsecs: 248000000
+  frame_id: "uav1/gps_baro_origin"
+value: -9.258488476709884e-05
+---
+header: 
+  seq: 797
+  stamp: 
+    secs: 87
+    nsecs: 348000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.00021926489138393178
+---
+header: 
+  seq: 798
+  stamp: 
+    secs: 87
+    nsecs: 448000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0003126182078243148
+---
+header: 
+  seq: 799
+  stamp: 
+    secs: 87
+    nsecs: 548000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.00042867816292228964
+---
+header: 
+  seq: 800
+  stamp: 
+    secs: 87
+    nsecs: 648000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.00045620399246911256
+---
+header: 
+  seq: 801
+  stamp: 
+    secs: 87
+    nsecs: 748000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0005865270111549553
+---
+header: 
+  seq: 802
+  stamp: 
+    secs: 87
+    nsecs: 848000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0005536734372251662
+---
+header: 
+  seq: 803
+  stamp: 
+    secs: 87
+    nsecs: 948000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.000531289115572509
+---
+header: 
+  seq: 804
+  stamp: 
+    secs: 88
+    nsecs:  48000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0005115136086344451
+---
+header: 
+  seq: 805
+  stamp: 
+    secs: 88
+    nsecs: 148000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.00047744847425334655
+---
+header: 
+  seq: 806
+  stamp: 
+    secs: 88
+    nsecs: 248000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0004181727396207186
+---
+header: 
+  seq: 807
+  stamp: 
+    secs: 88
+    nsecs: 348000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.000434369358157903
+---
+header: 
+  seq: 808
+  stamp: 
+    secs: 88
+    nsecs: 456000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0005497759551313514
+---
+header: 
+  seq: 809
+  stamp: 
+    secs: 88
+    nsecs: 548000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.000675755569468279
+---
+header: 
+  seq: 810
+  stamp: 
+    secs: 88
+    nsecs: 648000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.000647882281504447
+---
+header: 
+  seq: 811
+  stamp: 
+    secs: 88
+    nsecs: 748000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0005322467709915863
+---
+header: 
+  seq: 812
+  stamp: 
+    secs: 88
+    nsecs: 848000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0005265985948367197
+---
+header: 
+  seq: 813
+  stamp: 
+    secs: 88
+    nsecs: 948000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0005123153858711066
+---
+header: 
+  seq: 814
+  stamp: 
+    secs: 89
+    nsecs:  56000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.00045600443123201264
+---
+header: 
+  seq: 815
+  stamp: 
+    secs: 89
+    nsecs: 148000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0004895407224627402
+---
+header: 
+  seq: 816
+  stamp: 
+    secs: 89
+    nsecs: 248000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0006116222060229441
+---
+header: 
+  seq: 817
+  stamp: 
+    secs: 89
+    nsecs: 348000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.000563240585709147
+---
+header: 
+  seq: 818
+  stamp: 
+    secs: 89
+    nsecs: 448000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0005488313706977666
+---
+header: 
+  seq: 819
+  stamp: 
+    secs: 89
+    nsecs: 548000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0003429891476707556
+---
+header: 
+  seq: 820
+  stamp: 
+    secs: 89
+    nsecs: 656000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.00032234163275458394
+---
+header: 
+  seq: 821
+  stamp: 
+    secs: 89
+    nsecs: 748000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0003789267195205857
+---
+header: 
+  seq: 822
+  stamp: 
+    secs: 89
+    nsecs: 848000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0003879653501140782
+---
+header: 
+  seq: 823
+  stamp: 
+    secs: 89
+    nsecs: 948000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0003993065641613519
+---
+header: 
+  seq: 824
+  stamp: 
+    secs: 90
+    nsecs:  48000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.000553637670521999
+---
+header: 
+  seq: 825
+  stamp: 
+    secs: 90
+    nsecs: 148000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0005623814048237322
+---
+header: 
+  seq: 826
+  stamp: 
+    secs: 90
+    nsecs: 248000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0007642297453205664
+---
+header: 
+  seq: 827
+  stamp: 
+    secs: 90
+    nsecs: 348000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0009315798988654801
+---
+header: 
+  seq: 828
+  stamp: 
+    secs: 90
+    nsecs: 456000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0008352700580327219
+---
+header: 
+  seq: 829
+  stamp: 
+    secs: 90
+    nsecs: 556000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0006853281273600094
+---
+header: 
+  seq: 830
+  stamp: 
+    secs: 90
+    nsecs: 648000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.00048647645006672093
+---
+header: 
+  seq: 831
+  stamp: 
+    secs: 90
+    nsecs: 748000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0004894237460516285
+---
+header: 
+  seq: 832
+  stamp: 
+    secs: 90
+    nsecs: 848000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0006351274551710519
+---
+header: 
+  seq: 833
+  stamp: 
+    secs: 90
+    nsecs: 956000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.000697745219156332
+---
+header: 
+  seq: 834
+  stamp: 
+    secs: 91
+    nsecs:  48000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0007363010263254628
+---
+header: 
+  seq: 835
+  stamp: 
+    secs: 91
+    nsecs: 156000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0006713785611982549
+---
+header: 
+  seq: 836
+  stamp: 
+    secs: 91
+    nsecs: 248000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0005299889714086845
+---
+header: 
+  seq: 837
+  stamp: 
+    secs: 91
+    nsecs: 348000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0005714059211739201
+---
+header: 
+  seq: 838
+  stamp: 
+    secs: 91
+    nsecs: 456000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0005632338782478983
+---
+header: 
+  seq: 839
+  stamp: 
+    secs: 91
+    nsecs: 548000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0005613246096751456
+---
+header: 
+  seq: 840
+  stamp: 
+    secs: 91
+    nsecs: 648000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.000443388987986646
+---
+header: 
+  seq: 841
+  stamp: 
+    secs: 91
+    nsecs: 748000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.00048024052426686944
+---
+header: 
+  seq: 842
+  stamp: 
+    secs: 91
+    nsecs: 848000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0004149473543807744
+---
+header: 
+  seq: 843
+  stamp: 
+    secs: 91
+    nsecs: 948000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0003138772248267483
+---
+header: 
+  seq: 844
+  stamp: 
+    secs: 92
+    nsecs:  48000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.00010520368394315439
+---
+header: 
+  seq: 845
+  stamp: 
+    secs: 92
+    nsecs: 148000000
+  frame_id: "uav1/gps_baro_origin"
+value: 7.522981828961421e-06
+---
+header: 
+  seq: 846
+  stamp: 
+    secs: 92
+    nsecs: 248000000
+  frame_id: "uav1/gps_baro_origin"
+value: 1.147575803118908e-05
+---
+header: 
+  seq: 847
+  stamp: 
+    secs: 92
+    nsecs: 348000000
+  frame_id: "uav1/gps_baro_origin"
+value: -2.8581990333266686e-05
+---
+header: 
+  seq: 848
+  stamp: 
+    secs: 92
+    nsecs: 448000000
+  frame_id: "uav1/gps_baro_origin"
+value: 5.011185130342394e-05
+---
+header: 
+  seq: 849
+  stamp: 
+    secs: 92
+    nsecs: 556000000
+  frame_id: "uav1/gps_baro_origin"
+value: 1.8780481657807285e-06
+---
+header: 
+  seq: 850
+  stamp: 
+    secs: 92
+    nsecs: 648000000
+  frame_id: "uav1/gps_baro_origin"
+value: 3.9373401246076e-05
+---
+header: 
+  seq: 851
+  stamp: 
+    secs: 92
+    nsecs: 748000000
+  frame_id: "uav1/gps_baro_origin"
+value: 1.3988946953803998e-05
+---
+header: 
+  seq: 852
+  stamp: 
+    secs: 92
+    nsecs: 856000000
+  frame_id: "uav1/gps_baro_origin"
+value: 1.15952461553986e-05
+---
+header: 
+  seq: 853
+  stamp: 
+    secs: 92
+    nsecs: 956000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.000105075107327785
+---
+header: 
+  seq: 854
+  stamp: 
+    secs: 93
+    nsecs:  48000000
+  frame_id: "uav1/gps_baro_origin"
+value: 1.976812865579225e-06
+---
+header: 
+  seq: 855
+  stamp: 
+    secs: 93
+    nsecs: 148000000
+  frame_id: "uav1/gps_baro_origin"
+value: 8.940561870399109e-06
+---
+header: 
+  seq: 856
+  stamp: 
+    secs: 93
+    nsecs: 248000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.9379098208931556e-05
+---
+header: 
+  seq: 857
+  stamp: 
+    secs: 93
+    nsecs: 348000000
+  frame_id: "uav1/gps_baro_origin"
+value: -3.376299573385584e-05
+---
+header: 
+  seq: 858
+  stamp: 
+    secs: 93
+    nsecs: 456000000
+  frame_id: "uav1/gps_baro_origin"
+value: 8.712984458043372e-06
+---
+header: 
+  seq: 859
+  stamp: 
+    secs: 93
+    nsecs: 548000000
+  frame_id: "uav1/gps_baro_origin"
+value: -3.379747010612689e-06
+---
+header: 
+  seq: 860
+  stamp: 
+    secs: 93
+    nsecs: 656000000
+  frame_id: "uav1/gps_baro_origin"
+value: -1.6047370758823562e-05
+---
+header: 
+  seq: 861
+  stamp: 
+    secs: 93
+    nsecs: 748000000
+  frame_id: "uav1/gps_baro_origin"
+value: 7.965175670468921e-05
+---
+header: 
+  seq: 862
+  stamp: 
+    secs: 93
+    nsecs: 848000000
+  frame_id: "uav1/gps_baro_origin"
+value: 1.6219103865774165e-05
+---
+header: 
+  seq: 863
+  stamp: 
+    secs: 93
+    nsecs: 948000000
+  frame_id: "uav1/gps_baro_origin"
+value: 2.0676485315502414e-06
+---
+header: 
+  seq: 864
+  stamp: 
+    secs: 94
+    nsecs:  48000000
+  frame_id: "uav1/gps_baro_origin"
+value: -5.0536402589550725e-05
+---
+header: 
+  seq: 865
+  stamp: 
+    secs: 94
+    nsecs: 148000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.00012916361139145825
+---
+header: 
+  seq: 866
+  stamp: 
+    secs: 94
+    nsecs: 248000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.00027179643698056185
+---
+header: 
+  seq: 867
+  stamp: 
+    secs: 94
+    nsecs: 348000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.00031328078975280177
+---
+header: 
+  seq: 868
+  stamp: 
+    secs: 94
+    nsecs: 448000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.00035199734665955517
+---
+header: 
+  seq: 869
+  stamp: 
+    secs: 94
+    nsecs: 548000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.00037756235216115626
+---
+header: 
+  seq: 870
+  stamp: 
+    secs: 94
+    nsecs: 648000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0005295283663191488
+---
+header: 
+  seq: 871
+  stamp: 
+    secs: 94
+    nsecs: 756000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0006009882310008474
+---
+header: 
+  seq: 872
+  stamp: 
+    secs: 94
+    nsecs: 848000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.000600074707953225
+---
+header: 
+  seq: 873
+  stamp: 
+    secs: 94
+    nsecs: 948000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0005613610039988267
+---
+header: 
+  seq: 874
+  stamp: 
+    secs: 95
+    nsecs:  48000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0005603081948361878
+---
+header: 
+  seq: 875
+  stamp: 
+    secs: 95
+    nsecs: 148000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.000536003152494011
+---
+header: 
+  seq: 876
+  stamp: 
+    secs: 95
+    nsecs: 248000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0005662752611225439
+---
+header: 
+  seq: 877
+  stamp: 
+    secs: 95
+    nsecs: 348000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0006201337175587576
+---
+header: 
+  seq: 878
+  stamp: 
+    secs: 95
+    nsecs: 448000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0005057280410495225
+---
+header: 
+  seq: 879
+  stamp: 
+    secs: 95
+    nsecs: 548000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.0004137254051729955
+---
+header: 
+  seq: 880
+  stamp: 
+    secs: 95
+    nsecs: 648000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.000237406943887676
+---
+header: 
+  seq: 881
+  stamp: 
+    secs: 95
+    nsecs: 748000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.00018943270066152707
+---
+header: 
+  seq: 882
+  stamp: 
+    secs: 95
+    nsecs: 848000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.00010593710411452343
+---
+header: 
+  seq: 883
+  stamp: 
+    secs: 95
+    nsecs: 948000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.00017093985970697808
+---
+header: 
+  seq: 884
+  stamp: 
+    secs: 96
+    nsecs:  56000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.00010094623660056782
+---
+header: 
+  seq: 885
+  stamp: 
+    secs: 96
+    nsecs: 148000000
+  frame_id: "uav1/gps_baro_origin"
+value: -6.642148996792735e-05
+---
+header: 
+  seq: 886
+  stamp: 
+    secs: 96
+    nsecs: 248000000
+  frame_id: "uav1/gps_baro_origin"
+value: -0.00010544645887868858
+---

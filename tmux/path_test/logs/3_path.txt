@@ -1,0 +1,180 @@
+header: 
+  seq: 1
+  stamp: 
+    secs: 126
+    nsecs: 880000000
+  frame_id: ''
+input_id: 0
+use_heading: True
+fly_now: True
+stop_at_waypoints: False
+loop: False
+max_execution_time: 5.0
+max_deviation_from_path: 0.0
+dont_prepend_current_state: False
+override_constraints: False
+override_max_velocity_horizontal: 0.0
+override_max_acceleration_horizontal: 0.0
+override_max_jerk_horizontal: 0.0
+override_max_velocity_vertical: 0.0
+override_max_acceleration_vertical: 0.0
+override_max_jerk_vertical: 0.0
+relax_heading: False
+points: 
+  - 
+    position: 
+      x: 0.0
+      y: 0.0
+      z: 7.0
+    heading: -1.571
+  - 
+    position: 
+      x: 5.0
+      y: 0.0
+      z: 7.0
+    heading: -1.571
+  - 
+    position: 
+      x: 10.0
+      y: 0.0
+      z: 7.0
+    heading: -1.571
+  - 
+    position: 
+      x: 15.0
+      y: 0.0
+      z: 7.0
+    heading: -1.571
+  - 
+    position: 
+      x: 20.0
+      y: 0.0
+      z: 7.0
+    heading: -1.571
+  - 
+    position: 
+      x: 25.0
+      y: 0.0
+      z: 7.0
+    heading: -1.571
+  - 
+    position: 
+      x: 30.0
+      y: 0.0
+      z: 7.0
+    heading: -1.571
+  - 
+    position: 
+      x: 35.0
+      y: 0.0
+      z: 7.0
+    heading: -1.571
+  - 
+    position: 
+      x: 40.0
+      y: 0.0
+      z: 7.0
+    heading: -1.571
+  - 
+    position: 
+      x: 45.0
+      y: 0.0
+      z: 7.0
+    heading: -1.571
+  - 
+    position: 
+      x: 50.0
+      y: 0.0
+      z: 7.0
+    heading: -1.571
+---
+header: 
+  seq: 2
+  stamp: 
+    secs: 136
+    nsecs: 884000000
+  frame_id: ''
+input_id: 0
+use_heading: True
+fly_now: True
+stop_at_waypoints: False
+loop: False
+max_execution_time: 5.0
+max_deviation_from_path: 0.0
+dont_prepend_current_state: False
+override_constraints: False
+override_max_velocity_horizontal: 0.0
+override_max_acceleration_horizontal: 0.0
+override_max_jerk_horizontal: 0.0
+override_max_velocity_vertical: 0.0
+override_max_acceleration_vertical: 0.0
+override_max_jerk_vertical: 0.0
+relax_heading: False
+points: 
+  - 
+    position: 
+      x: 50.0
+      y: 0.0
+      z: 7.0
+    heading: 0.0
+  - 
+    position: 
+      x: 50.0
+      y: -5.0
+      z: 7.0
+    heading: 0.0
+  - 
+    position: 
+      x: 50.0
+      y: -10.0
+      z: 7.0
+    heading: 0.0
+  - 
+    position: 
+      x: 50.0
+      y: -15.0
+      z: 7.0
+    heading: 0.0
+  - 
+    position: 
+      x: 50.0
+      y: -20.0
+      z: 7.0
+    heading: 0.0
+  - 
+    position: 
+      x: 50.0
+      y: -25.0
+      z: 7.0
+    heading: 0.0
+  - 
+    position: 
+      x: 50.0
+      y: -30.0
+      z: 7.0
+    heading: 0.0
+  - 
+    position: 
+      x: 50.0
+      y: -35.0
+      z: 7.0
+    heading: 0.0
+  - 
+    position: 
+      x: 50.0
+      y: -40.0
+      z: 7.0
+    heading: 0.0
+  - 
+    position: 
+      x: 50.0
+      y: -45.0
+      z: 7.0
+    heading: 0.0
+  - 
+    position: 
+      x: 50.0
+      y: -50.0
+      z: 7.0
+    heading: 0.0
+---
