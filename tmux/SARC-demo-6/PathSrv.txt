@@ -1,0 +1,85 @@
+[INFO] [1714648946.849779, 0.000000]: ros not initialized
+path: 
+  header: 
+    seq: 0
+    stamp: 
+      secs: 0
+      nsecs:         0
+    frame_id: ''
+  input_id: 0
+  use_heading: True
+  fly_now: True
+  stop_at_waypoints: False
+  loop: False
+  max_execution_time: 5.0
+  max_deviation_from_path: 0.0
+  dont_prepend_current_state: False
+  override_constraints: False
+  override_max_velocity_horizontal: 0.0
+  override_max_acceleration_horizontal: 0.0
+  override_max_jerk_horizontal: 0.0
+  override_max_velocity_vertical: 0.0
+  override_max_acceleration_vertical: 0.0
+  override_max_jerk_vertical: 0.0
+  relax_heading: False
+  points: 
+    - 
+      position: 
+        x: 0
+        y: 0.5
+        z: 5
+      heading: 0
+    - 
+      position: 
+        x: 2
+        y: -0.5
+        z: 5
+      heading: 0
+    - 
+      position: 
+        x: 4
+        y: 0.5
+        z: 5
+      heading: 0
+    - 
+      position: 
+        x: 6
+        y: -0.5
+        z: 5
+      heading: 0
+    - 
+      position: 
+        x: 8
+        y: 0.5
+        z: 5
+      heading: 0
+    - 
+      position: 
+        x: 10
+        y: -0.5
+        z: 5
+      heading: 0
+    - 
+      position: 
+        x: 12
+        y: 0.5
+        z: 5
+      heading: 0
+    - 
+      position: 
+        x: 14
+        y: -0.5
+        z: 5
+      heading: 0
+    - 
+      position: 
+        x: 16
+        y: 0.5
+        z: 5
+      heading: 0
+    - 
+      position: 
+        x: 18
+        y: -0.5
+        z: 5
+      heading: 0

@@ -5,13 +5,13 @@
       connectionString: ws://localhost:9090     
       className: DefaultRos4EmbeddedMas  
   perceptionTopics:
-      - topicName: failure_uav3 
+      - topicName: failure_uav5 
         topicType: std_msgs/Int8 
       - topicName: block 
         topicType: std_msgs/Int8 
       - topicName: unblock 
         topicType: std_msgs/Int8 
-      - topicName: uav3/ground_truth
+      - topicName: uav5/ground_truth
         topicType: nav_msgs/Odometry
       - topicName: landing_x
         topicType: std_msgs/Float64
@@ -20,7 +20,7 @@
   actions:       
     serviceRequestActions: 
         - actionName: land 
-          serviceName: /uav3/uav_manager/land 
+          serviceName: /uav5/uav_manager/land 
     topicWritingActions:          
        - actionName: fightFire              
          topicName: /fightFire

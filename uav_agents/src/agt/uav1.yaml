@@ -1,16 +1,16 @@
-- device_id: roscore1 #device identifier. It is up to the designer to choose this name.
+- device_id: roscore1 
   className:  MyRosMaster
   microcontroller: 
-      id: ros1 #microcontroller identifier. It is up to the designer to choose this name.
-      connectionString: ws://localhost:9090 #connection with ROS      
+      id: ros1 
+      connectionString: ws://localhost:9090     
       className: DefaultRos4EmbeddedMas  
   perceptionTopics:
-      - topicName: failure_uav1 #topico do rospy
-        topicType: std_msgs/Int8 #type do rospy
-      - topicName: block #topico do rospy
-        topicType: std_msgs/Int8 #type do rospy
-      - topicName: unblock #topico do rospy
-        topicType: std_msgs/Int8 #type do rospy
+      - topicName: failure_uav1 
+        topicType: std_msgs/Int8 
+      - topicName: block 
+        topicType: std_msgs/Int8 
+      - topicName: unblock 
+        topicType: std_msgs/Int8 
       - topicName: uav1/ground_truth
         topicType: nav_msgs/Odometry
       - topicName: landing_x
@@ -18,32 +18,12 @@
       - topicName: landing_y
         topicType: std_msgs/Float64
   actions:       
-    serviceRequestActions: #this example has only service-based actions
-        - actionName: land #action name (from agent's perspective)
-          serviceName: /uav1/uav_manager/land #service called to execute the action
-        - actionName: pathSrv #action name (from agent's perspective)
-          serviceName: /uav1/trajectory_generation/path #service called to execute the action
-          params:
-           - header:
-              - seq
-              - stamp
-              - frame_id
-           - input_id
+    serviceRequestActions: 
+        - actionName: land 
+          serviceName: /uav1/uav_manager/land 
     topicWritingActions:          
-      # - actionName: update_value1
-      #   topicName: /value1
-      #   topicType: std_msgs/Int32
-      # - actionName: update_value2              
-      #   topicName: /value2
-      #   topicType: std_msgs/Int32
        - actionName: fightFire              
          topicName: /fightFire
          topicType: std_msgs/Float64 
-      - actionName: path          
-         topicName: /uav1/trajectory_generation/path
-         topicType: mrs_msgs/Path
-       #- actionName: adf              
-       #  topicName: /agent_detected_failure_uav1
-       #  topicType: std_msgs/String 
 
 

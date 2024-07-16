@@ -15,6 +15,8 @@ class Goto:
 
         # Publisher for path
         self.path_pub = rospy.Publisher('/uav1/trajectory_generation/path', Path, queue_size=0)
+        self.path_pub2 = rospy.Publisher('/uav2/trajectory_generation/path', Path, queue_size=0)
+        self.path_pub3 = rospy.Publisher('/uav3/trajectory_generation/path', Path, queue_size=0)
 
         path_msg = Path()
         path_msg2= Path()

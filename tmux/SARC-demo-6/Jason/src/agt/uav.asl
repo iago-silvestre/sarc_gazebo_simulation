@@ -22,12 +22,6 @@ current_position(CX, CY, CZ) :- my_frame_id(Frame_id) & my_number(3) & uav3_grou
 current_position(CX, CY, CZ) :- my_frame_id(Frame_id) & my_number(4) & uav4_ground_truth(header(seq(Seq),stamp(secs(Secs),nsecs(Nsecs)),frame_id(Frame_id)),child_frame_id(CFI),pose(pose(position(x(CX),y(CY),z(CZ)),orientation(x(OX),y((OY)),z((OZ)),w((OW)))),covariance(CV)),twist(twist(linear(x(LX),y(LY),z((LZ))),angular(x(AX),y((AY)),z((AZ)))),covariance(CV2))).
 current_position(CX, CY, CZ) :- my_frame_id(Frame_id) & my_number(5) & uav5_ground_truth(header(seq(Seq),stamp(secs(Secs),nsecs(Nsecs)),frame_id(Frame_id)),child_frame_id(CFI),pose(pose(position(x(CX),y(CY),z(CZ)),orientation(x(OX),y((OY)),z((OZ)),w((OW)))),covariance(CV)),twist(twist(linear(x(LX),y(LY),z((LZ))),angular(x(AX),y((AY)),z((AZ)))),covariance(CV2))).
 current_position(CX, CY, CZ) :- my_frame_id(Frame_id) & my_number(6) & uav6_ground_truth(header(seq(Seq),stamp(secs(Secs),nsecs(Nsecs)),frame_id(Frame_id)),child_frame_id(CFI),pose(pose(position(x(CX),y(CY),z(CZ)),orientation(x(OX),y((OY)),z((OZ)),w((OW)))),covariance(CV)),twist(twist(linear(x(LX),y(LY),z((LZ))),angular(x(AX),y((AY)),z((AZ)))),covariance(CV2))).
-current_position(CX, CY, CZ) :- my_frame_id(Frame_id) & my_number(7) & uav7_ground_truth(header(seq(Seq),stamp(secs(Secs),nsecs(Nsecs)),frame_id(Frame_id)),child_frame_id(CFI),pose(pose(position(x(CX),y(CY),z(CZ)),orientation(x(OX),y((OY)),z((OZ)),w((OW)))),covariance(CV)),twist(twist(linear(x(LX),y(LY),z((LZ))),angular(x(AX),y((AY)),z((AZ)))),covariance(CV2))).
-current_position(CX, CY, CZ) :- my_frame_id(Frame_id) & my_number(8) & uav8_ground_truth(header(seq(Seq),stamp(secs(Secs),nsecs(Nsecs)),frame_id(Frame_id)),child_frame_id(CFI),pose(pose(position(x(CX),y(CY),z(CZ)),orientation(x(OX),y((OY)),z((OZ)),w((OW)))),covariance(CV)),twist(twist(linear(x(LX),y(LY),z((LZ))),angular(x(AX),y((AY)),z((AZ)))),covariance(CV2))).
-current_position(CX, CY, CZ) :- my_frame_id(Frame_id) & my_number(9) & uav9_ground_truth(header(seq(Seq),stamp(secs(Secs),nsecs(Nsecs)),frame_id(Frame_id)),child_frame_id(CFI),pose(pose(position(x(CX),y(CY),z(CZ)),orientation(x(OX),y((OY)),z((OZ)),w((OW)))),covariance(CV)),twist(twist(linear(x(LX),y(LY),z((LZ))),angular(x(AX),y((AY)),z((AZ)))),covariance(CV2))).
-current_position(CX, CY, CZ) :- my_frame_id(Frame_id) & my_number(10) & uav10_ground_truth(header(seq(Seq),stamp(secs(Secs),nsecs(Nsecs)),frame_id(Frame_id)),child_frame_id(CFI),pose(pose(position(x(CX),y(CY),z(CZ)),orientation(x(OX),y((OY)),z((OZ)),w((OW)))),covariance(CV)),twist(twist(linear(x(LX),y(LY),z((LZ))),angular(x(AX),y((AY)),z((AZ)))),covariance(CV2))).
-current_position(CX, CY, CZ) :- my_frame_id(Frame_id) & my_number(11) & uav11_ground_truth(header(seq(Seq),stamp(secs(Secs),nsecs(Nsecs)),frame_id(Frame_id)),child_frame_id(CFI),pose(pose(position(x(CX),y(CY),z(CZ)),orientation(x(OX),y((OY)),z((OZ)),w((OW)))),covariance(CV)),twist(twist(linear(x(LX),y(LY),z((LZ))),angular(x(AX),y((AY)),z((AZ)))),covariance(CV2))).
-current_position(CX, CY, CZ) :- my_frame_id(Frame_id) & my_number(12) & uav12_ground_truth(header(seq(Seq),stamp(secs(Secs),nsecs(Nsecs)),frame_id(Frame_id)),child_frame_id(CFI),pose(pose(position(x(CX),y(CY),z(CZ)),orientation(x(OX),y((OY)),z((OZ)),w((OW)))),covariance(CV)),twist(twist(linear(x(LX),y(LY),z((LZ))),angular(x(AX),y((AY)),z((AZ)))),covariance(CV2))).
 
 combat_traj(CT) :- wind_speed(WS) & WS >=0.0 & fire_pos(CX,CY) & std_altitude(Z)  & my_number(N)
                   & CT= [[CX-2,CY+2,Z+N],[CX+2,CY+2,Z+N],[CX+2,CY-2,Z+N],[CX-2,CY-2,Z+N]].
@@ -42,7 +36,7 @@ distance(X,Y,D) :- current_position(CX, CY, CZ) & D=math.sqrt( (CX-X)**2 + (CY-Y
 
 +fire_detection(N) : N>=22000 <- !found_fire.
 +battery(B) : B<=30.0 & not(low_batt) <- !low_battery.
-//////////////// Start
+
 !start.
 
 +fireSize(0)
@@ -58,25 +52,25 @@ distance(X,Y,D) :- current_position(CX, CY, CZ) & D=math.sqrt( (CX-X)**2 + (CY-Y
     <- .wait(2000);
       +mm::my_ap(AP);
       .print("Started!",CT);
-      !calculate_trajectory;//trajectory//!calculate_area;//!calculate_waypoints(1, []);// pode ser unido com os outros
+      !calculate_trajectory;
       !my_missions.
 
 +!my_missions
-   :  waypoints_list(L) & my_number(N) //& N==1
-   <- !mm::create_mission(search, 10, []); // scan
-      +mm::mission_plan(search,L); // a list of waypoints
+   :  waypoints_list(L) & my_number(N) 
+   <- !mm::create_mission(search, 10, []); 
+      +mm::mission_plan(search,L); 
       !mm::run_mission(search).
 
 +!my_missions
    :  waypoints_list(L) & my_number(N) & not (N==1)
-   <- !mm::create_mission(search, 10, []); // scan
-      +mm::mission_plan(search,L); // a list of waypoints
+   <- !mm::create_mission(search, 10, []); 
+      +mm::mission_plan(search,L); 
       !mm::run_mission(search).
 
 +frl_charges(0)
    : my_number(N)
    <- .print(" No more Fire Retardant charges, going to recharge");
-      !mm::create_mission(low_frl, 10, []); // Recharge Battery
+      !mm::create_mission(low_frl, 10, []); 
       +mm::mission_plan(low_frl,[[0,0,N*5]]);
       !mm::run_mission(low_frl).
 
@@ -84,7 +78,7 @@ distance(X,Y,D) :- current_position(CX, CY, CZ) & D=math.sqrt( (CX-X)**2 + (CY-Y
    : my_number(N)
    <- +low_batt;
       .print(" Low Battery, going back to Recharge");
-      !mm::create_mission(low_batt, 10, []); // Recharge Battery
+      !mm::create_mission(low_batt, 10, []); 
       +mm::mission_plan(low_batt,[[0,0,N*5]]);
       !mm::run_mission(low_batt).
 
@@ -93,21 +87,20 @@ distance(X,Y,D) :- current_position(CX, CY, CZ) & D=math.sqrt( (CX-X)**2 + (CY-Y
    <- .print(" Recharging Battery");
       .wait(10000);
       embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("sample_roscore","recharge_battery",N);
-      .print(" Recharged!!");  //Still need to publish rechargeBattery topic
+      .print(" Recharged!!");  
       -low_batt.
       
-
 +mm::mission_state(low_frl,finished) 
    <- .print(" Recharging FRL");
       .wait(10000);
-      .print(" Recharged!!");  //Still need to publish rechargeBattery topic
+      .print(" Recharged!!");  
       -+frl_charges(4);
       !analyzeFire.
 
 +!analyzeFire
    : fireSize(FS) & FS >0 & fire_pos(CX,CY) & std_altitude(Z) & my_number(N)
    <- .print(" Going back to fire!!");
-      !mm::create_mission(goto_fire, 10, []); // gotofire
+      !mm::create_mission(goto_fire, 10, []); 
       +mm::mission_plan(goto_fire,[[CX,CY,Z+N]]);
       !mm::run_mission(goto_fire).
 
@@ -128,7 +121,7 @@ distance(X,Y,D) :- current_position(CX, CY, CZ) & D=math.sqrt( (CX-X)**2 + (CY-Y
    : fireSize(FS) & frl_charges(FRL) & FS > FRL
    <- !cnp( 2,help,(FS-FRL)).
 
-+mm::mission_state(combat_fire,finished)   // Priority
++mm::mission_state(combat_fire,finished)  
    : fireSize(FS) & FS==0
    <- .print("Fire Extinguished").
 
@@ -145,24 +138,23 @@ distance(X,Y,D) :- current_position(CX, CY, CZ) & D=math.sqrt( (CX-X)**2 + (CY-Y
 
 price(_Service,X,Y,R) :- 
    current_position(X, Y, CZ) & 
-   frl_charges(R). //math.floor(R*20)+1.
-// answer to Call For Proposal
+   frl_charges(R).
 @c1 +cfp(CNPId,Task)[source(A)]
    :  price(Task,X,Y,R)
-   <- +proposal(CNPId,Task,X,Y,R); // remember my proposal
+   <- +proposal(CNPId,Task,X,Y,R); 
       .send(A,tell,propose(CNPId,X,Y,R)).
 
 @r1 +accept_proposal(CNPId)[source(A)]
    :  proposal(CNPId,Task,X,Y,R) & fire_pos(CX,CY) & std_altitude(Z) & my_number(N)
    <- .print("My proposal '",R,"' was accepted for CNP ",CNPId, ", task ",Task," for agent ",A,"!");
       .print("Going to fire in : ",CX," , ",CY);  
-      !mm::create_mission(goto_fire, 10, []); // gotofire
+      !mm::create_mission(goto_fire, 10, []); 
       +mm::mission_plan(goto_fire,[[CX,CY,Z+N]]);
       !mm::run_mission(goto_fire).
    
 @r2 +reject_proposal(CNPId)
    <- .print("My proposal was not accepted for CNP ",CNPId, ".");
-      -proposal(CNPId,_,_,_,_). // clear memory
+      -proposal(CNPId,_,_,_,_). 
 
 +!cnp(Id,Task,TR)
    <- !call(Id,Task);
@@ -172,7 +164,7 @@ price(_Service,X,Y,R) :-
    : fire_pos(CX,CY)
    <- .broadcast(tell,cfp(Id,Task));
       .broadcast(tell,fire_pos(CX,CY)).
-+!bids(Id,LOS,TR) // the deadline of the CNP is now + 3 seconds (or all proposals received)
++!bids(Id,LOS,TR) 
     : nb_participants(LP)
    <- .wait(all_proposals_received(Id,LP), 3000, _);
       .findall( offer(U,R,D,A),
@@ -182,7 +174,7 @@ price(_Service,X,Y,R) :-
       .print("Offers are ",LOS).
 
 +!result(_,[],_).
-+!result(CNPId,[offer(_,R,_,WAg)|T],RT) // announce result to the winner
++!result(CNPId,[offer(_,R,_,WAg)|T],RT) 
     : RT > 0
    <- .send(WAg,tell,accept_proposal(CNPId));
       ND = RT-R;
@@ -191,20 +183,17 @@ price(_Service,X,Y,R) :-
           .member(offer(N1,R1,D1,A1),T) & NU=math.abs(ND-R1),
           LO);
       .sort(LO,LOS);
-      //.print("New list of offers ",LOS);
       !result(CNPId,LOS,ND).
-+!result(CNPId,[offer(_,_,_,LAg)|T],RT) // announce to others
++!result(CNPId,[offer(_,_,_,LAg)|T],RT) 
    <- .send(LAg,tell,reject_proposal(CNPId));
       !result(CNPId,T,RT).
 
-/* Initial beliefs and rules */
-
-all_proposals_received(CNPId,NP) :-              // NP = number of participants
-     .count(propose(CNPId,_,_,_)[source(_)], NO) &   // number of proposes received
-     .count(refuse(CNPId)[source(_)], NR) &      // number of refusals received
+all_proposals_received(CNPId,NP) :-              
+     .count(propose(CNPId,_,_,_)[source(_)], NO) &   
+     .count(refuse(CNPId)[source(_)], NR) &      
      NP = NO + NR.
 
-+mm::mission_state(goto_fire,finished)  //goto fire finished
++mm::mission_state(goto_fire,finished) 
    : fire_pos(CX,CY) & std_altitude(Z) & my_number(N) & combat_traj(CT)
    <- .print("Go to fire finished!");
       !mm::create_mission(combat_fire, 10, [drop_when_interrupted]);
@@ -223,7 +212,7 @@ all_proposals_received(CNPId,NP) :-              // NP = number of participants
    :  my_landing_position(LAX, LAY) & std_altitude(Z)
       & .count(finished_trajectory(_), C) & nb_participants(C)
    <- .print("All finished, going to land position");
-      !mm::create_mission(goto_land, 10, []); // gotofire
+      !mm::create_mission(goto_land, 10, []); 
       +mm::mission_plan(goto_land,[[LAX,LAY,Z]]);
       !mm::run_mission(goto_land).
 
@@ -250,7 +239,6 @@ all_proposals_received(CNPId,NP) :-              // NP = number of participants
       My_landing_x = LX - R/2 + LndRectangleWidth/2 + ((N-1) mod LndNumOfColumns)*LndRectangleWidth;
       My_landing_y = LY - R/2 + LndRectangleHeight/2 + (math.floor((N-1)/LndNumOfColumns))*LndRectangleHeight;
       +my_landing_position(My_landing_x, My_landing_y);
-      //////////////// Calculating area
       .print("Calculating area");
       +status("calculating_area");
       AreaNumOfColumns = NumOfUavs/2;
@@ -261,10 +249,8 @@ all_proposals_received(CNPId,NP) :-              // NP = number of participants
       Y1 = CY - H/2 + (math.floor((N-1)/AreaNumOfColumns))*AreaRectangleHeight;
       Y2 = CY - H/2 + (math.floor((N-1)/AreaNumOfColumns) + 1)*AreaRectangleHeight;
       +my_area(X1, X2, Y1, Y2);
-      //////////////// Calculating waypoints
       !calculate_waypoints(1, []).
 
-//////////////// Calculating waypoints
 +!calculate_waypoints(C, OldWayList)
     :   camera_range(CR)
         & my_area(X1, X2, Y1, Y2)
@@ -287,7 +273,7 @@ all_proposals_received(CNPId,NP) :-              // NP = number of participants
         +waypoints_list_len(.length(WayList));
         .print("Waypoints list: ", WayList).
 
-+mm::mission_state(Id,S) // "callback" when a mission is finished
++mm::mission_state(Id,S) 
    <- .print("Mission ",Id," state is ",S).
 
 +mm::current_mission(Id)

@@ -3,8 +3,11 @@
 current_mission("None").
 status("None").
 world_area(100, 100, 0, 0).
-num_of_uavs(6).
-nb_participants(5).
+//world_area(250, 250, 0, 0).
+//num_of_uavs(6).
+//nb_participants(5).
+num_of_uavs(12).
+nb_participants(11).
 camera_range(5).
 std_altitude(6.25).
 std_heading(0.0).
@@ -13,8 +16,6 @@ frl_charges(1).
 cnp_limit(0).
 landing_x(0.0).
 landing_y(0.0).
-wind_speed(-20.0).
-fire_pos(0.0,0.0).
 
 current_position(CX, CY, CZ) :- my_frame_id(Frame_id) & my_number(1) & uav1_ground_truth(header(seq(Seq),stamp(secs(Secs),nsecs(Nsecs)),frame_id(Frame_id)),child_frame_id(CFI),pose(pose(position(x(CX),y(CY),z(CZ)),orientation(x(OX),y((OY)),z((OZ)),w((OW)))),covariance(CV)),twist(twist(linear(x(LX),y(LY),z((LZ))),angular(x(AX),y((AY)),z((AZ)))),covariance(CV2))).
 current_position(CX, CY, CZ) :- my_frame_id(Frame_id) & my_number(2) & uav2_ground_truth(header(seq(Seq),stamp(secs(Secs),nsecs(Nsecs)),frame_id(Frame_id)),child_frame_id(CFI),pose(pose(position(x(CX),y(CY),z(CZ)),orientation(x(OX),y((OY)),z((OZ)),w((OW)))),covariance(CV)),twist(twist(linear(x(LX),y(LY),z((LZ))),angular(x(AX),y((AY)),z((AZ)))),covariance(CV2))).
@@ -29,11 +30,6 @@ current_position(CX, CY, CZ) :- my_frame_id(Frame_id) & my_number(10) & uav10_gr
 current_position(CX, CY, CZ) :- my_frame_id(Frame_id) & my_number(11) & uav11_ground_truth(header(seq(Seq),stamp(secs(Secs),nsecs(Nsecs)),frame_id(Frame_id)),child_frame_id(CFI),pose(pose(position(x(CX),y(CY),z(CZ)),orientation(x(OX),y((OY)),z((OZ)),w((OW)))),covariance(CV)),twist(twist(linear(x(LX),y(LY),z((LZ))),angular(x(AX),y((AY)),z((AZ)))),covariance(CV2))).
 current_position(CX, CY, CZ) :- my_frame_id(Frame_id) & my_number(12) & uav12_ground_truth(header(seq(Seq),stamp(secs(Secs),nsecs(Nsecs)),frame_id(Frame_id)),child_frame_id(CFI),pose(pose(position(x(CX),y(CY),z(CZ)),orientation(x(OX),y((OY)),z((OZ)),w((OW)))),covariance(CV)),twist(twist(linear(x(LX),y(LY),z((LZ))),angular(x(AX),y((AY)),z((AZ)))),covariance(CV2))).
 
-combat_traj(CT) :- wind_speed(WS) & WS >=0.0 & fire_pos(CX,CY) & std_altitude(Z)  & my_number(N)
-                  & CT= [[CX-2,CY+2,Z+N],[CX+2,CY+2,Z+N],[CX+2,CY-2,Z+N],[CX-2,CY-2,Z+N]].
-combat_traj(CT) :- wind_speed(WS) & WS < 0.0 & fire_pos(CX,CY) & std_altitude(Z)  & my_number(N) 
-                  & CT= [[CX-2,CY-2,Z+N],[CX+2,CY-2,Z+N],[CX+2,CY+2,Z+N],[CX-2,CY+2,Z+N]].
-
 
 my_ap(AP) :- my_number(N)
             & .term2string(N, S) & .concat("autopilot",S,AP).
@@ -42,6 +38,7 @@ distance(X,Y,D) :- current_position(CX, CY, CZ) & D=math.sqrt( (CX-X)**2 + (CY-Y
 
 +fire_detection(N) : N>=22000 <- !found_fire.
 +battery(B) : B<=30.0 & not(low_batt) <- !low_battery.
+//+fireSize(FS) <- -fireSize(_); +fireSize(FS). //infinite loop 
 //////////////// Start
 !start.
 
@@ -54,10 +51,10 @@ distance(X,Y,D) :- current_position(CX, CY, CZ) & D=math.sqrt( (CX-X)**2 + (CY-Y
    <- !mm::stop_mission(goto_fire,"Fire is Extinguished").
 
 +!start
-   : my_ap(AP) & my_number(N) & combat_traj(CT)
+   : my_ap(AP) & my_number(N)
     <- .wait(2000);
       +mm::my_ap(AP);
-      .print("Started!",CT);
+      .print("Started!");
       !calculate_trajectory;//trajectory//!calculate_area;//!calculate_waypoints(1, []);// pode ser unido com os outros
       !my_missions.
 
@@ -115,18 +112,23 @@ distance(X,Y,D) :- current_position(CX, CY, CZ) & D=math.sqrt( (CX-X)**2 + (CY-Y
    : current_position(CX, CY, CZ) & std_altitude(Z) & my_number(N)
    & fireSize(FS) & frl_charges(FRL) & FS > FRL
    & current_mission(search)
-   <- +fire_pos(CX,CY);
-      .print("Fire detected in X: ",CX," , Y:",CY);
-      .print("FRL dif: ",(FS-FRL));
+   <- .print("Need help for detected fire in : ",CX," , ",CY);
+      .print("FRL Needed: ",(FS-FRL));
+      +fire_pos(CX,CY);
       !mm::create_mission(combat_fire, 10, [drop_when_interrupted]);
-      ?combat_traj(CT);
-      +mm::mission_plan(combat_fire,CT);
+      +mm::mission_plan(combat_fire,[[CX-2,CY+2,Z+N],[CX+2,CY+2,Z+N],[CX+2,CY-2,Z+N],[CX-2,CY-2,Z+N]]);
       !mm::run_mission(combat_fire);
-      !analyze_CNP.
+      !cnp( 2,help,(FS-FRL)).
 
-+!analyze_CNP
-   : fireSize(FS) & frl_charges(FRL) & FS > FRL
-   <- !cnp( 2,help,(FS-FRL)).
++!found_fire
+   : current_position(CX, CY, CZ) & std_altitude(Z) & my_number(N)
+   & fireSize(FS) & frl_charges(FRL) & FRL >= FS
+   & current_mission(search)
+   <- .print("Found fire in : ",CX," , ",CY,". I don't need help");
+      +fire_pos(CX,CY);
+      !mm::create_mission(combat_fire, 10, [drop_when_interrupted]);
+      +mm::mission_plan(combat_fire,[[CX-2,CY+2,Z+N],[CX+2,CY+2,Z+N],[CX+2,CY-2,Z+N],[CX-2,CY-2,Z+N]]);
+      !mm::run_mission(combat_fire).
 
 +mm::mission_state(combat_fire,finished)   // Priority
    : fireSize(FS) & FS==0
@@ -139,8 +141,8 @@ distance(X,Y,D) :- current_position(CX, CY, CZ) & D=math.sqrt( (CX-X)**2 + (CY-Y
 +mm::mission_state(combat_fire,finished) 
    : frl_charges(FRL) & FRL>=1
    <- embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("sample_roscore","fightFire",FRL);
-      -+frl_charges(FRL-1);
       .wait(1000);
+      -+frl_charges(FRL-1);
       !mm::run_mission(combat_fire).
 
 price(_Service,X,Y,R) :- 
@@ -205,10 +207,10 @@ all_proposals_received(CNPId,NP) :-              // NP = number of participants
      NP = NO + NR.
 
 +mm::mission_state(goto_fire,finished)  //goto fire finished
-   : fire_pos(CX,CY) & std_altitude(Z) & my_number(N) & combat_traj(CT)
+   : fire_pos(CX,CY) & std_altitude(Z) & my_number(N)
    <- .print("Go to fire finished!");
       !mm::create_mission(combat_fire, 10, [drop_when_interrupted]);
-      +mm::mission_plan(combat_fire,CT);
+      +mm::mission_plan(combat_fire,[[CX-2,CY+2,Z+N],[CX+2,CY+2,Z+N],[CX+2,CY-2,Z+N],[CX-2,CY-2,Z+N]]);
       !mm::run_mission(combat_fire).
 
 +mm::mission_state(search,finished) 
@@ -297,4 +299,3 @@ all_proposals_received(CNPId,NP) :-              // NP = number of participants
 +!found_fire.
 +!my_missions.
 +!analyzeFire.
-+!analyze_CNP.
