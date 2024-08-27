@@ -3,8 +3,8 @@
 current_mission("None").
 status("None").
 world_area(100, 100, 0, 0).
-num_of_uavs(6).
-nb_participants(5).
+num_of_uavs(12).
+nb_participants(11).
 camera_range(5).
 std_altitude(6.25).
 std_heading(0.0).

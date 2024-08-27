@@ -5,7 +5,7 @@ ros_log="log_ros.log"
 java_log="log_java.log"
 
 # Interval between logging in seconds
-interval=.1
+interval=0.1
 
 # Total duration for logging in seconds (3 minutes = 180 seconds)
 duration=180
@@ -44,8 +44,8 @@ log_processes() {
 echo "ROS Processes Log" > $ros_log
 echo "Java Processes Log" > $java_log
 
-# Calculate the number of iterations
-iterations=$((duration / interval))
+# Calculate the number of iterations (integer-based)
+iterations=$((duration * 10))
 
 # Loop to log the processes every interval for the total duration
 for ((i = 1; i <= iterations; i++))
@@ -54,4 +54,3 @@ do
     log_processes "java" $java_log $i
     sleep $interval
 done
-
