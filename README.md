@@ -1,4 +1,6 @@
 # sarc_gazebo_simulation
+
+Video demo : https://youtu.be/9LZqEOhQzTQ
 ### Dependencies
 
 * Ubuntu 20.04
