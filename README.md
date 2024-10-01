@@ -30,9 +30,9 @@ export GAZEBO_MODEL_PATH=/home/oem/catkin_ws/src/sarc_gazebo_simulation/models/
 ```
 ./start.sh
 ```
-* In another tab, you should run the auxiliary python node, that will colaborate with the Jason Agent to modify the Gazebo simulation
+* In another tab, you should run the auxiliary python node, that will colaborate with the Jason Agent to modify the Gazebo simulation. That can be done by opening a terminal inside the tmux/SARC-demo folder and running the following command
 ```
-rosrun sarc_gazebo_simulation delete.py 
+./AgentNode.py
 ```
 * Finally you should run the Jason Agents. That can be done by opening a terminal inside the tmux/SARC-demo folder and running the following command
 ```
