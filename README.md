@@ -32,7 +32,7 @@ export GAZEBO_MODEL_PATH=/home/oem/catkin_ws/src/sarc_gazebo_simulation/models/
 ```
 rosrun sarc_gazebo_simulation delete.py 
 ```
-* Finally you should run the Jason Agents. That can be done by opening a terminal inside the TrajectEmasStd folder and running the following command
+* Finally you should run the Jason Agents. That can be done by opening a terminal inside the tmux/SARC-demo folder and running the following command
 ```
 ./gradlew
 ```
