@@ -33,6 +33,7 @@ class WaypointTrackerNode:
         self.fire_detection_publishers = []
         self.battery_publishers = []
         self.bridge = CvBridge()
+        self.teste=0
               
         self.subscriber_del = rospy.Subscriber('/fightFire', Int32, self.del_callback)
         self.fire_size_pub = rospy.Publisher("fireSize", Int8, queue_size=1)
@@ -158,7 +159,9 @@ class WaypointTrackerNode:
             self.auxcount=self.auxcount+1
             probability = random.random()
             if self.auxcount != -2:
-                if probability <= 1.80:
+                #if probability <= 1.80:
+                #if self.teste !=0:
+                if probability <= 0.75:
                     try:
                         self.count=self.count+1
                         self.fireSize=self.fireSize-1
@@ -167,7 +170,7 @@ class WaypointTrackerNode:
                         self.fire_size_pub.publish(self.fireSize)
                     except rospy.ServiceException as e:
                         rospy.logerr("Service call failed: %s", e)
-            
+            self.teste=self.teste+1
         
     
 

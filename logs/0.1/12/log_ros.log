@@ -1,1777 +1,1777 @@
 ROS Processes Log
-iteration: 25 ; CPU: .28% ; MEM: 27.04 MB
-iteration: 26 ; CPU: .46% ; MEM: 30.35 MB
-iteration: 27 ; CPU: .53% ; MEM: 61.04 MB
-iteration: 28 ; CPU: 3.68% ; MEM: 68.59 MB
-iteration: 29 ; CPU: 3.75% ; MEM: 81.36 MB
-iteration: 30 ; CPU: 3.76% ; MEM: 90.55 MB
-iteration: 31 ; CPU: 6.22% ; MEM: 120.60 MB
-iteration: 32 ; CPU: 6.37% ; MEM: 109.70 MB
-iteration: 33 ; CPU: 6.50% ; MEM: 157.46 MB
-iteration: 34 ; CPU: 16.95% ; MEM: 193.42 MB
-iteration: 35 ; CPU: 17.27% ; MEM: 223.77 MB
-iteration: 36 ; CPU: 17.41% ; MEM: 378.23 MB
-iteration: 37 ; CPU: 17.45% ; MEM: 642.53 MB
-iteration: 38 ; CPU: 17.45% ; MEM: 721.61 MB
-iteration: 39 ; CPU: 17.45% ; MEM: 845.17 MB
-iteration: 40 ; CPU: 17.48% ; MEM: 880.28 MB
-iteration: 41 ; CPU: 33.86% ; MEM: 916.71 MB
-iteration: 42 ; CPU: 34.36% ; MEM: 923.01 MB
-iteration: 43 ; CPU: 34.78% ; MEM: 923.01 MB
-iteration: 44 ; CPU: 35.28% ; MEM: 923.02 MB
-iteration: 45 ; CPU: 35.71% ; MEM: 923.90 MB
-iteration: 46 ; CPU: 35.92% ; MEM: 925.57 MB
-iteration: 47 ; CPU: 36.48% ; MEM: 959.88 MB
-iteration: 48 ; CPU: 37.12% ; MEM: 1010.53 MB
-iteration: 49 ; CPU: 27.19% ; MEM: 1145.91 MB
-iteration: 50 ; CPU: 42.02% ; MEM: 1304.67 MB
-iteration: 51 ; CPU: 45.67% ; MEM: 1518.19 MB
-iteration: 52 ; CPU: 46.15% ; MEM: 1823.97 MB
-iteration: 53 ; CPU: 104.51% ; MEM: 2224.54 MB
-iteration: 54 ; CPU: 106.92% ; MEM: 2418.10 MB
-iteration: 55 ; CPU: 107.32% ; MEM: 2548.54 MB
-iteration: 56 ; CPU: 107.83% ; MEM: 2636.51 MB
-iteration: 57 ; CPU: 108.70% ; MEM: 2693.37 MB
-iteration: 58 ; CPU: 104.03% ; MEM: 2752.43 MB
-iteration: 59 ; CPU: 69.09% ; MEM: 2775.59 MB
-iteration: 60 ; CPU: 71.91% ; MEM: 2781.69 MB
-iteration: 61 ; CPU: 57.08% ; MEM: 2645.53 MB
-iteration: 62 ; CPU: 42.25% ; MEM: 2375.20 MB
-iteration: 63 ; CPU: 42.54% ; MEM: 2425.91 MB
-iteration: 64 ; CPU: 42.72% ; MEM: 2445.09 MB
-iteration: 65 ; CPU: 43.05% ; MEM: 2489.39 MB
-iteration: 66 ; CPU: 43.37% ; MEM: 2538.75 MB
-iteration: 67 ; CPU: 32.03% ; MEM: 2560.73 MB
-iteration: 68 ; CPU: 32.33% ; MEM: 2644.38 MB
-iteration: 69 ; CPU: 32.63% ; MEM: 2693.35 MB
-iteration: 70 ; CPU: 32.96% ; MEM: 2751.87 MB
-iteration: 71 ; CPU: 33.25% ; MEM: 2852.95 MB
-iteration: 72 ; CPU: 33.50% ; MEM: 3000.58 MB
-iteration: 73 ; CPU: 33.84% ; MEM: 3034.59 MB
-iteration: 74 ; CPU: 59.85% ; MEM: 3458.86 MB
-iteration: 75 ; CPU: 60.25% ; MEM: 3520.89 MB
-iteration: 76 ; CPU: 61.00% ; MEM: 3590.77 MB
-iteration: 77 ; CPU: 61.38% ; MEM: 3647.28 MB
-iteration: 78 ; CPU: 61.93% ; MEM: 3731.78 MB
-iteration: 79 ; CPU: 62.95% ; MEM: 3874.46 MB
-iteration: 80 ; CPU: 85.50% ; MEM: 4149.09 MB
-iteration: 81 ; CPU: 89.59% ; MEM: 4601.91 MB
-iteration: 82 ; CPU: 89.92% ; MEM: 4770.09 MB
-iteration: 83 ; CPU: 90.84% ; MEM: 4875.16 MB
-iteration: 84 ; CPU: 91.49% ; MEM: 4944.50 MB
-iteration: 85 ; CPU: 92.03% ; MEM: 5195.84 MB
-iteration: 86 ; CPU: 84.24% ; MEM: 5266.03 MB
-iteration: 87 ; CPU: 84.78% ; MEM: 5285.43 MB
-iteration: 88 ; CPU: 85.47% ; MEM: 5336.58 MB
-iteration: 89 ; CPU: 85.77% ; MEM: 5404.53 MB
-iteration: 90 ; CPU: 86.58% ; MEM: 5451.65 MB
-iteration: 91 ; CPU: 87.56% ; MEM: 5515.00 MB
-iteration: 92 ; CPU: 88.10% ; MEM: 5775.01 MB
-iteration: 93 ; CPU: 88.97% ; MEM: 5855.23 MB
-iteration: 94 ; CPU: 91.43% ; MEM: 6105.99 MB
-iteration: 95 ; CPU: 92.81% ; MEM: 6202.91 MB
-iteration: 96 ; CPU: 93.75% ; MEM: 6329.92 MB
-iteration: 97 ; CPU: 94.84% ; MEM: 6378.74 MB
-iteration: 98 ; CPU: 95.74% ; MEM: 6425.69 MB
-iteration: 99 ; CPU: 95.50% ; MEM: 6644.23 MB
-iteration: 100 ; CPU: 96.22% ; MEM: 6686.30 MB
-iteration: 101 ; CPU: 97.04% ; MEM: 6699.93 MB
-iteration: 102 ; CPU: 97.99% ; MEM: 6744.69 MB
-iteration: 103 ; CPU: 99.01% ; MEM: 6791.74 MB
-iteration: 104 ; CPU: 99.92% ; MEM: 6846.58 MB
-iteration: 105 ; CPU: 101.21% ; MEM: 6893.39 MB
-iteration: 106 ; CPU: 100.74% ; MEM: 7346.57 MB
-iteration: 107 ; CPU: 101.41% ; MEM: 7406.78 MB
-iteration: 108 ; CPU: 102.23% ; MEM: 7428.14 MB
-iteration: 109 ; CPU: 103.37% ; MEM: 7495.79 MB
-iteration: 110 ; CPU: 104.37% ; MEM: 7541.25 MB
-iteration: 111 ; CPU: 105.44% ; MEM: 7546.08 MB
-iteration: 112 ; CPU: 94.59% ; MEM: 7760.70 MB
-iteration: 113 ; CPU: 95.35% ; MEM: 7761.72 MB
-iteration: 114 ; CPU: 96.48% ; MEM: 7771.90 MB
-iteration: 115 ; CPU: 97.81% ; MEM: 7798.00 MB
-iteration: 116 ; CPU: 99.55% ; MEM: 7831.85 MB
-iteration: 117 ; CPU: 100.32% ; MEM: 7895.06 MB
-iteration: 118 ; CPU: 101.84% ; MEM: 7915.81 MB
-iteration: 119 ; CPU: 94.73% ; MEM: 7918.91 MB
-iteration: 120 ; CPU: 96.68% ; MEM: 7934.61 MB
-iteration: 121 ; CPU: 98.70% ; MEM: 7945.04 MB
-iteration: 122 ; CPU: 90.95% ; MEM: 7921.98 MB
-iteration: 123 ; CPU: 82.42% ; MEM: 7943.94 MB
-iteration: 124 ; CPU: 83.45% ; MEM: 7958.21 MB
-iteration: 125 ; CPU: 77.27% ; MEM: 7963.00 MB
-iteration: 126 ; CPU: 78.74% ; MEM: 7965.88 MB
-iteration: 127 ; CPU: 80.31% ; MEM: 7983.75 MB
-iteration: 128 ; CPU: 81.84% ; MEM: 7990.89 MB
-iteration: 129 ; CPU: 74.19% ; MEM: 7995.49 MB
-iteration: 130 ; CPU: 75.30% ; MEM: 8050.96 MB
-iteration: 131 ; CPU: 88.59% ; MEM: 8110.57 MB
-iteration: 132 ; CPU: 90.73% ; MEM: 8120.03 MB
-iteration: 133 ; CPU: 92.75% ; MEM: 8129.10 MB
-iteration: 134 ; CPU: 85.00% ; MEM: 8110.19 MB
-iteration: 135 ; CPU: 86.10% ; MEM: 8162.23 MB
-iteration: 136 ; CPU: 70.53% ; MEM: 8189.82 MB
-iteration: 137 ; CPU: 93.40% ; MEM: 8208.68 MB
-iteration: 138 ; CPU: 96.27% ; MEM: 8223.42 MB
-iteration: 139 ; CPU: 98.93% ; MEM: 8268.30 MB
-iteration: 140 ; CPU: 92.59% ; MEM: 8272.12 MB
-iteration: 141 ; CPU: 66.55% ; MEM: 8232.67 MB
-iteration: 142 ; CPU: 86.65% ; MEM: 8250.75 MB
-iteration: 143 ; CPU: 88.71% ; MEM: 8266.73 MB
-iteration: 144 ; CPU: 85.21% ; MEM: 8230.62 MB
-iteration: 145 ; CPU: 78.72% ; MEM: 8212.44 MB
-iteration: 146 ; CPU: 80.39% ; MEM: 8247.93 MB
-iteration: 147 ; CPU: 64.19% ; MEM: 8204.92 MB
-iteration: 148 ; CPU: 83.16% ; MEM: 8252.73 MB
-iteration: 149 ; CPU: 84.77% ; MEM: 8267.69 MB
-iteration: 150 ; CPU: 86.37% ; MEM: 8273.11 MB
-iteration: 151 ; CPU: 88.37% ; MEM: 8282.49 MB
-iteration: 152 ; CPU: 80.82% ; MEM: 8282.33 MB
-iteration: 153 ; CPU: 61.86% ; MEM: 8268.93 MB
-iteration: 154 ; CPU: 80.31% ; MEM: 8378.44 MB
-iteration: 155 ; CPU: 82.11% ; MEM: 8399.05 MB
-iteration: 156 ; CPU: 84.10% ; MEM: 8443.96 MB
-iteration: 157 ; CPU: 77.26% ; MEM: 8416.38 MB
-iteration: 158 ; CPU: 71.04% ; MEM: 8405.53 MB
-iteration: 159 ; CPU: 77.83% ; MEM: 8437.27 MB
-iteration: 160 ; CPU: 70.51% ; MEM: 8401.88 MB
-iteration: 161 ; CPU: 72.38% ; MEM: 8417.62 MB
-iteration: 162 ; CPU: 74.36% ; MEM: 8423.03 MB
-iteration: 163 ; CPU: 76.17% ; MEM: 8433.18 MB
-iteration: 164 ; CPU: 60.84% ; MEM: 8363.09 MB
-iteration: 165 ; CPU: 57.39% ; MEM: 8367.48 MB
-iteration: 166 ; CPU: 58.19% ; MEM: 8385.03 MB
-iteration: 167 ; CPU: 58.98% ; MEM: 8388.89 MB
-iteration: 168 ; CPU: 59.77% ; MEM: 8396.89 MB
-iteration: 169 ; CPU: 60.24% ; MEM: 8446.03 MB
-iteration: 170 ; CPU: 60.98% ; MEM: 8453.19 MB
-iteration: 171 ; CPU: 66.98% ; MEM: 8472.30 MB
-iteration: 172 ; CPU: 68.15% ; MEM: 8474.88 MB
-iteration: 173 ; CPU: 69.45% ; MEM: 8477.03 MB
-iteration: 174 ; CPU: 59.93% ; MEM: 8455.83 MB
-iteration: 175 ; CPU: 60.60% ; MEM: 8456.10 MB
-iteration: 176 ; CPU: 61.39% ; MEM: 8461.26 MB
-iteration: 177 ; CPU: 58.47% ; MEM: 8477.50 MB
-iteration: 178 ; CPU: 59.24% ; MEM: 8479.82 MB
-iteration: 179 ; CPU: 59.90% ; MEM: 8481.68 MB
-iteration: 180 ; CPU: 60.61% ; MEM: 8502.60 MB
-iteration: 181 ; CPU: 61.22% ; MEM: 8503.64 MB
-iteration: 182 ; CPU: 58.40% ; MEM: 8503.65 MB
-iteration: 183 ; CPU: 59.04% ; MEM: 8504.69 MB
-iteration: 184 ; CPU: 59.67% ; MEM: 8509.61 MB
-iteration: 185 ; CPU: 60.35% ; MEM: 8526.32 MB
-iteration: 186 ; CPU: 61.03% ; MEM: 8527.61 MB
-iteration: 187 ; CPU: 61.74% ; MEM: 8528.06 MB
-iteration: 188 ; CPU: 59.08% ; MEM: 8528.06 MB
-iteration: 189 ; CPU: 59.66% ; MEM: 8528.06 MB
-iteration: 190 ; CPU: 60.12% ; MEM: 8529.05 MB
-iteration: 191 ; CPU: 60.81% ; MEM: 8530.35 MB
-iteration: 192 ; CPU: 61.42% ; MEM: 8546.85 MB
-iteration: 193 ; CPU: 62.06% ; MEM: 8548.40 MB
-iteration: 194 ; CPU: 59.49% ; MEM: 8550.21 MB
-iteration: 195 ; CPU: 60.02% ; MEM: 8550.72 MB
-iteration: 196 ; CPU: 60.57% ; MEM: 8550.72 MB
-iteration: 197 ; CPU: 61.12% ; MEM: 8583.89 MB
-iteration: 198 ; CPU: 61.70% ; MEM: 8621.26 MB
-iteration: 199 ; CPU: 72.37% ; MEM: 8639.98 MB
-iteration: 200 ; CPU: 73.83% ; MEM: 8640.48 MB
-iteration: 201 ; CPU: 75.52% ; MEM: 8640.88 MB
-iteration: 202 ; CPU: 68.78% ; MEM: 8539.27 MB
-iteration: 203 ; CPU: 61.08% ; MEM: 8529.81 MB
-iteration: 204 ; CPU: 61.11% ; MEM: 8486.61 MB
-iteration: 205 ; CPU: 64.88% ; MEM: 8442.76 MB
-iteration: 206 ; CPU: 65.77% ; MEM: 8408.53 MB
-iteration: 207 ; CPU: 66.77% ; MEM: 8408.59 MB
-iteration: 208 ; CPU: 59.40% ; MEM: 8352.60 MB
-iteration: 209 ; CPU: 59.80% ; MEM: 8421.82 MB
-iteration: 210 ; CPU: 79.05% ; MEM: 8454.31 MB
-iteration: 211 ; CPU: 79.71% ; MEM: 8457.06 MB
-iteration: 212 ; CPU: 80.39% ; MEM: 8354.73 MB
-iteration: 213 ; CPU: 82.02% ; MEM: 8354.88 MB
-iteration: 214 ; CPU: 73.51% ; MEM: 8254.91 MB
-iteration: 215 ; CPU: 69.52% ; MEM: 8171.82 MB
-iteration: 216 ; CPU: 70.97% ; MEM: 8192.57 MB
-iteration: 217 ; CPU: 71.85% ; MEM: 8183.96 MB
-iteration: 218 ; CPU: 73.39% ; MEM: 8155.57 MB
-iteration: 219 ; CPU: 65.53% ; MEM: 8067.28 MB
-iteration: 220 ; CPU: 57.52% ; MEM: 8035.36 MB
-iteration: 221 ; CPU: 79.31% ; MEM: 8036.02 MB
-iteration: 222 ; CPU: 71.32% ; MEM: 7951.54 MB
-iteration: 223 ; CPU: 72.95% ; MEM: 7951.60 MB
-iteration: 224 ; CPU: 74.26% ; MEM: 7882.58 MB
-iteration: 225 ; CPU: 76.05% ; MEM: 7882.72 MB
-iteration: 226 ; CPU: 53.97% ; MEM: 7704.89 MB
-iteration: 227 ; CPU: 54.42% ; MEM: 7704.89 MB
-iteration: 228 ; CPU: 54.90% ; MEM: 7704.89 MB
-iteration: 229 ; CPU: 55.35% ; MEM: 7704.89 MB
-iteration: 230 ; CPU: 55.72% ; MEM: 7745.57 MB
-iteration: 231 ; CPU: 56.18% ; MEM: 7749.42 MB
-iteration: 232 ; CPU: 61.02% ; MEM: 7749.44 MB
-iteration: 233 ; CPU: 61.45% ; MEM: 7749.49 MB
-iteration: 234 ; CPU: 61.85% ; MEM: 7715.14 MB
-iteration: 235 ; CPU: 62.81% ; MEM: 7715.19 MB
-iteration: 236 ; CPU: 55.74% ; MEM: 7626.58 MB
-iteration: 237 ; CPU: 56.19% ; MEM: 7626.58 MB
-iteration: 238 ; CPU: 54.57% ; MEM: 7626.58 MB
-iteration: 239 ; CPU: 54.99% ; MEM: 7626.58 MB
-iteration: 240 ; CPU: 55.41% ; MEM: 7626.58 MB
-iteration: 241 ; CPU: 55.79% ; MEM: 7626.58 MB
-iteration: 242 ; CPU: 56.20% ; MEM: 7626.59 MB
-iteration: 243 ; CPU: 56.65% ; MEM: 7626.59 MB
-iteration: 244 ; CPU: 55.10% ; MEM: 7626.59 MB
-iteration: 245 ; CPU: 55.50% ; MEM: 7626.59 MB
-iteration: 246 ; CPU: 55.91% ; MEM: 7627.10 MB
-iteration: 247 ; CPU: 56.33% ; MEM: 7627.10 MB
-iteration: 248 ; CPU: 56.71% ; MEM: 7627.10 MB
-iteration: 249 ; CPU: 57.12% ; MEM: 7627.10 MB
-iteration: 250 ; CPU: 55.61% ; MEM: 7627.11 MB
-iteration: 251 ; CPU: 56.00% ; MEM: 7627.11 MB
-iteration: 252 ; CPU: 56.40% ; MEM: 7627.11 MB
-iteration: 253 ; CPU: 56.76% ; MEM: 7627.11 MB
-iteration: 254 ; CPU: 57.15% ; MEM: 7627.11 MB
-iteration: 255 ; CPU: 57.51% ; MEM: 7627.11 MB
-iteration: 256 ; CPU: 56.08% ; MEM: 7627.11 MB
-iteration: 257 ; CPU: 56.42% ; MEM: 7627.11 MB
-iteration: 258 ; CPU: 56.80% ; MEM: 7627.11 MB
-iteration: 259 ; CPU: 57.22% ; MEM: 7627.11 MB
-iteration: 260 ; CPU: 57.52% ; MEM: 7627.11 MB
-iteration: 261 ; CPU: 57.92% ; MEM: 7627.11 MB
-iteration: 262 ; CPU: 56.41% ; MEM: 7627.11 MB
-iteration: 263 ; CPU: 56.80% ; MEM: 7627.37 MB
-iteration: 264 ; CPU: 57.17% ; MEM: 7627.62 MB
-iteration: 265 ; CPU: 57.49% ; MEM: 7627.62 MB
-iteration: 266 ; CPU: 57.86% ; MEM: 7627.62 MB
-iteration: 267 ; CPU: 58.21% ; MEM: 7627.62 MB
-iteration: 268 ; CPU: 56.81% ; MEM: 7627.62 MB
-iteration: 269 ; CPU: 57.17% ; MEM: 7627.62 MB
-iteration: 270 ; CPU: 57.52% ; MEM: 7627.62 MB
-iteration: 271 ; CPU: 57.87% ; MEM: 7627.62 MB
-iteration: 272 ; CPU: 58.25% ; MEM: 7627.62 MB
-iteration: 273 ; CPU: 58.57% ; MEM: 7627.62 MB
-iteration: 274 ; CPU: 57.20% ; MEM: 7627.62 MB
-iteration: 275 ; CPU: 57.53% ; MEM: 7627.62 MB
-iteration: 276 ; CPU: 57.86% ; MEM: 7627.62 MB
-iteration: 277 ; CPU: 58.20% ; MEM: 7627.62 MB
-iteration: 278 ; CPU: 58.55% ; MEM: 7627.62 MB
-iteration: 279 ; CPU: 58.89% ; MEM: 7627.88 MB
-iteration: 280 ; CPU: 57.59% ; MEM: 7628.14 MB
-iteration: 281 ; CPU: 57.89% ; MEM: 7628.14 MB
-iteration: 282 ; CPU: 58.22% ; MEM: 7628.14 MB
-iteration: 283 ; CPU: 58.50% ; MEM: 7628.14 MB
-iteration: 284 ; CPU: 58.85% ; MEM: 7628.14 MB
-iteration: 285 ; CPU: 59.15% ; MEM: 7628.14 MB
-iteration: 286 ; CPU: 57.82% ; MEM: 7628.14 MB
-iteration: 287 ; CPU: 58.11% ; MEM: 7628.14 MB
-iteration: 288 ; CPU: 58.47% ; MEM: 7628.14 MB
-iteration: 289 ; CPU: 58.74% ; MEM: 7631.23 MB
-iteration: 290 ; CPU: 59.08% ; MEM: 7631.23 MB
-iteration: 291 ; CPU: 59.42% ; MEM: 7631.23 MB
-iteration: 292 ; CPU: 58.09% ; MEM: 7631.23 MB
-iteration: 293 ; CPU: 58.43% ; MEM: 7631.23 MB
-iteration: 294 ; CPU: 58.72% ; MEM: 7634.33 MB
-iteration: 295 ; CPU: 59.04% ; MEM: 7634.39 MB
-iteration: 296 ; CPU: 59.33% ; MEM: 7634.39 MB
-iteration: 297 ; CPU: 59.63% ; MEM: 7634.39 MB
-iteration: 298 ; CPU: 58.41% ; MEM: 7634.39 MB
-iteration: 299 ; CPU: 58.69% ; MEM: 7634.65 MB
-iteration: 300 ; CPU: 59.00% ; MEM: 7634.65 MB
-iteration: 301 ; CPU: 59.28% ; MEM: 7634.65 MB
-iteration: 302 ; CPU: 59.56% ; MEM: 7634.65 MB
-iteration: 303 ; CPU: 59.87% ; MEM: 7634.65 MB
-iteration: 304 ; CPU: 58.64% ; MEM: 7634.65 MB
-iteration: 305 ; CPU: 58.90% ; MEM: 7634.65 MB
-iteration: 306 ; CPU: 59.24% ; MEM: 7634.65 MB
-iteration: 307 ; CPU: 59.52% ; MEM: 7634.65 MB
-iteration: 308 ; CPU: 59.84% ; MEM: 7634.65 MB
-iteration: 309 ; CPU: 60.09% ; MEM: 7634.65 MB
-iteration: 310 ; CPU: 58.87% ; MEM: 7634.65 MB
-iteration: 311 ; CPU: 59.18% ; MEM: 7634.65 MB
-iteration: 312 ; CPU: 59.45% ; MEM: 7634.65 MB
-iteration: 313 ; CPU: 59.74% ; MEM: 7634.65 MB
-iteration: 314 ; CPU: 60.03% ; MEM: 7634.65 MB
-iteration: 315 ; CPU: 60.31% ; MEM: 7634.65 MB
-iteration: 316 ; CPU: 59.14% ; MEM: 7634.65 MB
-iteration: 317 ; CPU: 59.40% ; MEM: 7634.65 MB
-iteration: 318 ; CPU: 59.66% ; MEM: 7634.65 MB
-iteration: 319 ; CPU: 59.95% ; MEM: 7634.65 MB
-iteration: 320 ; CPU: 60.22% ; MEM: 7634.65 MB
-iteration: 321 ; CPU: 60.53% ; MEM: 7634.65 MB
-iteration: 322 ; CPU: 59.35% ; MEM: 7634.91 MB
-iteration: 323 ; CPU: 59.58% ; MEM: 7634.91 MB
-iteration: 324 ; CPU: 59.90% ; MEM: 7634.91 MB
-iteration: 325 ; CPU: 60.14% ; MEM: 7634.91 MB
-iteration: 326 ; CPU: 60.41% ; MEM: 7634.91 MB
-iteration: 327 ; CPU: 60.65% ; MEM: 7634.91 MB
-iteration: 328 ; CPU: 59.53% ; MEM: 7634.91 MB
-iteration: 329 ; CPU: 59.78% ; MEM: 7634.91 MB
-iteration: 330 ; CPU: 60.03% ; MEM: 7634.91 MB
-iteration: 331 ; CPU: 60.30% ; MEM: 7634.91 MB
-iteration: 332 ; CPU: 60.59% ; MEM: 7634.91 MB
-iteration: 333 ; CPU: 60.83% ; MEM: 7634.91 MB
-iteration: 334 ; CPU: 59.72% ; MEM: 7634.91 MB
-iteration: 335 ; CPU: 60.02% ; MEM: 7634.91 MB
-iteration: 336 ; CPU: 60.27% ; MEM: 7634.91 MB
-iteration: 337 ; CPU: 60.56% ; MEM: 7634.91 MB
-iteration: 338 ; CPU: 60.82% ; MEM: 7634.91 MB
-iteration: 339 ; CPU: 59.75% ; MEM: 7634.91 MB
-iteration: 340 ; CPU: 60.06% ; MEM: 7634.91 MB
-iteration: 341 ; CPU: 60.30% ; MEM: 7634.91 MB
-iteration: 342 ; CPU: 60.61% ; MEM: 7634.92 MB
-iteration: 343 ; CPU: 60.90% ; MEM: 7634.92 MB
-iteration: 344 ; CPU: 59.83% ; MEM: 7634.92 MB
-iteration: 345 ; CPU: 60.11% ; MEM: 7634.92 MB
-iteration: 346 ; CPU: 60.36% ; MEM: 7634.92 MB
-iteration: 347 ; CPU: 60.65% ; MEM: 7634.92 MB
-iteration: 348 ; CPU: 60.93% ; MEM: 7634.92 MB
-iteration: 349 ; CPU: 61.22% ; MEM: 7634.92 MB
-iteration: 350 ; CPU: 60.18% ; MEM: 7634.92 MB
-iteration: 351 ; CPU: 60.44% ; MEM: 7634.92 MB
-iteration: 352 ; CPU: 60.70% ; MEM: 7634.92 MB
-iteration: 353 ; CPU: 60.95% ; MEM: 7634.92 MB
-iteration: 354 ; CPU: 61.23% ; MEM: 7634.92 MB
-iteration: 355 ; CPU: 60.21% ; MEM: 7634.92 MB
-iteration: 356 ; CPU: 60.46% ; MEM: 7634.92 MB
-iteration: 357 ; CPU: 60.73% ; MEM: 7634.92 MB
-iteration: 358 ; CPU: 60.96% ; MEM: 7634.92 MB
-iteration: 359 ; CPU: 61.19% ; MEM: 7634.92 MB
-iteration: 360 ; CPU: 61.45% ; MEM: 7634.92 MB
-iteration: 361 ; CPU: 60.42% ; MEM: 7671.97 MB
-iteration: 362 ; CPU: 60.70% ; MEM: 7694.73 MB
-iteration: 363 ; CPU: 60.96% ; MEM: 7709.83 MB
-iteration: 364 ; CPU: 61.22% ; MEM: 7722.08 MB
-iteration: 365 ; CPU: 61.45% ; MEM: 7737.72 MB
-iteration: 366 ; CPU: 65.75% ; MEM: 7752.76 MB
-iteration: 367 ; CPU: 67.86% ; MEM: 7780.58 MB
-iteration: 368 ; CPU: 69.46% ; MEM: 7782.20 MB
-iteration: 369 ; CPU: 71.49% ; MEM: 7798.14 MB
-iteration: 370 ; CPU: 74.25% ; MEM: 7840.48 MB
-iteration: 371 ; CPU: 68.57% ; MEM: 7870.96 MB
-iteration: 372 ; CPU: 69.72% ; MEM: 7892.59 MB
-iteration: 373 ; CPU: 71.06% ; MEM: 7921.00 MB
-iteration: 374 ; CPU: 72.88% ; MEM: 7934.03 MB
-iteration: 375 ; CPU: 74.23% ; MEM: 7954.22 MB
-iteration: 376 ; CPU: 69.75% ; MEM: 7968.00 MB
-iteration: 377 ; CPU: 70.33% ; MEM: 7972.63 MB
-iteration: 378 ; CPU: 71.10% ; MEM: 7977.44 MB
-iteration: 379 ; CPU: 71.68% ; MEM: 7977.86 MB
-iteration: 380 ; CPU: 72.33% ; MEM: 7988.89 MB
-iteration: 381 ; CPU: 69.07% ; MEM: 7984.77 MB
-iteration: 382 ; CPU: 69.47% ; MEM: 7985.57 MB
-iteration: 383 ; CPU: 69.81% ; MEM: 7985.91 MB
-iteration: 384 ; CPU: 70.18% ; MEM: 7986.01 MB
-iteration: 385 ; CPU: 70.58% ; MEM: 7996.07 MB
-iteration: 386 ; CPU: 71.08% ; MEM: 7998.01 MB
-iteration: 387 ; CPU: 68.86% ; MEM: 8011.51 MB
-iteration: 388 ; CPU: 69.29% ; MEM: 8018.16 MB
-iteration: 389 ; CPU: 69.68% ; MEM: 8015.25 MB
-iteration: 390 ; CPU: 69.99% ; MEM: 8017.55 MB
-iteration: 391 ; CPU: 70.33% ; MEM: 8018.10 MB
-iteration: 392 ; CPU: 68.09% ; MEM: 8019.02 MB
-iteration: 393 ; CPU: 68.54% ; MEM: 8033.83 MB
-iteration: 394 ; CPU: 68.85% ; MEM: 8034.12 MB
-iteration: 395 ; CPU: 69.12% ; MEM: 8034.12 MB
-iteration: 396 ; CPU: 69.46% ; MEM: 8034.38 MB
-iteration: 397 ; CPU: 67.66% ; MEM: 8035.15 MB
-iteration: 398 ; CPU: 67.95% ; MEM: 8035.15 MB
-iteration: 399 ; CPU: 68.24% ; MEM: 8035.15 MB
-iteration: 400 ; CPU: 68.49% ; MEM: 8035.15 MB
-iteration: 401 ; CPU: 68.83% ; MEM: 8035.15 MB
-iteration: 402 ; CPU: 67.31% ; MEM: 8037.73 MB
-iteration: 403 ; CPU: 67.58% ; MEM: 8038.50 MB
-iteration: 404 ; CPU: 67.93% ; MEM: 8039.13 MB
-iteration: 405 ; CPU: 68.18% ; MEM: 8039.19 MB
-iteration: 406 ; CPU: 68.43% ; MEM: 8039.19 MB
-iteration: 407 ; CPU: 68.68% ; MEM: 8039.19 MB
-iteration: 408 ; CPU: 67.27% ; MEM: 8039.44 MB
-iteration: 409 ; CPU: 67.60% ; MEM: 8042.53 MB
-iteration: 410 ; CPU: 67.85% ; MEM: 8042.83 MB
-iteration: 411 ; CPU: 68.07% ; MEM: 8043.09 MB
-iteration: 412 ; CPU: 68.34% ; MEM: 8043.09 MB
-iteration: 413 ; CPU: 66.94% ; MEM: 8043.09 MB
-iteration: 414 ; CPU: 67.22% ; MEM: 8019.06 MB
-iteration: 415 ; CPU: 67.49% ; MEM: 8019.05 MB
-iteration: 416 ; CPU: 67.71% ; MEM: 8023.61 MB
-iteration: 417 ; CPU: 67.94% ; MEM: 8023.60 MB
-iteration: 418 ; CPU: 66.72% ; MEM: 8024.18 MB
-iteration: 419 ; CPU: 66.99% ; MEM: 8024.18 MB
-iteration: 420 ; CPU: 67.28% ; MEM: 8024.18 MB
-iteration: 421 ; CPU: 67.54% ; MEM: 8024.18 MB
-iteration: 422 ; CPU: 67.77% ; MEM: 8024.41 MB
-iteration: 423 ; CPU: 66.57% ; MEM: 8024.41 MB
-iteration: 424 ; CPU: 66.85% ; MEM: 8024.41 MB
-iteration: 425 ; CPU: 67.11% ; MEM: 8024.42 MB
-iteration: 426 ; CPU: 67.32% ; MEM: 8024.68 MB
-iteration: 427 ; CPU: 67.60% ; MEM: 8025.53 MB
-iteration: 428 ; CPU: 67.85% ; MEM: 8025.53 MB
-iteration: 429 ; CPU: 66.76% ; MEM: 8025.65 MB
-iteration: 430 ; CPU: 66.97% ; MEM: 8025.65 MB
-iteration: 431 ; CPU: 67.25% ; MEM: 8025.76 MB
-iteration: 432 ; CPU: 67.49% ; MEM: 8025.76 MB
-iteration: 433 ; CPU: 67.68% ; MEM: 8025.76 MB
-iteration: 434 ; CPU: 66.60% ; MEM: 8025.76 MB
-iteration: 435 ; CPU: 66.80% ; MEM: 8025.76 MB
-iteration: 436 ; CPU: 67.07% ; MEM: 8025.76 MB
-iteration: 437 ; CPU: 67.29% ; MEM: 8025.74 MB
-iteration: 438 ; CPU: 67.49% ; MEM: 8025.74 MB
-iteration: 439 ; CPU: 67.68% ; MEM: 8025.74 MB
-iteration: 440 ; CPU: 66.68% ; MEM: 8025.74 MB
-iteration: 441 ; CPU: 66.94% ; MEM: 8025.74 MB
-iteration: 442 ; CPU: 67.17% ; MEM: 8025.75 MB
-iteration: 443 ; CPU: 67.44% ; MEM: 8025.75 MB
-iteration: 444 ; CPU: 67.69% ; MEM: 8025.75 MB
-iteration: 445 ; CPU: 66.67% ; MEM: 8025.75 MB
-iteration: 446 ; CPU: 66.93% ; MEM: 8025.75 MB
-iteration: 447 ; CPU: 67.11% ; MEM: 8025.75 MB
-iteration: 448 ; CPU: 67.36% ; MEM: 8025.75 MB
-iteration: 449 ; CPU: 67.58% ; MEM: 8025.75 MB
-iteration: 450 ; CPU: 66.66% ; MEM: 8025.75 MB
-iteration: 451 ; CPU: 66.82% ; MEM: 8025.75 MB
-iteration: 452 ; CPU: 67.08% ; MEM: 8025.73 MB
-iteration: 453 ; CPU: 67.32% ; MEM: 8025.73 MB
-iteration: 454 ; CPU: 67.59% ; MEM: 8025.73 MB
-iteration: 455 ; CPU: 66.64% ; MEM: 8025.73 MB
-iteration: 456 ; CPU: 66.86% ; MEM: 8025.73 MB
-iteration: 457 ; CPU: 67.07% ; MEM: 8025.73 MB
-iteration: 458 ; CPU: 67.26% ; MEM: 8025.73 MB
-iteration: 459 ; CPU: 67.52% ; MEM: 8025.73 MB
-iteration: 460 ; CPU: 67.71% ; MEM: 8025.73 MB
-iteration: 461 ; CPU: 66.83% ; MEM: 8025.73 MB
-iteration: 462 ; CPU: 67.02% ; MEM: 8025.72 MB
-iteration: 463 ; CPU: 67.30% ; MEM: 8025.70 MB
-iteration: 464 ; CPU: 67.48% ; MEM: 8025.70 MB
-iteration: 465 ; CPU: 67.70% ; MEM: 8025.70 MB
-iteration: 466 ; CPU: 66.88% ; MEM: 8025.70 MB
-iteration: 467 ; CPU: 67.08% ; MEM: 8027.25 MB
-iteration: 468 ; CPU: 67.29% ; MEM: 8027.25 MB
-iteration: 469 ; CPU: 67.50% ; MEM: 8027.25 MB
-iteration: 470 ; CPU: 67.71% ; MEM: 8027.25 MB
-iteration: 471 ; CPU: 66.88% ; MEM: 8027.25 MB
-iteration: 472 ; CPU: 67.09% ; MEM: 8027.25 MB
-iteration: 473 ; CPU: 67.31% ; MEM: 8027.25 MB
-iteration: 474 ; CPU: 67.53% ; MEM: 8027.25 MB
-iteration: 475 ; CPU: 67.74% ; MEM: 8027.25 MB
-iteration: 476 ; CPU: 66.92% ; MEM: 8027.25 MB
-iteration: 477 ; CPU: 67.11% ; MEM: 8027.25 MB
-iteration: 478 ; CPU: 67.39% ; MEM: 8027.25 MB
-iteration: 479 ; CPU: 67.59% ; MEM: 8027.25 MB
-iteration: 480 ; CPU: 67.81% ; MEM: 8027.25 MB
-iteration: 481 ; CPU: 67.01% ; MEM: 8027.25 MB
-iteration: 482 ; CPU: 67.20% ; MEM: 8027.25 MB
-iteration: 483 ; CPU: 67.41% ; MEM: 8027.25 MB
-iteration: 484 ; CPU: 67.63% ; MEM: 8027.25 MB
-iteration: 485 ; CPU: 67.79% ; MEM: 8027.25 MB
-iteration: 486 ; CPU: 67.01% ; MEM: 8027.46 MB
-iteration: 487 ; CPU: 67.22% ; MEM: 8027.46 MB
-iteration: 488 ; CPU: 67.35% ; MEM: 8027.46 MB
-iteration: 489 ; CPU: 67.57% ; MEM: 8027.46 MB
-iteration: 490 ; CPU: 67.76% ; MEM: 8027.46 MB
-iteration: 491 ; CPU: 67.95% ; MEM: 8027.46 MB
-iteration: 492 ; CPU: 67.12% ; MEM: 8027.46 MB
-iteration: 493 ; CPU: 67.27% ; MEM: 8027.67 MB
-iteration: 494 ; CPU: 67.50% ; MEM: 8027.67 MB
-iteration: 495 ; CPU: 67.70% ; MEM: 8027.67 MB
-iteration: 496 ; CPU: 67.88% ; MEM: 8027.67 MB
-iteration: 497 ; CPU: 67.11% ; MEM: 8027.67 MB
-iteration: 498 ; CPU: 67.30% ; MEM: 8027.67 MB
-iteration: 499 ; CPU: 67.53% ; MEM: 8027.67 MB
-iteration: 500 ; CPU: 67.73% ; MEM: 8027.81 MB
-iteration: 501 ; CPU: 67.91% ; MEM: 8027.81 MB
-iteration: 502 ; CPU: 67.17% ; MEM: 8027.81 MB
-iteration: 503 ; CPU: 67.31% ; MEM: 8027.81 MB
-iteration: 504 ; CPU: 67.50% ; MEM: 8027.81 MB
-iteration: 505 ; CPU: 67.71% ; MEM: 8027.81 MB
-iteration: 506 ; CPU: 67.90% ; MEM: 8027.81 MB
-iteration: 507 ; CPU: 68.09% ; MEM: 8027.81 MB
-iteration: 508 ; CPU: 67.36% ; MEM: 8027.81 MB
-iteration: 509 ; CPU: 67.51% ; MEM: 8027.81 MB
-iteration: 510 ; CPU: 67.72% ; MEM: 8027.81 MB
-iteration: 511 ; CPU: 67.90% ; MEM: 8027.81 MB
-iteration: 512 ; CPU: 68.07% ; MEM: 8028.07 MB
-iteration: 513 ; CPU: 67.33% ; MEM: 8028.07 MB
-iteration: 514 ; CPU: 67.51% ; MEM: 8028.07 MB
-iteration: 515 ; CPU: 67.73% ; MEM: 8028.07 MB
-iteration: 516 ; CPU: 67.91% ; MEM: 8028.07 MB
-iteration: 517 ; CPU: 68.10% ; MEM: 8028.07 MB
-iteration: 518 ; CPU: 67.32% ; MEM: 8028.07 MB
-iteration: 519 ; CPU: 67.51% ; MEM: 8028.07 MB
-iteration: 520 ; CPU: 67.68% ; MEM: 8028.07 MB
-iteration: 521 ; CPU: 67.82% ; MEM: 8028.07 MB
-iteration: 522 ; CPU: 68.02% ; MEM: 8028.07 MB
-iteration: 523 ; CPU: 68.23% ; MEM: 8028.07 MB
-iteration: 524 ; CPU: 67.46% ; MEM: 8028.07 MB
-iteration: 525 ; CPU: 67.69% ; MEM: 8028.07 MB
-iteration: 526 ; CPU: 67.88% ; MEM: 8028.07 MB
-iteration: 527 ; CPU: 68.03% ; MEM: 8028.07 MB
-iteration: 528 ; CPU: 68.23% ; MEM: 8028.07 MB
-iteration: 529 ; CPU: 67.53% ; MEM: 8028.07 MB
-iteration: 530 ; CPU: 67.66% ; MEM: 8028.07 MB
-iteration: 531 ; CPU: 67.89% ; MEM: 8028.07 MB
-iteration: 532 ; CPU: 68.09% ; MEM: 8028.07 MB
-iteration: 533 ; CPU: 68.23% ; MEM: 8028.33 MB
-iteration: 534 ; CPU: 67.53% ; MEM: 8028.33 MB
-iteration: 535 ; CPU: 67.71% ; MEM: 8028.33 MB
-iteration: 536 ; CPU: 67.92% ; MEM: 8028.33 MB
-iteration: 537 ; CPU: 68.08% ; MEM: 8028.33 MB
-iteration: 538 ; CPU: 68.26% ; MEM: 8028.33 MB
-iteration: 539 ; CPU: 67.54% ; MEM: 8028.59 MB
-iteration: 540 ; CPU: 67.69% ; MEM: 8028.59 MB
-iteration: 541 ; CPU: 67.91% ; MEM: 8028.59 MB
-iteration: 542 ; CPU: 68.06% ; MEM: 8028.59 MB
-iteration: 543 ; CPU: 68.26% ; MEM: 8028.59 MB
-iteration: 544 ; CPU: 68.45% ; MEM: 8028.59 MB
-iteration: 545 ; CPU: 67.70% ; MEM: 8028.59 MB
-iteration: 546 ; CPU: 67.89% ; MEM: 8028.59 MB
-iteration: 547 ; CPU: 68.08% ; MEM: 8028.59 MB
-iteration: 548 ; CPU: 68.23% ; MEM: 8028.59 MB
-iteration: 549 ; CPU: 68.40% ; MEM: 8028.59 MB
-iteration: 550 ; CPU: 67.72% ; MEM: 8028.59 MB
-iteration: 551 ; CPU: 67.93% ; MEM: 8028.59 MB
-iteration: 552 ; CPU: 68.08% ; MEM: 8028.59 MB
-iteration: 553 ; CPU: 68.25% ; MEM: 8028.59 MB
-iteration: 554 ; CPU: 68.38% ; MEM: 8028.59 MB
-iteration: 555 ; CPU: 67.70% ; MEM: 8028.59 MB
-iteration: 556 ; CPU: 67.90% ; MEM: 8028.74 MB
-iteration: 557 ; CPU: 68.06% ; MEM: 8028.74 MB
-iteration: 558 ; CPU: 68.24% ; MEM: 8028.74 MB
-iteration: 559 ; CPU: 68.39% ; MEM: 8028.74 MB
-iteration: 560 ; CPU: 68.59% ; MEM: 8028.74 MB
-iteration: 561 ; CPU: 67.89% ; MEM: 8028.74 MB
-iteration: 562 ; CPU: 68.08% ; MEM: 8028.74 MB
-iteration: 563 ; CPU: 68.24% ; MEM: 8028.74 MB
-iteration: 564 ; CPU: 68.42% ; MEM: 8028.74 MB
-iteration: 565 ; CPU: 68.61% ; MEM: 8028.74 MB
-iteration: 566 ; CPU: 67.96% ; MEM: 8028.74 MB
-iteration: 567 ; CPU: 68.12% ; MEM: 8028.74 MB
-iteration: 568 ; CPU: 68.29% ; MEM: 8028.74 MB
-iteration: 569 ; CPU: 68.43% ; MEM: 8028.74 MB
-iteration: 570 ; CPU: 68.63% ; MEM: 8029.00 MB
-iteration: 571 ; CPU: 67.97% ; MEM: 8029.00 MB
-iteration: 572 ; CPU: 68.12% ; MEM: 8029.23 MB
-iteration: 573 ; CPU: 68.29% ; MEM: 8029.23 MB
-iteration: 574 ; CPU: 68.45% ; MEM: 8029.23 MB
-iteration: 575 ; CPU: 68.64% ; MEM: 8029.23 MB
-iteration: 576 ; CPU: 67.97% ; MEM: 8029.23 MB
-iteration: 577 ; CPU: 68.16% ; MEM: 8029.23 MB
-iteration: 578 ; CPU: 68.30% ; MEM: 8029.23 MB
-iteration: 579 ; CPU: 68.46% ; MEM: 8029.43 MB
-iteration: 580 ; CPU: 68.58% ; MEM: 8029.43 MB
-iteration: 581 ; CPU: 68.77% ; MEM: 8029.43 MB
-iteration: 582 ; CPU: 68.15% ; MEM: 8029.43 MB
-iteration: 583 ; CPU: 68.27% ; MEM: 8029.43 MB
-iteration: 584 ; CPU: 68.44% ; MEM: 8029.43 MB
-iteration: 585 ; CPU: 68.58% ; MEM: 8029.43 MB
-iteration: 586 ; CPU: 68.77% ; MEM: 8029.43 MB
-iteration: 587 ; CPU: 68.15% ; MEM: 8029.43 MB
-iteration: 588 ; CPU: 68.30% ; MEM: 8029.43 MB
-iteration: 589 ; CPU: 68.44% ; MEM: 8029.43 MB
-iteration: 590 ; CPU: 68.59% ; MEM: 8029.43 MB
-iteration: 591 ; CPU: 68.80% ; MEM: 8029.43 MB
-iteration: 592 ; CPU: 68.17% ; MEM: 8029.43 MB
-iteration: 593 ; CPU: 68.32% ; MEM: 8029.43 MB
-iteration: 594 ; CPU: 68.49% ; MEM: 8029.43 MB
-iteration: 595 ; CPU: 68.61% ; MEM: 8029.43 MB
-iteration: 596 ; CPU: 68.81% ; MEM: 8029.43 MB
-iteration: 597 ; CPU: 68.91% ; MEM: 8029.43 MB
-iteration: 598 ; CPU: 68.30% ; MEM: 8029.43 MB
-iteration: 599 ; CPU: 68.46% ; MEM: 8029.43 MB
-iteration: 600 ; CPU: 68.57% ; MEM: 8029.43 MB
-iteration: 601 ; CPU: 68.78% ; MEM: 8029.43 MB
-iteration: 602 ; CPU: 68.91% ; MEM: 8029.43 MB
-iteration: 603 ; CPU: 68.30% ; MEM: 8029.43 MB
-iteration: 604 ; CPU: 68.46% ; MEM: 8029.43 MB
-iteration: 605 ; CPU: 68.60% ; MEM: 8029.43 MB
-iteration: 606 ; CPU: 68.79% ; MEM: 8029.43 MB
-iteration: 607 ; CPU: 68.96% ; MEM: 8029.43 MB
-iteration: 608 ; CPU: 68.36% ; MEM: 8029.43 MB
-iteration: 609 ; CPU: 68.48% ; MEM: 8029.43 MB
-iteration: 610 ; CPU: 68.64% ; MEM: 8029.43 MB
-iteration: 611 ; CPU: 68.75% ; MEM: 8029.43 MB
-iteration: 612 ; CPU: 68.97% ; MEM: 8029.43 MB
-iteration: 613 ; CPU: 69.13% ; MEM: 8035.36 MB
-iteration: 614 ; CPU: 68.53% ; MEM: 8035.49 MB
-iteration: 615 ; CPU: 68.66% ; MEM: 8035.49 MB
-iteration: 616 ; CPU: 68.83% ; MEM: 8035.49 MB
-iteration: 617 ; CPU: 68.99% ; MEM: 8035.49 MB
-iteration: 618 ; CPU: 69.14% ; MEM: 8035.49 MB
-iteration: 619 ; CPU: 68.54% ; MEM: 8035.49 MB
-iteration: 620 ; CPU: 68.66% ; MEM: 8035.49 MB
-iteration: 621 ; CPU: 68.82% ; MEM: 8035.49 MB
-iteration: 622 ; CPU: 68.98% ; MEM: 8035.49 MB
-iteration: 623 ; CPU: 69.13% ; MEM: 8035.49 MB
-iteration: 624 ; CPU: 68.55% ; MEM: 8035.49 MB
-iteration: 625 ; CPU: 68.67% ; MEM: 8035.49 MB
-iteration: 626 ; CPU: 68.83% ; MEM: 8035.49 MB
-iteration: 627 ; CPU: 68.98% ; MEM: 8035.49 MB
-iteration: 628 ; CPU: 69.14% ; MEM: 8035.49 MB
-iteration: 629 ; CPU: 68.54% ; MEM: 8035.49 MB
-iteration: 630 ; CPU: 68.70% ; MEM: 8035.49 MB
-iteration: 631 ; CPU: 68.83% ; MEM: 8035.49 MB
-iteration: 632 ; CPU: 69.02% ; MEM: 8035.49 MB
-iteration: 633 ; CPU: 69.14% ; MEM: 8035.49 MB
-iteration: 634 ; CPU: 69.29% ; MEM: 8035.49 MB
-iteration: 635 ; CPU: 68.69% ; MEM: 8036.52 MB
-iteration: 636 ; CPU: 68.84% ; MEM: 8037.62 MB
-iteration: 637 ; CPU: 69.00% ; MEM: 8037.62 MB
-iteration: 638 ; CPU: 69.11% ; MEM: 8040.71 MB
-iteration: 639 ; CPU: 69.26% ; MEM: 8040.71 MB
-iteration: 640 ; CPU: 68.70% ; MEM: 8040.71 MB
-iteration: 641 ; CPU: 68.83% ; MEM: 8040.71 MB
-iteration: 642 ; CPU: 68.96% ; MEM: 8040.71 MB
-iteration: 643 ; CPU: 69.12% ; MEM: 8040.71 MB
-iteration: 644 ; CPU: 69.25% ; MEM: 8040.71 MB
-iteration: 645 ; CPU: 68.69% ; MEM: 8040.89 MB
-iteration: 646 ; CPU: 68.83% ; MEM: 8040.89 MB
-iteration: 647 ; CPU: 68.99% ; MEM: 8040.89 MB
-iteration: 648 ; CPU: 69.15% ; MEM: 8040.89 MB
-iteration: 649 ; CPU: 69.25% ; MEM: 8040.89 MB
-iteration: 650 ; CPU: 69.40% ; MEM: 8040.89 MB
-iteration: 651 ; CPU: 68.85% ; MEM: 8040.89 MB
-iteration: 652 ; CPU: 69.03% ; MEM: 8032.32 MB
-iteration: 653 ; CPU: 69.15% ; MEM: 8032.32 MB
-iteration: 654 ; CPU: 69.30% ; MEM: 8032.32 MB
-iteration: 655 ; CPU: 69.44% ; MEM: 8032.32 MB
-iteration: 656 ; CPU: 68.85% ; MEM: 8032.32 MB
-iteration: 657 ; CPU: 69.05% ; MEM: 8032.32 MB
-iteration: 658 ; CPU: 69.15% ; MEM: 8032.32 MB
-iteration: 659 ; CPU: 69.28% ; MEM: 8032.32 MB
-iteration: 660 ; CPU: 69.41% ; MEM: 8032.32 MB
-iteration: 661 ; CPU: 68.84% ; MEM: 8032.32 MB
-iteration: 662 ; CPU: 69.03% ; MEM: 8032.32 MB
-iteration: 663 ; CPU: 69.13% ; MEM: 8032.32 MB
-iteration: 664 ; CPU: 69.29% ; MEM: 8032.32 MB
-iteration: 665 ; CPU: 69.39% ; MEM: 8038.81 MB
-iteration: 666 ; CPU: 68.89% ; MEM: 8052.22 MB
-iteration: 667 ; CPU: 69.05% ; MEM: 8052.38 MB
-iteration: 668 ; CPU: 69.19% ; MEM: 8052.38 MB
-iteration: 669 ; CPU: 69.31% ; MEM: 8052.44 MB
-iteration: 670 ; CPU: 69.47% ; MEM: 8052.44 MB
-iteration: 671 ; CPU: 69.58% ; MEM: 8052.44 MB
-iteration: 672 ; CPU: 69.05% ; MEM: 8052.44 MB
-iteration: 673 ; CPU: 69.19% ; MEM: 8052.87 MB
-iteration: 674 ; CPU: 69.31% ; MEM: 8054.18 MB
-iteration: 675 ; CPU: 69.44% ; MEM: 8054.30 MB
-iteration: 676 ; CPU: 69.56% ; MEM: 8054.30 MB
-iteration: 677 ; CPU: 69.10% ; MEM: 8054.30 MB
-iteration: 678 ; CPU: 69.21% ; MEM: 8054.30 MB
-iteration: 679 ; CPU: 69.32% ; MEM: 8054.30 MB
-iteration: 680 ; CPU: 69.47% ; MEM: 8054.30 MB
-iteration: 681 ; CPU: 69.58% ; MEM: 8054.30 MB
-iteration: 682 ; CPU: 69.11% ; MEM: 8054.30 MB
-iteration: 683 ; CPU: 69.21% ; MEM: 8054.30 MB
-iteration: 684 ; CPU: 69.36% ; MEM: 8054.30 MB
-iteration: 685 ; CPU: 69.47% ; MEM: 8054.30 MB
-iteration: 686 ; CPU: 69.60% ; MEM: 8054.50 MB
-iteration: 687 ; CPU: 69.74% ; MEM: 8054.50 MB
-iteration: 688 ; CPU: 69.21% ; MEM: 8054.50 MB
-iteration: 689 ; CPU: 69.35% ; MEM: 8054.44 MB
-iteration: 690 ; CPU: 69.46% ; MEM: 8054.62 MB
-iteration: 691 ; CPU: 69.60% ; MEM: 8054.82 MB
-iteration: 692 ; CPU: 69.74% ; MEM: 8054.82 MB
-iteration: 693 ; CPU: 69.24% ; MEM: 8054.79 MB
-iteration: 694 ; CPU: 69.35% ; MEM: 8054.79 MB
-iteration: 695 ; CPU: 69.50% ; MEM: 8054.79 MB
-iteration: 696 ; CPU: 69.60% ; MEM: 8054.87 MB
-iteration: 697 ; CPU: 69.73% ; MEM: 8054.87 MB
-iteration: 698 ; CPU: 69.22% ; MEM: 8054.87 MB
-iteration: 699 ; CPU: 69.33% ; MEM: 8055.13 MB
-iteration: 700 ; CPU: 69.46% ; MEM: 8055.13 MB
-iteration: 701 ; CPU: 69.56% ; MEM: 8055.13 MB
-iteration: 702 ; CPU: 69.67% ; MEM: 8055.35 MB
-iteration: 703 ; CPU: 69.22% ; MEM: 8055.35 MB
-iteration: 704 ; CPU: 69.33% ; MEM: 8055.35 MB
-iteration: 705 ; CPU: 69.48% ; MEM: 8044.91 MB
-iteration: 706 ; CPU: 69.56% ; MEM: 8044.91 MB
-iteration: 707 ; CPU: 69.67% ; MEM: 8044.91 MB
-iteration: 708 ; CPU: 69.81% ; MEM: 8044.91 MB
-iteration: 709 ; CPU: 69.28% ; MEM: 8044.91 MB
-iteration: 710 ; CPU: 69.42% ; MEM: 8044.91 MB
-iteration: 711 ; CPU: 69.53% ; MEM: 8044.91 MB
-iteration: 712 ; CPU: 69.66% ; MEM: 8044.91 MB
-iteration: 713 ; CPU: 69.78% ; MEM: 8044.91 MB
-iteration: 714 ; CPU: 69.26% ; MEM: 8044.91 MB
-iteration: 715 ; CPU: 69.42% ; MEM: 8045.07 MB
-iteration: 716 ; CPU: 69.50% ; MEM: 8045.20 MB
-iteration: 717 ; CPU: 69.64% ; MEM: 8045.20 MB
-iteration: 718 ; CPU: 69.76% ; MEM: 8045.40 MB
-iteration: 719 ; CPU: 69.85% ; MEM: 8045.40 MB
-iteration: 720 ; CPU: 69.40% ; MEM: 8045.40 MB
-iteration: 721 ; CPU: 69.50% ; MEM: 8045.40 MB
-iteration: 722 ; CPU: 69.62% ; MEM: 8045.40 MB
-iteration: 723 ; CPU: 69.71% ; MEM: 8045.40 MB
-iteration: 724 ; CPU: 69.86% ; MEM: 8045.40 MB
-iteration: 725 ; CPU: 69.40% ; MEM: 8045.40 MB
-iteration: 726 ; CPU: 69.49% ; MEM: 8045.40 MB
-iteration: 727 ; CPU: 69.61% ; MEM: 8045.40 MB
-iteration: 728 ; CPU: 69.71% ; MEM: 8045.40 MB
-iteration: 729 ; CPU: 69.84% ; MEM: 8045.40 MB
-iteration: 730 ; CPU: 69.39% ; MEM: 8045.40 MB
-iteration: 731 ; CPU: 69.47% ; MEM: 8045.40 MB
-iteration: 732 ; CPU: 69.61% ; MEM: 8045.53 MB
-iteration: 733 ; CPU: 69.71% ; MEM: 8045.71 MB
-iteration: 734 ; CPU: 69.85% ; MEM: 8045.71 MB
-iteration: 735 ; CPU: 69.94% ; MEM: 8045.71 MB
-iteration: 736 ; CPU: 69.48% ; MEM: 8045.71 MB
-iteration: 737 ; CPU: 69.62% ; MEM: 8045.71 MB
-iteration: 738 ; CPU: 69.70% ; MEM: 8046.32 MB
-iteration: 739 ; CPU: 69.85% ; MEM: 8055.38 MB
-iteration: 740 ; CPU: 69.96% ; MEM: 8055.42 MB
-iteration: 741 ; CPU: 69.50% ; MEM: 8055.42 MB
-iteration: 742 ; CPU: 69.60% ; MEM: 8081.56 MB
-iteration: 743 ; CPU: 69.69% ; MEM: 8152.17 MB
-iteration: 744 ; CPU: 69.84% ; MEM: 8246.21 MB
-iteration: 745 ; CPU: 69.93% ; MEM: 8334.82 MB
-iteration: 746 ; CPU: 69.47% ; MEM: 8419.05 MB
-iteration: 747 ; CPU: 69.59% ; MEM: 8519.28 MB
-iteration: 748 ; CPU: 69.68% ; MEM: 8617.17 MB
-iteration: 749 ; CPU: 69.79% ; MEM: 8675.34 MB
-iteration: 750 ; CPU: 69.93% ; MEM: 8675.34 MB
-iteration: 751 ; CPU: 70.04% ; MEM: 8675.59 MB
-iteration: 752 ; CPU: 69.59% ; MEM: 8675.59 MB
-iteration: 753 ; CPU: 69.70% ; MEM: 8675.59 MB
-iteration: 754 ; CPU: 69.78% ; MEM: 8675.59 MB
-iteration: 755 ; CPU: 69.92% ; MEM: 8675.59 MB
-iteration: 756 ; CPU: 70.05% ; MEM: 8680.59 MB
-iteration: 757 ; CPU: 69.59% ; MEM: 8680.59 MB
-iteration: 758 ; CPU: 69.67% ; MEM: 8680.59 MB
-iteration: 759 ; CPU: 69.74% ; MEM: 8680.74 MB
-iteration: 760 ; CPU: 69.87% ; MEM: 8680.68 MB
-iteration: 761 ; CPU: 70.00% ; MEM: 8680.68 MB
-iteration: 762 ; CPU: 70.08% ; MEM: 8680.68 MB
-iteration: 763 ; CPU: 69.66% ; MEM: 8681.08 MB
-iteration: 764 ; CPU: 69.74% ; MEM: 8683.35 MB
-iteration: 765 ; CPU: 69.86% ; MEM: 8683.89 MB
-iteration: 766 ; CPU: 69.98% ; MEM: 8683.89 MB
-iteration: 767 ; CPU: 70.08% ; MEM: 8683.89 MB
-iteration: 768 ; CPU: 69.65% ; MEM: 8683.89 MB
-iteration: 769 ; CPU: 69.72% ; MEM: 8683.91 MB
-iteration: 770 ; CPU: 69.81% ; MEM: 8683.91 MB
-iteration: 771 ; CPU: 69.97% ; MEM: 8683.91 MB
-iteration: 772 ; CPU: 70.04% ; MEM: 8684.33 MB
-iteration: 773 ; CPU: 69.64% ; MEM: 8684.33 MB
-iteration: 774 ; CPU: 69.71% ; MEM: 8684.33 MB
-iteration: 775 ; CPU: 69.80% ; MEM: 8684.33 MB
-iteration: 776 ; CPU: 69.95% ; MEM: 8684.33 MB
-iteration: 777 ; CPU: 70.03% ; MEM: 8684.33 MB
-iteration: 778 ; CPU: 70.14% ; MEM: 8684.33 MB
-iteration: 779 ; CPU: 69.70% ; MEM: 8684.41 MB
-iteration: 780 ; CPU: 69.80% ; MEM: 8684.46 MB
-iteration: 781 ; CPU: 69.94% ; MEM: 8684.46 MB
-iteration: 782 ; CPU: 70.01% ; MEM: 8684.46 MB
-iteration: 783 ; CPU: 70.15% ; MEM: 8684.51 MB
-iteration: 784 ; CPU: 69.71% ; MEM: 8684.51 MB
-iteration: 785 ; CPU: 69.81% ; MEM: 8684.51 MB
-iteration: 786 ; CPU: 69.93% ; MEM: 8684.51 MB
-iteration: 787 ; CPU: 70.01% ; MEM: 8684.59 MB
-iteration: 788 ; CPU: 70.15% ; MEM: 8684.59 MB
-iteration: 789 ; CPU: 70.23% ; MEM: 8684.59 MB
-iteration: 790 ; CPU: 69.75% ; MEM: 8684.59 MB
-iteration: 791 ; CPU: 69.86% ; MEM: 8684.59 MB
-iteration: 792 ; CPU: 69.96% ; MEM: 8684.85 MB
-iteration: 793 ; CPU: 70.10% ; MEM: 8684.85 MB
-iteration: 794 ; CPU: 70.20% ; MEM: 8684.85 MB
-iteration: 795 ; CPU: 69.76% ; MEM: 8684.91 MB
-iteration: 796 ; CPU: 69.85% ; MEM: 8684.91 MB
-iteration: 797 ; CPU: 69.98% ; MEM: 8684.92 MB
-iteration: 798 ; CPU: 70.11% ; MEM: 8684.97 MB
-iteration: 799 ; CPU: 70.21% ; MEM: 8684.98 MB
-iteration: 800 ; CPU: 69.78% ; MEM: 8684.98 MB
-iteration: 801 ; CPU: 69.86% ; MEM: 8684.98 MB
-iteration: 802 ; CPU: 69.98% ; MEM: 8684.98 MB
-iteration: 803 ; CPU: 70.11% ; MEM: 8685.90 MB
-iteration: 804 ; CPU: 70.19% ; MEM: 8685.90 MB
-iteration: 805 ; CPU: 70.27% ; MEM: 8685.90 MB
-iteration: 806 ; CPU: 69.85% ; MEM: 8685.90 MB
-iteration: 807 ; CPU: 69.96% ; MEM: 8685.98 MB
-iteration: 808 ; CPU: 70.09% ; MEM: 8685.98 MB
-iteration: 809 ; CPU: 70.18% ; MEM: 8686.00 MB
-iteration: 810 ; CPU: 70.29% ; MEM: 8686.65 MB
-iteration: 811 ; CPU: 69.84% ; MEM: 8686.65 MB
-iteration: 812 ; CPU: 69.97% ; MEM: 8686.65 MB
-iteration: 813 ; CPU: 70.06% ; MEM: 8686.77 MB
-iteration: 814 ; CPU: 70.16% ; MEM: 8686.85 MB
-iteration: 815 ; CPU: 70.27% ; MEM: 8686.85 MB
-iteration: 816 ; CPU: 70.36% ; MEM: 8686.92 MB
-iteration: 817 ; CPU: 69.95% ; MEM: 8686.92 MB
-iteration: 818 ; CPU: 70.05% ; MEM: 8686.92 MB
-iteration: 819 ; CPU: 70.14% ; MEM: 8686.92 MB
-iteration: 820 ; CPU: 70.26% ; MEM: 8686.92 MB
-iteration: 821 ; CPU: 70.34% ; MEM: 8686.92 MB
-iteration: 822 ; CPU: 69.92% ; MEM: 8686.92 MB
-iteration: 823 ; CPU: 70.03% ; MEM: 8686.92 MB
-iteration: 824 ; CPU: 70.11% ; MEM: 8686.92 MB
-iteration: 825 ; CPU: 70.24% ; MEM: 8686.92 MB
-iteration: 826 ; CPU: 70.33% ; MEM: 8686.92 MB
-iteration: 827 ; CPU: 69.91% ; MEM: 8686.92 MB
-iteration: 828 ; CPU: 70.03% ; MEM: 8686.92 MB
-iteration: 829 ; CPU: 70.11% ; MEM: 8686.92 MB
-iteration: 830 ; CPU: 70.22% ; MEM: 8686.92 MB
-iteration: 831 ; CPU: 70.32% ; MEM: 8686.92 MB
-iteration: 832 ; CPU: 70.40% ; MEM: 8687.00 MB
-iteration: 833 ; CPU: 70.03% ; MEM: 8687.00 MB
-iteration: 834 ; CPU: 70.12% ; MEM: 8687.00 MB
-iteration: 835 ; CPU: 70.24% ; MEM: 8687.00 MB
-iteration: 836 ; CPU: 70.32% ; MEM: 8687.12 MB
-iteration: 837 ; CPU: 70.40% ; MEM: 8687.12 MB
-iteration: 838 ; CPU: 70.03% ; MEM: 8687.12 MB
-iteration: 839 ; CPU: 70.15% ; MEM: 8687.12 MB
-iteration: 840 ; CPU: 70.25% ; MEM: 8687.12 MB
-iteration: 841 ; CPU: 70.32% ; MEM: 8687.12 MB
-iteration: 842 ; CPU: 70.43% ; MEM: 8687.12 MB
-iteration: 843 ; CPU: 70.04% ; MEM: 8687.12 MB
-iteration: 844 ; CPU: 70.16% ; MEM: 8687.12 MB
-iteration: 845 ; CPU: 70.24% ; MEM: 8687.12 MB
-iteration: 846 ; CPU: 70.31% ; MEM: 8687.12 MB
-iteration: 847 ; CPU: 70.42% ; MEM: 8687.53 MB
-iteration: 848 ; CPU: 70.50% ; MEM: 8687.53 MB
-iteration: 849 ; CPU: 70.15% ; MEM: 8687.53 MB
-iteration: 850 ; CPU: 70.23% ; MEM: 8687.53 MB
-iteration: 851 ; CPU: 70.30% ; MEM: 8687.53 MB
-iteration: 852 ; CPU: 70.41% ; MEM: 8687.74 MB
-iteration: 853 ; CPU: 70.48% ; MEM: 8687.74 MB
-iteration: 854 ; CPU: 70.11% ; MEM: 8687.74 MB
-iteration: 855 ; CPU: 70.19% ; MEM: 8687.74 MB
-iteration: 856 ; CPU: 70.25% ; MEM: 8687.74 MB
-iteration: 857 ; CPU: 70.35% ; MEM: 8687.74 MB
-iteration: 858 ; CPU: 70.43% ; MEM: 8687.74 MB
-iteration: 859 ; CPU: 70.51% ; MEM: 8687.74 MB
-iteration: 860 ; CPU: 70.15% ; MEM: 8687.74 MB
-iteration: 861 ; CPU: 70.24% ; MEM: 8687.74 MB
-iteration: 862 ; CPU: 70.34% ; MEM: 8687.74 MB
-iteration: 863 ; CPU: 70.42% ; MEM: 8687.74 MB
-iteration: 864 ; CPU: 70.50% ; MEM: 8687.74 MB
-iteration: 865 ; CPU: 70.15% ; MEM: 8687.74 MB
-iteration: 866 ; CPU: 70.22% ; MEM: 8687.74 MB
-iteration: 867 ; CPU: 70.33% ; MEM: 8687.74 MB
-iteration: 868 ; CPU: 70.40% ; MEM: 8687.74 MB
-iteration: 869 ; CPU: 70.49% ; MEM: 8687.74 MB
-iteration: 870 ; CPU: 70.13% ; MEM: 8687.74 MB
-iteration: 871 ; CPU: 70.21% ; MEM: 8687.81 MB
-iteration: 872 ; CPU: 70.32% ; MEM: 8687.81 MB
-iteration: 873 ; CPU: 70.40% ; MEM: 8687.81 MB
-iteration: 874 ; CPU: 70.47% ; MEM: 8687.81 MB
-iteration: 875 ; CPU: 70.57% ; MEM: 8687.81 MB
-iteration: 876 ; CPU: 70.20% ; MEM: 8687.81 MB
-iteration: 877 ; CPU: 70.29% ; MEM: 8687.86 MB
-iteration: 878 ; CPU: 70.38% ; MEM: 8687.86 MB
-iteration: 879 ; CPU: 70.45% ; MEM: 8687.86 MB
-iteration: 880 ; CPU: 70.55% ; MEM: 8688.10 MB
-iteration: 881 ; CPU: 70.16% ; MEM: 8688.10 MB
-iteration: 882 ; CPU: 70.26% ; MEM: 8688.10 MB
-iteration: 883 ; CPU: 70.34% ; MEM: 8688.17 MB
-iteration: 884 ; CPU: 70.42% ; MEM: 8688.17 MB
-iteration: 885 ; CPU: 70.52% ; MEM: 8688.27 MB
-iteration: 886 ; CPU: 70.60% ; MEM: 8688.27 MB
-iteration: 887 ; CPU: 70.24% ; MEM: 8688.27 MB
-iteration: 888 ; CPU: 70.32% ; MEM: 8688.27 MB
-iteration: 889 ; CPU: 70.40% ; MEM: 8688.27 MB
-iteration: 890 ; CPU: 70.50% ; MEM: 8688.27 MB
-iteration: 891 ; CPU: 70.58% ; MEM: 8688.27 MB
-iteration: 892 ; CPU: 70.24% ; MEM: 8688.27 MB
-iteration: 893 ; CPU: 70.31% ; MEM: 8688.27 MB
-iteration: 894 ; CPU: 70.38% ; MEM: 8688.27 MB
-iteration: 895 ; CPU: 70.48% ; MEM: 8688.27 MB
-iteration: 896 ; CPU: 70.55% ; MEM: 8688.45 MB
-iteration: 897 ; CPU: 70.64% ; MEM: 8688.45 MB
-iteration: 898 ; CPU: 70.29% ; MEM: 8688.45 MB
-iteration: 899 ; CPU: 70.36% ; MEM: 8688.45 MB
-iteration: 900 ; CPU: 70.43% ; MEM: 8688.45 MB
-iteration: 901 ; CPU: 70.51% ; MEM: 8688.45 MB
-iteration: 902 ; CPU: 70.59% ; MEM: 8688.45 MB
-iteration: 903 ; CPU: 70.25% ; MEM: 8688.45 MB
-iteration: 904 ; CPU: 70.32% ; MEM: 8688.45 MB
-iteration: 905 ; CPU: 70.41% ; MEM: 8688.45 MB
-iteration: 906 ; CPU: 70.50% ; MEM: 8688.58 MB
-iteration: 907 ; CPU: 70.58% ; MEM: 8688.58 MB
-iteration: 908 ; CPU: 70.23% ; MEM: 8688.58 MB
-iteration: 909 ; CPU: 70.30% ; MEM: 8688.58 MB
-iteration: 910 ; CPU: 70.38% ; MEM: 8688.58 MB
-iteration: 911 ; CPU: 70.47% ; MEM: 8688.58 MB
-iteration: 912 ; CPU: 70.55% ; MEM: 8688.58 MB
-iteration: 913 ; CPU: 70.61% ; MEM: 8688.58 MB
-iteration: 914 ; CPU: 70.29% ; MEM: 8688.58 MB
-iteration: 915 ; CPU: 70.35% ; MEM: 8688.58 MB
-iteration: 916 ; CPU: 70.45% ; MEM: 8688.58 MB
-iteration: 917 ; CPU: 70.51% ; MEM: 8688.58 MB
-iteration: 918 ; CPU: 70.60% ; MEM: 8688.58 MB
-iteration: 919 ; CPU: 70.26% ; MEM: 8688.84 MB
-iteration: 920 ; CPU: 70.33% ; MEM: 8689.10 MB
-iteration: 921 ; CPU: 70.43% ; MEM: 8689.10 MB
-iteration: 922 ; CPU: 70.50% ; MEM: 8689.10 MB
-iteration: 923 ; CPU: 70.57% ; MEM: 8689.10 MB
-iteration: 924 ; CPU: 70.68% ; MEM: 8689.10 MB
-iteration: 925 ; CPU: 70.31% ; MEM: 8689.03 MB
-iteration: 926 ; CPU: 70.41% ; MEM: 8689.03 MB
-iteration: 927 ; CPU: 70.47% ; MEM: 8689.03 MB
-iteration: 928 ; CPU: 70.55% ; MEM: 8689.03 MB
-iteration: 929 ; CPU: 70.61% ; MEM: 8689.03 MB
-iteration: 930 ; CPU: 70.28% ; MEM: 8689.03 MB
-iteration: 931 ; CPU: 70.37% ; MEM: 8689.03 MB
-iteration: 932 ; CPU: 70.45% ; MEM: 8689.03 MB
-iteration: 933 ; CPU: 70.52% ; MEM: 8689.25 MB
-iteration: 934 ; CPU: 70.58% ; MEM: 8689.25 MB
-iteration: 935 ; CPU: 70.68% ; MEM: 8689.27 MB
-iteration: 936 ; CPU: 70.33% ; MEM: 8689.27 MB
-iteration: 937 ; CPU: 70.42% ; MEM: 8689.27 MB
-iteration: 938 ; CPU: 70.50% ; MEM: 8689.27 MB
-iteration: 939 ; CPU: 70.57% ; MEM: 8689.27 MB
-iteration: 940 ; CPU: 70.66% ; MEM: 8689.27 MB
-iteration: 941 ; CPU: 70.30% ; MEM: 8689.27 MB
-iteration: 942 ; CPU: 70.40% ; MEM: 8689.27 MB
-iteration: 943 ; CPU: 70.47% ; MEM: 8689.27 MB
-iteration: 944 ; CPU: 70.54% ; MEM: 8689.27 MB
-iteration: 945 ; CPU: 70.62% ; MEM: 8689.27 MB
-iteration: 946 ; CPU: 70.69% ; MEM: 8689.27 MB
-iteration: 947 ; CPU: 70.38% ; MEM: 8689.26 MB
-iteration: 948 ; CPU: 70.43% ; MEM: 8689.26 MB
-iteration: 949 ; CPU: 70.51% ; MEM: 8689.26 MB
-iteration: 950 ; CPU: 70.57% ; MEM: 8689.26 MB
-iteration: 951 ; CPU: 70.67% ; MEM: 8689.26 MB
-iteration: 952 ; CPU: 70.35% ; MEM: 8689.26 MB
-iteration: 953 ; CPU: 70.41% ; MEM: 8689.26 MB
-iteration: 954 ; CPU: 70.49% ; MEM: 8689.26 MB
-iteration: 955 ; CPU: 70.54% ; MEM: 8689.26 MB
-iteration: 956 ; CPU: 70.64% ; MEM: 8689.26 MB
-iteration: 957 ; CPU: 70.70% ; MEM: 8689.26 MB
-iteration: 958 ; CPU: 70.38% ; MEM: 8689.26 MB
-iteration: 959 ; CPU: 70.45% ; MEM: 8689.26 MB
-iteration: 960 ; CPU: 70.51% ; MEM: 8689.26 MB
-iteration: 961 ; CPU: 70.61% ; MEM: 8689.26 MB
-iteration: 962 ; CPU: 70.67% ; MEM: 8689.26 MB
-iteration: 963 ; CPU: 70.73% ; MEM: 8689.26 MB
-iteration: 964 ; CPU: 70.41% ; MEM: 8689.26 MB
-iteration: 965 ; CPU: 70.48% ; MEM: 8689.26 MB
-iteration: 966 ; CPU: 70.53% ; MEM: 8689.26 MB
-iteration: 967 ; CPU: 70.63% ; MEM: 8689.26 MB
-iteration: 968 ; CPU: 70.66% ; MEM: 8689.26 MB
-iteration: 969 ; CPU: 70.36% ; MEM: 8689.26 MB
-iteration: 970 ; CPU: 70.43% ; MEM: 8689.26 MB
-iteration: 971 ; CPU: 70.50% ; MEM: 8689.26 MB
-iteration: 972 ; CPU: 70.58% ; MEM: 8689.26 MB
-iteration: 973 ; CPU: 70.65% ; MEM: 8689.26 MB
-iteration: 974 ; CPU: 70.71% ; MEM: 8689.26 MB
-iteration: 975 ; CPU: 70.40% ; MEM: 8689.26 MB
-iteration: 976 ; CPU: 70.48% ; MEM: 8689.26 MB
-iteration: 977 ; CPU: 70.56% ; MEM: 8689.26 MB
-iteration: 978 ; CPU: 70.63% ; MEM: 8689.26 MB
-iteration: 979 ; CPU: 70.70% ; MEM: 8689.26 MB
-iteration: 980 ; CPU: 70.39% ; MEM: 8689.26 MB
-iteration: 981 ; CPU: 70.46% ; MEM: 8689.26 MB
-iteration: 982 ; CPU: 70.55% ; MEM: 8689.26 MB
-iteration: 983 ; CPU: 70.61% ; MEM: 8689.26 MB
-iteration: 984 ; CPU: 70.67% ; MEM: 8689.26 MB
-iteration: 985 ; CPU: 70.73% ; MEM: 8689.26 MB
-iteration: 986 ; CPU: 70.41% ; MEM: 8689.26 MB
-iteration: 987 ; CPU: 70.48% ; MEM: 8689.26 MB
-iteration: 988 ; CPU: 70.58% ; MEM: 8689.26 MB
-iteration: 989 ; CPU: 70.63% ; MEM: 8689.26 MB
-iteration: 990 ; CPU: 70.70% ; MEM: 8689.26 MB
-iteration: 991 ; CPU: 70.39% ; MEM: 8689.26 MB
-iteration: 992 ; CPU: 70.45% ; MEM: 8689.26 MB
-iteration: 993 ; CPU: 70.55% ; MEM: 8689.26 MB
-iteration: 994 ; CPU: 70.61% ; MEM: 8689.26 MB
-iteration: 995 ; CPU: 70.68% ; MEM: 8689.49 MB
-iteration: 996 ; CPU: 70.73% ; MEM: 8689.56 MB
-iteration: 997 ; CPU: 70.43% ; MEM: 8689.56 MB
-iteration: 998 ; CPU: 70.52% ; MEM: 8689.56 MB
-iteration: 999 ; CPU: 70.58% ; MEM: 8689.56 MB
-iteration: 1000 ; CPU: 70.63% ; MEM: 8689.56 MB
-iteration: 1001 ; CPU: 70.70% ; MEM: 8689.56 MB
-iteration: 1002 ; CPU: 70.80% ; MEM: 8689.56 MB
-iteration: 1003 ; CPU: 70.46% ; MEM: 8689.56 MB
-iteration: 1004 ; CPU: 70.55% ; MEM: 8689.56 MB
-iteration: 1005 ; CPU: 70.62% ; MEM: 8689.56 MB
-iteration: 1006 ; CPU: 70.70% ; MEM: 8689.56 MB
-iteration: 1007 ; CPU: 70.79% ; MEM: 8689.62 MB
-iteration: 1008 ; CPU: 70.46% ; MEM: 8689.62 MB
-iteration: 1009 ; CPU: 70.55% ; MEM: 8689.62 MB
-iteration: 1010 ; CPU: 70.60% ; MEM: 8689.62 MB
-iteration: 1011 ; CPU: 70.67% ; MEM: 8689.62 MB
-iteration: 1012 ; CPU: 70.76% ; MEM: 8689.62 MB
-iteration: 1013 ; CPU: 70.42% ; MEM: 8689.62 MB
-iteration: 1014 ; CPU: 70.51% ; MEM: 8689.62 MB
-iteration: 1015 ; CPU: 70.58% ; MEM: 8689.64 MB
-iteration: 1016 ; CPU: 70.63% ; MEM: 8689.66 MB
-iteration: 1017 ; CPU: 70.69% ; MEM: 8689.66 MB
-iteration: 1018 ; CPU: 70.78% ; MEM: 8690.00 MB
-iteration: 1019 ; CPU: 70.46% ; MEM: 8690.00 MB
-iteration: 1020 ; CPU: 70.53% ; MEM: 8690.00 MB
-iteration: 1021 ; CPU: 70.60% ; MEM: 8690.05 MB
-iteration: 1022 ; CPU: 70.66% ; MEM: 8690.05 MB
-iteration: 1023 ; CPU: 70.75% ; MEM: 8690.15 MB
-iteration: 1024 ; CPU: 70.84% ; MEM: 8690.15 MB
-iteration: 1025 ; CPU: 70.51% ; MEM: 8690.15 MB
-iteration: 1026 ; CPU: 70.57% ; MEM: 8690.15 MB
-iteration: 1027 ; CPU: 70.65% ; MEM: 8690.15 MB
-iteration: 1028 ; CPU: 70.73% ; MEM: 8690.15 MB
-iteration: 1029 ; CPU: 70.78% ; MEM: 8690.15 MB
-iteration: 1030 ; CPU: 70.49% ; MEM: 8690.15 MB
-iteration: 1031 ; CPU: 70.55% ; MEM: 8690.15 MB
-iteration: 1032 ; CPU: 70.61% ; MEM: 8690.15 MB
-iteration: 1033 ; CPU: 70.67% ; MEM: 8690.15 MB
-iteration: 1034 ; CPU: 70.75% ; MEM: 8690.15 MB
-iteration: 1035 ; CPU: 70.82% ; MEM: 8690.87 MB
-iteration: 1036 ; CPU: 70.51% ; MEM: 8690.87 MB
-iteration: 1037 ; CPU: 70.59% ; MEM: 8690.87 MB
-iteration: 1038 ; CPU: 70.65% ; MEM: 8690.87 MB
-iteration: 1039 ; CPU: 70.73% ; MEM: 8690.87 MB
-iteration: 1040 ; CPU: 70.79% ; MEM: 8690.87 MB
-iteration: 1041 ; CPU: 70.48% ; MEM: 8690.87 MB
-iteration: 1042 ; CPU: 70.54% ; MEM: 8690.87 MB
-iteration: 1043 ; CPU: 70.62% ; MEM: 8690.87 MB
-iteration: 1044 ; CPU: 70.71% ; MEM: 8690.87 MB
-iteration: 1045 ; CPU: 70.76% ; MEM: 8690.88 MB
-iteration: 1046 ; CPU: 70.82% ; MEM: 8690.88 MB
-iteration: 1047 ; CPU: 70.53% ; MEM: 8690.88 MB
-iteration: 1048 ; CPU: 70.59% ; MEM: 8690.88 MB
-iteration: 1049 ; CPU: 70.64% ; MEM: 8690.88 MB
-iteration: 1050 ; CPU: 70.73% ; MEM: 8690.88 MB
-iteration: 1051 ; CPU: 70.78% ; MEM: 8690.88 MB
-iteration: 1052 ; CPU: 70.50% ; MEM: 8690.88 MB
-iteration: 1053 ; CPU: 70.58% ; MEM: 8690.88 MB
-iteration: 1054 ; CPU: 70.63% ; MEM: 8690.88 MB
-iteration: 1055 ; CPU: 70.71% ; MEM: 8690.88 MB
-iteration: 1056 ; CPU: 70.78% ; MEM: 8690.88 MB
-iteration: 1057 ; CPU: 70.85% ; MEM: 8690.88 MB
-iteration: 1058 ; CPU: 70.53% ; MEM: 8690.88 MB
-iteration: 1059 ; CPU: 70.61% ; MEM: 8690.88 MB
-iteration: 1060 ; CPU: 70.68% ; MEM: 8690.88 MB
-iteration: 1061 ; CPU: 70.73% ; MEM: 8690.88 MB
-iteration: 1062 ; CPU: 70.80% ; MEM: 8690.88 MB
-iteration: 1063 ; CPU: 70.90% ; MEM: 8690.88 MB
-iteration: 1064 ; CPU: 70.57% ; MEM: 8690.88 MB
-iteration: 1065 ; CPU: 70.66% ; MEM: 8690.88 MB
-iteration: 1066 ; CPU: 70.72% ; MEM: 8690.88 MB
-iteration: 1067 ; CPU: 70.77% ; MEM: 8690.88 MB
-iteration: 1068 ; CPU: 70.83% ; MEM: 8690.88 MB
-iteration: 1069 ; CPU: 70.55% ; MEM: 8690.88 MB
-iteration: 1070 ; CPU: 70.61% ; MEM: 8690.88 MB
-iteration: 1071 ; CPU: 70.68% ; MEM: 8690.88 MB
-iteration: 1072 ; CPU: 70.75% ; MEM: 8690.88 MB
-iteration: 1073 ; CPU: 70.80% ; MEM: 8690.88 MB
-iteration: 1074 ; CPU: 70.91% ; MEM: 8690.88 MB
-iteration: 1075 ; CPU: 70.57% ; MEM: 8690.88 MB
-iteration: 1076 ; CPU: 70.65% ; MEM: 8690.88 MB
-iteration: 1077 ; CPU: 70.71% ; MEM: 8690.88 MB
-iteration: 1078 ; CPU: 70.76% ; MEM: 8690.88 MB
-iteration: 1079 ; CPU: 70.83% ; MEM: 8690.88 MB
-iteration: 1080 ; CPU: 70.55% ; MEM: 8690.88 MB
-iteration: 1081 ; CPU: 70.60% ; MEM: 8690.90 MB
-iteration: 1082 ; CPU: 70.69% ; MEM: 8690.90 MB
-iteration: 1083 ; CPU: 70.74% ; MEM: 8690.90 MB
-iteration: 1084 ; CPU: 70.81% ; MEM: 8690.90 MB
-iteration: 1085 ; CPU: 70.94% ; MEM: 8690.90 MB
-iteration: 1086 ; CPU: 70.59% ; MEM: 8690.90 MB
-iteration: 1087 ; CPU: 70.67% ; MEM: 8690.90 MB
-iteration: 1088 ; CPU: 70.73% ; MEM: 8691.15 MB
-iteration: 1089 ; CPU: 70.78% ; MEM: 8691.14 MB
-iteration: 1090 ; CPU: 70.90% ; MEM: 8691.14 MB
-iteration: 1091 ; CPU: 70.57% ; MEM: 8691.14 MB
-iteration: 1092 ; CPU: 70.65% ; MEM: 8691.14 MB
-iteration: 1093 ; CPU: 70.70% ; MEM: 8691.14 MB
-iteration: 1094 ; CPU: 70.75% ; MEM: 8691.14 MB
-iteration: 1095 ; CPU: 70.81% ; MEM: 8691.14 MB
-iteration: 1096 ; CPU: 70.93% ; MEM: 8691.14 MB
-iteration: 1097 ; CPU: 70.61% ; MEM: 8691.14 MB
-iteration: 1098 ; CPU: 70.67% ; MEM: 8691.14 MB
-iteration: 1099 ; CPU: 70.73% ; MEM: 8691.14 MB
-iteration: 1100 ; CPU: 70.80% ; MEM: 8691.14 MB
-iteration: 1101 ; CPU: 70.88% ; MEM: 8691.14 MB
-iteration: 1102 ; CPU: 70.60% ; MEM: 8691.14 MB
-iteration: 1103 ; CPU: 70.65% ; MEM: 8691.14 MB
-iteration: 1104 ; CPU: 70.71% ; MEM: 8691.14 MB
-iteration: 1105 ; CPU: 70.77% ; MEM: 8691.14 MB
-iteration: 1106 ; CPU: 70.86% ; MEM: 8691.14 MB
-iteration: 1107 ; CPU: 70.95% ; MEM: 8691.14 MB
-iteration: 1108 ; CPU: 70.63% ; MEM: 8691.14 MB
-iteration: 1109 ; CPU: 70.68% ; MEM: 8691.16 MB
-iteration: 1110 ; CPU: 70.74% ; MEM: 8691.14 MB
-iteration: 1111 ; CPU: 70.80% ; MEM: 8691.14 MB
-iteration: 1112 ; CPU: 70.89% ; MEM: 8691.16 MB
-iteration: 1113 ; CPU: 70.98% ; MEM: 8691.16 MB
-iteration: 1114 ; CPU: 70.65% ; MEM: 8691.16 MB
-iteration: 1115 ; CPU: 70.71% ; MEM: 8691.16 MB
-iteration: 1116 ; CPU: 70.79% ; MEM: 8691.19 MB
-iteration: 1117 ; CPU: 70.88% ; MEM: 8691.19 MB
-iteration: 1118 ; CPU: 70.96% ; MEM: 8691.19 MB
-iteration: 1119 ; CPU: 70.65% ; MEM: 8691.19 MB
-iteration: 1120 ; CPU: 70.70% ; MEM: 8691.44 MB
-iteration: 1121 ; CPU: 70.78% ; MEM: 8691.44 MB
-iteration: 1122 ; CPU: 70.87% ; MEM: 8691.44 MB
-iteration: 1123 ; CPU: 70.92% ; MEM: 8691.44 MB
-iteration: 1124 ; CPU: 70.64% ; MEM: 8691.50 MB
-iteration: 1125 ; CPU: 70.69% ; MEM: 8691.50 MB
-iteration: 1126 ; CPU: 70.75% ; MEM: 8691.50 MB
-iteration: 1127 ; CPU: 70.84% ; MEM: 8691.50 MB
-iteration: 1128 ; CPU: 70.89% ; MEM: 8691.50 MB
-iteration: 1129 ; CPU: 70.96% ; MEM: 8691.50 MB
-iteration: 1130 ; CPU: 70.67% ; MEM: 8691.50 MB
-iteration: 1131 ; CPU: 70.72% ; MEM: 8691.50 MB
-iteration: 1132 ; CPU: 70.82% ; MEM: 8691.85 MB
-iteration: 1133 ; CPU: 70.88% ; MEM: 8691.85 MB
-iteration: 1134 ; CPU: 70.93% ; MEM: 8691.84 MB
-iteration: 1135 ; CPU: 70.66% ; MEM: 8691.84 MB
-iteration: 1136 ; CPU: 70.71% ; MEM: 8691.84 MB
-iteration: 1137 ; CPU: 70.81% ; MEM: 8691.84 MB
-iteration: 1138 ; CPU: 70.87% ; MEM: 8691.84 MB
-iteration: 1139 ; CPU: 70.91% ; MEM: 8691.84 MB
-iteration: 1140 ; CPU: 71.02% ; MEM: 8691.80 MB
-iteration: 1141 ; CPU: 70.69% ; MEM: 8692.00 MB
-iteration: 1142 ; CPU: 70.76% ; MEM: 8692.00 MB
-iteration: 1143 ; CPU: 70.83% ; MEM: 8691.95 MB
-iteration: 1144 ; CPU: 70.89% ; MEM: 8691.95 MB
-iteration: 1145 ; CPU: 70.95% ; MEM: 8691.95 MB
-iteration: 1146 ; CPU: 70.67% ; MEM: 8691.95 MB
-iteration: 1147 ; CPU: 70.74% ; MEM: 8691.95 MB
-iteration: 1148 ; CPU: 70.81% ; MEM: 8691.95 MB
-iteration: 1149 ; CPU: 70.86% ; MEM: 8691.95 MB
-iteration: 1150 ; CPU: 70.92% ; MEM: 8691.95 MB
-iteration: 1151 ; CPU: 71.04% ; MEM: 8691.95 MB
-iteration: 1152 ; CPU: 70.72% ; MEM: 8691.95 MB
-iteration: 1153 ; CPU: 70.80% ; MEM: 8691.95 MB
-iteration: 1154 ; CPU: 70.86% ; MEM: 8691.95 MB
-iteration: 1155 ; CPU: 70.91% ; MEM: 8691.95 MB
-iteration: 1156 ; CPU: 71.01% ; MEM: 8691.95 MB
-iteration: 1157 ; CPU: 70.70% ; MEM: 8691.95 MB
-iteration: 1158 ; CPU: 70.79% ; MEM: 8691.95 MB
-iteration: 1159 ; CPU: 70.85% ; MEM: 8691.95 MB
-iteration: 1160 ; CPU: 70.90% ; MEM: 8691.95 MB
-iteration: 1161 ; CPU: 70.96% ; MEM: 8691.95 MB
-iteration: 1162 ; CPU: 71.08% ; MEM: 8692.12 MB
-iteration: 1163 ; CPU: 70.77% ; MEM: 8692.12 MB
-iteration: 1164 ; CPU: 70.84% ; MEM: 8692.12 MB
-iteration: 1165 ; CPU: 70.87% ; MEM: 8692.12 MB
-iteration: 1166 ; CPU: 70.94% ; MEM: 8692.11 MB
-iteration: 1167 ; CPU: 71.07% ; MEM: 8692.11 MB
-iteration: 1168 ; CPU: 70.75% ; MEM: 8692.10 MB
-iteration: 1169 ; CPU: 70.82% ; MEM: 8692.10 MB
-iteration: 1170 ; CPU: 70.87% ; MEM: 8692.10 MB
-iteration: 1171 ; CPU: 70.94% ; MEM: 8692.31 MB
-iteration: 1172 ; CPU: 71.07% ; MEM: 8692.31 MB
-iteration: 1173 ; CPU: 71.12% ; MEM: 8692.31 MB
-iteration: 1174 ; CPU: 70.81% ; MEM: 8692.31 MB
-iteration: 1175 ; CPU: 70.86% ; MEM: 8692.40 MB
-iteration: 1176 ; CPU: 70.92% ; MEM: 8692.40 MB
-iteration: 1177 ; CPU: 71.02% ; MEM: 8692.33 MB
-iteration: 1178 ; CPU: 71.11% ; MEM: 8692.33 MB
-iteration: 1179 ; CPU: 70.80% ; MEM: 8692.33 MB
-iteration: 1180 ; CPU: 70.85% ; MEM: 8692.33 MB
-iteration: 1181 ; CPU: 70.91% ; MEM: 8692.33 MB
-iteration: 1182 ; CPU: 71.00% ; MEM: 8692.33 MB
-iteration: 1183 ; CPU: 71.10% ; MEM: 8692.33 MB
-iteration: 1184 ; CPU: 70.79% ; MEM: 8692.33 MB
-iteration: 1185 ; CPU: 70.84% ; MEM: 8692.33 MB
-iteration: 1186 ; CPU: 70.90% ; MEM: 8692.33 MB
-iteration: 1187 ; CPU: 71.00% ; MEM: 8692.33 MB
-iteration: 1188 ; CPU: 71.09% ; MEM: 8692.33 MB
-iteration: 1189 ; CPU: 70.78% ; MEM: 8692.33 MB
-iteration: 1190 ; CPU: 70.83% ; MEM: 8692.37 MB
-iteration: 1191 ; CPU: 70.89% ; MEM: 8692.37 MB
-iteration: 1192 ; CPU: 70.99% ; MEM: 8692.37 MB
-iteration: 1193 ; CPU: 71.09% ; MEM: 8692.37 MB
-iteration: 1194 ; CPU: 71.14% ; MEM: 8692.37 MB
-iteration: 1195 ; CPU: 70.82% ; MEM: 8692.37 MB
-iteration: 1196 ; CPU: 70.90% ; MEM: 8692.37 MB
-iteration: 1197 ; CPU: 71.00% ; MEM: 8692.37 MB
-iteration: 1198 ; CPU: 71.08% ; MEM: 8692.37 MB
-iteration: 1199 ; CPU: 71.13% ; MEM: 8692.37 MB
-iteration: 1200 ; CPU: 70.81% ; MEM: 8692.37 MB
-iteration: 1201 ; CPU: 70.88% ; MEM: 8692.34 MB
-iteration: 1202 ; CPU: 70.98% ; MEM: 8692.34 MB
-iteration: 1203 ; CPU: 71.04% ; MEM: 8692.34 MB
-iteration: 1204 ; CPU: 71.11% ; MEM: 8692.34 MB
-iteration: 1205 ; CPU: 70.81% ; MEM: 8692.34 MB
-iteration: 1206 ; CPU: 70.90% ; MEM: 8692.40 MB
-iteration: 1207 ; CPU: 70.97% ; MEM: 8692.40 MB
-iteration: 1208 ; CPU: 71.03% ; MEM: 8692.40 MB
-iteration: 1209 ; CPU: 71.11% ; MEM: 8692.65 MB
-iteration: 1210 ; CPU: 71.20% ; MEM: 8692.65 MB
-iteration: 1211 ; CPU: 70.91% ; MEM: 8692.65 MB
-iteration: 1212 ; CPU: 70.97% ; MEM: 8692.65 MB
-iteration: 1213 ; CPU: 71.03% ; MEM: 8692.64 MB
-iteration: 1214 ; CPU: 71.11% ; MEM: 8692.64 MB
-iteration: 1215 ; CPU: 71.19% ; MEM: 8692.64 MB
-iteration: 1216 ; CPU: 70.92% ; MEM: 8692.64 MB
-iteration: 1217 ; CPU: 70.98% ; MEM: 8692.75 MB
-iteration: 1218 ; CPU: 71.03% ; MEM: 8692.75 MB
-iteration: 1219 ; CPU: 71.11% ; MEM: 8692.75 MB
-iteration: 1220 ; CPU: 71.19% ; MEM: 8692.75 MB
-iteration: 1221 ; CPU: 70.92% ; MEM: 8692.75 MB
-iteration: 1222 ; CPU: 70.99% ; MEM: 8692.75 MB
-iteration: 1223 ; CPU: 71.04% ; MEM: 8693.95 MB
-iteration: 1224 ; CPU: 71.11% ; MEM: 8693.95 MB
-iteration: 1225 ; CPU: 71.20% ; MEM: 8696.01 MB
-iteration: 1226 ; CPU: 70.92% ; MEM: 8696.01 MB
-iteration: 1227 ; CPU: 70.98% ; MEM: 8698.08 MB
-iteration: 1228 ; CPU: 71.02% ; MEM: 8698.08 MB
-iteration: 1229 ; CPU: 71.10% ; MEM: 8699.11 MB
-iteration: 1230 ; CPU: 71.19% ; MEM: 8699.11 MB
-iteration: 1231 ; CPU: 71.25% ; MEM: 8699.11 MB
-iteration: 1232 ; CPU: 70.97% ; MEM: 8699.11 MB
-iteration: 1233 ; CPU: 71.01% ; MEM: 8699.11 MB
-iteration: 1234 ; CPU: 71.10% ; MEM: 8699.11 MB
-iteration: 1235 ; CPU: 71.19% ; MEM: 8699.11 MB
-iteration: 1236 ; CPU: 71.25% ; MEM: 8699.11 MB
-iteration: 1237 ; CPU: 70.97% ; MEM: 8699.11 MB
-iteration: 1238 ; CPU: 71.01% ; MEM: 8699.11 MB
-iteration: 1239 ; CPU: 71.07% ; MEM: 8699.11 MB
-iteration: 1240 ; CPU: 71.20% ; MEM: 8699.36 MB
-iteration: 1241 ; CPU: 71.25% ; MEM: 8699.36 MB
-iteration: 1242 ; CPU: 70.96% ; MEM: 8699.36 MB
-iteration: 1243 ; CPU: 71.00% ; MEM: 8699.36 MB
-iteration: 1244 ; CPU: 71.05% ; MEM: 8699.36 MB
-iteration: 1245 ; CPU: 71.18% ; MEM: 8699.36 MB
-iteration: 1246 ; CPU: 71.23% ; MEM: 8699.36 MB
-iteration: 1247 ; CPU: 71.28% ; MEM: 8699.36 MB
-iteration: 1248 ; CPU: 71.00% ; MEM: 8699.36 MB
-iteration: 1249 ; CPU: 71.05% ; MEM: 8699.36 MB
-iteration: 1250 ; CPU: 71.16% ; MEM: 8699.36 MB
-iteration: 1251 ; CPU: 71.21% ; MEM: 8699.36 MB
-iteration: 1252 ; CPU: 71.27% ; MEM: 8699.36 MB
-iteration: 1253 ; CPU: 70.99% ; MEM: 8699.57 MB
-iteration: 1254 ; CPU: 71.03% ; MEM: 8699.57 MB
-iteration: 1255 ; CPU: 71.15% ; MEM: 8699.57 MB
-iteration: 1256 ; CPU: 71.21% ; MEM: 8700.60 MB
-iteration: 1257 ; CPU: 71.26% ; MEM: 8700.60 MB
-iteration: 1258 ; CPU: 70.98% ; MEM: 8700.60 MB
-iteration: 1259 ; CPU: 71.03% ; MEM: 8700.67 MB
-iteration: 1260 ; CPU: 71.15% ; MEM: 8700.92 MB
-iteration: 1261 ; CPU: 71.21% ; MEM: 8700.99 MB
-iteration: 1262 ; CPU: 71.27% ; MEM: 8701.13 MB
-iteration: 1263 ; CPU: 71.31% ; MEM: 8701.13 MB
-iteration: 1264 ; CPU: 71.05% ; MEM: 8701.13 MB
-iteration: 1265 ; CPU: 71.12% ; MEM: 8701.13 MB
-iteration: 1266 ; CPU: 71.20% ; MEM: 8701.13 MB
-iteration: 1267 ; CPU: 71.25% ; MEM: 8701.13 MB
-iteration: 1268 ; CPU: 71.30% ; MEM: 8701.13 MB
-iteration: 1269 ; CPU: 71.05% ; MEM: 8701.13 MB
-iteration: 1270 ; CPU: 71.11% ; MEM: 8701.13 MB
-iteration: 1271 ; CPU: 71.20% ; MEM: 8701.13 MB
-iteration: 1272 ; CPU: 71.25% ; MEM: 8701.13 MB
-iteration: 1273 ; CPU: 71.32% ; MEM: 8701.13 MB
-iteration: 1274 ; CPU: 71.03% ; MEM: 8701.13 MB
-iteration: 1275 ; CPU: 71.10% ; MEM: 8701.13 MB
-iteration: 1276 ; CPU: 71.18% ; MEM: 8701.13 MB
-iteration: 1277 ; CPU: 71.23% ; MEM: 8701.13 MB
-iteration: 1278 ; CPU: 71.30% ; MEM: 8701.13 MB
-iteration: 1279 ; CPU: 71.03% ; MEM: 8701.13 MB
-iteration: 1280 ; CPU: 71.10% ; MEM: 8701.13 MB
-iteration: 1281 ; CPU: 71.18% ; MEM: 8701.13 MB
-iteration: 1282 ; CPU: 71.23% ; MEM: 8701.13 MB
-iteration: 1283 ; CPU: 71.30% ; MEM: 8701.13 MB
-iteration: 1284 ; CPU: 71.34% ; MEM: 8701.13 MB
-iteration: 1285 ; CPU: 71.09% ; MEM: 8702.20 MB
-iteration: 1286 ; CPU: 71.16% ; MEM: 8702.20 MB
-iteration: 1287 ; CPU: 71.22% ; MEM: 8703.11 MB
-iteration: 1288 ; CPU: 71.31% ; MEM: 8703.32 MB
-iteration: 1289 ; CPU: 71.35% ; MEM: 8703.39 MB
-iteration: 1290 ; CPU: 71.07% ; MEM: 8703.39 MB
-iteration: 1291 ; CPU: 71.16% ; MEM: 8703.39 MB
-iteration: 1292 ; CPU: 71.21% ; MEM: 8703.39 MB
-iteration: 1293 ; CPU: 71.29% ; MEM: 8703.39 MB
-iteration: 1294 ; CPU: 71.34% ; MEM: 8703.39 MB
-iteration: 1295 ; CPU: 71.05% ; MEM: 8703.39 MB
-iteration: 1296 ; CPU: 71.10% ; MEM: 8703.39 MB
-iteration: 1297 ; CPU: 71.18% ; MEM: 8703.39 MB
-iteration: 1298 ; CPU: 71.22% ; MEM: 8703.39 MB
-iteration: 1299 ; CPU: 71.29% ; MEM: 8703.39 MB
-iteration: 1300 ; CPU: 71.36% ; MEM: 8703.39 MB
-iteration: 1301 ; CPU: 71.09% ; MEM: 8703.39 MB
-iteration: 1302 ; CPU: 71.17% ; MEM: 8703.39 MB
-iteration: 1303 ; CPU: 71.21% ; MEM: 8703.39 MB
-iteration: 1304 ; CPU: 71.28% ; MEM: 8703.45 MB
-iteration: 1305 ; CPU: 71.33% ; MEM: 8703.45 MB
-iteration: 1306 ; CPU: 71.08% ; MEM: 8703.45 MB
-iteration: 1307 ; CPU: 71.16% ; MEM: 8703.45 MB
-iteration: 1308 ; CPU: 71.20% ; MEM: 8703.45 MB
-iteration: 1309 ; CPU: 71.28% ; MEM: 8703.45 MB
-iteration: 1310 ; CPU: 71.31% ; MEM: 8703.45 MB
-iteration: 1311 ; CPU: 71.37% ; MEM: 8703.45 MB
-iteration: 1312 ; CPU: 71.15% ; MEM: 8703.45 MB
-iteration: 1313 ; CPU: 71.19% ; MEM: 8703.45 MB
-iteration: 1314 ; CPU: 71.27% ; MEM: 8703.45 MB
-iteration: 1315 ; CPU: 71.33% ; MEM: 8703.45 MB
-iteration: 1316 ; CPU: 71.37% ; MEM: 8703.45 MB
-iteration: 1317 ; CPU: 71.15% ; MEM: 8703.45 MB
-iteration: 1318 ; CPU: 71.18% ; MEM: 8703.45 MB
-iteration: 1319 ; CPU: 71.26% ; MEM: 8703.45 MB
-iteration: 1320 ; CPU: 71.31% ; MEM: 8703.45 MB
-iteration: 1321 ; CPU: 71.36% ; MEM: 8703.51 MB
-iteration: 1322 ; CPU: 71.10% ; MEM: 8703.51 MB
-iteration: 1323 ; CPU: 71.18% ; MEM: 8703.51 MB
-iteration: 1324 ; CPU: 71.25% ; MEM: 8703.51 MB
-iteration: 1325 ; CPU: 71.29% ; MEM: 8703.51 MB
-iteration: 1326 ; CPU: 71.35% ; MEM: 8703.51 MB
-iteration: 1327 ; CPU: 71.40% ; MEM: 8703.51 MB
-iteration: 1328 ; CPU: 71.17% ; MEM: 8703.51 MB
-iteration: 1329 ; CPU: 71.24% ; MEM: 8703.51 MB
-iteration: 1330 ; CPU: 71.27% ; MEM: 8703.51 MB
-iteration: 1331 ; CPU: 71.32% ; MEM: 8703.51 MB
-iteration: 1332 ; CPU: 71.39% ; MEM: 8703.51 MB
-iteration: 1333 ; CPU: 71.15% ; MEM: 8703.51 MB
-iteration: 1334 ; CPU: 71.24% ; MEM: 8703.51 MB
-iteration: 1335 ; CPU: 71.28% ; MEM: 8703.51 MB
-iteration: 1336 ; CPU: 71.33% ; MEM: 8703.51 MB
-iteration: 1337 ; CPU: 71.40% ; MEM: 8703.51 MB
-iteration: 1338 ; CPU: 71.15% ; MEM: 8703.51 MB
-iteration: 1339 ; CPU: 71.22% ; MEM: 8703.51 MB
-iteration: 1340 ; CPU: 71.28% ; MEM: 8703.48 MB
-iteration: 1341 ; CPU: 71.33% ; MEM: 8703.49 MB
-iteration: 1342 ; CPU: 71.37% ; MEM: 8703.49 MB
-iteration: 1343 ; CPU: 71.43% ; MEM: 8703.51 MB
-iteration: 1344 ; CPU: 71.23% ; MEM: 8703.60 MB
-iteration: 1345 ; CPU: 71.25% ; MEM: 8703.60 MB
-iteration: 1346 ; CPU: 71.30% ; MEM: 8703.70 MB
-iteration: 1347 ; CPU: 71.36% ; MEM: 8703.70 MB
-iteration: 1348 ; CPU: 71.41% ; MEM: 8703.70 MB
-iteration: 1349 ; CPU: 71.18% ; MEM: 8704.12 MB
-iteration: 1350 ; CPU: 71.25% ; MEM: 8704.12 MB
-iteration: 1351 ; CPU: 71.29% ; MEM: 8704.12 MB
-iteration: 1352 ; CPU: 71.34% ; MEM: 8704.12 MB
-iteration: 1353 ; CPU: 71.41% ; MEM: 8704.12 MB
-iteration: 1354 ; CPU: 71.46% ; MEM: 8704.12 MB
-iteration: 1355 ; CPU: 71.24% ; MEM: 8704.12 MB
-iteration: 1356 ; CPU: 71.28% ; MEM: 8704.12 MB
-iteration: 1357 ; CPU: 71.34% ; MEM: 8704.12 MB
-iteration: 1358 ; CPU: 71.39% ; MEM: 8704.12 MB
-iteration: 1359 ; CPU: 71.48% ; MEM: 8704.12 MB
-iteration: 1360 ; CPU: 71.25% ; MEM: 8704.12 MB
-iteration: 1361 ; CPU: 71.28% ; MEM: 8704.12 MB
-iteration: 1362 ; CPU: 71.32% ; MEM: 8704.12 MB
-iteration: 1363 ; CPU: 71.36% ; MEM: 8704.12 MB
-iteration: 1364 ; CPU: 71.42% ; MEM: 8704.12 MB
-iteration: 1365 ; CPU: 71.23% ; MEM: 8704.12 MB
-iteration: 1366 ; CPU: 71.28% ; MEM: 8704.12 MB
-iteration: 1367 ; CPU: 71.31% ; MEM: 8704.12 MB
-iteration: 1368 ; CPU: 71.36% ; MEM: 8704.12 MB
-iteration: 1369 ; CPU: 71.41% ; MEM: 8704.24 MB
-iteration: 1370 ; CPU: 71.48% ; MEM: 8704.24 MB
-iteration: 1371 ; CPU: 71.24% ; MEM: 8704.24 MB
-iteration: 1372 ; CPU: 71.30% ; MEM: 8704.24 MB
-iteration: 1373 ; CPU: 71.34% ; MEM: 8704.24 MB
-iteration: 1374 ; CPU: 71.39% ; MEM: 8704.24 MB
-iteration: 1375 ; CPU: 71.43% ; MEM: 8704.23 MB
-iteration: 1376 ; CPU: 71.50% ; MEM: 8704.23 MB
-iteration: 1377 ; CPU: 71.26% ; MEM: 8704.23 MB
-iteration: 1378 ; CPU: 71.31% ; MEM: 8704.23 MB
-iteration: 1379 ; CPU: 71.35% ; MEM: 8704.23 MB
-iteration: 1380 ; CPU: 71.40% ; MEM: 8704.22 MB
-iteration: 1381 ; CPU: 71.48% ; MEM: 8704.22 MB
-iteration: 1382 ; CPU: 71.25% ; MEM: 8704.22 MB
-iteration: 1383 ; CPU: 71.29% ; MEM: 8704.22 MB
-iteration: 1384 ; CPU: 71.33% ; MEM: 8704.22 MB
-iteration: 1385 ; CPU: 71.37% ; MEM: 8704.22 MB
-iteration: 1386 ; CPU: 71.42% ; MEM: 8704.22 MB
-iteration: 1387 ; CPU: 71.49% ; MEM: 8704.22 MB
-iteration: 1388 ; CPU: 71.25% ; MEM: 8704.22 MB
-iteration: 1389 ; CPU: 71.29% ; MEM: 8704.22 MB
-iteration: 1390 ; CPU: 71.33% ; MEM: 8704.42 MB
-iteration: 1391 ; CPU: 71.37% ; MEM: 8704.42 MB
-iteration: 1392 ; CPU: 71.45% ; MEM: 8704.42 MB
-iteration: 1393 ; CPU: 71.21% ; MEM: 8704.42 MB
-iteration: 1394 ; CPU: 71.25% ; MEM: 8704.42 MB
-iteration: 1395 ; CPU: 71.29% ; MEM: 8704.42 MB
-iteration: 1396 ; CPU: 71.35% ; MEM: 8704.42 MB
-iteration: 1397 ; CPU: 71.40% ; MEM: 8704.42 MB
-iteration: 1398 ; CPU: 71.47% ; MEM: 8704.42 MB
-iteration: 1399 ; CPU: 71.22% ; MEM: 8704.42 MB
-iteration: 1400 ; CPU: 71.28% ; MEM: 8704.42 MB
-iteration: 1401 ; CPU: 71.30% ; MEM: 8704.42 MB
-iteration: 1402 ; CPU: 71.35% ; MEM: 8704.42 MB
-iteration: 1403 ; CPU: 71.39% ; MEM: 8704.42 MB
-iteration: 1404 ; CPU: 71.46% ; MEM: 8704.42 MB
-iteration: 1405 ; CPU: 71.23% ; MEM: 8704.42 MB
-iteration: 1406 ; CPU: 71.26% ; MEM: 8704.42 MB
-iteration: 1407 ; CPU: 71.31% ; MEM: 8704.42 MB
-iteration: 1408 ; CPU: 71.35% ; MEM: 8704.41 MB
-iteration: 1409 ; CPU: 71.39% ; MEM: 8704.41 MB
-iteration: 1410 ; CPU: 71.45% ; MEM: 8704.41 MB
-iteration: 1411 ; CPU: 71.23% ; MEM: 8704.41 MB
-iteration: 1412 ; CPU: 71.26% ; MEM: 8704.41 MB
-iteration: 1413 ; CPU: 71.31% ; MEM: 8704.41 MB
-iteration: 1414 ; CPU: 71.35% ; MEM: 8704.69 MB
-iteration: 1415 ; CPU: 71.42% ; MEM: 8704.69 MB
-iteration: 1416 ; CPU: 71.20% ; MEM: 8704.69 MB
-iteration: 1417 ; CPU: 71.24% ; MEM: 8704.69 MB
-iteration: 1418 ; CPU: 71.28% ; MEM: 8704.69 MB
-iteration: 1419 ; CPU: 71.32% ; MEM: 8704.69 MB
-iteration: 1420 ; CPU: 71.35% ; MEM: 8704.69 MB
-iteration: 1421 ; CPU: 71.43% ; MEM: 8704.76 MB
-iteration: 1422 ; CPU: 71.21% ; MEM: 8704.76 MB
-iteration: 1423 ; CPU: 71.25% ; MEM: 8704.76 MB
-iteration: 1424 ; CPU: 71.28% ; MEM: 8704.76 MB
-iteration: 1425 ; CPU: 71.33% ; MEM: 8704.76 MB
-iteration: 1426 ; CPU: 71.38% ; MEM: 8704.76 MB
-iteration: 1427 ; CPU: 71.43% ; MEM: 8704.76 MB
-iteration: 1428 ; CPU: 71.20% ; MEM: 8704.76 MB
-iteration: 1429 ; CPU: 71.23% ; MEM: 8704.76 MB
-iteration: 1430 ; CPU: 71.27% ; MEM: 8704.76 MB
-iteration: 1431 ; CPU: 71.31% ; MEM: 8704.76 MB
-iteration: 1432 ; CPU: 71.38% ; MEM: 8704.76 MB
-iteration: 1433 ; CPU: 71.16% ; MEM: 8704.76 MB
-iteration: 1434 ; CPU: 71.20% ; MEM: 8704.76 MB
-iteration: 1435 ; CPU: 71.23% ; MEM: 8704.76 MB
-iteration: 1436 ; CPU: 71.28% ; MEM: 8704.76 MB
-iteration: 1437 ; CPU: 71.34% ; MEM: 8704.76 MB
-iteration: 1438 ; CPU: 71.39% ; MEM: 8704.78 MB
-iteration: 1439 ; CPU: 71.16% ; MEM: 8704.78 MB
-iteration: 1440 ; CPU: 71.20% ; MEM: 8704.78 MB
-iteration: 1441 ; CPU: 71.25% ; MEM: 8704.78 MB
-iteration: 1442 ; CPU: 71.28% ; MEM: 8704.92 MB
-iteration: 1443 ; CPU: 71.35% ; MEM: 8704.92 MB
-iteration: 1444 ; CPU: 71.39% ; MEM: 8704.92 MB
-iteration: 1445 ; CPU: 71.16% ; MEM: 8704.92 MB
-iteration: 1446 ; CPU: 71.20% ; MEM: 8704.92 MB
-iteration: 1447 ; CPU: 71.23% ; MEM: 8704.92 MB
-iteration: 1448 ; CPU: 71.27% ; MEM: 8704.92 MB
-iteration: 1449 ; CPU: 71.34% ; MEM: 8704.92 MB
-iteration: 1450 ; CPU: 71.38% ; MEM: 8704.92 MB
-iteration: 1451 ; CPU: 71.15% ; MEM: 8704.91 MB
-iteration: 1452 ; CPU: 71.20% ; MEM: 8704.91 MB
-iteration: 1453 ; CPU: 71.24% ; MEM: 8704.91 MB
-iteration: 1454 ; CPU: 71.28% ; MEM: 8704.91 MB
-iteration: 1455 ; CPU: 71.35% ; MEM: 8704.91 MB
-iteration: 1456 ; CPU: 71.13% ; MEM: 8704.91 MB
-iteration: 1457 ; CPU: 71.16% ; MEM: 8704.93 MB
-iteration: 1458 ; CPU: 71.20% ; MEM: 8704.93 MB
-iteration: 1459 ; CPU: 71.23% ; MEM: 8704.93 MB
-iteration: 1460 ; CPU: 71.30% ; MEM: 8704.91 MB
-iteration: 1461 ; CPU: 71.34% ; MEM: 8704.91 MB
-iteration: 1462 ; CPU: 71.12% ; MEM: 8704.91 MB
-iteration: 1463 ; CPU: 71.15% ; MEM: 8704.91 MB
-iteration: 1464 ; CPU: 71.19% ; MEM: 8704.91 MB
-iteration: 1465 ; CPU: 71.23% ; MEM: 8704.91 MB
-iteration: 1466 ; CPU: 71.30% ; MEM: 8704.94 MB
-iteration: 1467 ; CPU: 71.35% ; MEM: 8704.94 MB
-iteration: 1468 ; CPU: 71.12% ; MEM: 8704.94 MB
-iteration: 1469 ; CPU: 71.16% ; MEM: 8704.94 MB
-iteration: 1470 ; CPU: 71.18% ; MEM: 8704.95 MB
-iteration: 1471 ; CPU: 71.26% ; MEM: 8704.95 MB
-iteration: 1472 ; CPU: 71.30% ; MEM: 8704.95 MB
-iteration: 1473 ; CPU: 71.34% ; MEM: 8704.95 MB
-iteration: 1474 ; CPU: 71.12% ; MEM: 8704.95 MB
-iteration: 1475 ; CPU: 71.15% ; MEM: 8704.95 MB
-iteration: 1476 ; CPU: 71.18% ; MEM: 8704.95 MB
-iteration: 1477 ; CPU: 71.25% ; MEM: 8704.95 MB
-iteration: 1478 ; CPU: 71.29% ; MEM: 8704.95 MB
-iteration: 1479 ; CPU: 71.08% ; MEM: 8704.95 MB
-iteration: 1480 ; CPU: 71.12% ; MEM: 8704.95 MB
-iteration: 1481 ; CPU: 71.15% ; MEM: 8704.95 MB
-iteration: 1482 ; CPU: 71.20% ; MEM: 8704.95 MB
-iteration: 1483 ; CPU: 71.26% ; MEM: 8704.95 MB
-iteration: 1484 ; CPU: 71.30% ; MEM: 8704.95 MB
-iteration: 1485 ; CPU: 71.06% ; MEM: 8704.95 MB
-iteration: 1486 ; CPU: 71.10% ; MEM: 8704.95 MB
-iteration: 1487 ; CPU: 71.14% ; MEM: 8704.95 MB
-iteration: 1488 ; CPU: 71.21% ; MEM: 8704.95 MB
-iteration: 1489 ; CPU: 71.25% ; MEM: 8704.95 MB
-iteration: 1490 ; CPU: 71.28% ; MEM: 8704.96 MB
-iteration: 1491 ; CPU: 71.06% ; MEM: 8704.96 MB
-iteration: 1492 ; CPU: 71.08% ; MEM: 8704.96 MB
-iteration: 1493 ; CPU: 71.13% ; MEM: 8705.09 MB
-iteration: 1494 ; CPU: 71.19% ; MEM: 8705.10 MB
-iteration: 1495 ; CPU: 71.23% ; MEM: 8705.10 MB
-iteration: 1496 ; CPU: 71.26% ; MEM: 8705.10 MB
-iteration: 1497 ; CPU: 71.05% ; MEM: 8705.10 MB
-iteration: 1498 ; CPU: 71.07% ; MEM: 8705.10 MB
-iteration: 1499 ; CPU: 71.10% ; MEM: 8705.08 MB
-iteration: 1500 ; CPU: 71.18% ; MEM: 8705.08 MB
-iteration: 1501 ; CPU: 71.21% ; MEM: 8705.08 MB
-iteration: 1502 ; CPU: 71.01% ; MEM: 8705.08 MB
-iteration: 1503 ; CPU: 71.04% ; MEM: 8705.08 MB
-iteration: 1504 ; CPU: 71.06% ; MEM: 8705.08 MB
-iteration: 1505 ; CPU: 71.13% ; MEM: 8705.08 MB
-iteration: 1506 ; CPU: 71.16% ; MEM: 8705.09 MB
-iteration: 1507 ; CPU: 71.20% ; MEM: 8705.09 MB
-iteration: 1508 ; CPU: 71.00% ; MEM: 8705.09 MB
-iteration: 1509 ; CPU: 71.02% ; MEM: 8705.09 MB
-iteration: 1510 ; CPU: 71.06% ; MEM: 8705.09 MB
-iteration: 1511 ; CPU: 71.12% ; MEM: 8705.08 MB
-iteration: 1512 ; CPU: 71.16% ; MEM: 8705.08 MB
-iteration: 1513 ; CPU: 71.19% ; MEM: 8705.08 MB
-iteration: 1514 ; CPU: 70.98% ; MEM: 8705.30 MB
-iteration: 1515 ; CPU: 71.01% ; MEM: 8705.30 MB
-iteration: 1516 ; CPU: 71.04% ; MEM: 8705.30 MB
-iteration: 1517 ; CPU: 71.11% ; MEM: 8705.30 MB
-iteration: 1518 ; CPU: 71.15% ; MEM: 8705.30 MB
-iteration: 1519 ; CPU: 71.19% ; MEM: 8705.30 MB
-iteration: 1520 ; CPU: 70.97% ; MEM: 8705.30 MB
-iteration: 1521 ; CPU: 71.00% ; MEM: 8705.29 MB
-iteration: 1522 ; CPU: 71.07% ; MEM: 8705.29 MB
-iteration: 1523 ; CPU: 71.10% ; MEM: 8705.29 MB
-iteration: 1524 ; CPU: 71.14% ; MEM: 8705.29 MB
-iteration: 1525 ; CPU: 71.17% ; MEM: 8705.40 MB
-iteration: 1526 ; CPU: 70.96% ; MEM: 8705.40 MB
-iteration: 1527 ; CPU: 71.01% ; MEM: 8705.40 MB
-iteration: 1528 ; CPU: 71.06% ; MEM: 8705.40 MB
-iteration: 1529 ; CPU: 71.10% ; MEM: 8705.40 MB
-iteration: 1530 ; CPU: 71.13% ; MEM: 8705.40 MB
-iteration: 1531 ; CPU: 70.93% ; MEM: 8705.40 MB
-iteration: 1532 ; CPU: 70.95% ; MEM: 8705.40 MB
-iteration: 1533 ; CPU: 71.02% ; MEM: 8705.40 MB
-iteration: 1534 ; CPU: 71.06% ; MEM: 8705.40 MB
-iteration: 1535 ; CPU: 71.09% ; MEM: 8705.40 MB
-iteration: 1536 ; CPU: 71.13% ; MEM: 8705.40 MB
-iteration: 1537 ; CPU: 70.91% ; MEM: 8705.40 MB
-iteration: 1538 ; CPU: 70.93% ; MEM: 8705.50 MB
-iteration: 1539 ; CPU: 71.01% ; MEM: 8705.50 MB
-iteration: 1540 ; CPU: 71.03% ; MEM: 8705.50 MB
-iteration: 1541 ; CPU: 71.08% ; MEM: 8705.95 MB
-iteration: 1542 ; CPU: 71.10% ; MEM: 8705.95 MB
-iteration: 1543 ; CPU: 70.90% ; MEM: 8705.95 MB
-iteration: 1544 ; CPU: 70.96% ; MEM: 8705.95 MB
-iteration: 1545 ; CPU: 70.99% ; MEM: 8705.95 MB
-iteration: 1546 ; CPU: 71.04% ; MEM: 8705.95 MB
-iteration: 1547 ; CPU: 71.06% ; MEM: 8705.96 MB
-iteration: 1548 ; CPU: 71.11% ; MEM: 8705.96 MB
-iteration: 1549 ; CPU: 70.88% ; MEM: 8705.96 MB
-iteration: 1550 ; CPU: 70.95% ; MEM: 8705.96 MB
-iteration: 1551 ; CPU: 70.99% ; MEM: 8705.94 MB
-iteration: 1552 ; CPU: 71.02% ; MEM: 8705.94 MB
-iteration: 1553 ; CPU: 71.05% ; MEM: 8705.94 MB
-iteration: 1554 ; CPU: 70.85% ; MEM: 8705.94 MB
-iteration: 1555 ; CPU: 70.89% ; MEM: 8705.94 MB
-iteration: 1556 ; CPU: 70.95% ; MEM: 8705.94 MB
-iteration: 1557 ; CPU: 70.98% ; MEM: 8705.94 MB
-iteration: 1558 ; CPU: 71.02% ; MEM: 8705.94 MB
-iteration: 1559 ; CPU: 71.04% ; MEM: 8705.94 MB
-iteration: 1560 ; CPU: 70.84% ; MEM: 8705.94 MB
-iteration: 1561 ; CPU: 70.90% ; MEM: 8705.94 MB
-iteration: 1562 ; CPU: 70.94% ; MEM: 8705.94 MB
-iteration: 1563 ; CPU: 70.97% ; MEM: 8705.94 MB
-iteration: 1564 ; CPU: 71.01% ; MEM: 8706.12 MB
-iteration: 1565 ; CPU: 71.05% ; MEM: 8706.12 MB
-iteration: 1566 ; CPU: 70.84% ; MEM: 8706.12 MB
-iteration: 1567 ; CPU: 70.89% ; MEM: 8706.12 MB
-iteration: 1568 ; CPU: 70.93% ; MEM: 8706.12 MB
-iteration: 1569 ; CPU: 70.98% ; MEM: 8706.12 MB
-iteration: 1570 ; CPU: 71.00% ; MEM: 8706.12 MB
-iteration: 1571 ; CPU: 70.79% ; MEM: 8706.12 MB
-iteration: 1572 ; CPU: 70.85% ; MEM: 8706.12 MB
-iteration: 1573 ; CPU: 70.89% ; MEM: 8706.12 MB
-iteration: 1574 ; CPU: 70.93% ; MEM: 8706.12 MB
-iteration: 1575 ; CPU: 70.97% ; MEM: 8706.12 MB
-iteration: 1576 ; CPU: 71.00% ; MEM: 8706.12 MB
-iteration: 1577 ; CPU: 70.82% ; MEM: 8706.12 MB
-iteration: 1578 ; CPU: 70.86% ; MEM: 8706.12 MB
-iteration: 1579 ; CPU: 70.90% ; MEM: 8706.12 MB
-iteration: 1580 ; CPU: 70.94% ; MEM: 8706.12 MB
-iteration: 1581 ; CPU: 70.97% ; MEM: 8706.12 MB
-iteration: 1582 ; CPU: 71.00% ; MEM: 8706.12 MB
-iteration: 1583 ; CPU: 70.83% ; MEM: 8706.14 MB
-iteration: 1584 ; CPU: 70.86% ; MEM: 8706.14 MB
-iteration: 1585 ; CPU: 70.91% ; MEM: 8706.14 MB
-iteration: 1586 ; CPU: 70.94% ; MEM: 8706.14 MB
-iteration: 1587 ; CPU: 70.98% ; MEM: 8706.14 MB
-iteration: 1588 ; CPU: 70.80% ; MEM: 8706.14 MB
-iteration: 1589 ; CPU: 70.84% ; MEM: 8706.25 MB
-iteration: 1590 ; CPU: 70.87% ; MEM: 8706.25 MB
-iteration: 1591 ; CPU: 70.91% ; MEM: 8706.25 MB
-iteration: 1592 ; CPU: 70.93% ; MEM: 8706.25 MB
-iteration: 1593 ; CPU: 70.98% ; MEM: 8706.25 MB
-iteration: 1594 ; CPU: 70.80% ; MEM: 8706.25 MB
-iteration: 1595 ; CPU: 70.85% ; MEM: 8706.24 MB
-iteration: 1596 ; CPU: 70.88% ; MEM: 8706.24 MB
-iteration: 1597 ; CPU: 70.93% ; MEM: 8706.24 MB
-iteration: 1598 ; CPU: 70.99% ; MEM: 8706.24 MB
-iteration: 1599 ; CPU: 70.79% ; MEM: 8706.24 MB
-iteration: 1600 ; CPU: 70.82% ; MEM: 8706.24 MB
-iteration: 1601 ; CPU: 70.85% ; MEM: 8706.24 MB
-iteration: 1602 ; CPU: 70.89% ; MEM: 8706.24 MB
-iteration: 1603 ; CPU: 70.95% ; MEM: 8706.24 MB
-iteration: 1604 ; CPU: 71.00% ; MEM: 8706.24 MB
-iteration: 1605 ; CPU: 70.80% ; MEM: 8706.24 MB
-iteration: 1606 ; CPU: 70.82% ; MEM: 8706.24 MB
-iteration: 1607 ; CPU: 70.86% ; MEM: 8706.24 MB
-iteration: 1608 ; CPU: 70.94% ; MEM: 8706.24 MB
-iteration: 1609 ; CPU: 70.95% ; MEM: 8706.24 MB
-iteration: 1610 ; CPU: 70.76% ; MEM: 8706.24 MB
-iteration: 1611 ; CPU: 70.79% ; MEM: 8706.24 MB
-iteration: 1612 ; CPU: 70.83% ; MEM: 8706.24 MB
-iteration: 1613 ; CPU: 70.85% ; MEM: 8706.24 MB
-iteration: 1614 ; CPU: 70.93% ; MEM: 8706.24 MB
-iteration: 1615 ; CPU: 70.97% ; MEM: 8706.24 MB
-iteration: 1616 ; CPU: 70.77% ; MEM: 8706.24 MB
-iteration: 1617 ; CPU: 70.80% ; MEM: 8706.24 MB
-iteration: 1618 ; CPU: 70.84% ; MEM: 8706.24 MB
-iteration: 1619 ; CPU: 70.90% ; MEM: 8706.24 MB
-iteration: 1620 ; CPU: 70.95% ; MEM: 8706.24 MB
-iteration: 1621 ; CPU: 70.75% ; MEM: 8706.24 MB
-iteration: 1622 ; CPU: 70.79% ; MEM: 8706.24 MB
-iteration: 1623 ; CPU: 70.82% ; MEM: 8706.24 MB
-iteration: 1624 ; CPU: 70.88% ; MEM: 8706.24 MB
-iteration: 1625 ; CPU: 70.92% ; MEM: 8706.24 MB
-iteration: 1626 ; CPU: 70.96% ; MEM: 8706.24 MB
-iteration: 1627 ; CPU: 70.75% ; MEM: 8706.27 MB
-iteration: 1628 ; CPU: 70.79% ; MEM: 8706.27 MB
-iteration: 1629 ; CPU: 70.86% ; MEM: 8706.27 MB
-iteration: 1630 ; CPU: 70.89% ; MEM: 8706.27 MB
-iteration: 1631 ; CPU: 70.93% ; MEM: 8706.25 MB
-iteration: 1632 ; CPU: 70.72% ; MEM: 8706.25 MB
-iteration: 1633 ; CPU: 70.76% ; MEM: 8706.25 MB
-iteration: 1634 ; CPU: 70.82% ; MEM: 8706.25 MB
-iteration: 1635 ; CPU: 70.86% ; MEM: 8706.25 MB
-iteration: 1636 ; CPU: 70.90% ; MEM: 8706.25 MB
-iteration: 1637 ; CPU: 70.70% ; MEM: 8706.25 MB
-iteration: 1638 ; CPU: 70.72% ; MEM: 8706.25 MB
-iteration: 1639 ; CPU: 70.80% ; MEM: 8706.25 MB
-iteration: 1640 ; CPU: 70.83% ; MEM: 8706.25 MB
-iteration: 1641 ; CPU: 70.87% ; MEM: 8706.25 MB
-iteration: 1642 ; CPU: 70.89% ; MEM: 8706.25 MB
-iteration: 1643 ; CPU: 70.70% ; MEM: 8706.25 MB
-iteration: 1644 ; CPU: 70.75% ; MEM: 8706.25 MB
-iteration: 1645 ; CPU: 70.80% ; MEM: 8706.25 MB
-iteration: 1646 ; CPU: 70.83% ; MEM: 8706.25 MB
-iteration: 1647 ; CPU: 70.86% ; MEM: 8706.25 MB
-iteration: 1648 ; CPU: 70.95% ; MEM: 8706.48 MB
-iteration: 1649 ; CPU: 70.73% ; MEM: 8706.48 MB
-iteration: 1650 ; CPU: 70.77% ; MEM: 8706.48 MB
-iteration: 1651 ; CPU: 70.79% ; MEM: 8706.48 MB
-iteration: 1652 ; CPU: 70.84% ; MEM: 8706.48 MB
-iteration: 1653 ; CPU: 70.90% ; MEM: 8706.48 MB
-iteration: 1654 ; CPU: 70.70% ; MEM: 8706.48 MB
-iteration: 1655 ; CPU: 70.72% ; MEM: 8706.69 MB
-iteration: 1656 ; CPU: 70.77% ; MEM: 8706.69 MB
-iteration: 1657 ; CPU: 70.81% ; MEM: 8706.69 MB
-iteration: 1658 ; CPU: 70.83% ; MEM: 8706.69 MB
-iteration: 1659 ; CPU: 70.91% ; MEM: 8706.74 MB
-iteration: 1660 ; CPU: 70.70% ; MEM: 8706.74 MB
-iteration: 1661 ; CPU: 70.74% ; MEM: 8706.74 MB
-iteration: 1662 ; CPU: 70.77% ; MEM: 8706.74 MB
-iteration: 1663 ; CPU: 70.80% ; MEM: 8706.74 MB
-iteration: 1664 ; CPU: 70.87% ; MEM: 8706.74 MB
-iteration: 1665 ; CPU: 70.67% ; MEM: 8706.74 MB
-iteration: 1666 ; CPU: 70.70% ; MEM: 8706.99 MB
-iteration: 1667 ; CPU: 70.74% ; MEM: 8707.25 MB
-iteration: 1668 ; CPU: 70.77% ; MEM: 8707.25 MB
-iteration: 1669 ; CPU: 70.80% ; MEM: 8707.25 MB
-iteration: 1670 ; CPU: 70.92% ; MEM: 8707.25 MB
-iteration: 1671 ; CPU: 70.67% ; MEM: 8707.25 MB
-iteration: 1672 ; CPU: 70.71% ; MEM: 8707.25 MB
-iteration: 1673 ; CPU: 70.74% ; MEM: 8707.25 MB
-iteration: 1674 ; CPU: 70.78% ; MEM: 8707.25 MB
-iteration: 1675 ; CPU: 70.87% ; MEM: 8707.25 MB
-iteration: 1676 ; CPU: 70.65% ; MEM: 8707.25 MB
-iteration: 1677 ; CPU: 70.68% ; MEM: 8707.25 MB
-iteration: 1678 ; CPU: 70.71% ; MEM: 8707.25 MB
-iteration: 1679 ; CPU: 70.75% ; MEM: 8707.25 MB
-iteration: 1680 ; CPU: 70.81% ; MEM: 8707.25 MB
-iteration: 1681 ; CPU: 70.89% ; MEM: 8707.26 MB
-iteration: 1682 ; CPU: 70.65% ; MEM: 8707.28 MB
-iteration: 1683 ; CPU: 70.69% ; MEM: 8707.28 MB
-iteration: 1684 ; CPU: 70.71% ; MEM: 8707.28 MB
-iteration: 1685 ; CPU: 70.74% ; MEM: 8707.29 MB
-iteration: 1686 ; CPU: 70.85% ; MEM: 8707.30 MB
-iteration: 1687 ; CPU: 70.88% ; MEM: 8707.29 MB
-iteration: 1688 ; CPU: 70.65% ; MEM: 8707.29 MB
-iteration: 1689 ; CPU: 70.68% ; MEM: 8707.29 MB
-iteration: 1690 ; CPU: 70.71% ; MEM: 8707.29 MB
-iteration: 1691 ; CPU: 70.77% ; MEM: 8707.29 MB
-iteration: 1692 ; CPU: 70.85% ; MEM: 8707.29 MB
-iteration: 1693 ; CPU: 70.62% ; MEM: 8707.29 MB
-iteration: 1694 ; CPU: 70.66% ; MEM: 8707.29 MB
-iteration: 1695 ; CPU: 70.69% ; MEM: 8707.29 MB
-iteration: 1696 ; CPU: 70.71% ; MEM: 8707.29 MB
-iteration: 1697 ; CPU: 70.82% ; MEM: 8707.29 MB
-iteration: 1698 ; CPU: 70.88% ; MEM: 8707.29 MB
-iteration: 1699 ; CPU: 70.62% ; MEM: 8707.29 MB
-iteration: 1700 ; CPU: 70.66% ; MEM: 8707.28 MB
-iteration: 1701 ; CPU: 70.70% ; MEM: 8707.28 MB
-iteration: 1702 ; CPU: 70.79% ; MEM: 8707.28 MB
-iteration: 1703 ; CPU: 70.84% ; MEM: 8707.28 MB
-iteration: 1704 ; CPU: 70.60% ; MEM: 8707.28 MB
-iteration: 1705 ; CPU: 70.63% ; MEM: 8707.28 MB
-iteration: 1706 ; CPU: 70.65% ; MEM: 8707.28 MB
-iteration: 1707 ; CPU: 70.72% ; MEM: 8707.50 MB
-iteration: 1708 ; CPU: 70.78% ; MEM: 8707.51 MB
-iteration: 1709 ; CPU: 70.83% ; MEM: 8707.51 MB
-iteration: 1710 ; CPU: 70.60% ; MEM: 8707.51 MB
-iteration: 1711 ; CPU: 70.64% ; MEM: 8707.51 MB
-iteration: 1712 ; CPU: 70.68% ; MEM: 8707.51 MB
-iteration: 1713 ; CPU: 70.76% ; MEM: 8707.51 MB
-iteration: 1714 ; CPU: 70.81% ; MEM: 8707.51 MB
-iteration: 1715 ; CPU: 70.58% ; MEM: 8707.51 MB
-iteration: 1716 ; CPU: 70.60% ; MEM: 8707.51 MB
-iteration: 1717 ; CPU: 70.66% ; MEM: 8707.51 MB
-iteration: 1718 ; CPU: 70.70% ; MEM: 8707.51 MB
-iteration: 1719 ; CPU: 70.76% ; MEM: 8707.51 MB
-iteration: 1720 ; CPU: 70.81% ; MEM: 8707.51 MB
-iteration: 1721 ; CPU: 70.57% ; MEM: 8707.51 MB
-iteration: 1722 ; CPU: 70.64% ; MEM: 8707.51 MB
-iteration: 1723 ; CPU: 70.66% ; MEM: 8707.51 MB
-iteration: 1724 ; CPU: 70.73% ; MEM: 8707.51 MB
-iteration: 1725 ; CPU: 70.77% ; MEM: 8707.51 MB
-iteration: 1726 ; CPU: 70.55% ; MEM: 8707.51 MB
-iteration: 1727 ; CPU: 70.61% ; MEM: 8707.51 MB
-iteration: 1728 ; CPU: 70.64% ; MEM: 8707.51 MB
-iteration: 1729 ; CPU: 70.70% ; MEM: 8707.51 MB
-iteration: 1730 ; CPU: 70.75% ; MEM: 8707.51 MB
-iteration: 1731 ; CPU: 70.80% ; MEM: 8707.51 MB
-iteration: 1732 ; CPU: 70.59% ; MEM: 8707.51 MB
-iteration: 1733 ; CPU: 70.62% ; MEM: 8707.51 MB
-iteration: 1734 ; CPU: 70.64% ; MEM: 8707.51 MB
-iteration: 1735 ; CPU: 70.71% ; MEM: 8707.51 MB
-iteration: 1736 ; CPU: 70.75% ; MEM: 8707.51 MB
-iteration: 1737 ; CPU: 70.52% ; MEM: 8707.51 MB
-iteration: 1738 ; CPU: 70.58% ; MEM: 8707.51 MB
-iteration: 1739 ; CPU: 70.60% ; MEM: 8707.51 MB
-iteration: 1740 ; CPU: 70.67% ; MEM: 8707.51 MB
-iteration: 1741 ; CPU: 70.71% ; MEM: 8707.51 MB
-iteration: 1742 ; CPU: 70.75% ; MEM: 8707.51 MB
-iteration: 1743 ; CPU: 70.54% ; MEM: 8707.51 MB
-iteration: 1744 ; CPU: 70.58% ; MEM: 8707.51 MB
-iteration: 1745 ; CPU: 70.61% ; MEM: 8707.51 MB
-iteration: 1746 ; CPU: 70.68% ; MEM: 8707.51 MB
-iteration: 1747 ; CPU: 70.72% ; MEM: 8707.51 MB
-iteration: 1748 ; CPU: 70.75% ; MEM: 8707.51 MB
-iteration: 1749 ; CPU: 70.54% ; MEM: 8707.51 MB
-iteration: 1750 ; CPU: 70.57% ; MEM: 8707.51 MB
-iteration: 1751 ; CPU: 70.62% ; MEM: 8707.51 MB
-iteration: 1752 ; CPU: 70.67% ; MEM: 8707.53 MB
-iteration: 1753 ; CPU: 70.71% ; MEM: 8707.53 MB
-iteration: 1754 ; CPU: 70.51% ; MEM: 8707.53 MB
-iteration: 1755 ; CPU: 70.54% ; MEM: 8707.53 MB
-iteration: 1756 ; CPU: 70.61% ; MEM: 8707.53 MB
-iteration: 1757 ; CPU: 70.63% ; MEM: 8707.53 MB
-iteration: 1758 ; CPU: 70.68% ; MEM: 8707.53 MB
-iteration: 1759 ; CPU: 70.76% ; MEM: 8707.53 MB
-iteration: 1760 ; CPU: 70.52% ; MEM: 8707.53 MB
-iteration: 1761 ; CPU: 70.54% ; MEM: 8707.53 MB
-iteration: 1762 ; CPU: 70.60% ; MEM: 8707.53 MB
-iteration: 1763 ; CPU: 70.65% ; MEM: 8707.53 MB
-iteration: 1764 ; CPU: 70.67% ; MEM: 8707.53 MB
-iteration: 1765 ; CPU: 70.47% ; MEM: 8707.53 MB
-iteration: 1766 ; CPU: 70.51% ; MEM: 8707.53 MB
-iteration: 1767 ; CPU: 70.57% ; MEM: 8707.53 MB
-iteration: 1768 ; CPU: 70.60% ; MEM: 8707.53 MB
-iteration: 1769 ; CPU: 70.64% ; MEM: 8707.53 MB
-iteration: 1770 ; CPU: 70.71% ; MEM: 8707.53 MB
-iteration: 1771 ; CPU: 70.50% ; MEM: 8707.53 MB
-iteration: 1772 ; CPU: 70.51% ; MEM: 8707.53 MB
-iteration: 1773 ; CPU: 70.57% ; MEM: 8707.53 MB
-iteration: 1774 ; CPU: 70.61% ; MEM: 8707.53 MB
-iteration: 1775 ; CPU: 70.68% ; MEM: 8707.53 MB
-iteration: 1776 ; CPU: 70.72% ; MEM: 8707.53 MB
-iteration: 1777 ; CPU: 70.48% ; MEM: 8707.53 MB
-iteration: 1778 ; CPU: 70.54% ; MEM: 8707.53 MB
-iteration: 1779 ; CPU: 70.58% ; MEM: 8707.55 MB
-iteration: 1780 ; CPU: 70.65% ; MEM: 8707.55 MB
-iteration: 1781 ; CPU: 70.69% ; MEM: 8707.55 MB
-iteration: 1782 ; CPU: 70.46% ; MEM: 8707.55 MB
-iteration: 1783 ; CPU: 70.49% ; MEM: 8707.55 MB
-iteration: 1784 ; CPU: 70.55% ; MEM: 8707.55 MB
-iteration: 1785 ; CPU: 70.59% ; MEM: 8707.55 MB
-iteration: 1786 ; CPU: 70.66% ; MEM: 8707.55 MB
-iteration: 1787 ; CPU: 70.71% ; MEM: 8707.55 MB
-iteration: 1788 ; CPU: 70.46% ; MEM: 8707.55 MB
-iteration: 1789 ; CPU: 70.52% ; MEM: 8707.55 MB
-iteration: 1790 ; CPU: 70.56% ; MEM: 8707.55 MB
-iteration: 1791 ; CPU: 70.62% ; MEM: 8707.55 MB
-iteration: 1792 ; CPU: 70.65% ; MEM: 8707.55 MB
-iteration: 1793 ; CPU: 70.44% ; MEM: 8707.55 MB
-iteration: 1794 ; CPU: 70.46% ; MEM: 8707.55 MB
-iteration: 1795 ; CPU: 70.52% ; MEM: 8707.55 MB
-iteration: 1796 ; CPU: 70.60% ; MEM: 8707.55 MB
-iteration: 1797 ; CPU: 70.63% ; MEM: 8707.55 MB
-iteration: 1798 ; CPU: 70.66% ; MEM: 8707.55 MB
-iteration: 1799 ; CPU: 70.44% ; MEM: 8707.55 MB
-iteration: 1800 ; CPU: 70.50% ; MEM: 8707.55 MB
+iteration: 25 ; CPU: .28% ; MEM: 27.04 
+iteration: 26 ; CPU: .46% ; MEM: 30.35 
+iteration: 27 ; CPU: .53% ; MEM: 61.04 
+iteration: 28 ; CPU: 3.68% ; MEM: 68.59 
+iteration: 29 ; CPU: 3.75% ; MEM: 81.36 
+iteration: 30 ; CPU: 3.76% ; MEM: 90.55 
+iteration: 31 ; CPU: 6.22% ; MEM: 120.60 
+iteration: 32 ; CPU: 6.37% ; MEM: 109.70 
+iteration: 33 ; CPU: 6.50% ; MEM: 157.46 
+iteration: 34 ; CPU: 16.95% ; MEM: 193.42 
+iteration: 35 ; CPU: 17.27% ; MEM: 223.77 
+iteration: 36 ; CPU: 17.41% ; MEM: 378.23 
+iteration: 37 ; CPU: 17.45% ; MEM: 642.53 
+iteration: 38 ; CPU: 17.45% ; MEM: 721.61 
+iteration: 39 ; CPU: 17.45% ; MEM: 845.17 
+iteration: 40 ; CPU: 17.48% ; MEM: 880.28 
+iteration: 41 ; CPU: 33.86% ; MEM: 916.71 
+iteration: 42 ; CPU: 34.36% ; MEM: 923.01 
+iteration: 43 ; CPU: 34.78% ; MEM: 923.01 
+iteration: 44 ; CPU: 35.28% ; MEM: 923.02 
+iteration: 45 ; CPU: 35.71% ; MEM: 923.90 
+iteration: 46 ; CPU: 35.92% ; MEM: 925.57 
+iteration: 47 ; CPU: 36.48% ; MEM: 959.88 
+iteration: 48 ; CPU: 37.12% ; MEM: 1010.53 
+iteration: 49 ; CPU: 27.19% ; MEM: 1145.91 
+iteration: 50 ; CPU: 42.02% ; MEM: 1304.67 
+iteration: 51 ; CPU: 45.67% ; MEM: 1518.19 
+iteration: 52 ; CPU: 46.15% ; MEM: 1823.97 
+iteration: 53 ; CPU: 104.51% ; MEM: 2224.54 
+iteration: 54 ; CPU: 106.92% ; MEM: 2418.10 
+iteration: 55 ; CPU: 107.32% ; MEM: 2548.54 
+iteration: 56 ; CPU: 107.83% ; MEM: 2636.51 
+iteration: 57 ; CPU: 108.70% ; MEM: 2693.37 
+iteration: 58 ; CPU: 104.03% ; MEM: 2752.43 
+iteration: 59 ; CPU: 69.09% ; MEM: 2775.59 
+iteration: 60 ; CPU: 71.91% ; MEM: 2781.69 
+iteration: 61 ; CPU: 57.08% ; MEM: 2645.53 
+iteration: 62 ; CPU: 42.25% ; MEM: 2375.20 
+iteration: 63 ; CPU: 42.54% ; MEM: 2425.91 
+iteration: 64 ; CPU: 42.72% ; MEM: 2445.09 
+iteration: 65 ; CPU: 43.05% ; MEM: 2489.39 
+iteration: 66 ; CPU: 43.37% ; MEM: 2538.75 
+iteration: 67 ; CPU: 32.03% ; MEM: 2560.73 
+iteration: 68 ; CPU: 32.33% ; MEM: 2644.38 
+iteration: 69 ; CPU: 32.63% ; MEM: 2693.35 
+iteration: 70 ; CPU: 32.96% ; MEM: 2751.87 
+iteration: 71 ; CPU: 33.25% ; MEM: 2852.95 
+iteration: 72 ; CPU: 33.50% ; MEM: 3000.58 
+iteration: 73 ; CPU: 33.84% ; MEM: 3034.59 
+iteration: 74 ; CPU: 59.85% ; MEM: 3458.86 
+iteration: 75 ; CPU: 60.25% ; MEM: 3520.89 
+iteration: 76 ; CPU: 61.00% ; MEM: 3590.77 
+iteration: 77 ; CPU: 61.38% ; MEM: 3647.28 
+iteration: 78 ; CPU: 61.93% ; MEM: 3731.78 
+iteration: 79 ; CPU: 62.95% ; MEM: 3874.46 
+iteration: 80 ; CPU: 85.50% ; MEM: 4149.09 
+iteration: 81 ; CPU: 89.59% ; MEM: 4601.91 
+iteration: 82 ; CPU: 89.92% ; MEM: 4770.09 
+iteration: 83 ; CPU: 90.84% ; MEM: 4875.16 
+iteration: 84 ; CPU: 91.49% ; MEM: 4944.50 
+iteration: 85 ; CPU: 92.03% ; MEM: 5195.84 
+iteration: 86 ; CPU: 84.24% ; MEM: 5266.03 
+iteration: 87 ; CPU: 84.78% ; MEM: 5285.43 
+iteration: 88 ; CPU: 85.47% ; MEM: 5336.58 
+iteration: 89 ; CPU: 85.77% ; MEM: 5404.53 
+iteration: 90 ; CPU: 86.58% ; MEM: 5451.65 
+iteration: 91 ; CPU: 87.56% ; MEM: 5515.00 
+iteration: 92 ; CPU: 88.10% ; MEM: 5775.01 
+iteration: 93 ; CPU: 88.97% ; MEM: 5855.23 
+iteration: 94 ; CPU: 91.43% ; MEM: 6105.99 
+iteration: 95 ; CPU: 92.81% ; MEM: 6202.91 
+iteration: 96 ; CPU: 93.75% ; MEM: 6329.92 
+iteration: 97 ; CPU: 94.84% ; MEM: 6378.74 
+iteration: 98 ; CPU: 95.74% ; MEM: 6425.69 
+iteration: 99 ; CPU: 95.50% ; MEM: 6644.23 
+iteration: 100 ; CPU: 96.22% ; MEM: 6686.30 
+iteration: 101 ; CPU: 97.04% ; MEM: 6699.93 
+iteration: 102 ; CPU: 97.99% ; MEM: 6744.69 
+iteration: 103 ; CPU: 99.01% ; MEM: 6791.74 
+iteration: 104 ; CPU: 99.92% ; MEM: 6846.58 
+iteration: 105 ; CPU: 101.21% ; MEM: 6893.39 
+iteration: 106 ; CPU: 100.74% ; MEM: 7346.57 
+iteration: 107 ; CPU: 101.41% ; MEM: 7406.78 
+iteration: 108 ; CPU: 102.23% ; MEM: 7428.14 
+iteration: 109 ; CPU: 103.37% ; MEM: 7495.79 
+iteration: 110 ; CPU: 104.37% ; MEM: 7541.25 
+iteration: 111 ; CPU: 105.44% ; MEM: 7546.08 
+iteration: 112 ; CPU: 94.59% ; MEM: 7760.70 
+iteration: 113 ; CPU: 95.35% ; MEM: 7761.72 
+iteration: 114 ; CPU: 96.48% ; MEM: 7771.90 
+iteration: 115 ; CPU: 97.81% ; MEM: 7798.00 
+iteration: 116 ; CPU: 99.55% ; MEM: 7831.85 
+iteration: 117 ; CPU: 100.32% ; MEM: 7895.06 
+iteration: 118 ; CPU: 101.84% ; MEM: 7915.81 
+iteration: 119 ; CPU: 94.73% ; MEM: 7918.91 
+iteration: 120 ; CPU: 96.68% ; MEM: 7934.61 
+iteration: 121 ; CPU: 98.70% ; MEM: 7945.04 
+iteration: 122 ; CPU: 90.95% ; MEM: 7921.98 
+iteration: 123 ; CPU: 82.42% ; MEM: 7943.94 
+iteration: 124 ; CPU: 83.45% ; MEM: 7958.21 
+iteration: 125 ; CPU: 77.27% ; MEM: 7963.00 
+iteration: 126 ; CPU: 78.74% ; MEM: 7965.88 
+iteration: 127 ; CPU: 80.31% ; MEM: 7983.75 
+iteration: 128 ; CPU: 81.84% ; MEM: 7990.89 
+iteration: 129 ; CPU: 74.19% ; MEM: 7995.49 
+iteration: 130 ; CPU: 75.30% ; MEM: 8050.96 
+iteration: 131 ; CPU: 88.59% ; MEM: 8110.57 
+iteration: 132 ; CPU: 90.73% ; MEM: 8120.03 
+iteration: 133 ; CPU: 92.75% ; MEM: 8129.10 
+iteration: 134 ; CPU: 85.00% ; MEM: 8110.19 
+iteration: 135 ; CPU: 86.10% ; MEM: 8162.23 
+iteration: 136 ; CPU: 70.53% ; MEM: 8189.82 
+iteration: 137 ; CPU: 93.40% ; MEM: 8208.68 
+iteration: 138 ; CPU: 96.27% ; MEM: 8223.42 
+iteration: 139 ; CPU: 98.93% ; MEM: 8268.30 
+iteration: 140 ; CPU: 92.59% ; MEM: 8272.12 
+iteration: 141 ; CPU: 66.55% ; MEM: 8232.67 
+iteration: 142 ; CPU: 86.65% ; MEM: 8250.75 
+iteration: 143 ; CPU: 88.71% ; MEM: 8266.73 
+iteration: 144 ; CPU: 85.21% ; MEM: 8230.62 
+iteration: 145 ; CPU: 78.72% ; MEM: 8212.44 
+iteration: 146 ; CPU: 80.39% ; MEM: 8247.93 
+iteration: 147 ; CPU: 64.19% ; MEM: 8204.92 
+iteration: 148 ; CPU: 83.16% ; MEM: 8252.73 
+iteration: 149 ; CPU: 84.77% ; MEM: 8267.69 
+iteration: 150 ; CPU: 86.37% ; MEM: 8273.11 
+iteration: 151 ; CPU: 88.37% ; MEM: 8282.49 
+iteration: 152 ; CPU: 80.82% ; MEM: 8282.33 
+iteration: 153 ; CPU: 61.86% ; MEM: 8268.93 
+iteration: 154 ; CPU: 80.31% ; MEM: 8378.44 
+iteration: 155 ; CPU: 82.11% ; MEM: 8399.05 
+iteration: 156 ; CPU: 84.10% ; MEM: 8443.96 
+iteration: 157 ; CPU: 77.26% ; MEM: 8416.38 
+iteration: 158 ; CPU: 71.04% ; MEM: 8405.53 
+iteration: 159 ; CPU: 77.83% ; MEM: 8437.27 
+iteration: 160 ; CPU: 70.51% ; MEM: 8401.88 
+iteration: 161 ; CPU: 72.38% ; MEM: 8417.62 
+iteration: 162 ; CPU: 74.36% ; MEM: 8423.03 
+iteration: 163 ; CPU: 76.17% ; MEM: 8433.18 
+iteration: 164 ; CPU: 60.84% ; MEM: 8363.09 
+iteration: 165 ; CPU: 57.39% ; MEM: 8367.48 
+iteration: 166 ; CPU: 58.19% ; MEM: 8385.03 
+iteration: 167 ; CPU: 58.98% ; MEM: 8388.89 
+iteration: 168 ; CPU: 59.77% ; MEM: 8396.89 
+iteration: 169 ; CPU: 60.24% ; MEM: 8446.03 
+iteration: 170 ; CPU: 60.98% ; MEM: 8453.19 
+iteration: 171 ; CPU: 66.98% ; MEM: 8472.30 
+iteration: 172 ; CPU: 68.15% ; MEM: 8474.88 
+iteration: 173 ; CPU: 69.45% ; MEM: 8477.03 
+iteration: 174 ; CPU: 59.93% ; MEM: 8455.83 
+iteration: 175 ; CPU: 60.60% ; MEM: 8456.10 
+iteration: 176 ; CPU: 61.39% ; MEM: 8461.26 
+iteration: 177 ; CPU: 58.47% ; MEM: 8477.50 
+iteration: 178 ; CPU: 59.24% ; MEM: 8479.82 
+iteration: 179 ; CPU: 59.90% ; MEM: 8481.68 
+iteration: 180 ; CPU: 60.61% ; MEM: 8502.60 
+iteration: 181 ; CPU: 61.22% ; MEM: 8503.64 
+iteration: 182 ; CPU: 58.40% ; MEM: 8503.65 
+iteration: 183 ; CPU: 59.04% ; MEM: 8504.69 
+iteration: 184 ; CPU: 59.67% ; MEM: 8509.61 
+iteration: 185 ; CPU: 60.35% ; MEM: 8526.32 
+iteration: 186 ; CPU: 61.03% ; MEM: 8527.61 
+iteration: 187 ; CPU: 61.74% ; MEM: 8528.06 
+iteration: 188 ; CPU: 59.08% ; MEM: 8528.06 
+iteration: 189 ; CPU: 59.66% ; MEM: 8528.06 
+iteration: 190 ; CPU: 60.12% ; MEM: 8529.05 
+iteration: 191 ; CPU: 60.81% ; MEM: 8530.35 
+iteration: 192 ; CPU: 61.42% ; MEM: 8546.85 
+iteration: 193 ; CPU: 62.06% ; MEM: 8548.40 
+iteration: 194 ; CPU: 59.49% ; MEM: 8550.21 
+iteration: 195 ; CPU: 60.02% ; MEM: 8550.72 
+iteration: 196 ; CPU: 60.57% ; MEM: 8550.72 
+iteration: 197 ; CPU: 61.12% ; MEM: 8583.89 
+iteration: 198 ; CPU: 61.70% ; MEM: 8621.26 
+iteration: 199 ; CPU: 72.37% ; MEM: 8639.98 
+iteration: 200 ; CPU: 73.83% ; MEM: 8640.48 
+iteration: 201 ; CPU: 75.52% ; MEM: 8640.88 
+iteration: 202 ; CPU: 68.78% ; MEM: 8539.27 
+iteration: 203 ; CPU: 61.08% ; MEM: 8529.81 
+iteration: 204 ; CPU: 61.11% ; MEM: 8486.61 
+iteration: 205 ; CPU: 64.88% ; MEM: 8442.76 
+iteration: 206 ; CPU: 65.77% ; MEM: 8408.53 
+iteration: 207 ; CPU: 66.77% ; MEM: 8408.59 
+iteration: 208 ; CPU: 59.40% ; MEM: 8352.60 
+iteration: 209 ; CPU: 59.80% ; MEM: 8421.82 
+iteration: 210 ; CPU: 79.05% ; MEM: 8454.31 
+iteration: 211 ; CPU: 79.71% ; MEM: 8457.06 
+iteration: 212 ; CPU: 80.39% ; MEM: 8354.73 
+iteration: 213 ; CPU: 82.02% ; MEM: 8354.88 
+iteration: 214 ; CPU: 73.51% ; MEM: 8254.91 
+iteration: 215 ; CPU: 69.52% ; MEM: 8171.82 
+iteration: 216 ; CPU: 70.97% ; MEM: 8192.57 
+iteration: 217 ; CPU: 71.85% ; MEM: 8183.96 
+iteration: 218 ; CPU: 73.39% ; MEM: 8155.57 
+iteration: 219 ; CPU: 65.53% ; MEM: 8067.28 
+iteration: 220 ; CPU: 57.52% ; MEM: 8035.36 
+iteration: 221 ; CPU: 79.31% ; MEM: 8036.02 
+iteration: 222 ; CPU: 71.32% ; MEM: 7951.54 
+iteration: 223 ; CPU: 72.95% ; MEM: 7951.60 
+iteration: 224 ; CPU: 74.26% ; MEM: 7882.58 
+iteration: 225 ; CPU: 76.05% ; MEM: 7882.72 
+iteration: 226 ; CPU: 53.97% ; MEM: 7704.89 
+iteration: 227 ; CPU: 54.42% ; MEM: 7704.89 
+iteration: 228 ; CPU: 54.90% ; MEM: 7704.89 
+iteration: 229 ; CPU: 55.35% ; MEM: 7704.89 
+iteration: 230 ; CPU: 55.72% ; MEM: 7745.57 
+iteration: 231 ; CPU: 56.18% ; MEM: 7749.42 
+iteration: 232 ; CPU: 61.02% ; MEM: 7749.44 
+iteration: 233 ; CPU: 61.45% ; MEM: 7749.49 
+iteration: 234 ; CPU: 61.85% ; MEM: 7715.14 
+iteration: 235 ; CPU: 62.81% ; MEM: 7715.19 
+iteration: 236 ; CPU: 55.74% ; MEM: 7626.58 
+iteration: 237 ; CPU: 56.19% ; MEM: 7626.58 
+iteration: 238 ; CPU: 54.57% ; MEM: 7626.58 
+iteration: 239 ; CPU: 54.99% ; MEM: 7626.58 
+iteration: 240 ; CPU: 55.41% ; MEM: 7626.58 
+iteration: 241 ; CPU: 55.79% ; MEM: 7626.58 
+iteration: 242 ; CPU: 56.20% ; MEM: 7626.59 
+iteration: 243 ; CPU: 56.65% ; MEM: 7626.59 
+iteration: 244 ; CPU: 55.10% ; MEM: 7626.59 
+iteration: 245 ; CPU: 55.50% ; MEM: 7626.59 
+iteration: 246 ; CPU: 55.91% ; MEM: 7627.10 
+iteration: 247 ; CPU: 56.33% ; MEM: 7627.10 
+iteration: 248 ; CPU: 56.71% ; MEM: 7627.10 
+iteration: 249 ; CPU: 57.12% ; MEM: 7627.10 
+iteration: 250 ; CPU: 55.61% ; MEM: 7627.11 
+iteration: 251 ; CPU: 56.00% ; MEM: 7627.11 
+iteration: 252 ; CPU: 56.40% ; MEM: 7627.11 
+iteration: 253 ; CPU: 56.76% ; MEM: 7627.11 
+iteration: 254 ; CPU: 57.15% ; MEM: 7627.11 
+iteration: 255 ; CPU: 57.51% ; MEM: 7627.11 
+iteration: 256 ; CPU: 56.08% ; MEM: 7627.11 
+iteration: 257 ; CPU: 56.42% ; MEM: 7627.11 
+iteration: 258 ; CPU: 56.80% ; MEM: 7627.11 
+iteration: 259 ; CPU: 57.22% ; MEM: 7627.11 
+iteration: 260 ; CPU: 57.52% ; MEM: 7627.11 
+iteration: 261 ; CPU: 57.92% ; MEM: 7627.11 
+iteration: 262 ; CPU: 56.41% ; MEM: 7627.11 
+iteration: 263 ; CPU: 56.80% ; MEM: 7627.37 
+iteration: 264 ; CPU: 57.17% ; MEM: 7627.62 
+iteration: 265 ; CPU: 57.49% ; MEM: 7627.62 
+iteration: 266 ; CPU: 57.86% ; MEM: 7627.62 
+iteration: 267 ; CPU: 58.21% ; MEM: 7627.62 
+iteration: 268 ; CPU: 56.81% ; MEM: 7627.62 
+iteration: 269 ; CPU: 57.17% ; MEM: 7627.62 
+iteration: 270 ; CPU: 57.52% ; MEM: 7627.62 
+iteration: 271 ; CPU: 57.87% ; MEM: 7627.62 
+iteration: 272 ; CPU: 58.25% ; MEM: 7627.62 
+iteration: 273 ; CPU: 58.57% ; MEM: 7627.62 
+iteration: 274 ; CPU: 57.20% ; MEM: 7627.62 
+iteration: 275 ; CPU: 57.53% ; MEM: 7627.62 
+iteration: 276 ; CPU: 57.86% ; MEM: 7627.62 
+iteration: 277 ; CPU: 58.20% ; MEM: 7627.62 
+iteration: 278 ; CPU: 58.55% ; MEM: 7627.62 
+iteration: 279 ; CPU: 58.89% ; MEM: 7627.88 
+iteration: 280 ; CPU: 57.59% ; MEM: 7628.14 
+iteration: 281 ; CPU: 57.89% ; MEM: 7628.14 
+iteration: 282 ; CPU: 58.22% ; MEM: 7628.14 
+iteration: 283 ; CPU: 58.50% ; MEM: 7628.14 
+iteration: 284 ; CPU: 58.85% ; MEM: 7628.14 
+iteration: 285 ; CPU: 59.15% ; MEM: 7628.14 
+iteration: 286 ; CPU: 57.82% ; MEM: 7628.14 
+iteration: 287 ; CPU: 58.11% ; MEM: 7628.14 
+iteration: 288 ; CPU: 58.47% ; MEM: 7628.14 
+iteration: 289 ; CPU: 58.74% ; MEM: 7631.23 
+iteration: 290 ; CPU: 59.08% ; MEM: 7631.23 
+iteration: 291 ; CPU: 59.42% ; MEM: 7631.23 
+iteration: 292 ; CPU: 58.09% ; MEM: 7631.23 
+iteration: 293 ; CPU: 58.43% ; MEM: 7631.23 
+iteration: 294 ; CPU: 58.72% ; MEM: 7634.33 
+iteration: 295 ; CPU: 59.04% ; MEM: 7634.39 
+iteration: 296 ; CPU: 59.33% ; MEM: 7634.39 
+iteration: 297 ; CPU: 59.63% ; MEM: 7634.39 
+iteration: 298 ; CPU: 58.41% ; MEM: 7634.39 
+iteration: 299 ; CPU: 58.69% ; MEM: 7634.65 
+iteration: 300 ; CPU: 59.00% ; MEM: 7634.65 
+iteration: 301 ; CPU: 59.28% ; MEM: 7634.65 
+iteration: 302 ; CPU: 59.56% ; MEM: 7634.65 
+iteration: 303 ; CPU: 59.87% ; MEM: 7634.65 
+iteration: 304 ; CPU: 58.64% ; MEM: 7634.65 
+iteration: 305 ; CPU: 58.90% ; MEM: 7634.65 
+iteration: 306 ; CPU: 59.24% ; MEM: 7634.65 
+iteration: 307 ; CPU: 59.52% ; MEM: 7634.65 
+iteration: 308 ; CPU: 59.84% ; MEM: 7634.65 
+iteration: 309 ; CPU: 60.09% ; MEM: 7634.65 
+iteration: 310 ; CPU: 58.87% ; MEM: 7634.65 
+iteration: 311 ; CPU: 59.18% ; MEM: 7634.65 
+iteration: 312 ; CPU: 59.45% ; MEM: 7634.65 
+iteration: 313 ; CPU: 59.74% ; MEM: 7634.65 
+iteration: 314 ; CPU: 60.03% ; MEM: 7634.65 
+iteration: 315 ; CPU: 60.31% ; MEM: 7634.65 
+iteration: 316 ; CPU: 59.14% ; MEM: 7634.65 
+iteration: 317 ; CPU: 59.40% ; MEM: 7634.65 
+iteration: 318 ; CPU: 59.66% ; MEM: 7634.65 
+iteration: 319 ; CPU: 59.95% ; MEM: 7634.65 
+iteration: 320 ; CPU: 60.22% ; MEM: 7634.65 
+iteration: 321 ; CPU: 60.53% ; MEM: 7634.65 
+iteration: 322 ; CPU: 59.35% ; MEM: 7634.91 
+iteration: 323 ; CPU: 59.58% ; MEM: 7634.91 
+iteration: 324 ; CPU: 59.90% ; MEM: 7634.91 
+iteration: 325 ; CPU: 60.14% ; MEM: 7634.91 
+iteration: 326 ; CPU: 60.41% ; MEM: 7634.91 
+iteration: 327 ; CPU: 60.65% ; MEM: 7634.91 
+iteration: 328 ; CPU: 59.53% ; MEM: 7634.91 
+iteration: 329 ; CPU: 59.78% ; MEM: 7634.91 
+iteration: 330 ; CPU: 60.03% ; MEM: 7634.91 
+iteration: 331 ; CPU: 60.30% ; MEM: 7634.91 
+iteration: 332 ; CPU: 60.59% ; MEM: 7634.91 
+iteration: 333 ; CPU: 60.83% ; MEM: 7634.91 
+iteration: 334 ; CPU: 59.72% ; MEM: 7634.91 
+iteration: 335 ; CPU: 60.02% ; MEM: 7634.91 
+iteration: 336 ; CPU: 60.27% ; MEM: 7634.91 
+iteration: 337 ; CPU: 60.56% ; MEM: 7634.91 
+iteration: 338 ; CPU: 60.82% ; MEM: 7634.91 
+iteration: 339 ; CPU: 59.75% ; MEM: 7634.91 
+iteration: 340 ; CPU: 60.06% ; MEM: 7634.91 
+iteration: 341 ; CPU: 60.30% ; MEM: 7634.91 
+iteration: 342 ; CPU: 60.61% ; MEM: 7634.92 
+iteration: 343 ; CPU: 60.90% ; MEM: 7634.92 
+iteration: 344 ; CPU: 59.83% ; MEM: 7634.92 
+iteration: 345 ; CPU: 60.11% ; MEM: 7634.92 
+iteration: 346 ; CPU: 60.36% ; MEM: 7634.92 
+iteration: 347 ; CPU: 60.65% ; MEM: 7634.92 
+iteration: 348 ; CPU: 60.93% ; MEM: 7634.92 
+iteration: 349 ; CPU: 61.22% ; MEM: 7634.92 
+iteration: 350 ; CPU: 60.18% ; MEM: 7634.92 
+iteration: 351 ; CPU: 60.44% ; MEM: 7634.92 
+iteration: 352 ; CPU: 60.70% ; MEM: 7634.92 
+iteration: 353 ; CPU: 60.95% ; MEM: 7634.92 
+iteration: 354 ; CPU: 61.23% ; MEM: 7634.92 
+iteration: 355 ; CPU: 60.21% ; MEM: 7634.92 
+iteration: 356 ; CPU: 60.46% ; MEM: 7634.92 
+iteration: 357 ; CPU: 60.73% ; MEM: 7634.92 
+iteration: 358 ; CPU: 60.96% ; MEM: 7634.92 
+iteration: 359 ; CPU: 61.19% ; MEM: 7634.92 
+iteration: 360 ; CPU: 61.45% ; MEM: 7634.92 
+iteration: 361 ; CPU: 60.42% ; MEM: 7671.97 
+iteration: 362 ; CPU: 60.70% ; MEM: 7694.73 
+iteration: 363 ; CPU: 60.96% ; MEM: 7709.83 
+iteration: 364 ; CPU: 61.22% ; MEM: 7722.08 
+iteration: 365 ; CPU: 61.45% ; MEM: 7737.72 
+iteration: 366 ; CPU: 65.75% ; MEM: 7752.76 
+iteration: 367 ; CPU: 67.86% ; MEM: 7780.58 
+iteration: 368 ; CPU: 69.46% ; MEM: 7782.20 
+iteration: 369 ; CPU: 71.49% ; MEM: 7798.14 
+iteration: 370 ; CPU: 74.25% ; MEM: 7840.48 
+iteration: 371 ; CPU: 68.57% ; MEM: 7870.96 
+iteration: 372 ; CPU: 69.72% ; MEM: 7892.59 
+iteration: 373 ; CPU: 71.06% ; MEM: 7921.00 
+iteration: 374 ; CPU: 72.88% ; MEM: 7934.03 
+iteration: 375 ; CPU: 74.23% ; MEM: 7954.22 
+iteration: 376 ; CPU: 69.75% ; MEM: 7968.00 
+iteration: 377 ; CPU: 70.33% ; MEM: 7972.63 
+iteration: 378 ; CPU: 71.10% ; MEM: 7977.44 
+iteration: 379 ; CPU: 71.68% ; MEM: 7977.86 
+iteration: 380 ; CPU: 72.33% ; MEM: 7988.89 
+iteration: 381 ; CPU: 69.07% ; MEM: 7984.77 
+iteration: 382 ; CPU: 69.47% ; MEM: 7985.57 
+iteration: 383 ; CPU: 69.81% ; MEM: 7985.91 
+iteration: 384 ; CPU: 70.18% ; MEM: 7986.01 
+iteration: 385 ; CPU: 70.58% ; MEM: 7996.07 
+iteration: 386 ; CPU: 71.08% ; MEM: 7998.01 
+iteration: 387 ; CPU: 68.86% ; MEM: 8011.51 
+iteration: 388 ; CPU: 69.29% ; MEM: 8018.16 
+iteration: 389 ; CPU: 69.68% ; MEM: 8015.25 
+iteration: 390 ; CPU: 69.99% ; MEM: 8017.55 
+iteration: 391 ; CPU: 70.33% ; MEM: 8018.10 
+iteration: 392 ; CPU: 68.09% ; MEM: 8019.02 
+iteration: 393 ; CPU: 68.54% ; MEM: 8033.83 
+iteration: 394 ; CPU: 68.85% ; MEM: 8034.12 
+iteration: 395 ; CPU: 69.12% ; MEM: 8034.12 
+iteration: 396 ; CPU: 69.46% ; MEM: 8034.38 
+iteration: 397 ; CPU: 67.66% ; MEM: 8035.15 
+iteration: 398 ; CPU: 67.95% ; MEM: 8035.15 
+iteration: 399 ; CPU: 68.24% ; MEM: 8035.15 
+iteration: 400 ; CPU: 68.49% ; MEM: 8035.15 
+iteration: 401 ; CPU: 68.83% ; MEM: 8035.15 
+iteration: 402 ; CPU: 67.31% ; MEM: 8037.73 
+iteration: 403 ; CPU: 67.58% ; MEM: 8038.50 
+iteration: 404 ; CPU: 67.93% ; MEM: 8039.13 
+iteration: 405 ; CPU: 68.18% ; MEM: 8039.19 
+iteration: 406 ; CPU: 68.43% ; MEM: 8039.19 
+iteration: 407 ; CPU: 68.68% ; MEM: 8039.19 
+iteration: 408 ; CPU: 67.27% ; MEM: 8039.44 
+iteration: 409 ; CPU: 67.60% ; MEM: 8042.53 
+iteration: 410 ; CPU: 67.85% ; MEM: 8042.83 
+iteration: 411 ; CPU: 68.07% ; MEM: 8043.09 
+iteration: 412 ; CPU: 68.34% ; MEM: 8043.09 
+iteration: 413 ; CPU: 66.94% ; MEM: 8043.09 
+iteration: 414 ; CPU: 67.22% ; MEM: 8019.06 
+iteration: 415 ; CPU: 67.49% ; MEM: 8019.05 
+iteration: 416 ; CPU: 67.71% ; MEM: 8023.61 
+iteration: 417 ; CPU: 67.94% ; MEM: 8023.60 
+iteration: 418 ; CPU: 66.72% ; MEM: 8024.18 
+iteration: 419 ; CPU: 66.99% ; MEM: 8024.18 
+iteration: 420 ; CPU: 67.28% ; MEM: 8024.18 
+iteration: 421 ; CPU: 67.54% ; MEM: 8024.18 
+iteration: 422 ; CPU: 67.77% ; MEM: 8024.41 
+iteration: 423 ; CPU: 66.57% ; MEM: 8024.41 
+iteration: 424 ; CPU: 66.85% ; MEM: 8024.41 
+iteration: 425 ; CPU: 67.11% ; MEM: 8024.42 
+iteration: 426 ; CPU: 67.32% ; MEM: 8024.68 
+iteration: 427 ; CPU: 67.60% ; MEM: 8025.53 
+iteration: 428 ; CPU: 67.85% ; MEM: 8025.53 
+iteration: 429 ; CPU: 66.76% ; MEM: 8025.65 
+iteration: 430 ; CPU: 66.97% ; MEM: 8025.65 
+iteration: 431 ; CPU: 67.25% ; MEM: 8025.76 
+iteration: 432 ; CPU: 67.49% ; MEM: 8025.76 
+iteration: 433 ; CPU: 67.68% ; MEM: 8025.76 
+iteration: 434 ; CPU: 66.60% ; MEM: 8025.76 
+iteration: 435 ; CPU: 66.80% ; MEM: 8025.76 
+iteration: 436 ; CPU: 67.07% ; MEM: 8025.76 
+iteration: 437 ; CPU: 67.29% ; MEM: 8025.74 
+iteration: 438 ; CPU: 67.49% ; MEM: 8025.74 
+iteration: 439 ; CPU: 67.68% ; MEM: 8025.74 
+iteration: 440 ; CPU: 66.68% ; MEM: 8025.74 
+iteration: 441 ; CPU: 66.94% ; MEM: 8025.74 
+iteration: 442 ; CPU: 67.17% ; MEM: 8025.75 
+iteration: 443 ; CPU: 67.44% ; MEM: 8025.75 
+iteration: 444 ; CPU: 67.69% ; MEM: 8025.75 
+iteration: 445 ; CPU: 66.67% ; MEM: 8025.75 
+iteration: 446 ; CPU: 66.93% ; MEM: 8025.75 
+iteration: 447 ; CPU: 67.11% ; MEM: 8025.75 
+iteration: 448 ; CPU: 67.36% ; MEM: 8025.75 
+iteration: 449 ; CPU: 67.58% ; MEM: 8025.75 
+iteration: 450 ; CPU: 66.66% ; MEM: 8025.75 
+iteration: 451 ; CPU: 66.82% ; MEM: 8025.75 
+iteration: 452 ; CPU: 67.08% ; MEM: 8025.73 
+iteration: 453 ; CPU: 67.32% ; MEM: 8025.73 
+iteration: 454 ; CPU: 67.59% ; MEM: 8025.73 
+iteration: 455 ; CPU: 66.64% ; MEM: 8025.73 
+iteration: 456 ; CPU: 66.86% ; MEM: 8025.73 
+iteration: 457 ; CPU: 67.07% ; MEM: 8025.73 
+iteration: 458 ; CPU: 67.26% ; MEM: 8025.73 
+iteration: 459 ; CPU: 67.52% ; MEM: 8025.73 
+iteration: 460 ; CPU: 67.71% ; MEM: 8025.73 
+iteration: 461 ; CPU: 66.83% ; MEM: 8025.73 
+iteration: 462 ; CPU: 67.02% ; MEM: 8025.72 
+iteration: 463 ; CPU: 67.30% ; MEM: 8025.70 
+iteration: 464 ; CPU: 67.48% ; MEM: 8025.70 
+iteration: 465 ; CPU: 67.70% ; MEM: 8025.70 
+iteration: 466 ; CPU: 66.88% ; MEM: 8025.70 
+iteration: 467 ; CPU: 67.08% ; MEM: 8027.25 
+iteration: 468 ; CPU: 67.29% ; MEM: 8027.25 
+iteration: 469 ; CPU: 67.50% ; MEM: 8027.25 
+iteration: 470 ; CPU: 67.71% ; MEM: 8027.25 
+iteration: 471 ; CPU: 66.88% ; MEM: 8027.25 
+iteration: 472 ; CPU: 67.09% ; MEM: 8027.25 
+iteration: 473 ; CPU: 67.31% ; MEM: 8027.25 
+iteration: 474 ; CPU: 67.53% ; MEM: 8027.25 
+iteration: 475 ; CPU: 67.74% ; MEM: 8027.25 
+iteration: 476 ; CPU: 66.92% ; MEM: 8027.25 
+iteration: 477 ; CPU: 67.11% ; MEM: 8027.25 
+iteration: 478 ; CPU: 67.39% ; MEM: 8027.25 
+iteration: 479 ; CPU: 67.59% ; MEM: 8027.25 
+iteration: 480 ; CPU: 67.81% ; MEM: 8027.25 
+iteration: 481 ; CPU: 67.01% ; MEM: 8027.25 
+iteration: 482 ; CPU: 67.20% ; MEM: 8027.25 
+iteration: 483 ; CPU: 67.41% ; MEM: 8027.25 
+iteration: 484 ; CPU: 67.63% ; MEM: 8027.25 
+iteration: 485 ; CPU: 67.79% ; MEM: 8027.25 
+iteration: 486 ; CPU: 67.01% ; MEM: 8027.46 
+iteration: 487 ; CPU: 67.22% ; MEM: 8027.46 
+iteration: 488 ; CPU: 67.35% ; MEM: 8027.46 
+iteration: 489 ; CPU: 67.57% ; MEM: 8027.46 
+iteration: 490 ; CPU: 67.76% ; MEM: 8027.46 
+iteration: 491 ; CPU: 67.95% ; MEM: 8027.46 
+iteration: 492 ; CPU: 67.12% ; MEM: 8027.46 
+iteration: 493 ; CPU: 67.27% ; MEM: 8027.67 
+iteration: 494 ; CPU: 67.50% ; MEM: 8027.67 
+iteration: 495 ; CPU: 67.70% ; MEM: 8027.67 
+iteration: 496 ; CPU: 67.88% ; MEM: 8027.67 
+iteration: 497 ; CPU: 67.11% ; MEM: 8027.67 
+iteration: 498 ; CPU: 67.30% ; MEM: 8027.67 
+iteration: 499 ; CPU: 67.53% ; MEM: 8027.67 
+iteration: 500 ; CPU: 67.73% ; MEM: 8027.81 
+iteration: 501 ; CPU: 67.91% ; MEM: 8027.81 
+iteration: 502 ; CPU: 67.17% ; MEM: 8027.81 
+iteration: 503 ; CPU: 67.31% ; MEM: 8027.81 
+iteration: 504 ; CPU: 67.50% ; MEM: 8027.81 
+iteration: 505 ; CPU: 67.71% ; MEM: 8027.81 
+iteration: 506 ; CPU: 67.90% ; MEM: 8027.81 
+iteration: 507 ; CPU: 68.09% ; MEM: 8027.81 
+iteration: 508 ; CPU: 67.36% ; MEM: 8027.81 
+iteration: 509 ; CPU: 67.51% ; MEM: 8027.81 
+iteration: 510 ; CPU: 67.72% ; MEM: 8027.81 
+iteration: 511 ; CPU: 67.90% ; MEM: 8027.81 
+iteration: 512 ; CPU: 68.07% ; MEM: 8028.07 
+iteration: 513 ; CPU: 67.33% ; MEM: 8028.07 
+iteration: 514 ; CPU: 67.51% ; MEM: 8028.07 
+iteration: 515 ; CPU: 67.73% ; MEM: 8028.07 
+iteration: 516 ; CPU: 67.91% ; MEM: 8028.07 
+iteration: 517 ; CPU: 68.10% ; MEM: 8028.07 
+iteration: 518 ; CPU: 67.32% ; MEM: 8028.07 
+iteration: 519 ; CPU: 67.51% ; MEM: 8028.07 
+iteration: 520 ; CPU: 67.68% ; MEM: 8028.07 
+iteration: 521 ; CPU: 67.82% ; MEM: 8028.07 
+iteration: 522 ; CPU: 68.02% ; MEM: 8028.07 
+iteration: 523 ; CPU: 68.23% ; MEM: 8028.07 
+iteration: 524 ; CPU: 67.46% ; MEM: 8028.07 
+iteration: 525 ; CPU: 67.69% ; MEM: 8028.07 
+iteration: 526 ; CPU: 67.88% ; MEM: 8028.07 
+iteration: 527 ; CPU: 68.03% ; MEM: 8028.07 
+iteration: 528 ; CPU: 68.23% ; MEM: 8028.07 
+iteration: 529 ; CPU: 67.53% ; MEM: 8028.07 
+iteration: 530 ; CPU: 67.66% ; MEM: 8028.07 
+iteration: 531 ; CPU: 67.89% ; MEM: 8028.07 
+iteration: 532 ; CPU: 68.09% ; MEM: 8028.07 
+iteration: 533 ; CPU: 68.23% ; MEM: 8028.33 
+iteration: 534 ; CPU: 67.53% ; MEM: 8028.33 
+iteration: 535 ; CPU: 67.71% ; MEM: 8028.33 
+iteration: 536 ; CPU: 67.92% ; MEM: 8028.33 
+iteration: 537 ; CPU: 68.08% ; MEM: 8028.33 
+iteration: 538 ; CPU: 68.26% ; MEM: 8028.33 
+iteration: 539 ; CPU: 67.54% ; MEM: 8028.59 
+iteration: 540 ; CPU: 67.69% ; MEM: 8028.59 
+iteration: 541 ; CPU: 67.91% ; MEM: 8028.59 
+iteration: 542 ; CPU: 68.06% ; MEM: 8028.59 
+iteration: 543 ; CPU: 68.26% ; MEM: 8028.59 
+iteration: 544 ; CPU: 68.45% ; MEM: 8028.59 
+iteration: 545 ; CPU: 67.70% ; MEM: 8028.59 
+iteration: 546 ; CPU: 67.89% ; MEM: 8028.59 
+iteration: 547 ; CPU: 68.08% ; MEM: 8028.59 
+iteration: 548 ; CPU: 68.23% ; MEM: 8028.59 
+iteration: 549 ; CPU: 68.40% ; MEM: 8028.59 
+iteration: 550 ; CPU: 67.72% ; MEM: 8028.59 
+iteration: 551 ; CPU: 67.93% ; MEM: 8028.59 
+iteration: 552 ; CPU: 68.08% ; MEM: 8028.59 
+iteration: 553 ; CPU: 68.25% ; MEM: 8028.59 
+iteration: 554 ; CPU: 68.38% ; MEM: 8028.59 
+iteration: 555 ; CPU: 67.70% ; MEM: 8028.59 
+iteration: 556 ; CPU: 67.90% ; MEM: 8028.74 
+iteration: 557 ; CPU: 68.06% ; MEM: 8028.74 
+iteration: 558 ; CPU: 68.24% ; MEM: 8028.74 
+iteration: 559 ; CPU: 68.39% ; MEM: 8028.74 
+iteration: 560 ; CPU: 68.59% ; MEM: 8028.74 
+iteration: 561 ; CPU: 67.89% ; MEM: 8028.74 
+iteration: 562 ; CPU: 68.08% ; MEM: 8028.74 
+iteration: 563 ; CPU: 68.24% ; MEM: 8028.74 
+iteration: 564 ; CPU: 68.42% ; MEM: 8028.74 
+iteration: 565 ; CPU: 68.61% ; MEM: 8028.74 
+iteration: 566 ; CPU: 67.96% ; MEM: 8028.74 
+iteration: 567 ; CPU: 68.12% ; MEM: 8028.74 
+iteration: 568 ; CPU: 68.29% ; MEM: 8028.74 
+iteration: 569 ; CPU: 68.43% ; MEM: 8028.74 
+iteration: 570 ; CPU: 68.63% ; MEM: 8029.00 
+iteration: 571 ; CPU: 67.97% ; MEM: 8029.00 
+iteration: 572 ; CPU: 68.12% ; MEM: 8029.23 
+iteration: 573 ; CPU: 68.29% ; MEM: 8029.23 
+iteration: 574 ; CPU: 68.45% ; MEM: 8029.23 
+iteration: 575 ; CPU: 68.64% ; MEM: 8029.23 
+iteration: 576 ; CPU: 67.97% ; MEM: 8029.23 
+iteration: 577 ; CPU: 68.16% ; MEM: 8029.23 
+iteration: 578 ; CPU: 68.30% ; MEM: 8029.23 
+iteration: 579 ; CPU: 68.46% ; MEM: 8029.43 
+iteration: 580 ; CPU: 68.58% ; MEM: 8029.43 
+iteration: 581 ; CPU: 68.77% ; MEM: 8029.43 
+iteration: 582 ; CPU: 68.15% ; MEM: 8029.43 
+iteration: 583 ; CPU: 68.27% ; MEM: 8029.43 
+iteration: 584 ; CPU: 68.44% ; MEM: 8029.43 
+iteration: 585 ; CPU: 68.58% ; MEM: 8029.43 
+iteration: 586 ; CPU: 68.77% ; MEM: 8029.43 
+iteration: 587 ; CPU: 68.15% ; MEM: 8029.43 
+iteration: 588 ; CPU: 68.30% ; MEM: 8029.43 
+iteration: 589 ; CPU: 68.44% ; MEM: 8029.43 
+iteration: 590 ; CPU: 68.59% ; MEM: 8029.43 
+iteration: 591 ; CPU: 68.80% ; MEM: 8029.43 
+iteration: 592 ; CPU: 68.17% ; MEM: 8029.43 
+iteration: 593 ; CPU: 68.32% ; MEM: 8029.43 
+iteration: 594 ; CPU: 68.49% ; MEM: 8029.43 
+iteration: 595 ; CPU: 68.61% ; MEM: 8029.43 
+iteration: 596 ; CPU: 68.81% ; MEM: 8029.43 
+iteration: 597 ; CPU: 68.91% ; MEM: 8029.43 
+iteration: 598 ; CPU: 68.30% ; MEM: 8029.43 
+iteration: 599 ; CPU: 68.46% ; MEM: 8029.43 
+iteration: 600 ; CPU: 68.57% ; MEM: 8029.43 
+iteration: 601 ; CPU: 68.78% ; MEM: 8029.43 
+iteration: 602 ; CPU: 68.91% ; MEM: 8029.43 
+iteration: 603 ; CPU: 68.30% ; MEM: 8029.43 
+iteration: 604 ; CPU: 68.46% ; MEM: 8029.43 
+iteration: 605 ; CPU: 68.60% ; MEM: 8029.43 
+iteration: 606 ; CPU: 68.79% ; MEM: 8029.43 
+iteration: 607 ; CPU: 68.96% ; MEM: 8029.43 
+iteration: 608 ; CPU: 68.36% ; MEM: 8029.43 
+iteration: 609 ; CPU: 68.48% ; MEM: 8029.43 
+iteration: 610 ; CPU: 68.64% ; MEM: 8029.43 
+iteration: 611 ; CPU: 68.75% ; MEM: 8029.43 
+iteration: 612 ; CPU: 68.97% ; MEM: 8029.43 
+iteration: 613 ; CPU: 69.13% ; MEM: 8035.36 
+iteration: 614 ; CPU: 68.53% ; MEM: 8035.49 
+iteration: 615 ; CPU: 68.66% ; MEM: 8035.49 
+iteration: 616 ; CPU: 68.83% ; MEM: 8035.49 
+iteration: 617 ; CPU: 68.99% ; MEM: 8035.49 
+iteration: 618 ; CPU: 69.14% ; MEM: 8035.49 
+iteration: 619 ; CPU: 68.54% ; MEM: 8035.49 
+iteration: 620 ; CPU: 68.66% ; MEM: 8035.49 
+iteration: 621 ; CPU: 68.82% ; MEM: 8035.49 
+iteration: 622 ; CPU: 68.98% ; MEM: 8035.49 
+iteration: 623 ; CPU: 69.13% ; MEM: 8035.49 
+iteration: 624 ; CPU: 68.55% ; MEM: 8035.49 
+iteration: 625 ; CPU: 68.67% ; MEM: 8035.49 
+iteration: 626 ; CPU: 68.83% ; MEM: 8035.49 
+iteration: 627 ; CPU: 68.98% ; MEM: 8035.49 
+iteration: 628 ; CPU: 69.14% ; MEM: 8035.49 
+iteration: 629 ; CPU: 68.54% ; MEM: 8035.49 
+iteration: 630 ; CPU: 68.70% ; MEM: 8035.49 
+iteration: 631 ; CPU: 68.83% ; MEM: 8035.49 
+iteration: 632 ; CPU: 69.02% ; MEM: 8035.49 
+iteration: 633 ; CPU: 69.14% ; MEM: 8035.49 
+iteration: 634 ; CPU: 69.29% ; MEM: 8035.49 
+iteration: 635 ; CPU: 68.69% ; MEM: 8036.52 
+iteration: 636 ; CPU: 68.84% ; MEM: 8037.62 
+iteration: 637 ; CPU: 69.00% ; MEM: 8037.62 
+iteration: 638 ; CPU: 69.11% ; MEM: 8040.71 
+iteration: 639 ; CPU: 69.26% ; MEM: 8040.71 
+iteration: 640 ; CPU: 68.70% ; MEM: 8040.71 
+iteration: 641 ; CPU: 68.83% ; MEM: 8040.71 
+iteration: 642 ; CPU: 68.96% ; MEM: 8040.71 
+iteration: 643 ; CPU: 69.12% ; MEM: 8040.71 
+iteration: 644 ; CPU: 69.25% ; MEM: 8040.71 
+iteration: 645 ; CPU: 68.69% ; MEM: 8040.89 
+iteration: 646 ; CPU: 68.83% ; MEM: 8040.89 
+iteration: 647 ; CPU: 68.99% ; MEM: 8040.89 
+iteration: 648 ; CPU: 69.15% ; MEM: 8040.89 
+iteration: 649 ; CPU: 69.25% ; MEM: 8040.89 
+iteration: 650 ; CPU: 69.40% ; MEM: 8040.89 
+iteration: 651 ; CPU: 68.85% ; MEM: 8040.89 
+iteration: 652 ; CPU: 69.03% ; MEM: 8032.32 
+iteration: 653 ; CPU: 69.15% ; MEM: 8032.32 
+iteration: 654 ; CPU: 69.30% ; MEM: 8032.32 
+iteration: 655 ; CPU: 69.44% ; MEM: 8032.32 
+iteration: 656 ; CPU: 68.85% ; MEM: 8032.32 
+iteration: 657 ; CPU: 69.05% ; MEM: 8032.32 
+iteration: 658 ; CPU: 69.15% ; MEM: 8032.32 
+iteration: 659 ; CPU: 69.28% ; MEM: 8032.32 
+iteration: 660 ; CPU: 69.41% ; MEM: 8032.32 
+iteration: 661 ; CPU: 68.84% ; MEM: 8032.32 
+iteration: 662 ; CPU: 69.03% ; MEM: 8032.32 
+iteration: 663 ; CPU: 69.13% ; MEM: 8032.32 
+iteration: 664 ; CPU: 69.29% ; MEM: 8032.32 
+iteration: 665 ; CPU: 69.39% ; MEM: 8038.81 
+iteration: 666 ; CPU: 68.89% ; MEM: 8052.22 
+iteration: 667 ; CPU: 69.05% ; MEM: 8052.38 
+iteration: 668 ; CPU: 69.19% ; MEM: 8052.38 
+iteration: 669 ; CPU: 69.31% ; MEM: 8052.44 
+iteration: 670 ; CPU: 69.47% ; MEM: 8052.44 
+iteration: 671 ; CPU: 69.58% ; MEM: 8052.44 
+iteration: 672 ; CPU: 69.05% ; MEM: 8052.44 
+iteration: 673 ; CPU: 69.19% ; MEM: 8052.87 
+iteration: 674 ; CPU: 69.31% ; MEM: 8054.18 
+iteration: 675 ; CPU: 69.44% ; MEM: 8054.30 
+iteration: 676 ; CPU: 69.56% ; MEM: 8054.30 
+iteration: 677 ; CPU: 69.10% ; MEM: 8054.30 
+iteration: 678 ; CPU: 69.21% ; MEM: 8054.30 
+iteration: 679 ; CPU: 69.32% ; MEM: 8054.30 
+iteration: 680 ; CPU: 69.47% ; MEM: 8054.30 
+iteration: 681 ; CPU: 69.58% ; MEM: 8054.30 
+iteration: 682 ; CPU: 69.11% ; MEM: 8054.30 
+iteration: 683 ; CPU: 69.21% ; MEM: 8054.30 
+iteration: 684 ; CPU: 69.36% ; MEM: 8054.30 
+iteration: 685 ; CPU: 69.47% ; MEM: 8054.30 
+iteration: 686 ; CPU: 69.60% ; MEM: 8054.50 
+iteration: 687 ; CPU: 69.74% ; MEM: 8054.50 
+iteration: 688 ; CPU: 69.21% ; MEM: 8054.50 
+iteration: 689 ; CPU: 69.35% ; MEM: 8054.44 
+iteration: 690 ; CPU: 69.46% ; MEM: 8054.62 
+iteration: 691 ; CPU: 69.60% ; MEM: 8054.82 
+iteration: 692 ; CPU: 69.74% ; MEM: 8054.82 
+iteration: 693 ; CPU: 69.24% ; MEM: 8054.79 
+iteration: 694 ; CPU: 69.35% ; MEM: 8054.79 
+iteration: 695 ; CPU: 69.50% ; MEM: 8054.79 
+iteration: 696 ; CPU: 69.60% ; MEM: 8054.87 
+iteration: 697 ; CPU: 69.73% ; MEM: 8054.87 
+iteration: 698 ; CPU: 69.22% ; MEM: 8054.87 
+iteration: 699 ; CPU: 69.33% ; MEM: 8055.13 
+iteration: 700 ; CPU: 69.46% ; MEM: 8055.13 
+iteration: 701 ; CPU: 69.56% ; MEM: 8055.13 
+iteration: 702 ; CPU: 69.67% ; MEM: 8055.35 
+iteration: 703 ; CPU: 69.22% ; MEM: 8055.35 
+iteration: 704 ; CPU: 69.33% ; MEM: 8055.35 
+iteration: 705 ; CPU: 69.48% ; MEM: 8044.91 
+iteration: 706 ; CPU: 69.56% ; MEM: 8044.91 
+iteration: 707 ; CPU: 69.67% ; MEM: 8044.91 
+iteration: 708 ; CPU: 69.81% ; MEM: 8044.91 
+iteration: 709 ; CPU: 69.28% ; MEM: 8044.91 
+iteration: 710 ; CPU: 69.42% ; MEM: 8044.91 
+iteration: 711 ; CPU: 69.53% ; MEM: 8044.91 
+iteration: 712 ; CPU: 69.66% ; MEM: 8044.91 
+iteration: 713 ; CPU: 69.78% ; MEM: 8044.91 
+iteration: 714 ; CPU: 69.26% ; MEM: 8044.91 
+iteration: 715 ; CPU: 69.42% ; MEM: 8045.07 
+iteration: 716 ; CPU: 69.50% ; MEM: 8045.20 
+iteration: 717 ; CPU: 69.64% ; MEM: 8045.20 
+iteration: 718 ; CPU: 69.76% ; MEM: 8045.40 
+iteration: 719 ; CPU: 69.85% ; MEM: 8045.40 
+iteration: 720 ; CPU: 69.40% ; MEM: 8045.40 
+iteration: 721 ; CPU: 69.50% ; MEM: 8045.40 
+iteration: 722 ; CPU: 69.62% ; MEM: 8045.40 
+iteration: 723 ; CPU: 69.71% ; MEM: 8045.40 
+iteration: 724 ; CPU: 69.86% ; MEM: 8045.40 
+iteration: 725 ; CPU: 69.40% ; MEM: 8045.40 
+iteration: 726 ; CPU: 69.49% ; MEM: 8045.40 
+iteration: 727 ; CPU: 69.61% ; MEM: 8045.40 
+iteration: 728 ; CPU: 69.71% ; MEM: 8045.40 
+iteration: 729 ; CPU: 69.84% ; MEM: 8045.40 
+iteration: 730 ; CPU: 69.39% ; MEM: 8045.40 
+iteration: 731 ; CPU: 69.47% ; MEM: 8045.40 
+iteration: 732 ; CPU: 69.61% ; MEM: 8045.53 
+iteration: 733 ; CPU: 69.71% ; MEM: 8045.71 
+iteration: 734 ; CPU: 69.85% ; MEM: 8045.71 
+iteration: 735 ; CPU: 69.94% ; MEM: 8045.71 
+iteration: 736 ; CPU: 69.48% ; MEM: 8045.71 
+iteration: 737 ; CPU: 69.62% ; MEM: 8045.71 
+iteration: 738 ; CPU: 69.70% ; MEM: 8046.32 
+iteration: 739 ; CPU: 69.85% ; MEM: 8055.38 
+iteration: 740 ; CPU: 69.96% ; MEM: 8055.42 
+iteration: 741 ; CPU: 69.50% ; MEM: 8055.42 
+iteration: 742 ; CPU: 69.60% ; MEM: 8081.56 
+iteration: 743 ; CPU: 69.69% ; MEM: 8152.17 
+iteration: 744 ; CPU: 69.84% ; MEM: 8246.21 
+iteration: 745 ; CPU: 69.93% ; MEM: 8334.82 
+iteration: 746 ; CPU: 69.47% ; MEM: 8419.05 
+iteration: 747 ; CPU: 69.59% ; MEM: 8519.28 
+iteration: 748 ; CPU: 69.68% ; MEM: 8617.17 
+iteration: 749 ; CPU: 69.79% ; MEM: 8675.34 
+iteration: 750 ; CPU: 69.93% ; MEM: 8675.34 
+iteration: 751 ; CPU: 70.04% ; MEM: 8675.59 
+iteration: 752 ; CPU: 69.59% ; MEM: 8675.59 
+iteration: 753 ; CPU: 69.70% ; MEM: 8675.59 
+iteration: 754 ; CPU: 69.78% ; MEM: 8675.59 
+iteration: 755 ; CPU: 69.92% ; MEM: 8675.59 
+iteration: 756 ; CPU: 70.05% ; MEM: 8680.59 
+iteration: 757 ; CPU: 69.59% ; MEM: 8680.59 
+iteration: 758 ; CPU: 69.67% ; MEM: 8680.59 
+iteration: 759 ; CPU: 69.74% ; MEM: 8680.74 
+iteration: 760 ; CPU: 69.87% ; MEM: 8680.68 
+iteration: 761 ; CPU: 70.00% ; MEM: 8680.68 
+iteration: 762 ; CPU: 70.08% ; MEM: 8680.68 
+iteration: 763 ; CPU: 69.66% ; MEM: 8681.08 
+iteration: 764 ; CPU: 69.74% ; MEM: 8683.35 
+iteration: 765 ; CPU: 69.86% ; MEM: 8683.89 
+iteration: 766 ; CPU: 69.98% ; MEM: 8683.89 
+iteration: 767 ; CPU: 70.08% ; MEM: 8683.89 
+iteration: 768 ; CPU: 69.65% ; MEM: 8683.89 
+iteration: 769 ; CPU: 69.72% ; MEM: 8683.91 
+iteration: 770 ; CPU: 69.81% ; MEM: 8683.91 
+iteration: 771 ; CPU: 69.97% ; MEM: 8683.91 
+iteration: 772 ; CPU: 70.04% ; MEM: 8684.33 
+iteration: 773 ; CPU: 69.64% ; MEM: 8684.33 
+iteration: 774 ; CPU: 69.71% ; MEM: 8684.33 
+iteration: 775 ; CPU: 69.80% ; MEM: 8684.33 
+iteration: 776 ; CPU: 69.95% ; MEM: 8684.33 
+iteration: 777 ; CPU: 70.03% ; MEM: 8684.33 
+iteration: 778 ; CPU: 70.14% ; MEM: 8684.33 
+iteration: 779 ; CPU: 69.70% ; MEM: 8684.41 
+iteration: 780 ; CPU: 69.80% ; MEM: 8684.46 
+iteration: 781 ; CPU: 69.94% ; MEM: 8684.46 
+iteration: 782 ; CPU: 70.01% ; MEM: 8684.46 
+iteration: 783 ; CPU: 70.15% ; MEM: 8684.51 
+iteration: 784 ; CPU: 69.71% ; MEM: 8684.51 
+iteration: 785 ; CPU: 69.81% ; MEM: 8684.51 
+iteration: 786 ; CPU: 69.93% ; MEM: 8684.51 
+iteration: 787 ; CPU: 70.01% ; MEM: 8684.59 
+iteration: 788 ; CPU: 70.15% ; MEM: 8684.59 
+iteration: 789 ; CPU: 70.23% ; MEM: 8684.59 
+iteration: 790 ; CPU: 69.75% ; MEM: 8684.59 
+iteration: 791 ; CPU: 69.86% ; MEM: 8684.59 
+iteration: 792 ; CPU: 69.96% ; MEM: 8684.85 
+iteration: 793 ; CPU: 70.10% ; MEM: 8684.85 
+iteration: 794 ; CPU: 70.20% ; MEM: 8684.85 
+iteration: 795 ; CPU: 69.76% ; MEM: 8684.91 
+iteration: 796 ; CPU: 69.85% ; MEM: 8684.91 
+iteration: 797 ; CPU: 69.98% ; MEM: 8684.92 
+iteration: 798 ; CPU: 70.11% ; MEM: 8684.97 
+iteration: 799 ; CPU: 70.21% ; MEM: 8684.98 
+iteration: 800 ; CPU: 69.78% ; MEM: 8684.98 
+iteration: 801 ; CPU: 69.86% ; MEM: 8684.98 
+iteration: 802 ; CPU: 69.98% ; MEM: 8684.98 
+iteration: 803 ; CPU: 70.11% ; MEM: 8685.90 
+iteration: 804 ; CPU: 70.19% ; MEM: 8685.90 
+iteration: 805 ; CPU: 70.27% ; MEM: 8685.90 
+iteration: 806 ; CPU: 69.85% ; MEM: 8685.90 
+iteration: 807 ; CPU: 69.96% ; MEM: 8685.98 
+iteration: 808 ; CPU: 70.09% ; MEM: 8685.98 
+iteration: 809 ; CPU: 70.18% ; MEM: 8686.00 
+iteration: 810 ; CPU: 70.29% ; MEM: 8686.65 
+iteration: 811 ; CPU: 69.84% ; MEM: 8686.65 
+iteration: 812 ; CPU: 69.97% ; MEM: 8686.65 
+iteration: 813 ; CPU: 70.06% ; MEM: 8686.77 
+iteration: 814 ; CPU: 70.16% ; MEM: 8686.85 
+iteration: 815 ; CPU: 70.27% ; MEM: 8686.85 
+iteration: 816 ; CPU: 70.36% ; MEM: 8686.92 
+iteration: 817 ; CPU: 69.95% ; MEM: 8686.92 
+iteration: 818 ; CPU: 70.05% ; MEM: 8686.92 
+iteration: 819 ; CPU: 70.14% ; MEM: 8686.92 
+iteration: 820 ; CPU: 70.26% ; MEM: 8686.92 
+iteration: 821 ; CPU: 70.34% ; MEM: 8686.92 
+iteration: 822 ; CPU: 69.92% ; MEM: 8686.92 
+iteration: 823 ; CPU: 70.03% ; MEM: 8686.92 
+iteration: 824 ; CPU: 70.11% ; MEM: 8686.92 
+iteration: 825 ; CPU: 70.24% ; MEM: 8686.92 
+iteration: 826 ; CPU: 70.33% ; MEM: 8686.92 
+iteration: 827 ; CPU: 69.91% ; MEM: 8686.92 
+iteration: 828 ; CPU: 70.03% ; MEM: 8686.92 
+iteration: 829 ; CPU: 70.11% ; MEM: 8686.92 
+iteration: 830 ; CPU: 70.22% ; MEM: 8686.92 
+iteration: 831 ; CPU: 70.32% ; MEM: 8686.92 
+iteration: 832 ; CPU: 70.40% ; MEM: 8687.00 
+iteration: 833 ; CPU: 70.03% ; MEM: 8687.00 
+iteration: 834 ; CPU: 70.12% ; MEM: 8687.00 
+iteration: 835 ; CPU: 70.24% ; MEM: 8687.00 
+iteration: 836 ; CPU: 70.32% ; MEM: 8687.12 
+iteration: 837 ; CPU: 70.40% ; MEM: 8687.12 
+iteration: 838 ; CPU: 70.03% ; MEM: 8687.12 
+iteration: 839 ; CPU: 70.15% ; MEM: 8687.12 
+iteration: 840 ; CPU: 70.25% ; MEM: 8687.12 
+iteration: 841 ; CPU: 70.32% ; MEM: 8687.12 
+iteration: 842 ; CPU: 70.43% ; MEM: 8687.12 
+iteration: 843 ; CPU: 70.04% ; MEM: 8687.12 
+iteration: 844 ; CPU: 70.16% ; MEM: 8687.12 
+iteration: 845 ; CPU: 70.24% ; MEM: 8687.12 
+iteration: 846 ; CPU: 70.31% ; MEM: 8687.12 
+iteration: 847 ; CPU: 70.42% ; MEM: 8687.53 
+iteration: 848 ; CPU: 70.50% ; MEM: 8687.53 
+iteration: 849 ; CPU: 70.15% ; MEM: 8687.53 
+iteration: 850 ; CPU: 70.23% ; MEM: 8687.53 
+iteration: 851 ; CPU: 70.30% ; MEM: 8687.53 
+iteration: 852 ; CPU: 70.41% ; MEM: 8687.74 
+iteration: 853 ; CPU: 70.48% ; MEM: 8687.74 
+iteration: 854 ; CPU: 70.11% ; MEM: 8687.74 
+iteration: 855 ; CPU: 70.19% ; MEM: 8687.74 
+iteration: 856 ; CPU: 70.25% ; MEM: 8687.74 
+iteration: 857 ; CPU: 70.35% ; MEM: 8687.74 
+iteration: 858 ; CPU: 70.43% ; MEM: 8687.74 
+iteration: 859 ; CPU: 70.51% ; MEM: 8687.74 
+iteration: 860 ; CPU: 70.15% ; MEM: 8687.74 
+iteration: 861 ; CPU: 70.24% ; MEM: 8687.74 
+iteration: 862 ; CPU: 70.34% ; MEM: 8687.74 
+iteration: 863 ; CPU: 70.42% ; MEM: 8687.74 
+iteration: 864 ; CPU: 70.50% ; MEM: 8687.74 
+iteration: 865 ; CPU: 70.15% ; MEM: 8687.74 
+iteration: 866 ; CPU: 70.22% ; MEM: 8687.74 
+iteration: 867 ; CPU: 70.33% ; MEM: 8687.74 
+iteration: 868 ; CPU: 70.40% ; MEM: 8687.74 
+iteration: 869 ; CPU: 70.49% ; MEM: 8687.74 
+iteration: 870 ; CPU: 70.13% ; MEM: 8687.74 
+iteration: 871 ; CPU: 70.21% ; MEM: 8687.81 
+iteration: 872 ; CPU: 70.32% ; MEM: 8687.81 
+iteration: 873 ; CPU: 70.40% ; MEM: 8687.81 
+iteration: 874 ; CPU: 70.47% ; MEM: 8687.81 
+iteration: 875 ; CPU: 70.57% ; MEM: 8687.81 
+iteration: 876 ; CPU: 70.20% ; MEM: 8687.81 
+iteration: 877 ; CPU: 70.29% ; MEM: 8687.86 
+iteration: 878 ; CPU: 70.38% ; MEM: 8687.86 
+iteration: 879 ; CPU: 70.45% ; MEM: 8687.86 
+iteration: 880 ; CPU: 70.55% ; MEM: 8688.10 
+iteration: 881 ; CPU: 70.16% ; MEM: 8688.10 
+iteration: 882 ; CPU: 70.26% ; MEM: 8688.10 
+iteration: 883 ; CPU: 70.34% ; MEM: 8688.17 
+iteration: 884 ; CPU: 70.42% ; MEM: 8688.17 
+iteration: 885 ; CPU: 70.52% ; MEM: 8688.27 
+iteration: 886 ; CPU: 70.60% ; MEM: 8688.27 
+iteration: 887 ; CPU: 70.24% ; MEM: 8688.27 
+iteration: 888 ; CPU: 70.32% ; MEM: 8688.27 
+iteration: 889 ; CPU: 70.40% ; MEM: 8688.27 
+iteration: 890 ; CPU: 70.50% ; MEM: 8688.27 
+iteration: 891 ; CPU: 70.58% ; MEM: 8688.27 
+iteration: 892 ; CPU: 70.24% ; MEM: 8688.27 
+iteration: 893 ; CPU: 70.31% ; MEM: 8688.27 
+iteration: 894 ; CPU: 70.38% ; MEM: 8688.27 
+iteration: 895 ; CPU: 70.48% ; MEM: 8688.27 
+iteration: 896 ; CPU: 70.55% ; MEM: 8688.45 
+iteration: 897 ; CPU: 70.64% ; MEM: 8688.45 
+iteration: 898 ; CPU: 70.29% ; MEM: 8688.45 
+iteration: 899 ; CPU: 70.36% ; MEM: 8688.45 
+iteration: 900 ; CPU: 70.43% ; MEM: 8688.45 
+iteration: 901 ; CPU: 70.51% ; MEM: 8688.45 
+iteration: 902 ; CPU: 70.59% ; MEM: 8688.45 
+iteration: 903 ; CPU: 70.25% ; MEM: 8688.45 
+iteration: 904 ; CPU: 70.32% ; MEM: 8688.45 
+iteration: 905 ; CPU: 70.41% ; MEM: 8688.45 
+iteration: 906 ; CPU: 70.50% ; MEM: 8688.58 
+iteration: 907 ; CPU: 70.58% ; MEM: 8688.58 
+iteration: 908 ; CPU: 70.23% ; MEM: 8688.58 
+iteration: 909 ; CPU: 70.30% ; MEM: 8688.58 
+iteration: 910 ; CPU: 70.38% ; MEM: 8688.58 
+iteration: 911 ; CPU: 70.47% ; MEM: 8688.58 
+iteration: 912 ; CPU: 70.55% ; MEM: 8688.58 
+iteration: 913 ; CPU: 70.61% ; MEM: 8688.58 
+iteration: 914 ; CPU: 70.29% ; MEM: 8688.58 
+iteration: 915 ; CPU: 70.35% ; MEM: 8688.58 
+iteration: 916 ; CPU: 70.45% ; MEM: 8688.58 
+iteration: 917 ; CPU: 70.51% ; MEM: 8688.58 
+iteration: 918 ; CPU: 70.60% ; MEM: 8688.58 
+iteration: 919 ; CPU: 70.26% ; MEM: 8688.84 
+iteration: 920 ; CPU: 70.33% ; MEM: 8689.10 
+iteration: 921 ; CPU: 70.43% ; MEM: 8689.10 
+iteration: 922 ; CPU: 70.50% ; MEM: 8689.10 
+iteration: 923 ; CPU: 70.57% ; MEM: 8689.10 
+iteration: 924 ; CPU: 70.68% ; MEM: 8689.10 
+iteration: 925 ; CPU: 70.31% ; MEM: 8689.03 
+iteration: 926 ; CPU: 70.41% ; MEM: 8689.03 
+iteration: 927 ; CPU: 70.47% ; MEM: 8689.03 
+iteration: 928 ; CPU: 70.55% ; MEM: 8689.03 
+iteration: 929 ; CPU: 70.61% ; MEM: 8689.03 
+iteration: 930 ; CPU: 70.28% ; MEM: 8689.03 
+iteration: 931 ; CPU: 70.37% ; MEM: 8689.03 
+iteration: 932 ; CPU: 70.45% ; MEM: 8689.03 
+iteration: 933 ; CPU: 70.52% ; MEM: 8689.25 
+iteration: 934 ; CPU: 70.58% ; MEM: 8689.25 
+iteration: 935 ; CPU: 70.68% ; MEM: 8689.27 
+iteration: 936 ; CPU: 70.33% ; MEM: 8689.27 
+iteration: 937 ; CPU: 70.42% ; MEM: 8689.27 
+iteration: 938 ; CPU: 70.50% ; MEM: 8689.27 
+iteration: 939 ; CPU: 70.57% ; MEM: 8689.27 
+iteration: 940 ; CPU: 70.66% ; MEM: 8689.27 
+iteration: 941 ; CPU: 70.30% ; MEM: 8689.27 
+iteration: 942 ; CPU: 70.40% ; MEM: 8689.27 
+iteration: 943 ; CPU: 70.47% ; MEM: 8689.27 
+iteration: 944 ; CPU: 70.54% ; MEM: 8689.27 
+iteration: 945 ; CPU: 70.62% ; MEM: 8689.27 
+iteration: 946 ; CPU: 70.69% ; MEM: 8689.27 
+iteration: 947 ; CPU: 70.38% ; MEM: 8689.26 
+iteration: 948 ; CPU: 70.43% ; MEM: 8689.26 
+iteration: 949 ; CPU: 70.51% ; MEM: 8689.26 
+iteration: 950 ; CPU: 70.57% ; MEM: 8689.26 
+iteration: 951 ; CPU: 70.67% ; MEM: 8689.26 
+iteration: 952 ; CPU: 70.35% ; MEM: 8689.26 
+iteration: 953 ; CPU: 70.41% ; MEM: 8689.26 
+iteration: 954 ; CPU: 70.49% ; MEM: 8689.26 
+iteration: 955 ; CPU: 70.54% ; MEM: 8689.26 
+iteration: 956 ; CPU: 70.64% ; MEM: 8689.26 
+iteration: 957 ; CPU: 70.70% ; MEM: 8689.26 
+iteration: 958 ; CPU: 70.38% ; MEM: 8689.26 
+iteration: 959 ; CPU: 70.45% ; MEM: 8689.26 
+iteration: 960 ; CPU: 70.51% ; MEM: 8689.26 
+iteration: 961 ; CPU: 70.61% ; MEM: 8689.26 
+iteration: 962 ; CPU: 70.67% ; MEM: 8689.26 
+iteration: 963 ; CPU: 70.73% ; MEM: 8689.26 
+iteration: 964 ; CPU: 70.41% ; MEM: 8689.26 
+iteration: 965 ; CPU: 70.48% ; MEM: 8689.26 
+iteration: 966 ; CPU: 70.53% ; MEM: 8689.26 
+iteration: 967 ; CPU: 70.63% ; MEM: 8689.26 
+iteration: 968 ; CPU: 70.66% ; MEM: 8689.26 
+iteration: 969 ; CPU: 70.36% ; MEM: 8689.26 
+iteration: 970 ; CPU: 70.43% ; MEM: 8689.26 
+iteration: 971 ; CPU: 70.50% ; MEM: 8689.26 
+iteration: 972 ; CPU: 70.58% ; MEM: 8689.26 
+iteration: 973 ; CPU: 70.65% ; MEM: 8689.26 
+iteration: 974 ; CPU: 70.71% ; MEM: 8689.26 
+iteration: 975 ; CPU: 70.40% ; MEM: 8689.26 
+iteration: 976 ; CPU: 70.48% ; MEM: 8689.26 
+iteration: 977 ; CPU: 70.56% ; MEM: 8689.26 
+iteration: 978 ; CPU: 70.63% ; MEM: 8689.26 
+iteration: 979 ; CPU: 70.70% ; MEM: 8689.26 
+iteration: 980 ; CPU: 70.39% ; MEM: 8689.26 
+iteration: 981 ; CPU: 70.46% ; MEM: 8689.26 
+iteration: 982 ; CPU: 70.55% ; MEM: 8689.26 
+iteration: 983 ; CPU: 70.61% ; MEM: 8689.26 
+iteration: 984 ; CPU: 70.67% ; MEM: 8689.26 
+iteration: 985 ; CPU: 70.73% ; MEM: 8689.26 
+iteration: 986 ; CPU: 70.41% ; MEM: 8689.26 
+iteration: 987 ; CPU: 70.48% ; MEM: 8689.26 
+iteration: 988 ; CPU: 70.58% ; MEM: 8689.26 
+iteration: 989 ; CPU: 70.63% ; MEM: 8689.26 
+iteration: 990 ; CPU: 70.70% ; MEM: 8689.26 
+iteration: 991 ; CPU: 70.39% ; MEM: 8689.26 
+iteration: 992 ; CPU: 70.45% ; MEM: 8689.26 
+iteration: 993 ; CPU: 70.55% ; MEM: 8689.26 
+iteration: 994 ; CPU: 70.61% ; MEM: 8689.26 
+iteration: 995 ; CPU: 70.68% ; MEM: 8689.49 
+iteration: 996 ; CPU: 70.73% ; MEM: 8689.56 
+iteration: 997 ; CPU: 70.43% ; MEM: 8689.56 
+iteration: 998 ; CPU: 70.52% ; MEM: 8689.56 
+iteration: 999 ; CPU: 70.58% ; MEM: 8689.56 
+iteration: 1000 ; CPU: 70.63% ; MEM: 8689.56 
+iteration: 1001 ; CPU: 70.70% ; MEM: 8689.56 
+iteration: 1002 ; CPU: 70.80% ; MEM: 8689.56 
+iteration: 1003 ; CPU: 70.46% ; MEM: 8689.56 
+iteration: 1004 ; CPU: 70.55% ; MEM: 8689.56 
+iteration: 1005 ; CPU: 70.62% ; MEM: 8689.56 
+iteration: 1006 ; CPU: 70.70% ; MEM: 8689.56 
+iteration: 1007 ; CPU: 70.79% ; MEM: 8689.62 
+iteration: 1008 ; CPU: 70.46% ; MEM: 8689.62 
+iteration: 1009 ; CPU: 70.55% ; MEM: 8689.62 
+iteration: 1010 ; CPU: 70.60% ; MEM: 8689.62 
+iteration: 1011 ; CPU: 70.67% ; MEM: 8689.62 
+iteration: 1012 ; CPU: 70.76% ; MEM: 8689.62 
+iteration: 1013 ; CPU: 70.42% ; MEM: 8689.62 
+iteration: 1014 ; CPU: 70.51% ; MEM: 8689.62 
+iteration: 1015 ; CPU: 70.58% ; MEM: 8689.64 
+iteration: 1016 ; CPU: 70.63% ; MEM: 8689.66 
+iteration: 1017 ; CPU: 70.69% ; MEM: 8689.66 
+iteration: 1018 ; CPU: 70.78% ; MEM: 8690.00 
+iteration: 1019 ; CPU: 70.46% ; MEM: 8690.00 
+iteration: 1020 ; CPU: 70.53% ; MEM: 8690.00 
+iteration: 1021 ; CPU: 70.60% ; MEM: 8690.05 
+iteration: 1022 ; CPU: 70.66% ; MEM: 8690.05 
+iteration: 1023 ; CPU: 70.75% ; MEM: 8690.15 
+iteration: 1024 ; CPU: 70.84% ; MEM: 8690.15 
+iteration: 1025 ; CPU: 70.51% ; MEM: 8690.15 
+iteration: 1026 ; CPU: 70.57% ; MEM: 8690.15 
+iteration: 1027 ; CPU: 70.65% ; MEM: 8690.15 
+iteration: 1028 ; CPU: 70.73% ; MEM: 8690.15 
+iteration: 1029 ; CPU: 70.78% ; MEM: 8690.15 
+iteration: 1030 ; CPU: 70.49% ; MEM: 8690.15 
+iteration: 1031 ; CPU: 70.55% ; MEM: 8690.15 
+iteration: 1032 ; CPU: 70.61% ; MEM: 8690.15 
+iteration: 1033 ; CPU: 70.67% ; MEM: 8690.15 
+iteration: 1034 ; CPU: 70.75% ; MEM: 8690.15 
+iteration: 1035 ; CPU: 70.82% ; MEM: 8690.87 
+iteration: 1036 ; CPU: 70.51% ; MEM: 8690.87 
+iteration: 1037 ; CPU: 70.59% ; MEM: 8690.87 
+iteration: 1038 ; CPU: 70.65% ; MEM: 8690.87 
+iteration: 1039 ; CPU: 70.73% ; MEM: 8690.87 
+iteration: 1040 ; CPU: 70.79% ; MEM: 8690.87 
+iteration: 1041 ; CPU: 70.48% ; MEM: 8690.87 
+iteration: 1042 ; CPU: 70.54% ; MEM: 8690.87 
+iteration: 1043 ; CPU: 70.62% ; MEM: 8690.87 
+iteration: 1044 ; CPU: 70.71% ; MEM: 8690.87 
+iteration: 1045 ; CPU: 70.76% ; MEM: 8690.88 
+iteration: 1046 ; CPU: 70.82% ; MEM: 8690.88 
+iteration: 1047 ; CPU: 70.53% ; MEM: 8690.88 
+iteration: 1048 ; CPU: 70.59% ; MEM: 8690.88 
+iteration: 1049 ; CPU: 70.64% ; MEM: 8690.88 
+iteration: 1050 ; CPU: 70.73% ; MEM: 8690.88 
+iteration: 1051 ; CPU: 70.78% ; MEM: 8690.88 
+iteration: 1052 ; CPU: 70.50% ; MEM: 8690.88 
+iteration: 1053 ; CPU: 70.58% ; MEM: 8690.88 
+iteration: 1054 ; CPU: 70.63% ; MEM: 8690.88 
+iteration: 1055 ; CPU: 70.71% ; MEM: 8690.88 
+iteration: 1056 ; CPU: 70.78% ; MEM: 8690.88 
+iteration: 1057 ; CPU: 70.85% ; MEM: 8690.88 
+iteration: 1058 ; CPU: 70.53% ; MEM: 8690.88 
+iteration: 1059 ; CPU: 70.61% ; MEM: 8690.88 
+iteration: 1060 ; CPU: 70.68% ; MEM: 8690.88 
+iteration: 1061 ; CPU: 70.73% ; MEM: 8690.88 
+iteration: 1062 ; CPU: 70.80% ; MEM: 8690.88 
+iteration: 1063 ; CPU: 70.90% ; MEM: 8690.88 
+iteration: 1064 ; CPU: 70.57% ; MEM: 8690.88 
+iteration: 1065 ; CPU: 70.66% ; MEM: 8690.88 
+iteration: 1066 ; CPU: 70.72% ; MEM: 8690.88 
+iteration: 1067 ; CPU: 70.77% ; MEM: 8690.88 
+iteration: 1068 ; CPU: 70.83% ; MEM: 8690.88 
+iteration: 1069 ; CPU: 70.55% ; MEM: 8690.88 
+iteration: 1070 ; CPU: 70.61% ; MEM: 8690.88 
+iteration: 1071 ; CPU: 70.68% ; MEM: 8690.88 
+iteration: 1072 ; CPU: 70.75% ; MEM: 8690.88 
+iteration: 1073 ; CPU: 70.80% ; MEM: 8690.88 
+iteration: 1074 ; CPU: 70.91% ; MEM: 8690.88 
+iteration: 1075 ; CPU: 70.57% ; MEM: 8690.88 
+iteration: 1076 ; CPU: 70.65% ; MEM: 8690.88 
+iteration: 1077 ; CPU: 70.71% ; MEM: 8690.88 
+iteration: 1078 ; CPU: 70.76% ; MEM: 8690.88 
+iteration: 1079 ; CPU: 70.83% ; MEM: 8690.88 
+iteration: 1080 ; CPU: 70.55% ; MEM: 8690.88 
+iteration: 1081 ; CPU: 70.60% ; MEM: 8690.90 
+iteration: 1082 ; CPU: 70.69% ; MEM: 8690.90 
+iteration: 1083 ; CPU: 70.74% ; MEM: 8690.90 
+iteration: 1084 ; CPU: 70.81% ; MEM: 8690.90 
+iteration: 1085 ; CPU: 70.94% ; MEM: 8690.90 
+iteration: 1086 ; CPU: 70.59% ; MEM: 8690.90 
+iteration: 1087 ; CPU: 70.67% ; MEM: 8690.90 
+iteration: 1088 ; CPU: 70.73% ; MEM: 8691.15 
+iteration: 1089 ; CPU: 70.78% ; MEM: 8691.14 
+iteration: 1090 ; CPU: 70.90% ; MEM: 8691.14 
+iteration: 1091 ; CPU: 70.57% ; MEM: 8691.14 
+iteration: 1092 ; CPU: 70.65% ; MEM: 8691.14 
+iteration: 1093 ; CPU: 70.70% ; MEM: 8691.14 
+iteration: 1094 ; CPU: 70.75% ; MEM: 8691.14 
+iteration: 1095 ; CPU: 70.81% ; MEM: 8691.14 
+iteration: 1096 ; CPU: 70.93% ; MEM: 8691.14 
+iteration: 1097 ; CPU: 70.61% ; MEM: 8691.14 
+iteration: 1098 ; CPU: 70.67% ; MEM: 8691.14 
+iteration: 1099 ; CPU: 70.73% ; MEM: 8691.14 
+iteration: 1100 ; CPU: 70.80% ; MEM: 8691.14 
+iteration: 1101 ; CPU: 70.88% ; MEM: 8691.14 
+iteration: 1102 ; CPU: 70.60% ; MEM: 8691.14 
+iteration: 1103 ; CPU: 70.65% ; MEM: 8691.14 
+iteration: 1104 ; CPU: 70.71% ; MEM: 8691.14 
+iteration: 1105 ; CPU: 70.77% ; MEM: 8691.14 
+iteration: 1106 ; CPU: 70.86% ; MEM: 8691.14 
+iteration: 1107 ; CPU: 70.95% ; MEM: 8691.14 
+iteration: 1108 ; CPU: 70.63% ; MEM: 8691.14 
+iteration: 1109 ; CPU: 70.68% ; MEM: 8691.16 
+iteration: 1110 ; CPU: 70.74% ; MEM: 8691.14 
+iteration: 1111 ; CPU: 70.80% ; MEM: 8691.14 
+iteration: 1112 ; CPU: 70.89% ; MEM: 8691.16 
+iteration: 1113 ; CPU: 70.98% ; MEM: 8691.16 
+iteration: 1114 ; CPU: 70.65% ; MEM: 8691.16 
+iteration: 1115 ; CPU: 70.71% ; MEM: 8691.16 
+iteration: 1116 ; CPU: 70.79% ; MEM: 8691.19 
+iteration: 1117 ; CPU: 70.88% ; MEM: 8691.19 
+iteration: 1118 ; CPU: 70.96% ; MEM: 8691.19 
+iteration: 1119 ; CPU: 70.65% ; MEM: 8691.19 
+iteration: 1120 ; CPU: 70.70% ; MEM: 8691.44 
+iteration: 1121 ; CPU: 70.78% ; MEM: 8691.44 
+iteration: 1122 ; CPU: 70.87% ; MEM: 8691.44 
+iteration: 1123 ; CPU: 70.92% ; MEM: 8691.44 
+iteration: 1124 ; CPU: 70.64% ; MEM: 8691.50 
+iteration: 1125 ; CPU: 70.69% ; MEM: 8691.50 
+iteration: 1126 ; CPU: 70.75% ; MEM: 8691.50 
+iteration: 1127 ; CPU: 70.84% ; MEM: 8691.50 
+iteration: 1128 ; CPU: 70.89% ; MEM: 8691.50 
+iteration: 1129 ; CPU: 70.96% ; MEM: 8691.50 
+iteration: 1130 ; CPU: 70.67% ; MEM: 8691.50 
+iteration: 1131 ; CPU: 70.72% ; MEM: 8691.50 
+iteration: 1132 ; CPU: 70.82% ; MEM: 8691.85 
+iteration: 1133 ; CPU: 70.88% ; MEM: 8691.85 
+iteration: 1134 ; CPU: 70.93% ; MEM: 8691.84 
+iteration: 1135 ; CPU: 70.66% ; MEM: 8691.84 
+iteration: 1136 ; CPU: 70.71% ; MEM: 8691.84 
+iteration: 1137 ; CPU: 70.81% ; MEM: 8691.84 
+iteration: 1138 ; CPU: 70.87% ; MEM: 8691.84 
+iteration: 1139 ; CPU: 70.91% ; MEM: 8691.84 
+iteration: 1140 ; CPU: 71.02% ; MEM: 8691.80 
+iteration: 1141 ; CPU: 70.69% ; MEM: 8692.00 
+iteration: 1142 ; CPU: 70.76% ; MEM: 8692.00 
+iteration: 1143 ; CPU: 70.83% ; MEM: 8691.95 
+iteration: 1144 ; CPU: 70.89% ; MEM: 8691.95 
+iteration: 1145 ; CPU: 70.95% ; MEM: 8691.95 
+iteration: 1146 ; CPU: 70.67% ; MEM: 8691.95 
+iteration: 1147 ; CPU: 70.74% ; MEM: 8691.95 
+iteration: 1148 ; CPU: 70.81% ; MEM: 8691.95 
+iteration: 1149 ; CPU: 70.86% ; MEM: 8691.95 
+iteration: 1150 ; CPU: 70.92% ; MEM: 8691.95 
+iteration: 1151 ; CPU: 71.04% ; MEM: 8691.95 
+iteration: 1152 ; CPU: 70.72% ; MEM: 8691.95 
+iteration: 1153 ; CPU: 70.80% ; MEM: 8691.95 
+iteration: 1154 ; CPU: 70.86% ; MEM: 8691.95 
+iteration: 1155 ; CPU: 70.91% ; MEM: 8691.95 
+iteration: 1156 ; CPU: 71.01% ; MEM: 8691.95 
+iteration: 1157 ; CPU: 70.70% ; MEM: 8691.95 
+iteration: 1158 ; CPU: 70.79% ; MEM: 8691.95 
+iteration: 1159 ; CPU: 70.85% ; MEM: 8691.95 
+iteration: 1160 ; CPU: 70.90% ; MEM: 8691.95 
+iteration: 1161 ; CPU: 70.96% ; MEM: 8691.95 
+iteration: 1162 ; CPU: 71.08% ; MEM: 8692.12 
+iteration: 1163 ; CPU: 70.77% ; MEM: 8692.12 
+iteration: 1164 ; CPU: 70.84% ; MEM: 8692.12 
+iteration: 1165 ; CPU: 70.87% ; MEM: 8692.12 
+iteration: 1166 ; CPU: 70.94% ; MEM: 8692.11 
+iteration: 1167 ; CPU: 71.07% ; MEM: 8692.11 
+iteration: 1168 ; CPU: 70.75% ; MEM: 8692.10 
+iteration: 1169 ; CPU: 70.82% ; MEM: 8692.10 
+iteration: 1170 ; CPU: 70.87% ; MEM: 8692.10 
+iteration: 1171 ; CPU: 70.94% ; MEM: 8692.31 
+iteration: 1172 ; CPU: 71.07% ; MEM: 8692.31 
+iteration: 1173 ; CPU: 71.12% ; MEM: 8692.31 
+iteration: 1174 ; CPU: 70.81% ; MEM: 8692.31 
+iteration: 1175 ; CPU: 70.86% ; MEM: 8692.40 
+iteration: 1176 ; CPU: 70.92% ; MEM: 8692.40 
+iteration: 1177 ; CPU: 71.02% ; MEM: 8692.33 
+iteration: 1178 ; CPU: 71.11% ; MEM: 8692.33 
+iteration: 1179 ; CPU: 70.80% ; MEM: 8692.33 
+iteration: 1180 ; CPU: 70.85% ; MEM: 8692.33 
+iteration: 1181 ; CPU: 70.91% ; MEM: 8692.33 
+iteration: 1182 ; CPU: 71.00% ; MEM: 8692.33 
+iteration: 1183 ; CPU: 71.10% ; MEM: 8692.33 
+iteration: 1184 ; CPU: 70.79% ; MEM: 8692.33 
+iteration: 1185 ; CPU: 70.84% ; MEM: 8692.33 
+iteration: 1186 ; CPU: 70.90% ; MEM: 8692.33 
+iteration: 1187 ; CPU: 71.00% ; MEM: 8692.33 
+iteration: 1188 ; CPU: 71.09% ; MEM: 8692.33 
+iteration: 1189 ; CPU: 70.78% ; MEM: 8692.33 
+iteration: 1190 ; CPU: 70.83% ; MEM: 8692.37 
+iteration: 1191 ; CPU: 70.89% ; MEM: 8692.37 
+iteration: 1192 ; CPU: 70.99% ; MEM: 8692.37 
+iteration: 1193 ; CPU: 71.09% ; MEM: 8692.37 
+iteration: 1194 ; CPU: 71.14% ; MEM: 8692.37 
+iteration: 1195 ; CPU: 70.82% ; MEM: 8692.37 
+iteration: 1196 ; CPU: 70.90% ; MEM: 8692.37 
+iteration: 1197 ; CPU: 71.00% ; MEM: 8692.37 
+iteration: 1198 ; CPU: 71.08% ; MEM: 8692.37 
+iteration: 1199 ; CPU: 71.13% ; MEM: 8692.37 
+iteration: 1200 ; CPU: 70.81% ; MEM: 8692.37 
+iteration: 1201 ; CPU: 70.88% ; MEM: 8692.34 
+iteration: 1202 ; CPU: 70.98% ; MEM: 8692.34 
+iteration: 1203 ; CPU: 71.04% ; MEM: 8692.34 
+iteration: 1204 ; CPU: 71.11% ; MEM: 8692.34 
+iteration: 1205 ; CPU: 70.81% ; MEM: 8692.34 
+iteration: 1206 ; CPU: 70.90% ; MEM: 8692.40 
+iteration: 1207 ; CPU: 70.97% ; MEM: 8692.40 
+iteration: 1208 ; CPU: 71.03% ; MEM: 8692.40 
+iteration: 1209 ; CPU: 71.11% ; MEM: 8692.65 
+iteration: 1210 ; CPU: 71.20% ; MEM: 8692.65 
+iteration: 1211 ; CPU: 70.91% ; MEM: 8692.65 
+iteration: 1212 ; CPU: 70.97% ; MEM: 8692.65 
+iteration: 1213 ; CPU: 71.03% ; MEM: 8692.64 
+iteration: 1214 ; CPU: 71.11% ; MEM: 8692.64 
+iteration: 1215 ; CPU: 71.19% ; MEM: 8692.64 
+iteration: 1216 ; CPU: 70.92% ; MEM: 8692.64 
+iteration: 1217 ; CPU: 70.98% ; MEM: 8692.75 
+iteration: 1218 ; CPU: 71.03% ; MEM: 8692.75 
+iteration: 1219 ; CPU: 71.11% ; MEM: 8692.75 
+iteration: 1220 ; CPU: 71.19% ; MEM: 8692.75 
+iteration: 1221 ; CPU: 70.92% ; MEM: 8692.75 
+iteration: 1222 ; CPU: 70.99% ; MEM: 8692.75 
+iteration: 1223 ; CPU: 71.04% ; MEM: 8693.95 
+iteration: 1224 ; CPU: 71.11% ; MEM: 8693.95 
+iteration: 1225 ; CPU: 71.20% ; MEM: 8696.01 
+iteration: 1226 ; CPU: 70.92% ; MEM: 8696.01 
+iteration: 1227 ; CPU: 70.98% ; MEM: 8698.08 
+iteration: 1228 ; CPU: 71.02% ; MEM: 8698.08 
+iteration: 1229 ; CPU: 71.10% ; MEM: 8699.11 
+iteration: 1230 ; CPU: 71.19% ; MEM: 8699.11 
+iteration: 1231 ; CPU: 71.25% ; MEM: 8699.11 
+iteration: 1232 ; CPU: 70.97% ; MEM: 8699.11 
+iteration: 1233 ; CPU: 71.01% ; MEM: 8699.11 
+iteration: 1234 ; CPU: 71.10% ; MEM: 8699.11 
+iteration: 1235 ; CPU: 71.19% ; MEM: 8699.11 
+iteration: 1236 ; CPU: 71.25% ; MEM: 8699.11 
+iteration: 1237 ; CPU: 70.97% ; MEM: 8699.11 
+iteration: 1238 ; CPU: 71.01% ; MEM: 8699.11 
+iteration: 1239 ; CPU: 71.07% ; MEM: 8699.11 
+iteration: 1240 ; CPU: 71.20% ; MEM: 8699.36 
+iteration: 1241 ; CPU: 71.25% ; MEM: 8699.36 
+iteration: 1242 ; CPU: 70.96% ; MEM: 8699.36 
+iteration: 1243 ; CPU: 71.00% ; MEM: 8699.36 
+iteration: 1244 ; CPU: 71.05% ; MEM: 8699.36 
+iteration: 1245 ; CPU: 71.18% ; MEM: 8699.36 
+iteration: 1246 ; CPU: 71.23% ; MEM: 8699.36 
+iteration: 1247 ; CPU: 71.28% ; MEM: 8699.36 
+iteration: 1248 ; CPU: 71.00% ; MEM: 8699.36 
+iteration: 1249 ; CPU: 71.05% ; MEM: 8699.36 
+iteration: 1250 ; CPU: 71.16% ; MEM: 8699.36 
+iteration: 1251 ; CPU: 71.21% ; MEM: 8699.36 
+iteration: 1252 ; CPU: 71.27% ; MEM: 8699.36 
+iteration: 1253 ; CPU: 70.99% ; MEM: 8699.57 
+iteration: 1254 ; CPU: 71.03% ; MEM: 8699.57 
+iteration: 1255 ; CPU: 71.15% ; MEM: 8699.57 
+iteration: 1256 ; CPU: 71.21% ; MEM: 8700.60 
+iteration: 1257 ; CPU: 71.26% ; MEM: 8700.60 
+iteration: 1258 ; CPU: 70.98% ; MEM: 8700.60 
+iteration: 1259 ; CPU: 71.03% ; MEM: 8700.67 
+iteration: 1260 ; CPU: 71.15% ; MEM: 8700.92 
+iteration: 1261 ; CPU: 71.21% ; MEM: 8700.99 
+iteration: 1262 ; CPU: 71.27% ; MEM: 8701.13 
+iteration: 1263 ; CPU: 71.31% ; MEM: 8701.13 
+iteration: 1264 ; CPU: 71.05% ; MEM: 8701.13 
+iteration: 1265 ; CPU: 71.12% ; MEM: 8701.13 
+iteration: 1266 ; CPU: 71.20% ; MEM: 8701.13 
+iteration: 1267 ; CPU: 71.25% ; MEM: 8701.13 
+iteration: 1268 ; CPU: 71.30% ; MEM: 8701.13 
+iteration: 1269 ; CPU: 71.05% ; MEM: 8701.13 
+iteration: 1270 ; CPU: 71.11% ; MEM: 8701.13 
+iteration: 1271 ; CPU: 71.20% ; MEM: 8701.13 
+iteration: 1272 ; CPU: 71.25% ; MEM: 8701.13 
+iteration: 1273 ; CPU: 71.32% ; MEM: 8701.13 
+iteration: 1274 ; CPU: 71.03% ; MEM: 8701.13 
+iteration: 1275 ; CPU: 71.10% ; MEM: 8701.13 
+iteration: 1276 ; CPU: 71.18% ; MEM: 8701.13 
+iteration: 1277 ; CPU: 71.23% ; MEM: 8701.13 
+iteration: 1278 ; CPU: 71.30% ; MEM: 8701.13 
+iteration: 1279 ; CPU: 71.03% ; MEM: 8701.13 
+iteration: 1280 ; CPU: 71.10% ; MEM: 8701.13 
+iteration: 1281 ; CPU: 71.18% ; MEM: 8701.13 
+iteration: 1282 ; CPU: 71.23% ; MEM: 8701.13 
+iteration: 1283 ; CPU: 71.30% ; MEM: 8701.13 
+iteration: 1284 ; CPU: 71.34% ; MEM: 8701.13 
+iteration: 1285 ; CPU: 71.09% ; MEM: 8702.20 
+iteration: 1286 ; CPU: 71.16% ; MEM: 8702.20 
+iteration: 1287 ; CPU: 71.22% ; MEM: 8703.11 
+iteration: 1288 ; CPU: 71.31% ; MEM: 8703.32 
+iteration: 1289 ; CPU: 71.35% ; MEM: 8703.39 
+iteration: 1290 ; CPU: 71.07% ; MEM: 8703.39 
+iteration: 1291 ; CPU: 71.16% ; MEM: 8703.39 
+iteration: 1292 ; CPU: 71.21% ; MEM: 8703.39 
+iteration: 1293 ; CPU: 71.29% ; MEM: 8703.39 
+iteration: 1294 ; CPU: 71.34% ; MEM: 8703.39 
+iteration: 1295 ; CPU: 71.05% ; MEM: 8703.39 
+iteration: 1296 ; CPU: 71.10% ; MEM: 8703.39 
+iteration: 1297 ; CPU: 71.18% ; MEM: 8703.39 
+iteration: 1298 ; CPU: 71.22% ; MEM: 8703.39 
+iteration: 1299 ; CPU: 71.29% ; MEM: 8703.39 
+iteration: 1300 ; CPU: 71.36% ; MEM: 8703.39 
+iteration: 1301 ; CPU: 71.09% ; MEM: 8703.39 
+iteration: 1302 ; CPU: 71.17% ; MEM: 8703.39 
+iteration: 1303 ; CPU: 71.21% ; MEM: 8703.39 
+iteration: 1304 ; CPU: 71.28% ; MEM: 8703.45 
+iteration: 1305 ; CPU: 71.33% ; MEM: 8703.45 
+iteration: 1306 ; CPU: 71.08% ; MEM: 8703.45 
+iteration: 1307 ; CPU: 71.16% ; MEM: 8703.45 
+iteration: 1308 ; CPU: 71.20% ; MEM: 8703.45 
+iteration: 1309 ; CPU: 71.28% ; MEM: 8703.45 
+iteration: 1310 ; CPU: 71.31% ; MEM: 8703.45 
+iteration: 1311 ; CPU: 71.37% ; MEM: 8703.45 
+iteration: 1312 ; CPU: 71.15% ; MEM: 8703.45 
+iteration: 1313 ; CPU: 71.19% ; MEM: 8703.45 
+iteration: 1314 ; CPU: 71.27% ; MEM: 8703.45 
+iteration: 1315 ; CPU: 71.33% ; MEM: 8703.45 
+iteration: 1316 ; CPU: 71.37% ; MEM: 8703.45 
+iteration: 1317 ; CPU: 71.15% ; MEM: 8703.45 
+iteration: 1318 ; CPU: 71.18% ; MEM: 8703.45 
+iteration: 1319 ; CPU: 71.26% ; MEM: 8703.45 
+iteration: 1320 ; CPU: 71.31% ; MEM: 8703.45 
+iteration: 1321 ; CPU: 71.36% ; MEM: 8703.51 
+iteration: 1322 ; CPU: 71.10% ; MEM: 8703.51 
+iteration: 1323 ; CPU: 71.18% ; MEM: 8703.51 
+iteration: 1324 ; CPU: 71.25% ; MEM: 8703.51 
+iteration: 1325 ; CPU: 71.29% ; MEM: 8703.51 
+iteration: 1326 ; CPU: 71.35% ; MEM: 8703.51 
+iteration: 1327 ; CPU: 71.40% ; MEM: 8703.51 
+iteration: 1328 ; CPU: 71.17% ; MEM: 8703.51 
+iteration: 1329 ; CPU: 71.24% ; MEM: 8703.51 
+iteration: 1330 ; CPU: 71.27% ; MEM: 8703.51 
+iteration: 1331 ; CPU: 71.32% ; MEM: 8703.51 
+iteration: 1332 ; CPU: 71.39% ; MEM: 8703.51 
+iteration: 1333 ; CPU: 71.15% ; MEM: 8703.51 
+iteration: 1334 ; CPU: 71.24% ; MEM: 8703.51 
+iteration: 1335 ; CPU: 71.28% ; MEM: 8703.51 
+iteration: 1336 ; CPU: 71.33% ; MEM: 8703.51 
+iteration: 1337 ; CPU: 71.40% ; MEM: 8703.51 
+iteration: 1338 ; CPU: 71.15% ; MEM: 8703.51 
+iteration: 1339 ; CPU: 71.22% ; MEM: 8703.51 
+iteration: 1340 ; CPU: 71.28% ; MEM: 8703.48 
+iteration: 1341 ; CPU: 71.33% ; MEM: 8703.49 
+iteration: 1342 ; CPU: 71.37% ; MEM: 8703.49 
+iteration: 1343 ; CPU: 71.43% ; MEM: 8703.51 
+iteration: 1344 ; CPU: 71.23% ; MEM: 8703.60 
+iteration: 1345 ; CPU: 71.25% ; MEM: 8703.60 
+iteration: 1346 ; CPU: 71.30% ; MEM: 8703.70 
+iteration: 1347 ; CPU: 71.36% ; MEM: 8703.70 
+iteration: 1348 ; CPU: 71.41% ; MEM: 8703.70 
+iteration: 1349 ; CPU: 71.18% ; MEM: 8704.12 
+iteration: 1350 ; CPU: 71.25% ; MEM: 8704.12 
+iteration: 1351 ; CPU: 71.29% ; MEM: 8704.12 
+iteration: 1352 ; CPU: 71.34% ; MEM: 8704.12 
+iteration: 1353 ; CPU: 71.41% ; MEM: 8704.12 
+iteration: 1354 ; CPU: 71.46% ; MEM: 8704.12 
+iteration: 1355 ; CPU: 71.24% ; MEM: 8704.12 
+iteration: 1356 ; CPU: 71.28% ; MEM: 8704.12 
+iteration: 1357 ; CPU: 71.34% ; MEM: 8704.12 
+iteration: 1358 ; CPU: 71.39% ; MEM: 8704.12 
+iteration: 1359 ; CPU: 71.48% ; MEM: 8704.12 
+iteration: 1360 ; CPU: 71.25% ; MEM: 8704.12 
+iteration: 1361 ; CPU: 71.28% ; MEM: 8704.12 
+iteration: 1362 ; CPU: 71.32% ; MEM: 8704.12 
+iteration: 1363 ; CPU: 71.36% ; MEM: 8704.12 
+iteration: 1364 ; CPU: 71.42% ; MEM: 8704.12 
+iteration: 1365 ; CPU: 71.23% ; MEM: 8704.12 
+iteration: 1366 ; CPU: 71.28% ; MEM: 8704.12 
+iteration: 1367 ; CPU: 71.31% ; MEM: 8704.12 
+iteration: 1368 ; CPU: 71.36% ; MEM: 8704.12 
+iteration: 1369 ; CPU: 71.41% ; MEM: 8704.24 
+iteration: 1370 ; CPU: 71.48% ; MEM: 8704.24 
+iteration: 1371 ; CPU: 71.24% ; MEM: 8704.24 
+iteration: 1372 ; CPU: 71.30% ; MEM: 8704.24 
+iteration: 1373 ; CPU: 71.34% ; MEM: 8704.24 
+iteration: 1374 ; CPU: 71.39% ; MEM: 8704.24 
+iteration: 1375 ; CPU: 71.43% ; MEM: 8704.23 
+iteration: 1376 ; CPU: 71.50% ; MEM: 8704.23 
+iteration: 1377 ; CPU: 71.26% ; MEM: 8704.23 
+iteration: 1378 ; CPU: 71.31% ; MEM: 8704.23 
+iteration: 1379 ; CPU: 71.35% ; MEM: 8704.23 
+iteration: 1380 ; CPU: 71.40% ; MEM: 8704.22 
+iteration: 1381 ; CPU: 71.48% ; MEM: 8704.22 
+iteration: 1382 ; CPU: 71.25% ; MEM: 8704.22 
+iteration: 1383 ; CPU: 71.29% ; MEM: 8704.22 
+iteration: 1384 ; CPU: 71.33% ; MEM: 8704.22 
+iteration: 1385 ; CPU: 71.37% ; MEM: 8704.22 
+iteration: 1386 ; CPU: 71.42% ; MEM: 8704.22 
+iteration: 1387 ; CPU: 71.49% ; MEM: 8704.22 
+iteration: 1388 ; CPU: 71.25% ; MEM: 8704.22 
+iteration: 1389 ; CPU: 71.29% ; MEM: 8704.22 
+iteration: 1390 ; CPU: 71.33% ; MEM: 8704.42 
+iteration: 1391 ; CPU: 71.37% ; MEM: 8704.42 
+iteration: 1392 ; CPU: 71.45% ; MEM: 8704.42 
+iteration: 1393 ; CPU: 71.21% ; MEM: 8704.42 
+iteration: 1394 ; CPU: 71.25% ; MEM: 8704.42 
+iteration: 1395 ; CPU: 71.29% ; MEM: 8704.42 
+iteration: 1396 ; CPU: 71.35% ; MEM: 8704.42 
+iteration: 1397 ; CPU: 71.40% ; MEM: 8704.42 
+iteration: 1398 ; CPU: 71.47% ; MEM: 8704.42 
+iteration: 1399 ; CPU: 71.22% ; MEM: 8704.42 
+iteration: 1400 ; CPU: 71.28% ; MEM: 8704.42 
+iteration: 1401 ; CPU: 71.30% ; MEM: 8704.42 
+iteration: 1402 ; CPU: 71.35% ; MEM: 8704.42 
+iteration: 1403 ; CPU: 71.39% ; MEM: 8704.42 
+iteration: 1404 ; CPU: 71.46% ; MEM: 8704.42 
+iteration: 1405 ; CPU: 71.23% ; MEM: 8704.42 
+iteration: 1406 ; CPU: 71.26% ; MEM: 8704.42 
+iteration: 1407 ; CPU: 71.31% ; MEM: 8704.42 
+iteration: 1408 ; CPU: 71.35% ; MEM: 8704.41 
+iteration: 1409 ; CPU: 71.39% ; MEM: 8704.41 
+iteration: 1410 ; CPU: 71.45% ; MEM: 8704.41 
+iteration: 1411 ; CPU: 71.23% ; MEM: 8704.41 
+iteration: 1412 ; CPU: 71.26% ; MEM: 8704.41 
+iteration: 1413 ; CPU: 71.31% ; MEM: 8704.41 
+iteration: 1414 ; CPU: 71.35% ; MEM: 8704.69 
+iteration: 1415 ; CPU: 71.42% ; MEM: 8704.69 
+iteration: 1416 ; CPU: 71.20% ; MEM: 8704.69 
+iteration: 1417 ; CPU: 71.24% ; MEM: 8704.69 
+iteration: 1418 ; CPU: 71.28% ; MEM: 8704.69 
+iteration: 1419 ; CPU: 71.32% ; MEM: 8704.69 
+iteration: 1420 ; CPU: 71.35% ; MEM: 8704.69 
+iteration: 1421 ; CPU: 71.43% ; MEM: 8704.76 
+iteration: 1422 ; CPU: 71.21% ; MEM: 8704.76 
+iteration: 1423 ; CPU: 71.25% ; MEM: 8704.76 
+iteration: 1424 ; CPU: 71.28% ; MEM: 8704.76 
+iteration: 1425 ; CPU: 71.33% ; MEM: 8704.76 
+iteration: 1426 ; CPU: 71.38% ; MEM: 8704.76 
+iteration: 1427 ; CPU: 71.43% ; MEM: 8704.76 
+iteration: 1428 ; CPU: 71.20% ; MEM: 8704.76 
+iteration: 1429 ; CPU: 71.23% ; MEM: 8704.76 
+iteration: 1430 ; CPU: 71.27% ; MEM: 8704.76 
+iteration: 1431 ; CPU: 71.31% ; MEM: 8704.76 
+iteration: 1432 ; CPU: 71.38% ; MEM: 8704.76 
+iteration: 1433 ; CPU: 71.16% ; MEM: 8704.76 
+iteration: 1434 ; CPU: 71.20% ; MEM: 8704.76 
+iteration: 1435 ; CPU: 71.23% ; MEM: 8704.76 
+iteration: 1436 ; CPU: 71.28% ; MEM: 8704.76 
+iteration: 1437 ; CPU: 71.34% ; MEM: 8704.76 
+iteration: 1438 ; CPU: 71.39% ; MEM: 8704.78 
+iteration: 1439 ; CPU: 71.16% ; MEM: 8704.78 
+iteration: 1440 ; CPU: 71.20% ; MEM: 8704.78 
+iteration: 1441 ; CPU: 71.25% ; MEM: 8704.78 
+iteration: 1442 ; CPU: 71.28% ; MEM: 8704.92 
+iteration: 1443 ; CPU: 71.35% ; MEM: 8704.92 
+iteration: 1444 ; CPU: 71.39% ; MEM: 8704.92 
+iteration: 1445 ; CPU: 71.16% ; MEM: 8704.92 
+iteration: 1446 ; CPU: 71.20% ; MEM: 8704.92 
+iteration: 1447 ; CPU: 71.23% ; MEM: 8704.92 
+iteration: 1448 ; CPU: 71.27% ; MEM: 8704.92 
+iteration: 1449 ; CPU: 71.34% ; MEM: 8704.92 
+iteration: 1450 ; CPU: 71.38% ; MEM: 8704.92 
+iteration: 1451 ; CPU: 71.15% ; MEM: 8704.91 
+iteration: 1452 ; CPU: 71.20% ; MEM: 8704.91 
+iteration: 1453 ; CPU: 71.24% ; MEM: 8704.91 
+iteration: 1454 ; CPU: 71.28% ; MEM: 8704.91 
+iteration: 1455 ; CPU: 71.35% ; MEM: 8704.91 
+iteration: 1456 ; CPU: 71.13% ; MEM: 8704.91 
+iteration: 1457 ; CPU: 71.16% ; MEM: 8704.93 
+iteration: 1458 ; CPU: 71.20% ; MEM: 8704.93 
+iteration: 1459 ; CPU: 71.23% ; MEM: 8704.93 
+iteration: 1460 ; CPU: 71.30% ; MEM: 8704.91 
+iteration: 1461 ; CPU: 71.34% ; MEM: 8704.91 
+iteration: 1462 ; CPU: 71.12% ; MEM: 8704.91 
+iteration: 1463 ; CPU: 71.15% ; MEM: 8704.91 
+iteration: 1464 ; CPU: 71.19% ; MEM: 8704.91 
+iteration: 1465 ; CPU: 71.23% ; MEM: 8704.91 
+iteration: 1466 ; CPU: 71.30% ; MEM: 8704.94 
+iteration: 1467 ; CPU: 71.35% ; MEM: 8704.94 
+iteration: 1468 ; CPU: 71.12% ; MEM: 8704.94 
+iteration: 1469 ; CPU: 71.16% ; MEM: 8704.94 
+iteration: 1470 ; CPU: 71.18% ; MEM: 8704.95 
+iteration: 1471 ; CPU: 71.26% ; MEM: 8704.95 
+iteration: 1472 ; CPU: 71.30% ; MEM: 8704.95 
+iteration: 1473 ; CPU: 71.34% ; MEM: 8704.95 
+iteration: 1474 ; CPU: 71.12% ; MEM: 8704.95 
+iteration: 1475 ; CPU: 71.15% ; MEM: 8704.95 
+iteration: 1476 ; CPU: 71.18% ; MEM: 8704.95 
+iteration: 1477 ; CPU: 71.25% ; MEM: 8704.95 
+iteration: 1478 ; CPU: 71.29% ; MEM: 8704.95 
+iteration: 1479 ; CPU: 71.08% ; MEM: 8704.95 
+iteration: 1480 ; CPU: 71.12% ; MEM: 8704.95 
+iteration: 1481 ; CPU: 71.15% ; MEM: 8704.95 
+iteration: 1482 ; CPU: 71.20% ; MEM: 8704.95 
+iteration: 1483 ; CPU: 71.26% ; MEM: 8704.95 
+iteration: 1484 ; CPU: 71.30% ; MEM: 8704.95 
+iteration: 1485 ; CPU: 71.06% ; MEM: 8704.95 
+iteration: 1486 ; CPU: 71.10% ; MEM: 8704.95 
+iteration: 1487 ; CPU: 71.14% ; MEM: 8704.95 
+iteration: 1488 ; CPU: 71.21% ; MEM: 8704.95 
+iteration: 1489 ; CPU: 71.25% ; MEM: 8704.95 
+iteration: 1490 ; CPU: 71.28% ; MEM: 8704.96 
+iteration: 1491 ; CPU: 71.06% ; MEM: 8704.96 
+iteration: 1492 ; CPU: 71.08% ; MEM: 8704.96 
+iteration: 1493 ; CPU: 71.13% ; MEM: 8705.09 
+iteration: 1494 ; CPU: 71.19% ; MEM: 8705.10 
+iteration: 1495 ; CPU: 71.23% ; MEM: 8705.10 
+iteration: 1496 ; CPU: 71.26% ; MEM: 8705.10 
+iteration: 1497 ; CPU: 71.05% ; MEM: 8705.10 
+iteration: 1498 ; CPU: 71.07% ; MEM: 8705.10 
+iteration: 1499 ; CPU: 71.10% ; MEM: 8705.08 
+iteration: 1500 ; CPU: 71.18% ; MEM: 8705.08 
+iteration: 1501 ; CPU: 71.21% ; MEM: 8705.08 
+iteration: 1502 ; CPU: 71.01% ; MEM: 8705.08 
+iteration: 1503 ; CPU: 71.04% ; MEM: 8705.08 
+iteration: 1504 ; CPU: 71.06% ; MEM: 8705.08 
+iteration: 1505 ; CPU: 71.13% ; MEM: 8705.08 
+iteration: 1506 ; CPU: 71.16% ; MEM: 8705.09 
+iteration: 1507 ; CPU: 71.20% ; MEM: 8705.09 
+iteration: 1508 ; CPU: 71.00% ; MEM: 8705.09 
+iteration: 1509 ; CPU: 71.02% ; MEM: 8705.09 
+iteration: 1510 ; CPU: 71.06% ; MEM: 8705.09 
+iteration: 1511 ; CPU: 71.12% ; MEM: 8705.08 
+iteration: 1512 ; CPU: 71.16% ; MEM: 8705.08 
+iteration: 1513 ; CPU: 71.19% ; MEM: 8705.08 
+iteration: 1514 ; CPU: 70.98% ; MEM: 8705.30 
+iteration: 1515 ; CPU: 71.01% ; MEM: 8705.30 
+iteration: 1516 ; CPU: 71.04% ; MEM: 8705.30 
+iteration: 1517 ; CPU: 71.11% ; MEM: 8705.30 
+iteration: 1518 ; CPU: 71.15% ; MEM: 8705.30 
+iteration: 1519 ; CPU: 71.19% ; MEM: 8705.30 
+iteration: 1520 ; CPU: 70.97% ; MEM: 8705.30 
+iteration: 1521 ; CPU: 71.00% ; MEM: 8705.29 
+iteration: 1522 ; CPU: 71.07% ; MEM: 8705.29 
+iteration: 1523 ; CPU: 71.10% ; MEM: 8705.29 
+iteration: 1524 ; CPU: 71.14% ; MEM: 8705.29 
+iteration: 1525 ; CPU: 71.17% ; MEM: 8705.40 
+iteration: 1526 ; CPU: 70.96% ; MEM: 8705.40 
+iteration: 1527 ; CPU: 71.01% ; MEM: 8705.40 
+iteration: 1528 ; CPU: 71.06% ; MEM: 8705.40 
+iteration: 1529 ; CPU: 71.10% ; MEM: 8705.40 
+iteration: 1530 ; CPU: 71.13% ; MEM: 8705.40 
+iteration: 1531 ; CPU: 70.93% ; MEM: 8705.40 
+iteration: 1532 ; CPU: 70.95% ; MEM: 8705.40 
+iteration: 1533 ; CPU: 71.02% ; MEM: 8705.40 
+iteration: 1534 ; CPU: 71.06% ; MEM: 8705.40 
+iteration: 1535 ; CPU: 71.09% ; MEM: 8705.40 
+iteration: 1536 ; CPU: 71.13% ; MEM: 8705.40 
+iteration: 1537 ; CPU: 70.91% ; MEM: 8705.40 
+iteration: 1538 ; CPU: 70.93% ; MEM: 8705.50 
+iteration: 1539 ; CPU: 71.01% ; MEM: 8705.50 
+iteration: 1540 ; CPU: 71.03% ; MEM: 8705.50 
+iteration: 1541 ; CPU: 71.08% ; MEM: 8705.95 
+iteration: 1542 ; CPU: 71.10% ; MEM: 8705.95 
+iteration: 1543 ; CPU: 70.90% ; MEM: 8705.95 
+iteration: 1544 ; CPU: 70.96% ; MEM: 8705.95 
+iteration: 1545 ; CPU: 70.99% ; MEM: 8705.95 
+iteration: 1546 ; CPU: 71.04% ; MEM: 8705.95 
+iteration: 1547 ; CPU: 71.06% ; MEM: 8705.96 
+iteration: 1548 ; CPU: 71.11% ; MEM: 8705.96 
+iteration: 1549 ; CPU: 70.88% ; MEM: 8705.96 
+iteration: 1550 ; CPU: 70.95% ; MEM: 8705.96 
+iteration: 1551 ; CPU: 70.99% ; MEM: 8705.94 
+iteration: 1552 ; CPU: 71.02% ; MEM: 8705.94 
+iteration: 1553 ; CPU: 71.05% ; MEM: 8705.94 
+iteration: 1554 ; CPU: 70.85% ; MEM: 8705.94 
+iteration: 1555 ; CPU: 70.89% ; MEM: 8705.94 
+iteration: 1556 ; CPU: 70.95% ; MEM: 8705.94 
+iteration: 1557 ; CPU: 70.98% ; MEM: 8705.94 
+iteration: 1558 ; CPU: 71.02% ; MEM: 8705.94 
+iteration: 1559 ; CPU: 71.04% ; MEM: 8705.94 
+iteration: 1560 ; CPU: 70.84% ; MEM: 8705.94 
+iteration: 1561 ; CPU: 70.90% ; MEM: 8705.94 
+iteration: 1562 ; CPU: 70.94% ; MEM: 8705.94 
+iteration: 1563 ; CPU: 70.97% ; MEM: 8705.94 
+iteration: 1564 ; CPU: 71.01% ; MEM: 8706.12 
+iteration: 1565 ; CPU: 71.05% ; MEM: 8706.12 
+iteration: 1566 ; CPU: 70.84% ; MEM: 8706.12 
+iteration: 1567 ; CPU: 70.89% ; MEM: 8706.12 
+iteration: 1568 ; CPU: 70.93% ; MEM: 8706.12 
+iteration: 1569 ; CPU: 70.98% ; MEM: 8706.12 
+iteration: 1570 ; CPU: 71.00% ; MEM: 8706.12 
+iteration: 1571 ; CPU: 70.79% ; MEM: 8706.12 
+iteration: 1572 ; CPU: 70.85% ; MEM: 8706.12 
+iteration: 1573 ; CPU: 70.89% ; MEM: 8706.12 
+iteration: 1574 ; CPU: 70.93% ; MEM: 8706.12 
+iteration: 1575 ; CPU: 70.97% ; MEM: 8706.12 
+iteration: 1576 ; CPU: 71.00% ; MEM: 8706.12 
+iteration: 1577 ; CPU: 70.82% ; MEM: 8706.12 
+iteration: 1578 ; CPU: 70.86% ; MEM: 8706.12 
+iteration: 1579 ; CPU: 70.90% ; MEM: 8706.12 
+iteration: 1580 ; CPU: 70.94% ; MEM: 8706.12 
+iteration: 1581 ; CPU: 70.97% ; MEM: 8706.12 
+iteration: 1582 ; CPU: 71.00% ; MEM: 8706.12 
+iteration: 1583 ; CPU: 70.83% ; MEM: 8706.14 
+iteration: 1584 ; CPU: 70.86% ; MEM: 8706.14 
+iteration: 1585 ; CPU: 70.91% ; MEM: 8706.14 
+iteration: 1586 ; CPU: 70.94% ; MEM: 8706.14 
+iteration: 1587 ; CPU: 70.98% ; MEM: 8706.14 
+iteration: 1588 ; CPU: 70.80% ; MEM: 8706.14 
+iteration: 1589 ; CPU: 70.84% ; MEM: 8706.25 
+iteration: 1590 ; CPU: 70.87% ; MEM: 8706.25 
+iteration: 1591 ; CPU: 70.91% ; MEM: 8706.25 
+iteration: 1592 ; CPU: 70.93% ; MEM: 8706.25 
+iteration: 1593 ; CPU: 70.98% ; MEM: 8706.25 
+iteration: 1594 ; CPU: 70.80% ; MEM: 8706.25 
+iteration: 1595 ; CPU: 70.85% ; MEM: 8706.24 
+iteration: 1596 ; CPU: 70.88% ; MEM: 8706.24 
+iteration: 1597 ; CPU: 70.93% ; MEM: 8706.24 
+iteration: 1598 ; CPU: 70.99% ; MEM: 8706.24 
+iteration: 1599 ; CPU: 70.79% ; MEM: 8706.24 
+iteration: 1600 ; CPU: 70.82% ; MEM: 8706.24 
+iteration: 1601 ; CPU: 70.85% ; MEM: 8706.24 
+iteration: 1602 ; CPU: 70.89% ; MEM: 8706.24 
+iteration: 1603 ; CPU: 70.95% ; MEM: 8706.24 
+iteration: 1604 ; CPU: 71.00% ; MEM: 8706.24 
+iteration: 1605 ; CPU: 70.80% ; MEM: 8706.24 
+iteration: 1606 ; CPU: 70.82% ; MEM: 8706.24 
+iteration: 1607 ; CPU: 70.86% ; MEM: 8706.24 
+iteration: 1608 ; CPU: 70.94% ; MEM: 8706.24 
+iteration: 1609 ; CPU: 70.95% ; MEM: 8706.24 
+iteration: 1610 ; CPU: 70.76% ; MEM: 8706.24 
+iteration: 1611 ; CPU: 70.79% ; MEM: 8706.24 
+iteration: 1612 ; CPU: 70.83% ; MEM: 8706.24 
+iteration: 1613 ; CPU: 70.85% ; MEM: 8706.24 
+iteration: 1614 ; CPU: 70.93% ; MEM: 8706.24 
+iteration: 1615 ; CPU: 70.97% ; MEM: 8706.24 
+iteration: 1616 ; CPU: 70.77% ; MEM: 8706.24 
+iteration: 1617 ; CPU: 70.80% ; MEM: 8706.24 
+iteration: 1618 ; CPU: 70.84% ; MEM: 8706.24 
+iteration: 1619 ; CPU: 70.90% ; MEM: 8706.24 
+iteration: 1620 ; CPU: 70.95% ; MEM: 8706.24 
+iteration: 1621 ; CPU: 70.75% ; MEM: 8706.24 
+iteration: 1622 ; CPU: 70.79% ; MEM: 8706.24 
+iteration: 1623 ; CPU: 70.82% ; MEM: 8706.24 
+iteration: 1624 ; CPU: 70.88% ; MEM: 8706.24 
+iteration: 1625 ; CPU: 70.92% ; MEM: 8706.24 
+iteration: 1626 ; CPU: 70.96% ; MEM: 8706.24 
+iteration: 1627 ; CPU: 70.75% ; MEM: 8706.27 
+iteration: 1628 ; CPU: 70.79% ; MEM: 8706.27 
+iteration: 1629 ; CPU: 70.86% ; MEM: 8706.27 
+iteration: 1630 ; CPU: 70.89% ; MEM: 8706.27 
+iteration: 1631 ; CPU: 70.93% ; MEM: 8706.25 
+iteration: 1632 ; CPU: 70.72% ; MEM: 8706.25 
+iteration: 1633 ; CPU: 70.76% ; MEM: 8706.25 
+iteration: 1634 ; CPU: 70.82% ; MEM: 8706.25 
+iteration: 1635 ; CPU: 70.86% ; MEM: 8706.25 
+iteration: 1636 ; CPU: 70.90% ; MEM: 8706.25 
+iteration: 1637 ; CPU: 70.70% ; MEM: 8706.25 
+iteration: 1638 ; CPU: 70.72% ; MEM: 8706.25 
+iteration: 1639 ; CPU: 70.80% ; MEM: 8706.25 
+iteration: 1640 ; CPU: 70.83% ; MEM: 8706.25 
+iteration: 1641 ; CPU: 70.87% ; MEM: 8706.25 
+iteration: 1642 ; CPU: 70.89% ; MEM: 8706.25 
+iteration: 1643 ; CPU: 70.70% ; MEM: 8706.25 
+iteration: 1644 ; CPU: 70.75% ; MEM: 8706.25 
+iteration: 1645 ; CPU: 70.80% ; MEM: 8706.25 
+iteration: 1646 ; CPU: 70.83% ; MEM: 8706.25 
+iteration: 1647 ; CPU: 70.86% ; MEM: 8706.25 
+iteration: 1648 ; CPU: 70.95% ; MEM: 8706.48 
+iteration: 1649 ; CPU: 70.73% ; MEM: 8706.48 
+iteration: 1650 ; CPU: 70.77% ; MEM: 8706.48 
+iteration: 1651 ; CPU: 70.79% ; MEM: 8706.48 
+iteration: 1652 ; CPU: 70.84% ; MEM: 8706.48 
+iteration: 1653 ; CPU: 70.90% ; MEM: 8706.48 
+iteration: 1654 ; CPU: 70.70% ; MEM: 8706.48 
+iteration: 1655 ; CPU: 70.72% ; MEM: 8706.69 
+iteration: 1656 ; CPU: 70.77% ; MEM: 8706.69 
+iteration: 1657 ; CPU: 70.81% ; MEM: 8706.69 
+iteration: 1658 ; CPU: 70.83% ; MEM: 8706.69 
+iteration: 1659 ; CPU: 70.91% ; MEM: 8706.74 
+iteration: 1660 ; CPU: 70.70% ; MEM: 8706.74 
+iteration: 1661 ; CPU: 70.74% ; MEM: 8706.74 
+iteration: 1662 ; CPU: 70.77% ; MEM: 8706.74 
+iteration: 1663 ; CPU: 70.80% ; MEM: 8706.74 
+iteration: 1664 ; CPU: 70.87% ; MEM: 8706.74 
+iteration: 1665 ; CPU: 70.67% ; MEM: 8706.74 
+iteration: 1666 ; CPU: 70.70% ; MEM: 8706.99 
+iteration: 1667 ; CPU: 70.74% ; MEM: 8707.25 
+iteration: 1668 ; CPU: 70.77% ; MEM: 8707.25 
+iteration: 1669 ; CPU: 70.80% ; MEM: 8707.25 
+iteration: 1670 ; CPU: 70.92% ; MEM: 8707.25 
+iteration: 1671 ; CPU: 70.67% ; MEM: 8707.25 
+iteration: 1672 ; CPU: 70.71% ; MEM: 8707.25 
+iteration: 1673 ; CPU: 70.74% ; MEM: 8707.25 
+iteration: 1674 ; CPU: 70.78% ; MEM: 8707.25 
+iteration: 1675 ; CPU: 70.87% ; MEM: 8707.25 
+iteration: 1676 ; CPU: 70.65% ; MEM: 8707.25 
+iteration: 1677 ; CPU: 70.68% ; MEM: 8707.25 
+iteration: 1678 ; CPU: 70.71% ; MEM: 8707.25 
+iteration: 1679 ; CPU: 70.75% ; MEM: 8707.25 
+iteration: 1680 ; CPU: 70.81% ; MEM: 8707.25 
+iteration: 1681 ; CPU: 70.89% ; MEM: 8707.26 
+iteration: 1682 ; CPU: 70.65% ; MEM: 8707.28 
+iteration: 1683 ; CPU: 70.69% ; MEM: 8707.28 
+iteration: 1684 ; CPU: 70.71% ; MEM: 8707.28 
+iteration: 1685 ; CPU: 70.74% ; MEM: 8707.29 
+iteration: 1686 ; CPU: 70.85% ; MEM: 8707.30 
+iteration: 1687 ; CPU: 70.88% ; MEM: 8707.29 
+iteration: 1688 ; CPU: 70.65% ; MEM: 8707.29 
+iteration: 1689 ; CPU: 70.68% ; MEM: 8707.29 
+iteration: 1690 ; CPU: 70.71% ; MEM: 8707.29 
+iteration: 1691 ; CPU: 70.77% ; MEM: 8707.29 
+iteration: 1692 ; CPU: 70.85% ; MEM: 8707.29 
+iteration: 1693 ; CPU: 70.62% ; MEM: 8707.29 
+iteration: 1694 ; CPU: 70.66% ; MEM: 8707.29 
+iteration: 1695 ; CPU: 70.69% ; MEM: 8707.29 
+iteration: 1696 ; CPU: 70.71% ; MEM: 8707.29 
+iteration: 1697 ; CPU: 70.82% ; MEM: 8707.29 
+iteration: 1698 ; CPU: 70.88% ; MEM: 8707.29 
+iteration: 1699 ; CPU: 70.62% ; MEM: 8707.29 
+iteration: 1700 ; CPU: 70.66% ; MEM: 8707.28 
+iteration: 1701 ; CPU: 70.70% ; MEM: 8707.28 
+iteration: 1702 ; CPU: 70.79% ; MEM: 8707.28 
+iteration: 1703 ; CPU: 70.84% ; MEM: 8707.28 
+iteration: 1704 ; CPU: 70.60% ; MEM: 8707.28 
+iteration: 1705 ; CPU: 70.63% ; MEM: 8707.28 
+iteration: 1706 ; CPU: 70.65% ; MEM: 8707.28 
+iteration: 1707 ; CPU: 70.72% ; MEM: 8707.50 
+iteration: 1708 ; CPU: 70.78% ; MEM: 8707.51 
+iteration: 1709 ; CPU: 70.83% ; MEM: 8707.51 
+iteration: 1710 ; CPU: 70.60% ; MEM: 8707.51 
+iteration: 1711 ; CPU: 70.64% ; MEM: 8707.51 
+iteration: 1712 ; CPU: 70.68% ; MEM: 8707.51 
+iteration: 1713 ; CPU: 70.76% ; MEM: 8707.51 
+iteration: 1714 ; CPU: 70.81% ; MEM: 8707.51 
+iteration: 1715 ; CPU: 70.58% ; MEM: 8707.51 
+iteration: 1716 ; CPU: 70.60% ; MEM: 8707.51 
+iteration: 1717 ; CPU: 70.66% ; MEM: 8707.51 
+iteration: 1718 ; CPU: 70.70% ; MEM: 8707.51 
+iteration: 1719 ; CPU: 70.76% ; MEM: 8707.51 
+iteration: 1720 ; CPU: 70.81% ; MEM: 8707.51 
+iteration: 1721 ; CPU: 70.57% ; MEM: 8707.51 
+iteration: 1722 ; CPU: 70.64% ; MEM: 8707.51 
+iteration: 1723 ; CPU: 70.66% ; MEM: 8707.51 
+iteration: 1724 ; CPU: 70.73% ; MEM: 8707.51 
+iteration: 1725 ; CPU: 70.77% ; MEM: 8707.51 
+iteration: 1726 ; CPU: 70.55% ; MEM: 8707.51 
+iteration: 1727 ; CPU: 70.61% ; MEM: 8707.51 
+iteration: 1728 ; CPU: 70.64% ; MEM: 8707.51 
+iteration: 1729 ; CPU: 70.70% ; MEM: 8707.51 
+iteration: 1730 ; CPU: 70.75% ; MEM: 8707.51 
+iteration: 1731 ; CPU: 70.80% ; MEM: 8707.51 
+iteration: 1732 ; CPU: 70.59% ; MEM: 8707.51 
+iteration: 1733 ; CPU: 70.62% ; MEM: 8707.51 
+iteration: 1734 ; CPU: 70.64% ; MEM: 8707.51 
+iteration: 1735 ; CPU: 70.71% ; MEM: 8707.51 
+iteration: 1736 ; CPU: 70.75% ; MEM: 8707.51 
+iteration: 1737 ; CPU: 70.52% ; MEM: 8707.51 
+iteration: 1738 ; CPU: 70.58% ; MEM: 8707.51 
+iteration: 1739 ; CPU: 70.60% ; MEM: 8707.51 
+iteration: 1740 ; CPU: 70.67% ; MEM: 8707.51 
+iteration: 1741 ; CPU: 70.71% ; MEM: 8707.51 
+iteration: 1742 ; CPU: 70.75% ; MEM: 8707.51 
+iteration: 1743 ; CPU: 70.54% ; MEM: 8707.51 
+iteration: 1744 ; CPU: 70.58% ; MEM: 8707.51 
+iteration: 1745 ; CPU: 70.61% ; MEM: 8707.51 
+iteration: 1746 ; CPU: 70.68% ; MEM: 8707.51 
+iteration: 1747 ; CPU: 70.72% ; MEM: 8707.51 
+iteration: 1748 ; CPU: 70.75% ; MEM: 8707.51 
+iteration: 1749 ; CPU: 70.54% ; MEM: 8707.51 
+iteration: 1750 ; CPU: 70.57% ; MEM: 8707.51 
+iteration: 1751 ; CPU: 70.62% ; MEM: 8707.51 
+iteration: 1752 ; CPU: 70.67% ; MEM: 8707.53 
+iteration: 1753 ; CPU: 70.71% ; MEM: 8707.53 
+iteration: 1754 ; CPU: 70.51% ; MEM: 8707.53 
+iteration: 1755 ; CPU: 70.54% ; MEM: 8707.53 
+iteration: 1756 ; CPU: 70.61% ; MEM: 8707.53 
+iteration: 1757 ; CPU: 70.63% ; MEM: 8707.53 
+iteration: 1758 ; CPU: 70.68% ; MEM: 8707.53 
+iteration: 1759 ; CPU: 70.76% ; MEM: 8707.53 
+iteration: 1760 ; CPU: 70.52% ; MEM: 8707.53 
+iteration: 1761 ; CPU: 70.54% ; MEM: 8707.53 
+iteration: 1762 ; CPU: 70.60% ; MEM: 8707.53 
+iteration: 1763 ; CPU: 70.65% ; MEM: 8707.53 
+iteration: 1764 ; CPU: 70.67% ; MEM: 8707.53 
+iteration: 1765 ; CPU: 70.47% ; MEM: 8707.53 
+iteration: 1766 ; CPU: 70.51% ; MEM: 8707.53 
+iteration: 1767 ; CPU: 70.57% ; MEM: 8707.53 
+iteration: 1768 ; CPU: 70.60% ; MEM: 8707.53 
+iteration: 1769 ; CPU: 70.64% ; MEM: 8707.53 
+iteration: 1770 ; CPU: 70.71% ; MEM: 8707.53 
+iteration: 1771 ; CPU: 70.50% ; MEM: 8707.53 
+iteration: 1772 ; CPU: 70.51% ; MEM: 8707.53 
+iteration: 1773 ; CPU: 70.57% ; MEM: 8707.53 
+iteration: 1774 ; CPU: 70.61% ; MEM: 8707.53 
+iteration: 1775 ; CPU: 70.68% ; MEM: 8707.53 
+iteration: 1776 ; CPU: 70.72% ; MEM: 8707.53 
+iteration: 1777 ; CPU: 70.48% ; MEM: 8707.53 
+iteration: 1778 ; CPU: 70.54% ; MEM: 8707.53 
+iteration: 1779 ; CPU: 70.58% ; MEM: 8707.55 
+iteration: 1780 ; CPU: 70.65% ; MEM: 8707.55 
+iteration: 1781 ; CPU: 70.69% ; MEM: 8707.55 
+iteration: 1782 ; CPU: 70.46% ; MEM: 8707.55 
+iteration: 1783 ; CPU: 70.49% ; MEM: 8707.55 
+iteration: 1784 ; CPU: 70.55% ; MEM: 8707.55 
+iteration: 1785 ; CPU: 70.59% ; MEM: 8707.55 
+iteration: 1786 ; CPU: 70.66% ; MEM: 8707.55 
+iteration: 1787 ; CPU: 70.71% ; MEM: 8707.55 
+iteration: 1788 ; CPU: 70.46% ; MEM: 8707.55 
+iteration: 1789 ; CPU: 70.52% ; MEM: 8707.55 
+iteration: 1790 ; CPU: 70.56% ; MEM: 8707.55 
+iteration: 1791 ; CPU: 70.62% ; MEM: 8707.55 
+iteration: 1792 ; CPU: 70.65% ; MEM: 8707.55 
+iteration: 1793 ; CPU: 70.44% ; MEM: 8707.55 
+iteration: 1794 ; CPU: 70.46% ; MEM: 8707.55 
+iteration: 1795 ; CPU: 70.52% ; MEM: 8707.55 
+iteration: 1796 ; CPU: 70.60% ; MEM: 8707.55 
+iteration: 1797 ; CPU: 70.63% ; MEM: 8707.55 
+iteration: 1798 ; CPU: 70.66% ; MEM: 8707.55 
+iteration: 1799 ; CPU: 70.44% ; MEM: 8707.55 
+iteration: 1800 ; CPU: 70.50% ; MEM: 8707.55 

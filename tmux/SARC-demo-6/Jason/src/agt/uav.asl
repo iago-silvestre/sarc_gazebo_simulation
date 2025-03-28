@@ -9,8 +9,8 @@ camera_range(5).
 std_altitude(6.25).
 std_heading(0.0).
 land_radius(10.0).
-frl_charges(1).
-cnp_limit(0).
+frl_charges(5).
+//cnp_limit(0).
 landing_x(0.0).
 landing_y(0.0).
 wind_speed(-20.0).
@@ -72,7 +72,9 @@ distance(X,Y,D) :- current_position(CX, CY, CZ) & D=math.sqrt( (CX-X)**2 + (CY-Y
    <- .print(" No more Fire Retardant charges, going to recharge");
       !mm::create_mission(low_frl, 10, []); 
       +mm::mission_plan(low_frl,[[0,0,N*5]]);
-      !mm::run_mission(low_frl).
+      !mm::run_mission(low_frl);
+      .wait(1000);
+      !analyze_CNP.
 
 +!low_battery
    : my_number(N)
@@ -106,8 +108,7 @@ distance(X,Y,D) :- current_position(CX, CY, CZ) & D=math.sqrt( (CX-X)**2 + (CY-Y
 
 +!found_fire
    : current_position(CX, CY, CZ) & std_altitude(Z) & my_number(N)
-   & fireSize(FS) & frl_charges(FRL) & FS > FRL
-   & current_mission(search)
+   & current_mission(search) & fireSize(FS) & frl_charges(FRL)
    <- +fire_pos(CX,CY);
       .print("Fire detected in X: ",CX," , Y:",CY);
       .print("FRL dif: ",(FS-FRL));
@@ -118,23 +119,29 @@ distance(X,Y,D) :- current_position(CX, CY, CZ) & D=math.sqrt( (CX-X)**2 + (CY-Y
       !analyze_CNP.
 
 +!analyze_CNP
-   : fireSize(FS) & frl_charges(FRL) & FS > FRL
-   <- !cnp( 2,help,(FS-FRL)).
+   : fireSize(FS) & frl_charges(FRL) & FS > FRL & not cnp_limit
+   <- .print("FS: ",FS,"' and FR: ",FRL);
+      +cnp_limit;
+      !cnp( 2,help,(FS-FRL)).
 
 +mm::mission_state(combat_fire,finished)  
    : fireSize(FS) & FS==0
    <- .print("Fire Extinguished").
 
-+frl_charges(FRL)
+/*+frl_charges(FRL)     // Probably need to remove this and use analyze cnp on combat fire end
    : fireSize(FS) & current_mission(combat_fire) & FS>FRL
-   <- !cnp( 2,help,(FS-FRL)).
+   <- .print("FS: ",FS,"' and FR: ",FRL);
+      !cnp( 2,help,(FS-FRL)).*/
+
 
 +mm::mission_state(combat_fire,finished) 
    : frl_charges(FRL) & FRL>=1
    <- embedded.mas.bridges.jacamo.defaultEmbeddedInternalAction("sample_roscore","fightFire",FRL);
       -+frl_charges(FRL-1);
+      !mm::run_mission(combat_fire);
       .wait(1000);
-      !mm::run_mission(combat_fire).
+      !analyze_CNP.
+      //!mm::run_mission(combat_fire).
 
 price(_Service,X,Y,R) :- 
    current_position(X, Y, CZ) & 
