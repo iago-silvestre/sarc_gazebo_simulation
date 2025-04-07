@@ -1,0 +1,35 @@
+- device_id: sample_roscore 
+  className:  MyRosMaster
+  microcontroller: 
+      id: ros1 
+      className: DefaultRos4EmbeddedMas  
+      connectionString: ws://localhost:9090    
+  perceptionTopics:
+      - topicName: uav4_lastWP
+        topicType: std_msgs/Int8
+      - topicName: uav4/ground_truth
+        topicType: nav_msgs/Odometry
+      - topicName: fireExt
+        topicType: std_msgs/Int8
+      - topicName: fireSize
+        topicType: std_msgs/Int8
+      - topicName: uav4/fire_detection
+        topicType: std_msgs/Int32
+        beliefName: fire_detection
+      - topicName: battery_uav4
+        topicType: std_msgs/Float64
+        beliefName: battery
+  actions:       
+    topicWritingActions:          
+      - actionName: fightFire              
+        topicName: /fightFire
+        topicType: std_msgs/Int32       
+      - actionName: recharge_battery               
+        topicName: /recharge_battery 
+        topicType: std_msgs/Int32      
+      
+    serviceRequestActions:
+      - actionName: land 
+        serviceName: /uav4/uav_manager/land 
+
+

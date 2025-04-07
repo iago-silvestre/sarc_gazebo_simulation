@@ -1,0 +1,16 @@
+- device_id: sample_roscore
+  className:  MyRosMaster
+  microcontroller: 
+      id: ros1 
+      className: DefaultRos4EmbeddedMas  
+      connectionString: ws://localhost:9090       
+  perceptionTopics:
+      - topicName: uav3_lastWP
+        topicType: std_msgs/Int8
+        beliefName: uav_lastWP
+  actions:       
+    topicWritingActions:        
+
+      
+
+
