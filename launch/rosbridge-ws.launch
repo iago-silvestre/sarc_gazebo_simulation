@@ -1,0 +1,3 @@
+<launch>
+  <node pkg="rosbridge_server" type="rosbridge_websocket" name="rosbridge_ws"/>
+</launch>
